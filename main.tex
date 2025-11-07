@@ -1,0 +1,419 @@
+
+\documentclass[a4paper,12pt, twoside,openright]{report}
+\usepackage[provide=*,french]{babel}
+\selectlanguage{french}
+
+% Force French language support
+\AtBeginDocument{%
+  \renewcommand{\contentsname}{Table des matières}%
+  \renewcommand{\listfigurename}{Liste des figures}%
+  \renewcommand{\listtablename}{Liste des tableaux}%
+  \renewcommand{\chaptername}{Chapitre}%
+  \renewcommand{\figurename}{Figure}%
+  \renewcommand{\tablename}{Tableau}%
+}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\DeclareUnicodeCharacter{00A0}{~} % Non-breaking space
+\DeclareUnicodeCharacter{2019}{'} % Right single quotation mark
+\DeclareUnicodeCharacter{0080}{} % Control character - ignore
+\DeclareUnicodeCharacter{0089}{} % Control character - ignore
+\DeclareUnicodeCharacter{0093}{\guillemotleft} % Left guillemet
+\DeclareUnicodeCharacter{0099}{} % Control character - ignore
+\DeclareUnicodeCharacter{2265}{$\geq$} % Greater than or equal
+\DeclareUnicodeCharacter{251C}{|} % Box drawing character
+\DeclareUnicodeCharacter{2500}{-} % Box drawing character
+\DeclareUnicodeCharacter{2502}{|} % Box drawing character
+\DeclareUnicodeCharacter{2514}{`} % Box drawing character
+\usepackage{lmodern}  % Latin Modern fonts with better UTF-8 support
+\usepackage{textcomp} % Additional text symbols
+\usepackage{newunicodechar} % Handle special Unicode characters
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{geometry}
+\geometry{margin=3cm}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{shapes.symbols,shapes.geometric,arrows.meta,positioning,backgrounds}
+\usepackage{multirow}
+\usepackage{csquotes}
+\usepackage{textgreek}
+\usepackage{xcolor}
+\usepackage{sectsty}
+
+% TikZ styles pour les diagrammes
+\tikzstyle{service} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+% Style générique pour les noeuds "step" utilisés dans certains schémas TikZ
+% Attention: le nom de clé 'step' existe déjà dans TikZ (utilisé pour les grilles)
+% On le neutralise pour éviter l'erreur "requires a value" et on fournit aussi un style alternatif.
+\tikzset{boxstep/.style={rectangle, rounded corners, draw, align=center, minimum width=3.5cm, minimum height=1.2cm, font=\small, fill=gray!10}}
+% Rediriger toute utilisation de `step` vers le style `boxstep`
+\tikzset{step/.code=
+  {\pgfkeysalso{boxstep}}
+}
+
+\usepackage{array}
+\usepackage{tabularx}
+
+\chapterfont{\color{black}}
+\usepackage{color}
+
+% \usepackage[french,ruled,vlined,linesnumbered]{algorithm2e}
+
+%% Navigation dans le document
+\usepackage[pdftex,pdfborder={0 0 0},colorlinks=true,	linkcolor=black,	citecolor=red]{hyperref}	
+
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{hyperref}
+
+
+% \usepackage[top=2.5cm, bottom=2cm, left=3cm, right=2.5cm,headheight=15pt]{geometry}
+\usepackage{colortbl}
+\arrayrulecolor{black}
+%style
+% Allure generale du document
+\usepackage{fancyhdr}			% Entete et pieds de page
+	\pagestyle{fancy}			% Indique que le style de la page sera justement fancy
+	\fancyhf{}
+	\lfoot[\thepage]{} %gauche du pied de page
+	\cfoot{} %milieu du pied de page
+	\rfoot[]{\thepage} %droite du pied de page
+	\fancyhead[RO, LE] {}	
+%	\fancyhead[LE,RO]{\bfseries\thepage}    % Page number (boldface) in left on even
+% pages and right on odd pages
+\fancyhead[RE]{\bfseries\nouppercase{\leftmark}}      % Chapter in the right on even pages
+\fancyhead[LO]{\bfseries\nouppercase{\rightmark}} 
+
+\let\headruleORIG\headrule
+\renewcommand{\headrule}{\color{black} \headruleORIG}
+\renewcommand{\headrulewidth}{1.0pt}
+
+\fancypagestyle{plain}{
+  \fancyhead{}
+  \fancyfoot{}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+\makeatletter
+
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else%
+  \hbox{}%
+  \thispagestyle{empty}%              % Empty header styles
+  \newpage%
+  \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+
+%\makeatothe
+
+% centered page environment
+
+\newenvironment{vcenterpage}
+{\newpage\vspace*{\fill}\thispagestyle{empty}\renewcommand{\headrulewidth}{0pt}}
+{\vspace*{\fill}}
+
+%url
+\usepackage{url} 
+\urlstyle{sf} 
+
+%minitoc
+
+\usepackage[francais]{minitoc}
+
+%figures
+\usepackage{graphicx} 
+
+%ïndex
+%\usepackage{makeidx}
+
+%Maths
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+
+%% Tableaux
+\usepackage{lscape}
+% pour utiliser des tableaux sur plusieurs pages
+\usepackage{longtable}
+%\usepackage{caption}
+\usepackage{tabulary}
+\usepackage{array, supertabular}
+%\usepackage[landscape]{geometry}
+\usepackage{multirow}
+\usepackage{etoolbox}
+	\appto\TPTnoteSettings{\footnotesize}
+\addto\captionsfrench{\def\tablename{{\textsc{Tableau}}}}	% Renome 'table' en 'tableau'
+
+
+
+\usepackage{afterpage}
+
+\def\blankpage{%
+      \clearpage%
+      \thispagestyle{empty}%
+      \addtocounter{page}{-1}%
+      \null%
+      \clearpage}
+\usepackage[intoc]{nomencl}
+\renewcommand{\nomname}{Liste des Abr\'eviations}
+\makenomenclature
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{adjustbox}
+% \usepackage{breakcites}
+%\usepackage{slashbox}
+\addto\captionsfrench{\renewcommand{\listfigurename}{Liste des figures}}
+\usepackage[final]{pdfpages} 
+
+\usepackage{float} 
+\usepackage{caption}
+\usepackage{subcaption}  % Pour les subfigures (logos)
+
+% Bibliography
+\usepackage[style=ieee,backend=biber]{biblatex}
+\addbibresource{biblio.bib}
+
+
+% Configuration de l'en-tête
+\pagestyle{fancy}
+
+\usepackage{fancyhdr}   % Pour personnaliser l'en-tête et le pied de page
+\fancyhf{} % Efface les en-têtes et pieds de page par défaut
+
+% Supprime la ligne horizontale sous l'en-tête
+
+\definecolor{bleu}{RGB}{0, 0, 128}
+\definecolor{dangerred}{RGB}{220, 53, 69}
+\definecolor{warningorange}{RGB}{255, 193, 7}
+\definecolor{successgreen}{RGB}{40, 167, 69}
+
+% Simple replacements for missing environments
+\newenvironment{methodBox}
+{\begin{quote}\textbf{Méthode:}}
+{\end{quote}}
+
+\newenvironment{warningBox}
+{\begin{quote}\textbf{Attention:}}
+{\end{quote}}
+
+
+
+
+\newcommand{\styledtitle}[1]{
+    \cleardoublepage
+    \thispagestyle{empty}
+    \noindent
+    \begin{minipage}[t]{0.05\linewidth}
+        \rule{1cm}{1.8cm} % rectangle noir
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.9\linewidth}
+        \vspace{-0.2cm}
+        \hrule height 0.4pt \vspace{0.3cm}
+        {\Huge \textbf{#1}}\par
+        \vspace{0.3cm}
+    \end{minipage}
+}
+
+
+
+\usepackage{pdfpages}
+\begin{document}
+
+\dominitoc
+
+\let\cleardoublepage\clearpage
+%	\pagedegarde
+% \includepdf{pdg.pdf}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
+%        Contenu du document        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\maketitle
+
+
+
+%%%%%\bigbreak
+
+\newpage
+\thispagestyle{empty}
+\styledtitle{Dédication}
+\begin{spacing}{1.5}
+\vspace{1cm}
+
+\textbf{À} mes très chers parents,  
+dont l’amour inconditionnel, le soutien constant et les sacrifices silencieux ont été la lumière guidant chacun de mes pas.  
+Aucun mot ne saurait exprimer la reconnaissance profonde que je leur porte. Que Dieu leur accorde santé, bonheur et longue vie.
+
+\vspace{0.7cm}
+
+\textbf{À} mes deux frères et ma sœur,  
+qui ont toujours été à mes côtés avec patience, encouragement et affection.  
+Votre présence m’a donné la force d’avancer et de persévérer dans chaque étape de ce projet. Je vous en suis infiniment reconnaissante.
+
+\vspace{0.7cm}
+
+
+
+
+\textbf{À} tous les membres de ma famille,  
+pour leur amour sincère, leur bienveillance constante et leur présence précieuse dans ma vie.
+
+\vspace{0.7cm}
+
+\textbf{À} mes meilleures amies qui ont partagé avec moi rires, défis et réussites tout au long de ce parcours universitaire.  
+Votre amitié est un trésor que je chérirai toujours.
+
+\vspace{0.7cm}
+
+\textbf{À} toute l’équipe BACOVET,  
+pour leurs précieux conseils et leur soutien qui m’ont guidée avec bienveillance et expertise.
+
+
+\vspace{1cm}
+
+\textbf{À}vous tous,  \\
+      je dédie ce travail avec tout mon cœur.
+
+\end{spacing}
+\newpage
+\styledtitle{Remerciement}
+\begin{spacing}{1.5}
+\vspace{1cm}
+
+Ce travail n’aurait pu aboutir sans le soutien, l’accompagnement et l’implication de plusieurs personnes que je tiens à remercier chaleureusement.
+Je remercie tout d'abord, pour son suivi attentif, ses conseils avisés et sa disponibilité tout au long de ce stage. Son encadrement a été pour moi un véritable appui, tant sur le plan méthodologique qu'humain. Je tiens particulièrement à remercier\textbf{ Monsieur Naoufel Bhouri} pour son encadrement académique rigoureux, sa bienveillance et ses orientations précieuses, qui ont largement contribué à la réussite de ce projet.
+
+Je tiens également à exprimer ma gratitude à \textbf{Madame Dhoha Ben Brahim} , mon encadrante professionnelle, pour sa confiance, son accueil et son accompagnement tout au long de ce projet. J'adresse également mes sincères remerciements à toute l'équipe de l'entreprise pour leur accueil chaleureux, leur disponibilité et leur collaboration bienveillante, qui ont largement facilité mon intégration et enrichi mon apprentissage.
+
+Ma gratitude s'adresse aussi à membres du jury, pour avoir accepté d'évaluer mon travail et pour l'intérêt qu'elles y ont porté. Leurs remarques me seront précieuses pour la suite de mon parcours.
+
+À toutes celles et ceux qui ont contribué, de près ou de loin, à la réussite de ce stage, je dis merci du fond du cœur.
+
+
+\end{spacing}
+\newpage
+
+%\noindent
+\dominitoc	
+\setcounter{tocdepth}{3}% definir le niveau de la table de matieres (-1 -->5)
+
+
+\pagenumbering{roman}
+
+% lancer la numérotation arabe habituelle des pages (1, 2, 3, etc.).
+\pagenumbering{roman}
+
+
+
+\lhead{Table des matières}
+\rhead{\thepage}
+\tableofcontents%table des matières
+\renewcommand{\contentsname}{Table des matières}
+
+\newpage
+\addcontentsline{toc}{chapter}{Liste des figures}
+\lhead{Liste des figures}
+\rhead{\thepage}
+\listoffigures  % table des figures
+\addcontentsline{toc}{chapter}{Liste des tableaux}
+\newpage
+\lhead{Liste des tableaux}%liste des tableaux
+\rhead{\thepage}
+\listoftables 
+\rhead{\thepage}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
+%        Contenu du document        %
+%%%%%%%%%%%%%%%%%%% Depth de sous section %%%%%
+\setcounter{secnumdepth}{5}
+%\setcounter{tocdepth}{5}
+\setcounter{minitocdepth}{4}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{tocdepth}{5}% definir le niveau de la table de matieres (-1 -->5)
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+
+% \begin{spacing}{1.5}
+\input{IntroductionGenerale/intro.tex}
+
+\setcounter{chapter}{0} % Redémarre la numérotation des chapitres à 0
+
+\input{Chapitre1/chapitre1.tex}
+\input{Chapitre2/chapitre2.tex}
+\input{Chapitre3/chapitre3.tex}
+\input{Chapitre4/chapitre4.tex}
+\input{Chapitre5/chapitre5.tex}
+\input{Chapitre6/chapitre6.tex}
+\input{ConclusionGenerale/conclusion.tex}
+% \end{spacing}
+
+% Bibliography
+\newpage
+\styledtitle{BIBLIOGRAPHIE}
+\begin{spacing}{1.5}
+\vspace{1cm}
+\printbibliography[heading=none]
+\end{spacing}
+
+\newpage
+\styledtitle{WEBographie}
+\begin{spacing}{1.5}
+\vspace{1cm}
+\addcontentsline{toc}{chapter}{Webographie}
+\lhead{Webographie}
+\begin{enumerate}[label={[\arabic*]}, itemsep=0.5cm]
+    \item \label{ref:agile} \textbf{Agile :} https://monday.com/blog/fr/dev/gestion-de-projet-agile/
+    
+    \item \label{ref:scrum1} \textbf{Scrum :} https://www.atlassian.com/fr/agile/scrum/artifacts
+    
+    \item \label{ref:scrum2} \textbf{Scrum :} https://www.atlassian.com/fr/agile/scrum/roles
+    
+    \item \label{ref:architecture} \textbf{Architecture :} https://prometteursolutions.com/blog/fr/types-darchitecture-logicielle-explication-et-bonnes-pratiques
+    
+    \item \label{ref:mailtrap} \textbf{MailTrap :} https://mailtrap.io/blog/
+    
+    \item \label{ref:mysql} \textbf{MySql :} https://www.mysqltutorial.org/
+    
+    \item \label{ref:vscode} \textbf{Visual Studio Code :} https://www.blogdumoderateur.com/tools/visual-studio-code/
+     \item \label{ref:letcode} \textbf{Letcode :} https://www.letecode.com/tutoriels/tutoriels-laravel-9/controleur
+    
+    \item \label{ref:laravel} \textbf{Laravel :} https://laravel.com/docs/11.x
+    \item \label{ref:php}\textbf{websiterating : }
+    https ://www.websiterating.com/fr/web-hosting/glossary/what-is-phpmyadmin/
+    \item \label{ref:css}\textbf{softfluent :} https ://joshmartin.ch/en/technologies/css-3
+\end{enumerate}
+
+\end{spacing}
+\newpage
+\pagestyle{plain}
+
+\section*{ INTITULE DU PROJET DE PFE}
+Rapport de Stage de PFE DGT-ENIM, 2025
+
+
+\begin{spacing}{1.4}
+Ce projet de fin d’études s’inscrit dans le cadre de l’amélioration continue d’un atelier de coupe textile à travers une transformation digitale conforme aux principes de l’Industrie 4.0. En appliquant la démarche DMAIC, les dysfonctionnements critiques ont été identifiés puis traités par la mise en œuvre d’une solution technologique intelligente. L’approche inclut la modélisation des temps de matelassage, le développement d’un algorithme prédictif basé sur l’intelligence artificielle, et la création d’un tableau de bord de pilotage exploitant les données en temps réel. L’objectif est d’optimiser la planification, de réduire les pertes de temps, et d’améliorer la performance globale de l’atelier.
+
+
+\end{spacing}
+\textbf{Mots clés :}  Industrie 4.0, atelier de coupe, intelligence artificielle, planification, tableau de bord, DMAIC
+
+
+\vspace{1cm}
+
+
+\section*{ Abstract :}
+\begin{spacing}{1.4}
+
+This final-year project aims to improve a textile cutting workshop through a digital transformation aligned with Industry 4.0 principles. Using the DMAIC methodology, the main dysfunctions were identified and addressed with a smart technological solution. The approach integrates matelassage time modeling, a predictive algorithm based on artificial intelligence, and the development of a real-time dashboard for operational monitoring. The proposed system enhances planning, reduces inefficiencies, and boosts the overall performance of the workshop.
+
+\\
+\end{spacing}
+\textbf{Key-words :} Industry 4.0, cutting workshop, artificial intelligence, planning, dashboard, DMAIC.
+
+\end{document}

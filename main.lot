@@ -1,0 +1,64 @@
+\babel@toc {french}{}\relax 
+\babel@toc {french}{}\relax 
+\addvspace {10\p@ }
+\contentsline {xchapter}{Cadre du projet et étude de l'existant}{4}{chapter.1}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Mener une action d'amélioration d'un atelier de travail avec Audit, les outils lean 4.0}{15}{chapter.2}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Exemple de statut temps réel}}{17}{table.caption.16}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Critères constituant des leviers prioritaires d'amélioration}}{20}{table.caption.19}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Résumé du fonctionnement du logiciel Divatex}}{23}{table.caption.22}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Résumé du fonctionnement du logiciel G.Pro}}{24}{table.caption.23}%
+\contentsline {table}{\numberline {2.5}{\ignorespaces Analyse des forces et faiblesses du système actuel}}{26}{table.caption.31}%
+\contentsline {table}{\numberline {2.6}{\ignorespaces Paramètres techniques de l'atelier}}{30}{table.caption.33}%
+\contentsline {table}{\numberline {2.7}{\ignorespaces Analyse des temps observés par activité}}{31}{table.caption.34}%
+\contentsline {table}{\numberline {2.8}{\ignorespaces Analyse des ressources et limitations}}{32}{table.caption.35}%
+\contentsline {table}{\numberline {2.9}{\ignorespaces Synthèse des causes par catégorie}}{34}{table.caption.37}%
+\contentsline {table}{\numberline {2.10}{\ignorespaces Exemple de statut temps réel}}{37}{table.caption.39}%
+\contentsline {table}{\numberline {2.11}{\ignorespaces Indicateurs de performance pour le suivi de l'amélioration}}{38}{table.caption.40}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{CRISP-ML(Q) phases }{41}{chapter.3}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Bibliothèques Python pour la manipulation de données}}{43}{table.caption.44}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Bibliothèques Python pour le Machine Learning}}{44}{table.caption.46}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Bibliothèques Python pour la visualisation}}{45}{table.caption.48}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Technologies backend et API}}{46}{table.caption.50}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Technologies frontend}}{47}{table.caption.52}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Outils d'optimisation}}{48}{table.caption.54}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Outils d'infrastructure et DevOps}}{49}{table.caption.55}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Stack technologique complète du projet}}{50}{table.caption.57}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces Business Model Canvas du systeme IA de planification}}{53}{table.caption.58}%
+\contentsline {table}{\numberline {3.10}{\ignorespaces Objectifs operationnels avec metriques de succes}}{54}{table.caption.59}%
+\contentsline {table}{\numberline {3.11}{\ignorespaces Matrice pouvoir-interet des parties prenantes}}{54}{table.caption.60}%
+\contentsline {table}{\numberline {3.12}{\ignorespaces Comparaison processus AS-IS vs TO-BE}}{58}{table.caption.61}%
+\contentsline {table}{\numberline {3.13}{\ignorespaces Registre detaille des risques metier}}{58}{table.caption.62}%
+\contentsline {table}{\numberline {3.14}{\ignorespaces Criteres de succes techniques}}{60}{table.caption.63}%
+\contentsline {table}{\numberline {3.15}{\ignorespaces Criteres de succes metier}}{60}{table.caption.64}%
+\contentsline {table}{\numberline {3.16}{\ignorespaces Caracteristiques detaillees des sources de donnees}}{65}{table.caption.65}%
+\contentsline {table}{\numberline {3.17}{\ignorespaces Dictionnaire de donnees - Variables principales}}{66}{table.caption.66}%
+\contentsline {table}{\numberline {3.18}{\ignorespaces Description des variables principales}}{66}{table.caption.67}%
+\contentsline {table}{\numberline {3.19}{\ignorespaces Analyse des valeurs manquantes par variable}}{68}{table.caption.68}%
+\contentsline {table}{\numberline {3.20}{\ignorespaces Valeurs aberrantes detectees}}{69}{table.caption.69}%
+\contentsline {table}{\numberline {3.21}{\ignorespaces Features finales pour modelisation}}{76}{table.caption.71}%
+\contentsline {table}{\numberline {3.22}{\ignorespaces Metriques de qualite des donnees}}{80}{table.caption.74}%
+\contentsline {table}{\numberline {3.23}{\ignorespaces Alertes de qualite des donnees}}{80}{table.caption.75}%
+\contentsline {table}{\numberline {3.24}{\ignorespaces Criteres de validation des modeles ML}}{81}{table.caption.76}%
+\contentsline {table}{\numberline {3.25}{\ignorespaces Systeme d'alertes de monitoring}}{84}{table.caption.77}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Modeling, Evaluation, Deployment (MLOps)}{89}{chapter.4}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Comparaison des algorithmes de régression}}{90}{table.caption.78}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Hyperparamètres optimisés de XGBoost}}{92}{table.caption.79}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Performance du modèle de prédiction}}{95}{table.caption.80}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Importance des features (SHAP values moyennes)}}{96}{table.caption.81}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Performance en fonction de la taille du dataset}}{98}{table.caption.82}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Comparaison complète des modèles de régression}}{99}{table.caption.83}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Performance du modèle d'optimisation}}{100}{table.caption.84}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Impact métier mesuré}}{102}{table.caption.86}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Agile 4-month delivery plan}{104}{chapter.5}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Roadmap Phase 1 - Fondations}}{105}{table.caption.87}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Roadmap Phase 2 - Développement Core}}{105}{table.caption.88}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Roadmap Phase 3 - Optimisation et Production}}{105}{table.caption.89}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Registre détaillé des risques projet}}{110}{table.caption.90}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Matrice probabilité-impact des risques}}{110}{table.caption.91}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Répartition du Budget}}{114}{table.caption.92}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Service IA and dashboard}{115}{chapter.6}%

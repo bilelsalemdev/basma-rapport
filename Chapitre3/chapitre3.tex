@@ -1,0 +1,2384 @@
+\chapter{CRISP-ML(Q) phases }\label{chap3:crispml}
+
+\lhead{Chapitre III: Methodologie CRISP-ML(Q)}
+\dominitoc 
+\rhead{\thepage}
+\minitoc
+
+\section{Introduction}\label{chap3:intro}
+
+Ce troisieme chapitre expose de maniere detaillee l'application methodologique de la demarche CRISP-ML(Q) (\textit{Cross-Industry Standard Process for Machine Learning Quality}) \cite{studer2021towards} aux trois premieres phases de notre projet de recherche consacre a l'optimisation de la planification de l'atelier de coupe textile. Cette methodologie structuree, specifiquement adaptee aux exigences et aux specificites du machine learning moderne, integre de maniere systemique les aspects fondamentaux de qualite, de tracabilite et de deploiement continu, essentiels pour garantir la fiabilite et la perennite d'un systeme de production industrielle en environnement operationnel \cite{wirth2000crisp, provost2013data}.
+
+Les phases abordees dans ce chapitre sont :
+\begin{itemize}
+    \item \textbf{Phase 1 : Comprehension metier (Business Understanding)}
+    \item \textbf{Phase 2 : Comprehension des donnees (Data Understanding)}
+    \item \textbf{Phase 3 : Preparation des donnees (Data Preparation)}
+\end{itemize}
+
+Cette approche methodologique garantit une transition fluide vers les phases de modelisation et de deploiement, tout en assurant la qualite et la tracabilite des decisions prises.
+
+\subsection{Vue d'ensemble du processus CRISP-ML(Q)}
+
+La figure \ref{fig:crispml_process} illustre le processus complet CRISP-ML(Q) avec ses 6 phases iteratives et les boucles de retroaction qualite.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.8cm,
+    phase/.style={rectangle, draw, fill=blue!20, text width=3.2cm, text centered, rounded corners, minimum height=1cm, font=\small},
+    arrow/.style={->, >=stealth, thick},
+    quality/.style={rectangle, draw, fill=green!20, text width=2.8cm, text centered, rounded corners, minimum height=0.8cm, font=\footnotesize}
+]
+
+% Phases principales (colonne gauche)
+\node[phase] (business) at (0,0) {1. Business\\Understanding};
+\node[phase] (data) at (0,-2) {2. Data\\Understanding};
+\node[phase] (prep) at (0,-4) {3. Data\\Preparation};
+\node[phase] (model) at (0,-6) {4. Modeling};
+\node[phase] (eval) at (0,-8) {5. Evaluation};
+\node[phase] (deploy) at (0,-10) {6. Deployment};
+
+% Fleches principales
+\draw[arrow] (business) -- (data);
+\draw[arrow] (data) -- (prep);
+\draw[arrow] (prep) -- (model);
+\draw[arrow] (model) -- (eval);
+\draw[arrow] (eval) -- (deploy);
+
+% Boucles de retroaction (a droite)
+\draw[arrow, dashed, red] (eval.east) -- ++(1.5,0) |- (model.east);
+\draw[arrow, dashed, red] (eval.east) -- ++(2,0) |- (prep.east);
+\draw[arrow, dashed, red] (deploy.east) -- ++(2.5,0) |- (business.east);
+
+% Quality gates (colonne droite)
+\node[quality] (qg1) at (5,-2) {Quality Gate 1:\\Data Quality};
+\node[quality] (qg2) at (5,-6) {Quality Gate 2:\\Model Quality};
+\node[quality] (qg3) at (5,-10) {Quality Gate 3:\\Production};
+
+\draw[arrow, dotted, green!60!black] (data.east) -- (qg1.west);
+\draw[arrow, dotted, green!60!black] (model.east) -- (qg2.west);
+\draw[arrow, dotted, green!60!black] (deploy.east) -- (qg3.west);
+
+% Legende
+\node[font=\footnotesize] at (0,-11.5) {Phases couvertes dans ce chapitre: 1-3};
+
+\end{tikzpicture}
+\caption{Processus CRISP-ML(Q) avec portes de qualite}
+\label{fig:crispml_process}
+\end{figure}
+
+\textbf{Caracteristiques cles du processus :}
+\begin{itemize}
+    \item \textbf{Iteratif} : Retours possibles vers les phases precedentes
+    \item \textbf{Qualite integree} : Portes de qualite a chaque etape critique
+    \item \textbf{Tracabilite} : Documentation complete des decisions
+    \item \textbf{Reproductibilite} : Processus standardise et automatise
+\end{itemize}
+
+\section{Outils et bibliothèques utilisés}\label{chap3:tools}
+
+\subsection{Introduction}
+
+Le choix des outils et des bibliothèques constitue une décision stratégique fondamentale dans tout projet de machine learning industriel. Ces choix technologiques influencent directement la qualité, la performance, la maintenabilité et la pérennité de la solution développée. Dans le contexte de ce projet d'optimisation de la planification de l'atelier de coupe textile, la sélection des technologies s'est appuyée sur des critères rigoureux et objectifs, alignés avec les exigences de la méthodologie CRISP-ML(Q) et les contraintes opérationnelles de l'environnement industriel.
+
+Les critères de sélection appliqués incluent : (1) la \textbf{maturité technologique} et la stabilité des bibliothèques, garantissant une fiabilité en production ; (2) la \textbf{performance} mesurée par des benchmarks objectifs ; (3) la \textbf{qualité de la documentation} et l'activité de la communauté, facilitant le développement et la maintenance ; (4) la \textbf{compatibilité} et l'interopérabilité entre les différents composants de la stack ; et (5) la \textbf{maintenabilité} à long terme, essentielle pour l'évolution du système.
+
+Cette section présente de manière structurée l'écosystème technologique complet du projet, organisé en cinq catégories principales : l'écosystème Data Science et Machine Learning, les frameworks de développement backend et frontend, les outils d'optimisation et d'ordonnancement, l'infrastructure DevOps, et enfin une synthèse de la stack technologique complète avec son intégration dans la méthodologie CRISP-ML(Q).
+
+\subsection{Écosystème Data Science et Machine Learning}
+
+L'écosystème Data Science constitue le cœur technique du projet, regroupant les bibliothèques essentielles pour la manipulation des données, l'entraînement des modèles et la visualisation des résultats. L'ensemble de cet écosystème est développé en \textbf{Python 3.11.0}, langage de programmation de référence pour le Data Science et le Machine Learning, offrant une syntaxe claire, une vaste collection de bibliothèques scientifiques et une communauté active.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Chapitre3/images/python.png}
+\caption{Langage de programmation Python}
+\label{fig:3.2}
+\end{figure}
+
+\subsubsection{Bibliothèques de manipulation de données}
+
+
+\begin{table}[H]
+\centering
+\caption{Bibliothèques Python pour la manipulation de données}
+\begin{tabular}{|l|l|p{3cm}|p{6cm}|}
+\hline
+\textbf{Bibliothèque} & \textbf{Version} & \textbf{Rôle principal} & \textbf{Justification du choix} \\
+\hline
+\textbf{pandas} & 2.0.3 & Manipulation et analyse de données tabulaires & Standard de l'industrie pour les DataFrames, API riche et intuitive, performance optimisée pour les opérations vectorisées, intégration native avec NumPy et scikit-learn \\
+\hline
+\textbf{NumPy} & 1.24.3 & Calculs numériques et algèbre linéaire & Fondation de l'écosystème scientifique Python, performance optimale pour les opérations matricielles, support natif des types numériques, base de toutes les bibliothèques ML \\
+\hline
+\end{tabular}
+\label{tab:data_manipulation_libs}
+\end{table}
+
+\textbf{pandas} est utilisé intensivement dans les phases Data Understanding et Data Preparation de CRISP-ML(Q) pour le chargement, le nettoyage, la transformation et l'analyse exploratoire du dataset principal (\texttt{PSC\_X\_1 - COUPE.csv}, 16,433 enregistrements). Ses fonctionnalités de groupement, d'agrégation et de manipulation temporelle sont essentielles pour l'ingénierie des caractéristiques.
+
+\textbf{NumPy} fournit les structures de données fondamentales (arrays multidimensionnels) et les opérations mathématiques de bas niveau utilisées par toutes les autres bibliothèques. Son utilisation garantit des performances optimales pour les calculs vectorisés et matriciels nécessaires au preprocessing et aux transformations de données.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{Chapitre3/images/pbib.png}
+\caption{Bibliothèques de manipulation de données - pandas et NumPy}
+\label{fig:bib_manipulation}
+\end{figure}
+
+\subsubsection{Bibliothèques de Machine Learning}
+
+\begin{table}[H]
+\centering
+\caption{Bibliothèques Python pour le Machine Learning}
+\begin{tabular}{|l|l|p{3cm}|p{6cm}|}
+\hline
+\textbf{Bibliothèque} & \textbf{Version} & \textbf{Rôle principal} & \textbf{Justification du choix} \\
+\hline
+\textbf{scikit-learn} & 1.3.0 & Preprocessing, métriques, validation croisée & API cohérente et standardisée, documentation exhaustive, implémentation robuste des algorithmes classiques, outils de validation et d'évaluation complets \\
+\hline
+\textbf{XGBoost} & 1.7.6 & Algorithme principal de prédiction des temps & Performance supérieure (R²=0.84, MAE=12.3 min), gestion native des valeurs manquantes, régularisation intégrée (L1/L2), interprétabilité via SHAP, temps d'entraînement optimal (< 1 min) \\
+\hline
+\end{tabular}
+\label{tab:ml_libs}
+\end{table}
+
+\textbf{scikit-learn} est utilisé pour le preprocessing des données (\texttt{StandardScaler}, \texttt{LabelEncoder}), la séparation train/test (\texttt{train\_test\_split}), la validation croisée temporelle, et le calcul des métriques de performance (R², MAE, RMSE, MAPE). Son API uniforme facilite l'expérimentation avec différents algorithmes.
+
+\textbf{XGBoost} (Extreme Gradient Boosting) \cite{chen2016xgboost} a été sélectionné comme algorithme principal après une comparaison rigoureuse avec six alternatives (Régression Linéaire, Ridge, Lasso, Random Forest, Gradient Boosting). Les résultats expérimentaux démontrent sa supériorité statistiquement significative (test de Wilcoxon, p=0.031) avec un R² de 0.84 contre 0.78 pour Random Forest, représentant une amélioration de +87\% par rapport à la régression linéaire. Ses avantages incluent la régularisation intégrée prévenant le surapprentissage, la gestion native des valeurs manquantes, la parallélisation efficace, et l'interprétabilité via les valeurs SHAP. Le temps d'entraînement de 45 secondes offre un excellent compromis performance/rapidité pour le réentraînement périodique.
+
+\textbf{Alternatives considérées :}
+\begin{itemize}
+    \item \textbf{Random Forest} : Performance inférieure (R²=0.78) et temps d'entraînement plus long (12.5 min)
+    \item \textbf{Gradient Boosting} : Performance légèrement inférieure (R²=0.81) et temps d'entraînement excessif (78.2 min)
+    \item \textbf{Régression linéaire} : Performance insuffisante (R²=0.45) pour les besoins du projet
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Chapitre3/images/python.png}
+\caption{Logo Python - Langage de programmation utilisé pour l'écosystème Machine Learning (Python 3.11.0)}
+\label{fig:python_logo}
+\end{figure}
+
+\subsubsection{Bibliothèques de visualisation}
+
+\begin{table}[H]
+\centering
+\caption{Bibliothèques Python pour la visualisation}
+\begin{tabular}{|l|l|p{3cm}|p{6cm}|}
+\hline
+\textbf{Bibliothèque} & \textbf{Version} & \textbf{Rôle principal} & \textbf{Justification du choix} \\
+\hline
+\textbf{matplotlib} & 3.7.2 & Visualisations statiques de base & Bibliothèque de référence pour les graphiques scientifiques, contrôle fin de tous les éléments visuels, export haute qualité pour publications \\
+\hline
+\textbf{seaborn} & 0.12.2 & Visualisations statistiques avancées & Intégration native avec pandas, esthétique professionnelle par défaut, fonctions statistiques intégrées (distributions, corrélations, régression) \\
+\hline
+\end{tabular}
+\label{tab:viz_libs}
+\end{table}
+
+Ces bibliothèques sont utilisées intensivement dans la phase Data Understanding pour l'analyse exploratoire des données (EDA) : distributions des variables, matrices de corrélation, détection des outliers, analyse des patterns temporels, et visualisation des performances des modèles (courbes d'apprentissage, importance des features, résidus).
+
+\begin{figure}[H]
+\centering
+\IfFileExists{Chapitre3/images/logos/figure-28-data-science.png}{%
+    \includegraphics[width=0.9\textwidth]{Chapitre3/images/logos/figure-28-data-science.png}
+}{%
+    \fbox{\parbox{0.9\textwidth}{\centering\vspace{3cm}Figure 28 - Écosystème Data Science\\(pandas, NumPy, scikit-learn, XGBoost, matplotlib, seaborn)\\\vspace{3cm}}}
+}
+\caption{Écosystème Data Science et Machine Learning utilisé dans le projet (pandas 2.0.3, NumPy 1.24.3, scikit-learn 1.3.0, XGBoost 1.7.6, matplotlib 3.7.2, seaborn 0.12.2)}
+\label{fig:data_science_logos}
+\end{figure}
+
+\subsection{Frameworks de développement}
+
+Les frameworks de développement assurent la création d'une application web complète, robuste et performante, intégrant les modèles ML dans un environnement de production opérationnel.
+
+\subsubsection{Backend et API}
+
+\begin{table}[H]
+\centering
+\caption{Technologies backend et API}
+\begin{tabular}{|l|l|p{3cm}|p{6cm}|}
+\hline
+\textbf{Technologie} & \textbf{Version} & \textbf{Rôle principal} & \textbf{Justification du choix} \\
+\hline
+\textbf{FastAPI} & 0.103.0 & Framework web moderne pour API REST & Performance exceptionnelle (async/await natif), documentation automatique (Swagger/OpenAPI), validation de données intégrée (Pydantic), type hints Python natifs, temps de réponse < 200ms \\
+\hline
+\textbf{Pydantic} & 2.3.0 & Validation et sérialisation de données & Validation automatique des types, génération de schémas JSON, performance optimale, intégration native avec FastAPI \\
+\hline
+\textbf{uvicorn} & 0.23.2 & Serveur ASGI haute performance & Support async/await, performance optimale, compatibilité ASGI, déploiement production \\
+\hline
+\end{tabular}
+\label{tab:backend_tech}
+\end{table}
+
+\textbf{FastAPI} a été choisi comme framework backend principal pour plusieurs raisons techniques et opérationnelles majeures. Premièrement, sa performance exceptionnelle basée sur le support natif de la programmation asynchrone (async/await) permet de gérer efficacement les requêtes concurrentes avec une latence minimale (< 200ms pour les prédictions individuelles, débit de 1000 prédictions/minute). Deuxièmement, la génération automatique de documentation interactive (Swagger UI et ReDoc) facilite l'intégration et le test des endpoints par les développeurs frontend et les utilisateurs. Troisièmement, l'intégration native avec Pydantic assure une validation robuste des données d'entrée et de sortie, réduisant les erreurs et améliorant la fiabilité. Enfin, l'utilisation des type hints Python modernes améliore la maintenabilité du code et permet la détection précoce des erreurs via les outils d'analyse statique.
+
+\textbf{Alternatives considérées :}
+\begin{itemize}
+    \item \textbf{Flask} : Framework plus simple mais performance inférieure (pas de support async natif), documentation manuelle requise
+    \item \textbf{Django} : Framework trop lourd pour une API pure, overhead inutile, temps de réponse plus élevés
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\IfFileExists{Chapitre3/images/logos/figure-31-backend.png}{%
+    \includegraphics[width=0.7\textwidth]{Chapitre3/images/logos/figure-31-backend.png}
+}{%
+    \fbox{\parbox{0.7\textwidth}{\centering\vspace{2cm}Figure 31 - Technologies Backend\\(FastAPI, Pydantic, uvicorn)\\\vspace{2cm}}}
+}
+\caption{Technologies backend et serveur ASGI (FastAPI 0.103.0, Pydantic 2.3.0, uvicorn 0.23.2)}
+\label{fig:backend_logos}
+\end{figure}
+
+\subsubsection{Frontend et interface utilisateur}
+
+\begin{table}[H]
+\centering
+\caption{Technologies frontend}
+\begin{tabular}{|l|l|p{3cm}|p{6cm}|}
+\hline
+\textbf{Technologie} & \textbf{Version} & \textbf{Rôle principal} & \textbf{Justification du choix} \\
+\hline
+\textbf{React} & 18.2.0 & Framework JavaScript pour interface utilisateur & Architecture composants réutilisables, Virtual DOM pour performance, écosystème riche, communauté active, support TypeScript \\
+\hline
+\textbf{Recharts} & 2.8.0 & Bibliothèque de visualisations interactives & Composants React natifs, visualisations responsives, personnalisation facile, performance optimale \\
+\hline
+\textbf{Axios} & 1.5.0 & Client HTTP pour communication API & API simple et intuitive, intercepteurs pour authentification, gestion des erreurs robuste, support des promesses \\
+\hline
+\end{tabular}
+\label{tab:frontend_tech}
+\end{table}
+
+\textbf{React} offre une architecture moderne basée sur des composants réutilisables, facilitant le développement et la maintenance de l'interface utilisateur. Le Virtual DOM assure des performances optimales lors des mises à jour fréquentes du dashboard en temps réel. L'écosystème riche (React Router, Redux, hooks) et la communauté active garantissent la disponibilité de solutions pour tous les besoins. Le support natif de TypeScript améliore la robustesse du code frontend.
+
+\textbf{Recharts} fournit des composants de visualisation interactifs parfaitement intégrés avec React, utilisés pour afficher les KPIs, les graphiques de performance, les plannings visuels et les tableaux de bord opérationnels. Sa nature responsive assure une expérience utilisateur optimale sur tous les appareils.
+
+\begin{figure}[H]
+\centering
+\IfFileExists{Chapitre3/images/logos/figure-34-frontend.png}{%
+    \includegraphics[width=0.7\textwidth]{Chapitre3/images/logos/figure-34-frontend.png}
+}{%
+    \fbox{\parbox{0.7\textwidth}{\centering\vspace{2cm}Figure 34 - Technologies Frontend\\(React, Recharts, Axios)\\\vspace{2cm}}}
+}
+\caption{Technologies frontend et communication API (React 18.2.0, Recharts 2.8.0, Axios 1.5.0)}
+\label{fig:frontend_logos}
+\end{figure}
+
+\subsection{Outils d'optimisation et d'ordonnancement}
+
+L'optimisation de l'ordonnancement des tables de matelassage constitue un composant critique du système, nécessitant des outils spécialisés en recherche opérationnelle.
+
+\begin{table}[H]
+\centering
+\caption{Outils d'optimisation}
+\begin{tabular}{|l|l|p{3cm}|p{6cm}|}
+\hline
+\textbf{Outil} & \textbf{Version} & \textbf{Rôle principal} & \textbf{Justification du choix} \\
+\hline
+\textbf{OR-Tools} & 9.7 & Bibliothèque d'optimisation Google & Solveurs performants (CP-SAT, LP, MIP), documentation complète, support contraintes complexes, gratuit et open-source, maintenance active \\
+\hline
+\textbf{CP-SAT Solver} & 9.7 & Solveur de programmation par contraintes & Performance exceptionnelle pour problèmes d'ordonnancement, support contraintes temporelles, résolution < 2 secondes pour 50 OF, optimisation multi-critères \\
+\hline
+\end{tabular}
+\label{tab:optimization_tools}
+\end{table}
+
+\textbf{OR-Tools} de Google est une bibliothèque de recherche opérationnelle de niveau industriel, offrant plusieurs solveurs spécialisés. Le \textbf{CP-SAT Solver} (Constraint Programming - Satisfiability) a été sélectionné pour résoudre le problème d'ordonnancement optimal des tables de matelassage. Ce solveur excelle dans les problèmes combinatoires avec contraintes temporelles complexes (disponibilité des tables, séquencement des opérations, respect des délais, équilibrage de charge).
+
+Les performances mesurées démontrent une résolution en moins de 2 secondes pour un planning de 50 ordres de fabrication, avec optimisation simultanée de trois critères : minimisation du makespan (durée totale), équilibrage de la charge entre les tables, et respect des priorités clients. Cette performance permet une reoptimisation dynamique en cas de perturbation (panne machine, retard), assurant la réactivité du système.
+
+\textbf{Formulation du problème :} Le problème d'ordonnancement est modélisé comme un problème de satisfaction de contraintes avec variables de décision (affectation table-OF, temps de début), contraintes (non-chevauchement, précédence, capacité), et fonction objectif multi-critères. Le solveur CP-SAT explore l'espace des solutions de manière efficace grâce à des techniques de propagation de contraintes et de recherche arborescente.
+
+\subsection{Infrastructure et DevOps}
+
+L'infrastructure et les outils DevOps assurent la reproductibilité, la qualité et le déploiement fiable du système en environnement de production.
+
+\begin{table}[H]
+\centering
+\caption{Outils d'infrastructure et DevOps}
+\begin{tabular}{|l|l|p{3cm}|p{6cm}|}
+\hline
+\textbf{Outil} & \textbf{Version} & \textbf{Rôle principal} & \textbf{Justification du choix} \\
+\hline
+\textbf{Docker} & 24.0 & Conteneurisation des applications & Reproductibilité garantie, isolation des dépendances, déploiement simplifié, portabilité multi-environnements \\
+\hline
+\textbf{Git} & 2.41 & Gestion de version du code source & Standard de l'industrie, collaboration efficace, traçabilité complète, intégration CI/CD \\
+\hline
+\textbf{pytest} & 7.4.0 & Framework de tests automatisés & Syntaxe simple et expressive, fixtures puissantes, couverture de code, intégration CI/CD \\
+\hline
+\textbf{PostgreSQL} & 15.3 & Base de données relationnelle & Fiabilité éprouvée, support transactions ACID, performance optimale, types de données riches \\
+\hline
+\end{tabular}
+\label{tab:devops_tools}
+\end{table}
+
+\textbf{Docker} assure la conteneurisation de tous les composants du système (API FastAPI, modèles ML, base de données), garantissant une reproductibilité parfaite entre les environnements de développement, test et production. L'isolation des dépendances prévient les conflits de versions et simplifie le déploiement.
+
+\textbf{Git} est utilisé pour la gestion de version du code source, des configurations et de la documentation, assurant une traçabilité complète des modifications et facilitant la collaboration entre les membres de l'équipe.
+
+\textbf{pytest} fournit un framework de tests automatisés couvrant les tests unitaires (fonctions individuelles), les tests d'intégration (interaction entre composants), et les tests end-to-end (scénarios utilisateur complets). La couverture de code cible est de 80\%, assurant la robustesse du système.
+
+\textbf{PostgreSQL} est utilisé comme base de données relationnelle pour la persistance des données de production (ordres de fabrication, historique des prédictions, logs système, configurations). Son support des transactions ACID garantit la cohérence des données, et ses performances sont optimales pour les requêtes analytiques.
+
+\begin{figure}[H]
+\centering
+\IfFileExists{Chapitre3/images/logos/figure-35-devops.png}{%
+    \includegraphics[width=0.9\textwidth]{Chapitre3/images/logos/figure-35-devops.png}
+}{%
+    \fbox{\parbox{0.9\textwidth}{\centering\vspace{3cm}Figure 35 - Infrastructure DevOps\\(Docker, Git, pytest, PostgreSQL, OR-Tools)\\\vspace{3cm}}}
+}
+\caption{Infrastructure DevOps et outils de déploiement (Docker 24.0, Git 2.41, pytest 7.4.0, PostgreSQL 15.3, OR-Tools 9.7)}
+\label{fig:devops_logos}
+\end{figure}
+
+\subsection{Stack technologique complète}
+
+Le tableau suivant présente une vue d'ensemble synthétique de la stack technologique complète, organisée par couche fonctionnelle.
+
+\begin{table}[H]
+\centering
+\caption{Stack technologique complète du projet}
+\begin{tabular}{|l|p{5cm}|p{6cm}|}
+\hline
+\textbf{Couche} & \textbf{Technologies} & \textbf{Rôle dans le système} \\
+\hline
+\textbf{Data Science \& ML} & pandas 2.0.3, NumPy 1.24.3, scikit-learn 1.3.0, XGBoost 1.7.6, matplotlib 3.7.2, seaborn 0.12.2 & Manipulation de données, entraînement des modèles ML, analyse exploratoire, visualisation des résultats, évaluation des performances \\
+\hline
+\textbf{Backend \& API} & FastAPI 0.103.0, Pydantic 2.3.0, uvicorn 0.23.2 & API REST haute performance, validation de données, endpoints de prédiction et d'ordonnancement, authentification \\
+\hline
+\textbf{Frontend} & React 18.2.0, Recharts 2.8.0, Axios 1.5.0 & Interface utilisateur responsive, dashboard interactif, visualisations temps réel, communication avec l'API \\
+\hline
+\textbf{Optimisation} & OR-Tools 9.7, CP-SAT Solver 9.7 & Ordonnancement optimal des tables, résolution de contraintes, optimisation multi-critères \\
+\hline
+\textbf{Base de données} & PostgreSQL 15.3, SQLAlchemy 2.0.20 & Persistance des données, historique des prédictions, logs système, gestion des configurations \\
+\hline
+\textbf{DevOps \& Infrastructure} & Docker 24.0, Git 2.41, pytest 7.4.0 & Conteneurisation, gestion de version, tests automatisés, déploiement continu \\
+\hline
+\end{tabular}
+\label{tab:complete_stack}
+\end{table}
+
+Cette stack technologique a été conçue pour assurer une intégration harmonieuse entre tous les composants, de la collecte des données jusqu'au déploiement en production. Chaque technologie a été sélectionnée pour sa maturité, sa performance et sa compatibilité avec les autres composants, garantissant ainsi la fiabilité et la maintenabilité à long terme du système.
+
+\subsection{Justification des choix et intégration CRISP-ML(Q)}
+
+Les choix technologiques effectués s'alignent rigoureusement avec les six phases de la méthodologie CRISP-ML(Q), assurant une couverture complète du cycle de vie du projet de machine learning.
+
+\textbf{Alignement avec les phases CRISP-ML(Q) :}
+
+\begin{itemize}
+    \item \textbf{Phase 1 - Business Understanding} : Git pour la documentation et la traçabilité des décisions, outils de collaboration pour l'alignement avec les parties prenantes
+    
+    \item \textbf{Phase 2 - Data Understanding} : pandas pour l'exploration des données (16,433 enregistrements), matplotlib et seaborn pour l'analyse exploratoire (distributions, corrélations, outliers), NumPy pour les calculs statistiques
+    
+    \item \textbf{Phase 3 - Data Preparation} : pandas pour le nettoyage et la transformation, scikit-learn pour le preprocessing (StandardScaler, encodage), gestion des valeurs manquantes et des outliers
+    
+    \item \textbf{Phase 4 - Modeling} : XGBoost pour l'entraînement du modèle principal, scikit-learn pour la validation croisée temporelle, OR-Tools CP-SAT pour l'optimisation de l'ordonnancement
+    
+    \item \textbf{Phase 5 - Evaluation} : scikit-learn pour les métriques (R², MAE, RMSE, MAPE), matplotlib pour les courbes d'apprentissage et l'analyse des résidus, tests statistiques de significativité
+    
+    \item \textbf{Phase 6 - Deployment} : FastAPI pour l'API de production, Docker pour la conteneurisation, PostgreSQL pour la persistance, React pour l'interface utilisateur, pytest pour les tests automatisés
+\end{itemize}
+
+\textbf{Critères de sélection appliqués :}
+
+\begin{enumerate}
+    \item \textbf{Maturité technologique} : Toutes les bibliothèques sélectionnées sont des standards de l'industrie avec un historique stable (pandas depuis 2008, scikit-learn depuis 2007, XGBoost depuis 2014, FastAPI depuis 2018 avec adoption rapide)
+    
+    \item \textbf{Performance mesurée} : Les choix sont justifiés par des benchmarks objectifs (XGBoost R²=0.84 vs alternatives, FastAPI latence < 200ms, CP-SAT résolution < 2s)
+    
+    \item \textbf{Qualité de la documentation} : Toutes les technologies disposent d'une documentation exhaustive, de tutoriels complets et d'une communauté active (Stack Overflow, GitHub, forums spécialisés)
+    
+    \item \textbf{Compatibilité et interopérabilité} : L'écosystème Python assure une intégration harmonieuse entre les composants Data Science, l'API FastAPI expose les modèles de manière standard (REST/JSON), React communique via HTTP standard
+    
+    \item \textbf{Maintenabilité à long terme} : Le code est structuré selon les bonnes pratiques (type hints, tests automatisés, documentation inline), les dépendances sont gérées via requirements.txt, Docker assure la reproductibilité
+\end{enumerate}
+
+\textbf{Bénéfices de la stack choisie :}
+
+\begin{itemize}
+    \item \textbf{Reproductibilité scientifique} : Docker et Git garantissent que les résultats peuvent être reproduits exactement, essentiel pour la validation académique et industrielle
+    
+    \item \textbf{Performance opérationnelle} : La stack optimisée (XGBoost, FastAPI async, CP-SAT) assure des temps de réponse compatibles avec les contraintes temps réel de la production (< 2 secondes)
+    
+    \item \textbf{Maintenabilité à long terme} : L'utilisation de standards de l'industrie, la documentation complète et les tests automatisés facilitent l'évolution et la maintenance du système
+    
+    \item \textbf{Évolutivité du système} : L'architecture modulaire (API REST, microservices potentiels) permet d'ajouter de nouvelles fonctionnalités sans refonte majeure
+\end{itemize}
+
+Cette stack technologique constitue ainsi un fondement solide pour le développement, le déploiement et la maintenance d'un système d'intelligence artificielle industriel performant, fiable et évolutif, répondant aux exigences rigoureuses de la méthodologie CRISP-ML(Q) et aux contraintes opérationnelles de l'environnement de production textile.
+
+\section{Phase 1 : Comprehension metier (Business Understanding)}\label{chap3:business}
+
+\subsection{Contexte strategique et enjeux}
+
+La phase de comprehension metier etablit les fondations du projet de machine learning en alignant les objectifs techniques avec les besoins strategiques de l'entreprise. Cette phase critique garantit que la solution developpee apportera une valeur metier mesurable et durable.
+
+\subsubsection{Contexte industriel}
+
+L'industrie textile tunisienne fait face a une concurrence internationale accrue et a des exigences croissantes en termes de delais et de qualite. BACOVET, acteur majeur du secteur, doit moderniser ses processus pour maintenir sa competitivite. L'atelier de coupe, maillon critique de la chaine de production, represente un goulot d'etranglement potentiel dont l'optimisation peut generer des gains significatifs.
+
+\textbf{Enjeux strategiques :}
+\begin{itemize}
+    \item \textbf{Competitivite} : Reduire les coÃ»ts de production de 8\% via l'optimisation
+    \item \textbf{Qualite de service} : Ameliorer le taux de respect des delais de 85\% a 95\%
+    \item \textbf{Transformation digitale} : Positionner BACOVET comme leader de l'Industrie 4.0 dans le textile
+    \item \textbf{Capitalisation des connaissances} : Reduire la dependance aux experts individuels
+    \item \textbf{Scalabilite} : Creer un modele reproductible pour d'autres ateliers
+\end{itemize}
+
+\subsection{Business Model Canvas}
+
+Le Business Model Canvas permet de visualiser la proposition de valeur du systeme IA dans l'ecosysteme de l'entreprise.
+
+\begin{table}[H]
+\centering
+\caption{Business Model Canvas du systeme IA de planification}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Proposition de valeur}} \\
+\hline
+\multicolumn{2}{|l|}{Systeme intelligent de planification optimisant l'utilisation des ressources, reduisant les delais et ameliorant la precision des estimations grÃ¢ce a l'IA} \\
+\hline
+\textbf{Segments clients} & \textbf{Relations clients} \\
+\hline
+- Chefs d'atelier (planification) & - Support dedie \\
+- Planificateurs (optimisation) & - Formation continue \\
+- Operateurs (execution) & - Feedback regulier \\
+- Direction (pilotage) & - Comite de pilotage \\
+\hline
+\textbf{Canaux} & \textbf{Flux de revenus} \\
+\hline
+- Application web responsive & - Gains productivite : 18,000 TND/an \\
+- Dashboard temps reel & - Reduction retards : 8,000 TND/an \\
+- Notifications push/email & - Optimisation capacite : 28,000 TND/an \\
+- API pour integrations & - Reduction HS : 12,000 TND/an \\
+\hline
+\textbf{Activites cles} & \textbf{Ressources cles} \\
+\hline
+- Prediction temps ML & - Donnees historiques (16K+ records) \\
+- Optimisation ordonnancement & - Modeles ML (XGBoost, CP-SAT) \\
+- Monitoring temps reel & - Infrastructure cloud \\
+- Amelioration continue & - Ã‰quipe data science \\
+\hline
+\textbf{Partenaires cles} & \textbf{Structure de coÃ»ts} \\
+\hline
+- Fournisseur G.Pro (ERP) & - Developpement : 35,000 TND \\
+- Fournisseur Divatex (CAO) & - Infrastructure : 15,000 TND \\
+- Prestataire cloud & - Formation : 7,500 TND \\
+- Experts ML externes & - Support : 5,000 TND/an \\
+\hline
+\end{tabular}
+\label{tab:business_model_canvas}
+\end{table}
+
+\subsection{Objectifs metier detailles}
+
+L'objectif principal du projet est de developper un systeme d'intelligence artificielle pour optimiser la planification de l'atelier de coupe textile, en ameliorant l'efficacite operationnelle et la precision des estimations de temps.
+
+\subsubsection{Objectifs strategiques}
+
+\begin{itemize}
+    \item \textbf{Excellence operationnelle} : Positionner l'atelier de coupe comme reference en termes d'efficacite
+    \item \textbf{Innovation technologique} : Demontrer la capacite d'innovation de BACOVET
+    \item \textbf{Avantage concurrentiel} : Creer un differenciateur face a la concurrence
+    \item \textbf{Satisfaction client} : Ameliorer la fiabilite des delais de livraison
+\end{itemize}
+
+\subsubsection{Objectifs operationnels quantifiables}
+
+\begin{table}[H]
+\centering
+\caption{Objectifs operationnels avec metriques de succes}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Objectif} & \textbf{Baseline} & \textbf{Cible} & \textbf{Gain attendu} \\
+\hline
+Temps de planification & 2,5 h/jour & 1,0 h/jour & -60\% (390h/an) \\
+\hline
+Precision estimations (RÂ²) & 0,45 & > 0,80 & +78\% precision \\
+\hline
+Erreur absolue moyenne (MAE) & 42 min & < 15 min & -64\% erreur \\
+\hline
+Utilisation tables & 72\% & 85\% & +13 pts (+18\%) \\
+\hline
+Respect delais livraison & 85\% & 95\% & +10 pts (+12\%) \\
+\hline
+Retards/semaine & 8,5 & 6,0 & -29\% retards \\
+\hline
+Temps attente inter-etapes & 45 min & 20 min & -56\% attente \\
+\hline
+Satisfaction utilisateurs & 3,2/5 & 4,5/5 & +41\% satisfaction \\
+\hline
+\end{tabular}
+\label{tab:operational_objectives}
+\end{table}
+
+\subsubsection{Objectifs techniques ML}
+
+\begin{itemize}
+    \item \textbf{Performance predictive} : RÂ² > 0.80, MAE < 15 minutes, RMSE < 20 minutes
+    \item \textbf{Temps de reponse} : < 2 secondes pour prediction individuelle, < 10 secondes pour batch
+    \item \textbf{Disponibilite} : > 99,5\% uptime (maximum 3,6 heures d'indisponibilite/an)
+    \item \textbf{Scalabilite} : Capacite a traiter 200 OF/jour avec temps de reponse constant
+    \item \textbf{Robustesse} : Performance stable face a 20\% de variation des donnees d'entree
+    \item \textbf{Explicabilite} : Capacite a expliquer les predictions (SHAP values) \cite{lundberg2017unified}
+\end{itemize}
+
+\subsection{Analyse approfondie des parties prenantes}
+
+\subsubsection{Matrice pouvoir-interet}
+
+\begin{table}[H]
+\centering
+\caption{Matrice pouvoir-interet des parties prenantes}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Partie prenante} & \textbf{Pouvoir} & \textbf{Interet} & \textbf{Strategie} & \textbf{Actions cles} \\
+\hline
+Direction Production & Ã‰leve & Ã‰leve & Gerer etroitement & Comite mensuel, reporting \\
+\hline
+Chef d'atelier & Moyen & Ã‰leve & Maintenir satisfait & Formation, support \\
+\hline
+Planificateurs & Moyen & Ã‰leve & Maintenir satisfait & Co-conception, tests \\
+\hline
+Operateurs & Faible & Moyen & Tenir informe & Communication, formation \\
+\hline
+Service IT & Moyen & Moyen & Maintenir satisfait & Collaboration technique \\
+\hline
+Direction Qualite & Moyen & Moyen & Tenir informe & Validation qualite \\
+\hline
+Clients internes & Faible & Ã‰leve & Tenir informe & Communication resultats \\
+\hline
+Fournisseurs IT & Faible & Faible & Surveiller & Contrats, SLA \\
+\hline
+\end{tabular}
+\label{tab:power_interest_matrix}
+\end{table}
+
+\subsubsection{Besoins detailles par profil utilisateur}
+
+\textbf{Chef d'atelier :}
+\begin{itemize}
+    \item \textbf{Besoins fonctionnels} : Vue d'ensemble temps reel, alertes proactives, capacite de reoptimisation
+    \item \textbf{Besoins non-fonctionnels} : Interface intuitive, temps de reponse < 2s, disponibilite 24/7
+    \item \textbf{Contraintes} : Formation limitee (2 jours max), pas de competences techniques avancees
+    \item \textbf{Criteres d'acceptation} : Gain de temps > 50\%, precision > 85\%, facilite d'utilisation
+\end{itemize}
+
+\textbf{Planificateurs :}
+\begin{itemize}
+    \item \textbf{Besoins fonctionnels} : Optimisation multi-criteres, simulation what-if, analyses historiques
+    \item \textbf{Besoins non-fonctionnels} : Flexibilite parametrage, export donnees, integration Excel
+    \item \textbf{Contraintes} : Integration avec G.Pro obligatoire, respect des regles metier existantes
+    \item \textbf{Criteres d'acceptation} : Qualite planning > methode actuelle, flexibilite suffisante
+\end{itemize}
+
+\textbf{Operateurs :}
+\begin{itemize}
+    \item \textbf{Besoins fonctionnels} : Consultation planning simple, saisie rapide avancement
+    \item \textbf{Besoins non-fonctionnels} : Interface mobile-friendly, saisie < 30 secondes
+    \item \textbf{Contraintes} : Pas de formation technique, utilisation en environnement atelier
+    \item \textbf{Criteres d'acceptation} : Simplicite d'utilisation, pas de ralentissement du travail
+\end{itemize}
+
+\textbf{Direction :}
+\begin{itemize}
+    \item \textbf{Besoins fonctionnels} : KPIs strategiques, ROI, rapports executifs
+    \item \textbf{Besoins non-fonctionnels} : Synthese visuelle, export PowerPoint, acces mobile
+    \item \textbf{Contraintes} : Budget 75,000 TND, ROI < 18 mois
+    \item \textbf{Criteres d'acceptation} : ROI demontre, amelioration KPIs, adoption utilisateurs
+\end{itemize}
+
+\subsection{Analyse des processus metier}
+
+\subsubsection{Cartographie du processus actuel (AS-IS)}
+
+Le processus de planification actuel presente plusieurs etapes manuelles et chronophages avec de nombreux points de friction.
+
+\textbf{Ã‰tapes detaillees du processus actuel :}
+
+\begin{enumerate}
+    \item \textbf{Reception des ordres de fabrication (30 min)}
+    \begin{itemize}
+        \item Import manuel depuis G.Pro via export CSV
+        \item Verification manuelle de la completude des donnees
+        \item Consolidation dans fichier Excel maitre
+        \item \textit{Points de friction} : Risque d'erreur, double saisie, delai
+    \end{itemize}
+    
+    \item \textbf{Estimation des temps (45 min)}
+    \begin{itemize}
+        \item Consultation de l'historique papier ou memoire
+        \item Estimation basee sur l'experience du chef d'equipe
+        \item Ajustement selon disponibilite et charge
+        \item \textit{Points de friction} : Subjectivite, variabilite, pas de tracabilite
+    \end{itemize}
+    
+    \item \textbf{Affectation des tables (30 min)}
+    \begin{itemize}
+        \item Verification manuelle de la disponibilite des tables
+        \item Choix selon regles empiriques (FIFO, priorite client)
+        \item Affectation des operateurs selon competences
+        \item \textit{Points de friction} : Sous-optimisation, pas de vision globale
+    \end{itemize}
+    
+    \item \textbf{Ã‰laboration du planning (60 min)}
+    \begin{itemize}
+        \item Creation manuelle sur papier ou Excel
+        \item Ajustements iteratifs pour resoudre conflits
+        \item Impression et distribution physique
+        \item \textit{Points de friction} : Temps eleve, rigidite, pas de reoptimisation
+    \end{itemize}
+    
+    \item \textbf{Suivi d'execution (continu)}
+    \begin{itemize}
+        \item Saisie manuelle des avancements par operateurs
+        \item Consolidation en fin de journee
+        \item Ajustements ad-hoc en cas de probleme
+        \item \textit{Points de friction} : Delai d'information, reactivite limitee
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Metriques du processus actuel :}
+\begin{itemize}
+    \item \textbf{Temps de cycle total} : 2,5 heures/jour
+    \item \textbf{Activites a valeur ajoutee} : 35\% (estimation, optimisation)
+    \item \textbf{Activites sans valeur ajoutee} : 65\% (saisie, verification, consolidation)
+    \item \textbf{Taux d'erreur} : 8\% (erreurs de saisie, oublis)
+    \item \textbf{Flexibilite} : Faible (reoptimisation difficile)
+\end{itemize}
+
+\subsubsection{Processus cible optimise (TO-BE)}
+
+Le processus optimise integrera l'IA pour automatiser et ameliorer chaque etape.
+
+\textbf{Ã‰tapes du processus cible :}
+
+\begin{enumerate}
+    \item \textbf{Import automatique (2 min)}
+    \begin{itemize}
+        \item Synchronisation temps reel avec G.Pro via API
+        \item Validation automatique des donnees
+        \item Enrichissement avec donnees historiques
+        \item \textit{Ameliorations} : -93\% temps, 0\% erreur, temps reel
+    \end{itemize}
+    
+    \item \textbf{Prediction intelligente (< 1 min)}
+    \begin{itemize}
+        \item Estimation automatique via modele ML (XGBoost)
+        \item Calcul d'intervalle de confiance
+        \item Ajustement selon contexte (operateur, machine, charge)
+        \item \textit{Ameliorations} : -98\% temps, +78\% precision, tracabilite
+    \end{itemize}
+    
+    \item \textbf{Optimisation automatique (< 2 min)}
+    \begin{itemize}
+        \item Algorithme d'ordonnancement (CP-SAT) \cite{perron2011operations}
+        \item Optimisation multi-criteres (makespan, equilibrage, delais) \cite{pinedo2016scheduling}
+        \item Affectation optimale tables/operateurs
+        \item \textit{Ameliorations} : -93\% temps, optimisation globale, reproductibilite
+    \end{itemize}
+    
+    \item \textbf{Planning dynamique (< 1 min)}
+    \begin{itemize}
+        \item Generation automatique du planning optimal
+        \item Visualisation interactive sur dashboard
+        \item Distribution automatique (email, notifications)
+        \item \textit{Ameliorations} : -98\% temps, accessibilite, reoptimisation facile
+    \end{itemize}
+    
+    \item \textbf{Suivi intelligent (temps reel)}
+    \begin{itemize}
+        \item Monitoring automatique de l'avancement
+        \item Detection automatique des derives
+        \item Alertes proactives et reoptimisation
+        \item \textit{Ameliorations} : Temps reel, proactivite, reactivite
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Metriques du processus cible :}
+\begin{itemize}
+    \item \textbf{Temps de cycle total} : 1,0 heure/jour (-60\%)
+    \item \textbf{Activites a valeur ajoutee} : 85\% (analyse, decision)
+    \item \textbf{Activites sans valeur ajoutee} : 15\% (validation, ajustements)
+    \item \textbf{Taux d'erreur} : < 1\% (validation automatique)
+    \item \textbf{Flexibilite} : Ã‰levee (reoptimisation en quelques minutes)
+\end{itemize}
+
+\textbf{Gains attendus par etape :}
+
+\begin{table}[H]
+\centering
+\caption{Comparaison processus AS-IS vs TO-BE}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Ã‰tape} & \textbf{AS-IS} & \textbf{TO-BE} & \textbf{Gain temps} & \textbf{Gain qualite} \\
+\hline
+Import OF & 30 min & 2 min & -93\% & Zero erreur \\
+\hline
+Estimation temps & 45 min & < 1 min & -98\% & +78\% precision \\
+\hline
+Affectation tables & 30 min & < 2 min & -93\% & Optimisation \\
+\hline
+Ã‰laboration planning & 60 min & < 1 min & -98\% & Qualite optimale \\
+\hline
+Suivi execution & Fin journee & Temps reel & Continu & Proactivite \\
+\hline
+\textbf{Total} & \textbf{2,5h} & \textbf{1,0h} & \textbf{-60\%} & \textbf{+85\%} \\
+\hline
+\end{tabular}
+\label{tab:process_comparison}
+\end{table}
+
+\subsection{Analyse des risques metier}
+
+Une analyse approfondie des risques permet d'anticiper et de mitiger les obstacles potentiels au succes du projet.
+
+\subsubsection{Registre des risques}
+
+\begin{table}[H]
+\centering
+\caption{Registre detaille des risques metier}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\textbf{Risque} & \textbf{Prob.} & \textbf{Impact} & \textbf{Criticite} & \textbf{Mitigation} & \textbf{Responsable} \\
+\hline
+Resistance changement & Ã‰levee & Moyen & 6 & Formation intensive, champions, quick wins & Chef projet \\
+\hline
+Perturbation production & Faible & Ã‰leve & 3 & Deploiement progressif, rollback plan & IT + Production \\
+\hline
+Qualite donnees & Moyenne & Ã‰leve & 6 & Audit prealable, nettoyage, validation & Data Engineer \\
+\hline
+Performance systeme & Moyenne & Moyen & 4 & Tests charge, infrastructure dimensionnee & Developpeur \\
+\hline
+Derive modele ML & Moyenne & Ã‰leve & 6 & Monitoring continu, reentrainement auto & Data Scientist \\
+\hline
+Integration G.Pro & Faible & Ã‰leve & 3 & Tests integration, API robuste, fallback & Architecte \\
+\hline
+Turnover equipe & Faible & Moyen & 2 & Documentation, formation croisee & RH \\
+\hline
+Budget depasse & Moyenne & Moyen & 4 & Suivi rigoureux, contingence 10\% & Chef projet \\
+\hline
+Delai depasse & Moyenne & Moyen & 4 & Planning realiste, sprints agiles & Chef projet \\
+\hline
+Securite donnees & Faible & Ã‰leve & 3 & Chiffrement, controle acces, audit & RSSI \\
+\hline
+\end{tabular}
+\caption*{Criticite = Probabilite Ã— Impact (echelle 1-3)}
+\label{tab:risk_register}
+\end{table}
+
+\subsubsection{Plan de mitigation des risques critiques}
+
+\textbf{Risque 1 : Resistance au changement (Criticite = 6)}
+
+\begin{itemize}
+    \item \textbf{Indicateurs d'alerte} : Faible participation formations, feedback negatif, non-utilisation
+    \item \textbf{Actions preventives} :
+    \begin{itemize}
+        \item Communication transparente des le debut du projet
+        \item Implication des utilisateurs dans la conception (co-design)
+        \item Identification et formation de champions utilisateurs
+        \item Demonstration de quick wins (resultats rapides)
+    \end{itemize}
+    \item \textbf{Actions correctives} :
+    \begin{itemize}
+        \item Sessions de coaching individualise
+        \item Ajustement de l'interface selon feedback
+        \item Reconnaissance et valorisation des early adopters
+    \end{itemize}
+\end{itemize}
+
+\textbf{Risque 2 : Qualite des donnees insuffisante (Criticite = 6)}
+
+\begin{itemize}
+    \item \textbf{Indicateurs d'alerte} : Taux de valeurs manquantes > 10\%, outliers > 5\%, incoherences
+    \item \textbf{Actions preventives} :
+    \begin{itemize}
+        \item Audit complet des donnees avant demarrage
+        \item Nettoyage et enrichissement des donnees historiques
+        \item Mise en place de regles de validation a la saisie
+        \item Formation des operateurs a la qualite des donnees
+    \end{itemize}
+    \item \textbf{Actions correctives} :
+    \begin{itemize}
+        \item Pipeline de nettoyage automatique
+        \item Imputation intelligente des valeurs manquantes
+        \item Detection et traitement des outliers
+        \item Feedback loop pour amelioration continue
+    \end{itemize}
+\end{itemize}
+
+\textbf{Risque 3 : Derive du modele ML (Criticite = 6)}
+
+\begin{itemize}
+    \item \textbf{Indicateurs d'alerte} : MAPE > 20\%, RÂ² < 0,70, augmentation erreurs
+    \item \textbf{Actions preventives} :
+    \begin{itemize}
+        \item Monitoring continu des performances du modele
+        \item Tests de detection de derive (drift detection)
+        \item Reentrainement periodique automatique (mensuel)
+        \item Validation sur donnees recentes
+    \end{itemize}
+    \item \textbf{Actions correctives} :
+    \begin{itemize}
+        \item Reentrainement immediat si derive detectee
+        \item Analyse des causes de derive (nouveaux produits, changements processus)
+        \item Ajustement des features ou de l'architecture si necessaire
+        \item Rollback vers version precedente si echec
+    \end{itemize}
+\end{itemize}
+
+\subsection{Criteres de succes et metriques de performance}
+
+Les criteres de succes du projet sont definis selon quatre dimensions complementaires, chacune avec des metriques quantifiables et des seuils d'acceptation.
+
+\subsubsection{Criteres techniques ML}
+
+\begin{table}[H]
+\centering
+\caption{Criteres de succes techniques}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Critere} & \textbf{Seuil minimum} & \textbf{Cible} & \textbf{Methode de mesure} \\
+\hline
+Precision (RÂ²) & > 0,75 & > 0,80 & Validation croisee temporelle \\
+\hline
+MAE & < 20 min & < 15 min & Test set (15\% donnees) \\
+\hline
+RMSE & < 25 min & < 20 min & Test set (15\% donnees) \\
+\hline
+MAPE & < 25\% & < 20\% & Test set (15\% donnees) \\
+\hline
+Temps reponse & < 3 sec & < 2 sec & Tests de performance \\
+\hline
+Disponibilite & > 99\% & > 99,5\% & Monitoring 24/7 \\
+\hline
+Scalabilite & 150 OF/jour & 200 OF/jour & Tests de charge \\
+\hline
+\end{tabular}
+\label{tab:technical_success_criteria}
+\end{table}
+
+\subsubsection{Criteres metier operationnels}
+
+\begin{table}[H]
+\centering
+\caption{Criteres de succes metier}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Critere} & \textbf{Seuil minimum} & \textbf{Cible} & \textbf{Methode de mesure} \\
+\hline
+Temps planification & < 1,5 h/jour & < 1,0 h/jour & Chronometrage quotidien \\
+\hline
+Utilisation tables & > 80\% & > 85\% & KPI dashboard \\
+\hline
+Respect delais & > 90\% & > 95\% & Suivi commandes \\
+\hline
+Reduction retards & -20\% & -25\% & Comparaison baseline \\
+\hline
+Temps attente & < 30 min & < 20 min & Mesure hebdomadaire \\
+\hline
+Satisfaction users & > 3,8/5 & > 4,5/5 & Enquete trimestrielle \\
+\hline
+Taux adoption & > 85\% & > 90\% & Logs d'utilisation \\
+\hline
+\end{tabular}
+\label{tab:business_success_criteria}
+\end{table}
+
+\subsubsection{Criteres de qualite logicielle}
+
+\begin{itemize}
+    \item \textbf{Documentation} : Complete et a jour (guides utilisateur, documentation technique, API)
+    \item \textbf{Tests} : Couverture > 80\%, tests automatises (unitaires, integration, end-to-end)
+    \item \textbf{Code quality} : Respect des standards (PEP8, ESLint), revue de code systematique
+    \item \textbf{Securite} : Authentification, autorisation, chiffrement, audit de securite
+    \item \textbf{Monitoring} : Alertes operationnelles, logs centralises, dashboards de surveillance
+    \item \textbf{Maintenance} : Procedures de backup, disaster recovery, plan de continuite
+\end{itemize}
+
+\subsubsection{Criteres financiers}
+
+\begin{itemize}
+    \item \textbf{Respect du budget} : CoÃ»t total $\leq$ 82,500 TND (75,000 + 10\% contingence)
+    \item \textbf{ROI} : $>$ 150\% sur 3 ans (cible : 188\%)
+    \item \textbf{Periode de retour} : $<$ 18 mois (cible : 12,5 mois)
+    \item \textbf{Benefices annuels} : $>$ 60,000 TND/an (cible : 72,000 TND/an)
+    \item \textbf{CoÃ»t de maintenance} : $<$ 10,000 TND/an
+\end{itemize}
+
+\subsection{Contraintes et hypotheses du projet}
+
+\subsubsection{Contraintes identifiees}
+
+\textbf{Contraintes temporelles :}
+\begin{itemize}
+    \item Duree maximale du projet : 6 mois (janvier - juin 2024)
+    \item Deploiement avant la haute saison (juillet 2024)
+    \item Pas d'interruption de production pendant le deploiement
+\end{itemize}
+
+\textbf{Contraintes budgetaires :}
+\begin{itemize}
+    \item Budget total : 75,000 TND (hors contingence)
+    \item Pas de budget additionnel pour materiel (utilisation infrastructure existante)
+    \item CoÃ»t de maintenance annuel : < 10,000 TND
+\end{itemize}
+
+\textbf{Contraintes techniques :}
+\begin{itemize}
+    \item Compatibilite avec G.Pro (ERP) et Divatex (CAO) obligatoire
+    \item Utilisation de l'infrastructure IT existante
+    \item Pas de modification des systemes legacy
+    \item Conformite RGPD pour les donnees personnelles
+\end{itemize}
+
+\textbf{Contraintes organisationnelles :}
+\begin{itemize}
+    \item Formation limitee a 2 jours par utilisateur
+    \item Disponibilite limitee des utilisateurs pour tests (2h/semaine)
+    \item Pas de recrutement additionnel
+    \item Support IT existant (pas d'equipe dediee)
+\end{itemize}
+
+\subsubsection{Hypotheses du projet}
+
+\textbf{Hypotheses sur les donnees :}
+\begin{itemize}
+    \item Les donnees historiques sont suffisamment representatives
+    \item La qualite des donnees peut etre amelioree a un niveau acceptable
+    \item Les patterns historiques restent valides pour le futur
+    \item Les donnees de G.Pro sont accessibles via API
+\end{itemize}
+
+\textbf{Hypotheses sur les utilisateurs :}
+\begin{itemize}
+    \item Les utilisateurs sont ouverts au changement apres formation
+    \item Les chefs d'atelier accepteront de deleguer a l'IA
+    \item Les operateurs saisiront les donnees correctement
+    \item Le support de la direction est maintenu
+\end{itemize}
+
+\textbf{Hypotheses techniques :}
+\begin{itemize}
+    \item L'infrastructure IT peut supporter la charge additionnelle
+    \item Les modeles ML peuvent atteindre la precision cible
+    \item L'integration avec G.Pro est techniquement faisable
+    \item Les temps de reponse cibles sont atteignables
+\end{itemize}
+
+\textbf{Hypotheses metier :}
+\begin{itemize}
+    \item Les processus de production restent stables
+    \item Pas de changement majeur d'organisation pendant le projet
+    \item Les gains de productivite sont reinvestis (pas de reduction d'effectif)
+    \item Les clients acceptent la transition
+\end{itemize}
+
+\subsection{Synthese de la phase Business Understanding}
+
+La phase de comprehension metier a permis d'etablir :
+
+\begin{itemize}
+    \item \textbf{Alignement strategique} : Le projet s'inscrit dans la transformation digitale de BACOVET
+    \item \textbf{Objectifs clairs} : Objectifs quantifies avec metriques de succes precises
+    \item \textbf{Parties prenantes} : Analyse complete avec strategies d'engagement adaptees
+    \item \textbf{Processus} : Cartographie AS-IS et TO-BE avec gains attendus quantifies
+    \item \textbf{Risques} : Identification et plans de mitigation pour les risques critiques
+    \item \textbf{Criteres de succes} : Definition multi-dimensionnelle (technique, metier, qualite, financier)
+    \item \textbf{Contraintes et hypotheses} : Documentation complete pour cadrer le projet
+\end{itemize}
+
+Cette comprehension approfondie du contexte metier garantit que la solution ML developpee repondra aux besoins reels de l'entreprise et apportera une valeur mesurable et durable.
+
+\section{Phase 2 : Comprehension des donnees (Data Understanding)}\label{chap3:data}
+
+\subsection{Objectifs de la phase Data Understanding}
+
+La phase de comprehension des donnees vise a :
+\begin{itemize}
+    \item Identifier et collecter toutes les sources de donnees pertinentes
+    \item Ã‰valuer la qualite, la completude et la fiabilite des donnees
+    \item Realiser une analyse exploratoire approfondie (EDA)
+    \item Identifier les patterns, correlations et anomalies
+    \item Valider la faisabilite du projet ML avec les donnees disponibles
+\end{itemize}
+
+\subsection{Inventaire et collecte des donnees}
+
+\subsubsection{Sources de donnees identifiees}
+
+Les donnees proviennent de cinq sources principales dans l'ecosysteme de production :
+
+\textbf{1. G.Pro (ERP) - Source primaire}
+\begin{itemize}
+    \item \textbf{Contenu} : Ordres de fabrication, specifications produits, delais, clients
+    \item \textbf{Variables cles} : ID OF, quantite, date livraison, priorite, client
+    \item \textbf{Acces} : Export CSV quotidien + API REST disponible
+    \item \textbf{Fiabilite} : Ã‰levee (systeme transactionnel critique)
+\end{itemize}
+
+\textbf{2. Systeme de production - Source operationnelle}
+\begin{itemize}
+    \item \textbf{Contenu} : Temps reels de matelassage, statuts des tables, operateurs
+    \item \textbf{Variables cles} : Temps debut/fin, duree, table, operateur, anomalies
+    \item \textbf{Acces} : Saisie manuelle + logs systeme
+    \item \textbf{Fiabilite} : Moyenne (depend de la rigueur de saisie)
+\end{itemize}
+
+\textbf{3. Capteurs RFID - Source automatique}
+\begin{itemize}
+    \item \textbf{Contenu} : Position des rouleaux, disponibilite des tables, mouvements
+    \item \textbf{Variables cles} : Timestamp, ID rouleau, position, statut table
+    \item \textbf{Acces} : Flux temps reel via MQTT
+    \item \textbf{Fiabilite} : Ã‰levee (capture automatique)
+\end{itemize}
+
+\textbf{4. Saisie manuelle - Source complementaire}
+\begin{itemize}
+    \item \textbf{Contenu} : Observations des operateurs, incidents, commentaires
+    \item \textbf{Variables cles} : Type incident, duree, cause, action corrective
+    \item \textbf{Acces} : Fichiers Excel consolides
+    \item \textbf{Fiabilite} : Variable (subjectivite, exhaustivite)
+\end{itemize}
+
+\textbf{5. Systeme qualite - Source validation}
+\begin{itemize}
+    \item \textbf{Contenu} : Controles qualite, defauts, retours clients
+    \item \textbf{Variables cles} : Type defaut, gravite, cause, OF concerne
+    \item \textbf{Acces} : Base de donnees qualite
+    \item \textbf{Fiabilite} : Ã‰levee (processus formalise)
+\end{itemize}
+
+\subsubsection{Caracteristiques des sources de donnees}
+
+\begin{table}[H]
+\centering
+\caption{Caracteristiques detaillees des sources de donnees}
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Volume/jour} & \textbf{Frequence} & \textbf{Format} & \textbf{Retention} & \textbf{Qualite} & \textbf{Criticite ML} \\
+\hline
+G.Pro & 50-100 OF & Quotidienne & CSV/API & 2 ans & Bonne & Ã‰levee \\
+\hline
+Production & 200-500 records & Temps reel & JSON & 1 an & Moyenne & Critique \\
+\hline
+RFID & 1000+ events & Temps reel & JSON & 6 mois & Bonne & Moyenne \\
+\hline
+Manuel & 20-50 obs. & Quotidienne & Excel & 1 an & Variable & Faible \\
+\hline
+Qualite & 10-30 ctrl. & Quotidienne & CSV & 2 ans & Bonne & Faible \\
+\hline
+\end{tabular}
+\label{tab:data_sources_detailed}
+\end{table}
+
+\subsubsection{Dataset principal : PSC\_X\_1 - COUPE.csv}
+
+Le dataset principal consolide contient les donnees historiques de production sur 6 mois.
+
+\textbf{Caracteristiques generales :}
+\begin{itemize}
+    \item \textbf{Nombre d'enregistrements} : 16,433 observations
+    \item \textbf{Periode couverte} : Janvier 2024 - Juin 2024 (6 mois)
+    \item \textbf{Nombre de variables} : 24 colonnes (15 features + 1 target + 8 metadonnees)
+    \item \textbf{Taille du fichier} : 3,2 MB (format CSV)
+    \item \textbf{Couverture} : 8 tables de matelassage, 12 operateurs, 47 OF
+\end{itemize}
+
+\textbf{Repartition temporelle :}
+\begin{itemize}
+    \item Janvier 2024 : 2,456 enregistrements (15\%)
+    \item Fevrier 2024 : 2,789 enregistrements (17\%)
+    \item Mars 2024 : 3,012 enregistrements (18\%)
+    \item Avril 2024 : 2,934 enregistrements (18\%)
+    \item Mai 2024 : 2,678 enregistrements (16\%)
+    \item Juin 2024 : 2,564 enregistrements (16\%)
+\end{itemize}
+
+\subsection{Dictionnaire de donnees}
+
+Un dictionnaire de donnees complet documente chaque variable du dataset.
+
+\begin{table}[H]
+\centering
+\caption{Dictionnaire de donnees - Variables principales}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Variable} & \textbf{Type} & \textbf{Description} & \textbf{Plage valeurs} & \textbf{Role ML} \\
+\hline
+OF\_ID & String & Identifiant ordre fabrication & Alphanumerique & ID \\
+\hline
+Nbr\_Plies & Integer & Nombre de plis du matelas & 1-50 & Feature \\
+\hline
+Longeur\_Matela & Float & Longueur matelas (cm) & 50-500 & Feature \\
+\hline
+Longeur\_Trace & Float & Longueur trace (cm) & 30-450 & Feature \\
+\hline
+Largeur & Float & Largeur matelas (cm) & 80-250 & Feature \\
+\hline
+Machine & Categorical & Table de matelassage & T1-T8 & Feature \\
+\hline
+Operateur & Categorical & Operateur assigne & OP1-OP12 & Feature \\
+\hline
+Type\_Tissu & Categorical & Type de tissu & 8 categories & Feature \\
+\hline
+Date\_Production & Date & Date de production & 2024-01 a 2024-06 & Feature \\
+\hline
+Heure\_Debut & Time & Heure de debut & 06:00-22:00 & Feature \\
+\hline
+TEMPS\_DISP & Float & Temps reel (minutes) & 5-300 & Target \\
+\hline
+Priorite & Integer & Priorite OF & 1-5 & Feature \\
+\hline
+Complexite & Float & Score complexite & 0-100 & Feature \\
+\hline
+\end{tabular}
+\label{tab:data_dictionary}
+\end{table}
+
+\subsection{Exploration des donnees}
+
+\subsubsection{Analyse du dataset principal}
+
+Le dataset principal \texttt{PSC\_X\_1 - COUPE.csv} contient 16,433 enregistrements de production avec les caracteristiques suivantes :
+
+\begin{itemize}
+    \item \textbf{Periode} : Donnees historiques sur 6 mois
+    \item \textbf{Couverture} : Toutes les tables de matelassage
+    \item \textbf{Completude} : 95\% des champs obligatoires renseignes
+    \item \textbf{Coherence} : Validation des contraintes metier
+\end{itemize}
+
+\subsubsection{Variables d'interet}
+
+\begin{table}[H]
+\centering
+\caption{Description des variables principales}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Variable} & \textbf{Type} & \textbf{Description} & \textbf{Valeurs} & \textbf{Usage ML} \\
+\hline
+Nbr Plies & Numerique & Nombre de plis & 1-50 & Feature \\
+\hline
+Longeur Matela & Numerique & Longueur matelas (m) & 0.5-5.0 & Feature \\
+\hline
+Longeur Trace & Numerique & Longueur trace (m) & 0.3-4.5 & Feature \\
+\hline
+Largeur & Numerique & Largeur (m) & 0.8-2.5 & Feature \\
+\hline
+Machine & Categorielle & Table utilisee & T1-T8 & Feature \\
+\hline
+TEMPS DISP & Numerique & Temps reel (min) & 5-300 & Target \\
+\hline
+Date & Temporelle & Date production & 2024-01 a 2024-06 & Feature \\
+\hline
+\end{tabular}
+\label{tab:variables}
+\end{table}
+
+\subsection{Analyse de la qualite des donnees}
+
+\subsubsection{Valeurs manquantes}
+
+L'analyse revele un taux de valeurs manquantes acceptable :
+
+\begin{itemize}
+    \item \textbf{TEMPS DISP} : 2.3\% de valeurs manquantes (donnees corrompues)
+    \item \textbf{Machine} : 0.8\% de valeurs manquantes (saisie oubliee)
+    \item \textbf{Dimensions} : 1.1\% de valeurs manquantes (mesures incompletes)
+\end{itemize}
+
+\subsubsection{Valeurs aberrantes}
+
+L'identification des valeurs aberrantes utilise la methode IQR :
+
+\begin{itemize}
+    \item \textbf{TEMPS DISP} : 3.2\% de valeurs aberrantes (pannes, incidents)
+    \item \textbf{Dimensions} : 0.5\% de valeurs aberrantes (erreurs de saisie)
+    \item \textbf{Traitement} : Conservation avec flag pour analyse
+\end{itemize}
+
+\subsubsection{Coherence des donnees}
+
+\begin{itemize}
+    \item \textbf{Contraintes physiques} : Validation des dimensions logiques
+    \item \textbf{Contraintes temporelles} : Coherence des dates et heures
+    \item \textbf{Contraintes metier} : Respect des regles de production
+\end{itemize}
+
+\subsection{Analyse exploratoire des donnees}
+
+\subsubsection{Distribution des variables}
+
+\begin{itemize}
+    \item \textbf{TEMPS DISP} : Distribution asymetrique droite (moyenne : 45 min, mediane : 38 min)
+    \item \textbf{Nbr Plies} : Distribution quasi-normale (moyenne : 12 plis)
+    \item \textbf{Dimensions} : Distributions log-normales (contraintes physiques)
+\end{itemize}
+
+\subsubsection{Correlations}
+
+\begin{itemize}
+    \item \textbf{Forte correlation} : Nbr Plies Ã— Longeur Matela vs TEMPS DISP (r = 0.78)
+    \item \textbf{Correlation moderee} : Largeur vs TEMPS DISP (r = 0.45)
+    \item \textbf{Faible correlation} : Machine vs TEMPS DISP (r = 0.12)
+\end{itemize}
+
+\subsubsection{Patterns temporels}
+
+\begin{itemize}
+    \item \textbf{Saisonnalite hebdomadaire} : Diminution le vendredi (-15\%)
+    \item \textbf{Tendance mensuelle} : Amelioration progressive (+8\% sur 6 mois)
+    \item \textbf{Effet jour} : Pic d'activite le mardi (+12\%)
+\end{itemize}
+
+\section{Phase 3 : Preparation des donnees (Data Preparation)}\label{chap3:preparation}
+
+\subsection{Objectifs de la phase Data Preparation}
+
+La phase de preparation des donnees transforme les donnees brutes en un dataset propre, coherent et optimise pour l'entrainement des modeles ML. Les objectifs sont :
+
+\begin{itemize}
+    \item Nettoyer les donnees (valeurs manquantes, aberrantes, incoherences)
+    \item Creer des features pertinentes via feature engineering
+    \item Normaliser et standardiser les variables
+    \item Segmenter les donnees (train/validation/test)
+    \item Valider la qualite du dataset final
+    \item Automatiser le pipeline de preparation
+\end{itemize}
+
+\subsection{Nettoyage des donnees}
+
+\subsubsection{Traitement des valeurs manquantes}
+
+Une strategie differenciee est appliquee selon le type et l'importance de la variable.
+
+\textbf{Analyse des valeurs manquantes :}
+
+\begin{table}[H]
+\centering
+\caption{Analyse des valeurs manquantes par variable}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Variable} & \textbf{Manquantes} & \textbf{\% Total} & \textbf{Cause} & \textbf{Traitement} \\
+\hline
+TEMPS\_DISP (target) & 378 & 2.3\% & Donnees corrompues & Suppression \\
+\hline
+Machine & 131 & 0.8\% & Saisie oubliee & Imputation mode \\
+\hline
+Operateur & 164 & 1.0\% & Non renseigne & Imputation mode \\
+\hline
+Longeur\_Matela & 115 & 0.7\% & Mesure incomplete & Imputation mediane \\
+\hline
+Largeur & 98 & 0.6\% & Mesure incomplete & Imputation mediane \\
+\hline
+Type\_Tissu & 213 & 1.3\% & Non renseigne & Imputation mode \\
+\hline
+\textbf{Total unique} & 656 & 4.0\% & - & - \\
+\hline
+\end{tabular}
+\label{tab:missing_values_analysis}
+\end{table}
+
+\textbf{Strategies de traitement :}
+
+\begin{enumerate}
+    \item \textbf{Suppression (target manquant)} :
+    \begin{itemize}
+        \item Suppression de 378 lignes avec TEMPS\_DISP manquant
+        \item Justification : Variable cible critique, imputation non pertinente
+        \item Impact : Dataset reduit de 16,433 a 16,055 enregistrements (-2.3\%)
+    \end{itemize}
+    
+    \item \textbf{Imputation par mediane (variables numeriques)} :
+    \begin{itemize}
+        \item Application : Longeur\_Matela, Largeur, Nbr\_Plies
+        \item Methode : Mediane par groupe (Machine Ã— Type\_Tissu)
+        \item Justification : Robuste aux outliers, preserve distribution
+        \item Creation de flags : is\_imputed\_length, is\_imputed\_width
+    \end{itemize}
+    
+    \item \textbf{Imputation par mode (variables categorielles)} :
+    \begin{itemize}
+        \item Application : Machine, Operateur, Type\_Tissu
+        \item Methode : Mode par periode temporelle (semaine)
+        \item Justification : Valeur la plus frequente dans le contexte
+        \item Creation de flags : is\_imputed\_machine, is\_imputed\_operator
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Resultats du traitement :}
+\begin{itemize}
+    \item Dataset final : 16,055 enregistrements (97.7\% des donnees initiales)
+    \item Completude : 100\% apres traitement
+    \item Flags d'imputation : 6 variables indicatrices creees
+\end{itemize}
+
+\subsubsection{Traitement des valeurs aberrantes}
+
+Les valeurs aberrantes sont detectees et traitees de maniere adaptative.
+
+\textbf{Methode de detection IQR (Interquartile Range) :}
+
+\begin{itemize}
+    \item \textbf{Formule} : Outlier si $x < Q1 - 1.5 \times IQR$ ou $x > Q3 + 1.5 \times IQR$
+    \item \textbf{Application} : Par groupe (Machine) pour tenir compte des differences
+    \item \textbf{Seuils adaptatifs} : Calcul dynamique selon distribution de chaque machine
+\end{itemize}
+
+\textbf{Valeurs aberrantes identifiees :}
+
+\begin{table}[H]
+\centering
+\caption{Valeurs aberrantes detectees}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Variable} & \textbf{Outliers} & \textbf{\% Total} & \textbf{Cause probable} & \textbf{Traitement} \\
+\hline
+TEMPS\_DISP & 514 & 3.2\% & Pannes, incidents & Winsorisation \\
+\hline
+Nbr\_Plies & 82 & 0.5\% & Erreurs saisie & Validation + correction \\
+\hline
+Longeur\_Matela & 67 & 0.4\% & Erreurs saisie & Validation + correction \\
+\hline
+Largeur & 45 & 0.3\% & Erreurs saisie & Validation + correction \\
+\hline
+\end{tabular}
+\label{tab:outliers_analysis}
+\end{table}
+
+\textbf{Strategies de traitement :}
+
+\begin{enumerate}
+    \item \textbf{Validation metier} :
+    \begin{itemize}
+        \item Verification manuelle des 50 cas les plus extremes
+        \item Consultation des experts metier pour validation
+        \item Conservation si justification metier (ex: panne reelle)
+    \end{itemize}
+    
+    \item \textbf{Winsorisation (TEMPS\_DISP)} :
+    \begin{itemize}
+        \item Remplacement des valeurs extremes par percentiles 5 et 95
+        \item Justification : Preservation de l'information tout en limitant l'impact
+        \item 514 valeurs ajustees (3.2\%)
+    \end{itemize}
+    
+    \item \textbf{Correction (dimensions)} :
+    \begin{itemize}
+        \item Correction des erreurs de saisie evidentes (ex: 1000 au lieu de 100)
+        \item Suppression si incoherence non resoluble (23 lignes, 0.14\%)
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Impact du traitement :}
+\begin{itemize}
+    \item Dataset final : 16,032 enregistrements (97.6\% des donnees initiales)
+    \item Reduction de la variance : -18\% sur TEMPS\_DISP
+    \item Amelioration de la qualite : Coefficient de variation reduit de 35\% a 29\%
+\end{itemize}
+
+\subsubsection{Standardisation des formats}
+
+Uniformisation des formats pour garantir la coherence.
+
+\textbf{Dates et heures :}
+\begin{itemize}
+    \item \textbf{Format cible} : ISO 8601 (YYYY-MM-DD HH:MM:SS)
+    \item \textbf{Timezone} : UTC+1 (Tunisie)
+    \item \textbf{Validation} : Verification coherence temporelle (debut < fin)
+\end{itemize}
+
+\textbf{Nombres :}
+\begin{itemize}
+    \item \textbf{Separateur decimal} : Point (.)
+    \item \textbf{Precision} : 2 decimales pour dimensions, 1 pour temps
+    \item \textbf{Unites} : Standardisation (cm pour longueurs, minutes pour temps)
+\end{itemize}
+
+\textbf{Textes :}
+\begin{itemize}
+    \item \textbf{Casse} : Majuscules pour codes (T1, OP1)
+    \item \textbf{Espaces} : Suppression des espaces superflus
+    \item \textbf{Caracteres speciaux} : Nettoyage et normalisation
+\end{itemize}
+
+\subsubsection{Validation de la coherence}
+
+Verification des contraintes logiques et metier.
+
+\textbf{Contraintes physiques :}
+\begin{itemize}
+    \item Longeur\_Matela > Longeur\_Trace (matelas doit etre plus long que trace)
+    \item Largeur dans plage realiste (80-250 cm)
+    \item Nbr\_Plies coherent avec type de produit (1-50)
+\end{itemize}
+
+\textbf{Contraintes temporelles :}
+\begin{itemize}
+    \item Date\_Production dans periode valide (2024-01 a 2024-06)
+    \item Heure\_Debut dans plage de travail (06:00-22:00)
+    \item TEMPS\_DISP coherent avec dimensions (correlation attendue)
+\end{itemize}
+
+\textbf{Contraintes metier :}
+\begin{itemize}
+    \item Machine existe dans referentiel (T1-T8)
+    \item Operateur existe dans referentiel (OP1-OP12)
+    \item Type\_Tissu dans liste validee (8 categories)
+\end{itemize}
+
+\textbf{Resultats de validation :}
+\begin{itemize}
+    \item 16,032 enregistrements valides (100\% conformes)
+    \item 0 incoherence detectee apres nettoyage
+    \item Dataset pret pour feature engineering
+\end{itemize}
+
+\subsection{Ingenierie des caracteristiques (Feature Engineering)}
+
+L'ingenierie des caracteristiques cree de nouvelles variables pertinentes pour ameliorer la performance predictive \cite{zheng2018feature, guyon2003introduction}.
+
+\subsubsection{Strategie de feature engineering}
+
+\textbf{Principes directeurs :}
+\begin{itemize}
+    \item \textbf{Pertinence metier} : Features basees sur connaissance du domaine
+    \item \textbf{Pouvoir predictif} : Correlation avec la variable cible
+    \item \textbf{Interpretabilite} : Features comprehensibles par les utilisateurs
+    \item \textbf{Robustesse} : Resistance aux variations et outliers
+\end{itemize}
+
+\subsubsection{Workflow de feature engineering}
+
+La figure \ref{fig:feature_engineering} illustre le processus complet de creation et selection des features.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.1cm,
+    step/.style={rectangle, draw, fill=blue!20, text width=3.2cm, text centered, rounded corners, minimum height=0.8cm, font=\footnotesize},
+    result/.style={rectangle, draw, fill=green!20, text width=2.2cm, text centered, rounded corners, minimum height=0.6cm, font=\scriptsize},
+    arrow/.style={->, >=stealth, thick}
+]
+
+% Ã‰tapes principales (colonne gauche)
+\node[boxstep] (raw) at (0,0) {Features brutes\\(24 variables)};
+\node[boxstep] (temporal) at (0,-1.3) {Features temporelles\\(10 creees)};
+\node[boxstep] (geometric) at (0,-2.6) {Features geometriques\\(4 creees)};
+\node[boxstep] (context) at (0,-3.9) {Features contextuelles\\(4 creees)};
+\node[boxstep] (complexity) at (0,-5.2) {Features complexite\\(2 creees)};
+\node[boxstep] (encoding) at (0,-6.5) {Encodage categorielles\\(19 creees)};
+\node[boxstep] (selection) at (0,-7.8) {Selection features\\(4 methodes)};
+\node[boxstep] (final) at (0,-9.1) {Features finales\\(15 selectionnees)};
+
+% Resultats (colonne droite)
+\node[result] (r1) at (4.5,-1.3) {Cyclicite\\capturee};
+\node[result] (r2) at (4.5,-2.6) {Volume\\r=0.74***};
+\node[result] (r3) at (4.5,-3.9) {Charge\\machine};
+\node[result] (r4) at (4.5,-5.2) {Score\\0-100};
+\node[result] (r5) at (4.5,-6.5) {One-hot\\Target enc.};
+\node[result] (r6) at (4.5,-7.8) {VIF<10\\r>0.15};
+
+% Fleches principales
+\draw[arrow] (raw) -- (temporal);
+\draw[arrow] (temporal) -- (geometric);
+\draw[arrow] (geometric) -- (context);
+\draw[arrow] (context) -- (complexity);
+\draw[arrow] (complexity) -- (encoding);
+\draw[arrow] (encoding) -- (selection);
+\draw[arrow] (selection) -- (final);
+
+% Fleches vers resultats
+\draw[arrow, dotted] (temporal.east) -- (r1.west);
+\draw[arrow, dotted] (geometric.east) -- (r2.west);
+\draw[arrow, dotted] (context.east) -- (r3.west);
+\draw[arrow, dotted] (complexity.east) -- (r4.west);
+\draw[arrow, dotted] (encoding.east) -- (r5.west);
+\draw[arrow, dotted] (selection.east) -- (r6.west);
+
+% Annotation
+\node[font=\scriptsize] at (0,-10) {24 â†’ 59 â†’ 15 features | Amelioration RÂ²: 0.45 â†’ 0.84};
+
+\end{tikzpicture}
+\caption{Workflow de feature engineering}
+\label{fig:feature_engineering}
+\end{figure}
+
+\subsubsection{Features temporelles}
+
+Extraction de patterns temporels influencant la productivite.
+
+\textbf{Features cycliques (encodage sinusoÃ¯dal) :}
+\begin{itemize}
+    \item \textbf{mois\_sin, mois\_cos} : Encodage cyclique du mois (1-12)
+    \begin{itemize}
+        \item Formule : $sin(2\pi \times mois / 12)$, $cos(2\pi \times mois / 12)$
+        \item Justification : Capture saisonnalite sans discontinuite
+    \end{itemize}
+    \item \textbf{jour\_semaine\_sin, jour\_semaine\_cos} : Encodage jour (1-7)
+    \begin{itemize}
+        \item Formule : $sin(2\pi \times jour / 7)$, $cos(2\pi \times jour / 7)$
+        \item Justification : Lundi proche de dimanche (continuite)
+    \end{itemize}
+    \item \textbf{heure\_sin, heure\_cos} : Encodage heure de debut
+    \begin{itemize}
+        \item Formule : $sin(2\pi \times heure / 24)$, $cos(2\pi \times heure / 24)$
+        \item Justification : Capture effet fatigue et rythme circadien
+    \end{itemize}
+\end{itemize}
+
+\textbf{Features binaires :}
+\begin{itemize}
+    \item \textbf{est\_weekend} : 1 si samedi/dimanche, 0 sinon
+    \item \textbf{est\_debut\_semaine} : 1 si lundi/mardi, 0 sinon
+    \item \textbf{est\_fin\_semaine} : 1 si jeudi/vendredi, 0 sinon
+    \item \textbf{est\_matin} : 1 si heure < 12h, 0 sinon
+    \item \textbf{est\_apres\_midi} : 1 si 12h â‰¤ heure < 18h, 0 sinon
+\end{itemize}
+
+\textbf{Features de tendance :}
+\begin{itemize}
+    \item \textbf{jours\_depuis\_debut} : Nombre de jours depuis 2024-01-01
+    \item \textbf{semaine\_annee} : Numero de semaine (1-52)
+    \item \textbf{trimestre} : Trimestre de l'annee (1-4)
+\end{itemize}
+
+\subsubsection{Features derivees (domaine metier)}
+
+Creation de features basees sur la connaissance du processus de production.
+
+\textbf{Features geometriques :}
+\begin{itemize}
+    \item \textbf{surface\_matelas} : $Longeur\_Matela \times Largeur$ (cmÂ²)
+    \begin{itemize}
+        \item Justification : Surface totale a manipuler
+        \item Correlation avec target : r = 0.62***
+    \end{itemize}
+    \item \textbf{volume\_matelas} : $Nbr\_Plies \times surface\_matelas$ (cmÂ³)
+    \begin{itemize}
+        \item Justification : Volume total de tissu
+        \item Correlation avec target : r = 0.74***
+    \end{itemize}
+    \item \textbf{ratio\_longueur} : $Longeur\_Matela / Longeur\_Trace$
+    \begin{itemize}
+        \item Justification : Efficacite d'utilisation du tissu
+        \item Valeurs typiques : 1.05-1.15 (5-15\% de marge)
+    \end{itemize}
+    \item \textbf{densite\_plis} : $Nbr\_Plies / surface\_matelas$ (plis/cmÂ²)
+    \begin{itemize}
+        \item Justification : Complexite de manipulation
+        \item Correlation avec target : r = 0.48**
+    \end{itemize}
+\end{itemize}
+
+\textbf{Features de charge et contexte :}
+\begin{itemize}
+    \item \textbf{charge\_machine\_jour} : Nombre d'OF sur machine ce jour
+    \begin{itemize}
+        \item Calcul : Agregation par (Machine, Date)
+        \item Justification : Fatigue machine et operateur
+    \end{itemize}
+    \item \textbf{position\_dans\_journee} : Rang de l'OF dans la journee (1, 2, 3...)
+    \begin{itemize}
+        \item Justification : Effet d'apprentissage ou fatigue
+    \end{itemize}
+    \item \textbf{temps\_moyen\_machine\_7j} : Temps moyen sur machine (7 derniers jours)
+    \begin{itemize}
+        \item Justification : Performance recente de la machine
+        \item Fenetre glissante : 7 jours
+    \end{itemize}
+    \item \textbf{temps\_moyen\_operateur\_7j} : Temps moyen operateur (7 derniers jours)
+    \begin{itemize}
+        \item Justification : Performance recente de l'operateur
+        \item Fenetre glissante : 7 jours
+    \end{itemize}
+\end{itemize}
+
+\textbf{Features de complexite :}
+\begin{itemize}
+    \item \textbf{score\_complexite} : Score composite (0-100)
+    \begin{itemize}
+        \item Formule : $0.4 \times norm(Nbr\_Plies) + 0.3 \times norm(surface) + 0.3 \times norm(ratio)$
+        \item Justification : Indicateur global de difficulte
+    \end{itemize}
+    \item \textbf{categorie\_complexite} : Faible / Moyenne / Ã‰levee
+    \begin{itemize}
+        \item Faible : score < 33
+        \item Moyenne : 33 â‰¤ score < 66
+        \item Ã‰levee : score â‰¥ 66
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Encodage des variables categorielles}
+
+Transformation des variables categorielles pour utilisation dans les modeles ML.
+
+\textbf{One-Hot Encoding (faible cardinalite) :}
+\begin{itemize}
+    \item \textbf{Machine} : 8 categories â†’ 8 variables binaires (T1, T2, ..., T8)
+    \item \textbf{Type\_Tissu} : 8 categories â†’ 8 variables binaires
+    \item \textbf{Categorie\_Complexite} : 3 categories â†’ 3 variables binaires
+\end{itemize}
+
+\textbf{Target Encoding (cardinalite moyenne) :}
+\begin{itemize}
+    \item \textbf{Operateur} : 12 categories â†’ 1 variable numerique
+    \begin{itemize}
+        \item Methode : Moyenne de TEMPS\_DISP par operateur
+        \item Regularisation : Lissage bayesien pour eviter overfitting
+        \item Formule : $\frac{n \times mean_{cat} + m \times mean_{global}}{n + m}$
+    \end{itemize}
+\end{itemize}
+
+\textbf{Resultats de l'encodage :}
+\begin{itemize}
+    \item Variables categorielles initiales : 4
+    \item Variables apres encodage : 19 (8 + 8 + 3)
+    \item Augmentation dimensionnalite : +15 features
+\end{itemize}
+
+\subsubsection{Normalisation et standardisation}
+
+Mise a l'echelle des variables pour ameliorer la convergence des modeles.
+
+\textbf{StandardScaler (variables numeriques continues) :}
+\begin{itemize}
+    \item \textbf{Methode} : $z = \frac{x - \mu}{\sigma}$
+    \item \textbf{Application} : Dimensions, surfaces, volumes, scores
+    \item \textbf{Justification} : Moyenne 0, ecart-type 1, preserve distribution
+\end{itemize}
+
+\textbf{MinMaxScaler (variables bornees) :}
+\begin{itemize}
+    \item \textbf{Methode} : $x_{scaled} = \frac{x - x_{min}}{x_{max} - x_{min}}$
+    \item \textbf{Application} : Features cycliques, ratios, scores
+    \item \textbf{Justification} : Valeurs dans [0, 1], preserve relations
+\end{itemize}
+
+\textbf{Pas de normalisation :}
+\begin{itemize}
+    \item Variables binaires (deja dans [0, 1])
+    \item Variables one-hot encodees
+    \item Variables de comptage (interpretabilite)
+\end{itemize}
+
+\subsubsection{Selection de features}
+
+Reduction de la dimensionnalite pour eviter l'overfitting.
+
+\textbf{Methodes de selection :}
+
+\begin{enumerate}
+    \item \textbf{Correlation avec target} :
+    \begin{itemize}
+        \item Seuil : |r| > 0.15
+        \item Resultat : 28 features sur 35 retenues
+    \end{itemize}
+    
+    \item \textbf{Variance threshold} :
+    \begin{itemize}
+        \item Seuil : variance > 0.01
+        \item Resultat : Ã‰limination de 2 features quasi-constantes
+    \end{itemize}
+    
+    \item \textbf{Feature importance (XGBoost)} \cite{chen2016xgboost} :
+    \begin{itemize}
+        \item Entrainement modele preliminaire
+        \item Selection top 20 features par importance
+    \end{itemize}
+    
+    \item \textbf{Multicolinearite (VIF)} :
+    \begin{itemize}
+        \item Seuil : VIF < 10
+        \item Resultat : Ã‰limination de 3 features redondantes
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Features finales selectionnees (15) :}
+
+\begin{table}[H]
+\centering
+\caption{Features finales pour modelisation}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Feature} & \textbf{Type} & \textbf{Correlation} & \textbf{Importance} \\
+\hline
+volume\_matelas & Numerique & 0.74*** & 0.18 \\
+\hline
+Nbr\_Plies & Numerique & 0.68*** & 0.15 \\
+\hline
+surface\_matelas & Numerique & 0.62*** & 0.12 \\
+\hline
+Longeur\_Matela & Numerique & 0.52*** & 0.10 \\
+\hline
+temps\_moyen\_machine\_7j & Numerique & 0.48** & 0.09 \\
+\hline
+score\_complexite & Numerique & 0.45** & 0.08 \\
+\hline
+Largeur & Numerique & 0.34** & 0.06 \\
+\hline
+Machine (one-hot) & Categorielle & Variable & 0.05 \\
+\hline
+jour\_semaine\_sin/cos & Temporelle & 0.28* & 0.04 \\
+\hline
+Operateur (target enc.) & Categorielle & 0.42** & 0.07 \\
+\hline
+charge\_machine\_jour & Numerique & 0.31* & 0.04 \\
+\hline
+Type\_Tissu (one-hot) & Categorielle & Variable & 0.02 \\
+\hline
+\end{tabular}
+\caption*{*** p<0.001, ** p<0.01, * p<0.05}
+\label{tab:final_features}
+\end{table}
+
+\subsection{Segmentation des donnees}
+
+\subsubsection{Division temporelle}
+
+\begin{itemize}
+    \item \textbf{Entrainement} : Janvier-Mars 2024 (70\% des donnees)
+    \item \textbf{Validation} : Avril 2024 (15\% des donnees)
+    \item \textbf{Test} : Mai-Juin 2024 (15\% des donnees)
+\end{itemize}
+
+\subsubsection{Stratification}
+
+\begin{itemize}
+    \item \textbf{Par machine} : Maintien des proportions dans chaque split
+    \item \textbf{Par type de produit} : Ã‰quilibrage des gammes
+    \item \textbf{Par periode} : Respect de la chronologie temporelle
+\end{itemize}
+
+\subsection{Validation de la preparation}
+
+\subsubsection{Metriques de qualite}
+
+\begin{itemize}
+    \item \textbf{Completude} : 99.2\% des enregistrements complets
+    \item \textbf{Coherence} : 100\% des contraintes metier respectees
+    \item \textbf{Distribution} : Preservation des patterns temporels
+\end{itemize}
+
+\subsubsection{Tests de regression}
+
+\begin{itemize}
+    \item \textbf{Integrite} : Verification de la non-perte de donnees critiques
+    \item \textbf{Reproductibilite} : Tests de re-generation des features
+    \item \textbf{Performance} : Validation des temps de traitement
+\end{itemize}
+
+\subsection{Pipeline de donnees}
+
+\subsubsection{Architecture du pipeline}
+
+    % \begin{figure}[H]
+    % \centering
+    % \includegraphics[width=0.8\textwidth]{images/data_pipeline.png}
+    % \caption{Pipeline de preparation des donnees}
+    % \label{fig:data_pipeline}
+    % \end{figure}
+
+\subsubsection{Composants du pipeline}
+
+\begin{itemize}
+    \item \textbf{Extract} : Collecte depuis G.Pro et systemes de production
+    \item \textbf{Transform} : Nettoyage, enrichissement et feature engineering
+    \item \textbf{Load} : Stockage dans le data warehouse ML
+    \item \textbf{Validate} : Controles qualite et tests de regression
+\end{itemize}
+
+\subsubsection{Architecture du pipeline de donnees}
+
+La figure \ref{fig:data_pipeline} illustre l'architecture complete du pipeline de preparation des donnees.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.3cm,
+    source/.style={cylinder, draw, fill=blue!20, text width=1.6cm, text centered, minimum height=0.9cm, shape border rotate=90, font=\scriptsize},
+    process/.style={rectangle, draw, fill=orange!20, text width=2.2cm, text centered, rounded corners, minimum height=0.8cm, font=\scriptsize},
+    storage/.style={cylinder, draw, fill=green!20, text width=1.8cm, text centered, minimum height=0.9cm, shape border rotate=90, font=\scriptsize},
+    check/.style={diamond, draw, fill=yellow!20, text width=1.3cm, text centered, minimum height=0.8cm, aspect=2, font=\scriptsize},
+    arrow/.style={->, >=stealth, thick}
+]
+
+% Sources de donnees (en haut)
+\node[source] (gpro) at (0,0) {G.Pro\\ERP};
+\node[source] (prod) at (2.5,0) {Systeme\\Production};
+\node[source] (rfid) at (5,0) {Capteurs\\RFID};
+
+% Extraction
+\node[process] (extract) at (2.5,-1.5) {Extract\\Collecte donnees};
+
+% Validation initiale
+\node[check] (validate1) at (2.5,-3) {Qualite\\OK?};
+
+% Transformation
+\node[process] (clean) at (2.5,-4.5) {Clean\\Nettoyage};
+\node[process] (engineer) at (2.5,-6) {Engineer\\Features};
+\node[process] (encode) at (2.5,-7.5) {Encode\\Normalise};
+
+% Validation finale
+\node[check] (validate2) at (2.5,-9) {Tests\\OK?};
+
+% Stockage
+\node[storage] (warehouse) at (2.5,-10.5) {Data\\Warehouse\\ML};
+
+% Monitoring (a droite)
+\node[process] (monitor) at (6.5,-6) {Monitoring\\\& Alertes};
+
+% Fleches
+\draw[arrow] (gpro) -- (extract);
+\draw[arrow] (prod) -- (extract);
+\draw[arrow] (rfid) -- (extract);
+\draw[arrow] (extract) -- (validate1);
+\draw[arrow] (validate1) -- node[right, font=\tiny] {Oui} (clean);
+\draw[arrow] (validate1.east) -- ++(1,0) node[above, pos=0.5, font=\tiny] {Non} |- (monitor.north);
+\draw[arrow] (clean) -- (engineer);
+\draw[arrow] (engineer) -- (encode);
+\draw[arrow] (encode) -- (validate2);
+\draw[arrow] (validate2) -- node[right, font=\tiny] {Oui} (warehouse);
+\draw[arrow] (validate2.east) -- ++(1,0) node[above, pos=0.5, font=\tiny] {Non} |- (monitor.south);
+\draw[arrow] (monitor.west) -- ++(-1,0) |- (extract.east);
+
+% Annotations
+\node[font=\scriptsize] at (2.5,-11.5) {14,567 echantillons | 15 features | 100\% qualite};
+
+\end{tikzpicture}
+\caption{Architecture du pipeline de preparation des donnees}
+\label{fig:data_pipeline}
+\end{figure}
+
+\textbf{Caracteristiques du pipeline :}
+\begin{itemize}
+    \item \textbf{Automatise} : Execution quotidienne sans intervention manuelle
+    \item \textbf{Robuste} : Validation a chaque etape avec gestion d'erreurs
+    \item \textbf{Tracable} : Versioning et logging complet des transformations
+    \item \textbf{Scalable} : Capacite a traiter 200+ OF/jour
+\end{itemize}
+
+\subsubsection{Orchestration}
+
+\begin{itemize}
+    \item \textbf{Frequence} : Execution quotidienne a 6h00
+    \item \textbf{Monitoring} : Alertes en cas d'echec ou de derive
+    \item \textbf{Versioning} : Tracabilite des transformations appliquees
+\end{itemize}
+
+\section{Phase 3 (suite) : Cadre d'assurance qualite}\label{chap3:quality}
+
+\subsection{Introduction au cadre qualite CRISP-ML(Q)}
+
+La methodologie CRISP-ML(Q) se distingue de CRISP-DM par l'integration systematique de l'assurance qualite a chaque phase du projet. Cette section presente le cadre d'assurance qualite mis en place pour garantir la fiabilite, la robustesse et la maintenabilite du systeme de machine learning developpe.
+
+L'assurance qualite couvre quatre dimensions complementaires :
+\begin{itemize}
+    \item \textbf{Qualite des donnees} : Completude, exactitude, coherence, actualite
+    \item \textbf{Qualite des modeles} : Performance, robustesse, explicabilite, equite
+    \item \textbf{Qualite du code} : Maintenabilite, testabilite, documentation, securite
+    \item \textbf{Qualite operationnelle} : Disponibilite, performance, monitoring, gouvernance
+\end{itemize}
+
+\subsubsection{Framework d'assurance qualite}
+
+La figure \ref{fig:quality_framework} illustre le framework complet d'assurance qualite integre au processus CRISP-ML(Q).
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.2cm,
+    dimension/.style={rectangle, draw, fill=blue!20, text width=2.5cm, text centered, rounded corners, minimum height=1cm, font=\footnotesize},
+    check/.style={rectangle, draw, fill=orange!20, text width=2.2cm, text centered, rounded corners, minimum height=0.7cm, font=\scriptsize},
+    arrow/.style={->, >=stealth, thick}
+]
+
+% Dimensions qualite (ligne du haut)
+\node[dimension] (data) at (0,0) {Qualite\\Donnees};
+\node[dimension] (model) at (3,0) {Qualite\\Modeles};
+\node[dimension] (code) at (6,0) {Qualite\\Code};
+\node[dimension] (ops) at (9,0) {Qualite\\Operationnelle};
+
+% Controles pour chaque dimension
+\node[check] (d1) at (0,-1.5) {Completude\\>95\%};
+\node[check] (d2) at (0,-2.7) {Exactitude\\<5\% erreur};
+
+\node[check] (m1) at (3,-1.5) {Performance\\RÂ²>0.80};
+\node[check] (m2) at (3,-2.7) {Robustesse\\Tests OK};
+
+\node[check] (c1) at (6,-1.5) {Tests\\>80\% couv.};
+\node[check] (c2) at (6,-2.7) {Documentation\\Complete};
+
+\node[check] (o1) at (9,-1.5) {Disponibilite\\>99.5\%};
+\node[check] (o2) at (9,-2.7) {Monitoring\\24/7};
+
+% Fleches verticales
+\draw[arrow] (data) -- (d1);
+\draw[arrow] (d1) -- (d2);
+\draw[arrow] (model) -- (m1);
+\draw[arrow] (m1) -- (m2);
+\draw[arrow] (code) -- (c1);
+\draw[arrow] (c1) -- (c2);
+\draw[arrow] (ops) -- (o1);
+\draw[arrow] (o1) -- (o2);
+
+% Boucle de feedback (en bas)
+\draw[arrow, dashed, red, thick] (d2.south) -- ++(0,-0.3) -- ++(9,0) -- (o2.south);
+\node[font=\scriptsize] at (4.5,-3.5) {Amelioration continue};
+
+\end{tikzpicture}
+\caption{Framework d'assurance qualite CRISP-ML(Q)}
+\label{fig:quality_framework}
+\end{figure}
+
+\subsection{Metriques de qualite des donnees}
+
+\subsubsection{Framework de qualite des donnees}
+
+Un framework complet de qualite des donnees a ete etabli selon les dimensions DAMA (Data Management Association) \cite{redman2001data, batini2009methodologies}.
+
+\begin{table}[H]
+\centering
+\caption{Metriques de qualite des donnees}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Dimension} & \textbf{Metrique} & \textbf{Cible} & \textbf{Actuel} & \textbf{Statut} \\
+\hline
+Completude & Taux de remplissage & > 95\% & 96\% & âœ“ OK \\
+\hline
+Exactitude & Taux d'erreur & < 5\% & 3.2\% & âœ“ OK \\
+\hline
+Coherence & Violations contraintes & < 1\% & 0.8\% & âœ“ OK \\
+\hline
+Actualite & Delai de mise a jour & < 24h & < 1h & âœ“ OK \\
+\hline
+Unicite & Taux de doublons & < 0.5\% & 0.2\% & âœ“ OK \\
+\hline
+Validite & Conformite format & 100\% & 100\% & âœ“ OK \\
+\hline
+\end{tabular}
+\label{tab:data_quality_metrics}
+\end{table}
+
+\subsubsection{Tests de qualite automatises}
+
+Des tests automatises sont executes a chaque ingestion de donnees :
+
+\textbf{Tests de schema :}
+\begin{itemize}
+    \item Verification des types de donnees (int, float, string)
+    \item Validation des contraintes de domaine (min, max, enum)
+    \item Controle de la presence des colonnes obligatoires
+    \item Detection des colonnes inattendues
+\end{itemize}
+
+\textbf{Tests de distribution :}
+\begin{itemize}
+    \item Detection de derive statistique (Kolmogorov-Smirnov test)
+    \item Verification des quantiles (P5, P25, P50, P75, P95)
+    \item Controle de la variance et de l'ecart-type
+    \item Detection d'anomalies dans les distributions
+\end{itemize}
+
+\textbf{Tests de coherence :}
+\begin{itemize}
+    \item Validation des relations entre variables (Longueur\_Matela > Longueur\_Trace)
+    \item Verification des contraintes metier (Nbr\_Plies entre 1 et 50)
+    \item Controle de coherence temporelle (dates logiques)
+    \item Validation des references (Machine, Operateur existent)
+\end{itemize}
+
+\subsubsection{Monitoring de la qualite des donnees}
+
+Un systeme de monitoring continu surveille la qualite des donnees en production.
+
+\begin{table}[H]
+\centering
+\caption{Alertes de qualite des donnees}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Alerte} & \textbf{Seuil} & \textbf{Niveau} & \textbf{Action} \\
+\hline
+Taux de valeurs manquantes & > 10\% & Critique & Blocage pipeline \\
+\hline
+Derive de distribution & KS > 0.3 & Ã‰leve & Investigation + alerte \\
+\hline
+Outliers excessifs & > 5\% & Moyen & Analyse + rapport \\
+\hline
+Violations contraintes & > 2\% & Ã‰leve & Investigation + alerte \\
+\hline
+Delai de fraicheur & > 48h & Moyen & Alerte equipe data \\
+\hline
+\end{tabular}
+\label{tab:data_quality_alerts}
+\end{table}
+
+\subsection{Portes de qualite des modeles (Quality Gates)}
+
+\subsubsection{Framework de validation multi-niveaux}
+
+Un systeme de portes de qualite (quality gates) valide les modeles avant leur deploiement en production.
+
+\textbf{Niveau 1 : Validation technique}
+\begin{itemize}
+    \item \textbf{Performance minimale} : RÂ² > 0.75, MAE < 20 min, RMSE < 25 min
+    \item \textbf{Stabilite} : Ã‰cart-type des performances < 10\% sur 5 folds CV
+    \item \textbf{Convergence} : Entrainement converge en < 1000 iterations
+    \item \textbf{Temps d'inference} : < 200ms pour prediction individuelle
+\end{itemize}
+
+\textbf{Niveau 2 : Validation metier}
+\begin{itemize}
+    \item \textbf{Amelioration baseline} : Performance > baseline + 20\%
+    \item \textbf{Precision metier} : MAPE < 20\% (acceptable pour planification)
+    \item \textbf{Robustesse} : Performance stable sur tous les types de produits
+    \item \textbf{Explicabilite} : Features importantes alignees avec expertise metier
+\end{itemize}
+
+\textbf{Niveau 3 : Validation operationnelle}
+\begin{itemize}
+    \item \textbf{Scalabilite} : Traitement de 200 OF/jour sans degradation
+    \item \textbf{Disponibilite} : Temps de chargement modele < 5 secondes
+    \item \textbf{Ressources} : Utilisation memoire < 2GB, CPU < 50\%
+    \item \textbf{Compatibilite} : Integration avec systemes existants validee
+\end{itemize}
+
+\subsubsection{Matrice de validation des modeles}
+
+\begin{table}[H]
+\centering
+\caption{Criteres de validation des modeles ML}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\textbf{Critere} & \textbf{Metrique} & \textbf{Seuil min} & \textbf{Cible} & \textbf{Actuel} & \textbf{Statut} \\
+\hline
+Precision & RÂ² & > 0.75 & > 0.80 & 0.84 & âœ“ OK \\
+\hline
+Erreur absolue & MAE (min) & < 20 & < 15 & 12.3 & âœ“ OK \\
+\hline
+Erreur quadratique & RMSE (min) & < 25 & < 20 & 18.9 & âœ“ OK \\
+\hline
+Erreur relative & MAPE (\%) & < 25 & < 20 & 22.1 & âœ“ OK \\
+\hline
+Stabilite & CV score & < 0.15 & < 0.10 & 0.08 & âœ“ OK \\
+\hline
+Temps inference & ms & < 300 & < 200 & 95 & âœ“ OK \\
+\hline
+Taille modele & MB & < 100 & < 50 & 28 & âœ“ OK \\
+\hline
+\end{tabular}
+\label{tab:model_quality_gates}
+\end{table}
+
+\subsubsection{Tests de robustesse}
+
+Des tests de robustesse valident le comportement du modele dans des conditions variees.
+
+\textbf{Tests de sensibilite :}
+\begin{itemize}
+    \item \textbf{Perturbation des features} : Variation de Â±10\% des valeurs d'entree
+    \item \textbf{Valeurs extremes} : Test avec valeurs min/max du domaine
+    \item \textbf{Valeurs manquantes} : Comportement avec 5-10\% de donnees manquantes
+    \item \textbf{Resultat attendu} : Variation des predictions < 15\%
+\end{itemize}
+
+\textbf{Tests de coherence :}
+\begin{itemize}
+    \item \textbf{Monotonicite} : Augmentation Nbr\_Plies â†’ augmentation temps predit
+    \item \textbf{Symetrie} : Comportement similaire pour produits similaires
+    \item \textbf{Bornes} : Predictions dans l'intervalle [10, 120] minutes
+    \item \textbf{Coherence temporelle} : Predictions stables dans le temps
+\end{itemize}
+
+\textbf{Tests de derive :}
+\begin{itemize}
+    \item \textbf{Derive de donnees} : Detection via test de Kolmogorov-Smirnov
+    \item \textbf{Derive de concept} : Monitoring de la performance sur donnees recentes
+    \item \textbf{Derive de prediction} : Analyse de la distribution des predictions
+    \item \textbf{Seuil d'alerte} : Degradation > 10\% sur 7 jours consecutifs
+\end{itemize}
+
+\subsection{Framework de monitoring en production}
+
+\subsubsection{Architecture de monitoring}
+
+Un systeme de monitoring complet surveille les performances du modele en production.
+
+\textbf{Metriques de performance :}
+\begin{itemize}
+    \item \textbf{Precision en temps reel} : Comparaison predictions vs realisations
+    \item \textbf{Erreur glissante} : MAE, RMSE calcules sur fenetre de 7 jours
+    \item \textbf{Distribution des erreurs} : Histogramme et quantiles des erreurs
+    \item \textbf{Erreurs par segment} : Performance par machine, operateur, produit
+\end{itemize}
+
+\textbf{Metriques operationnelles :}
+\begin{itemize}
+    \item \textbf{Latence} : Temps de reponse P50, P95, P99
+    \item \textbf{Debit} : Nombre de predictions/minute
+    \item \textbf{Disponibilite} : Uptime du service (cible > 99.5\%)
+    \item \textbf{Taux d'erreur} : Pourcentage de requetes en echec
+\end{itemize}
+
+\textbf{Metriques de donnees :}
+\begin{itemize}
+    \item \textbf{Volume} : Nombre d'enregistrements traites/jour
+    \item \textbf{Qualite} : Taux de valeurs manquantes, outliers
+    \item \textbf{Derive} : Ã‰volution des distributions des features
+    \item \textbf{Couverture} : Pourcentage de cas couverts par le modele
+\end{itemize}
+
+\subsubsection{Dashboards de monitoring}
+
+Trois dashboards complementaires assurent la surveillance du systeme.
+
+\textbf{Dashboard Performance Modele :}
+\begin{itemize}
+    \item Graphique d'evolution de la MAE sur 30 jours
+    \item Comparaison predictions vs realisations (scatter plot)
+    \item Distribution des erreurs (histogramme)
+    \item Performance par segment (heatmap)
+    \item Alertes actives et historique
+\end{itemize}
+
+\textbf{Dashboard Operationnel :}
+\begin{itemize}
+    \item Latence P50/P95/P99 en temps reel
+    \item Debit de requetes (requetes/minute)
+    \item Taux d'erreur et disponibilite
+    \item Utilisation des ressources (CPU, memoire)
+    \item Logs d'erreurs recents
+\end{itemize}
+
+\textbf{Dashboard Qualite Donnees :}
+\begin{itemize}
+    \item Taux de completude par feature
+    \item Detection d'outliers (box plots)
+    \item Derive des distributions (KS statistic)
+    \item Violations de contraintes
+    \item Fraicheur des donnees
+\end{itemize}
+
+\subsubsection{Systeme d'alertes intelligent}
+
+Un systeme d'alertes multi-niveaux notifie les equipes en cas de probleme.
+
+\begin{table}[H]
+\centering
+\caption{Systeme d'alertes de monitoring}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Type d'alerte} & \textbf{Condition} & \textbf{Niveau} & \textbf{Action automatique} \\
+\hline
+Degradation performance & MAE > 20 min (3j) & Critique & Notification + analyse \\
+\hline
+Derive de donnees & KS > 0.3 & Ã‰leve & Notification + rapport \\
+\hline
+Latence elevee & P95 > 500ms & Moyen & Notification equipe ops \\
+\hline
+Taux d'erreur eleve & > 5\% (1h) & Critique & Notification + rollback \\
+\hline
+Disponibilite faible & < 99\% (24h) & Ã‰leve & Notification + investigation \\
+\hline
+Outliers excessifs & > 10\% & Moyen & Rapport qualite donnees \\
+\hline
+\end{tabular}
+\label{tab:monitoring_alerts}
+\end{table}
+
+\subsection{Strategie de tests A/B}
+
+\subsubsection{Framework de tests A/B}
+
+Une strategie de tests A/B permet de valider les ameliorations du modele en production.
+
+\textbf{Protocole de test :}
+\begin{enumerate}
+    \item \textbf{Definition des hypotheses} : Amelioration attendue (ex: MAE -10\%)
+    \item \textbf{Allocation du trafic} : 90\% modele actuel (A), 10\% nouveau modele (B)
+    \item \textbf{Duree du test} : Minimum 2 semaines pour significativite statistique
+    \item \textbf{Metriques de succes} : MAE, RMSE, satisfaction utilisateurs
+    \item \textbf{Criteres d'arret} : Degradation > 15\% ou erreurs critiques
+\end{enumerate}
+
+\textbf{Analyse statistique :}
+\begin{itemize}
+    \item \textbf{Test de significativite} : Test t de Student (Î± = 0.05)
+    \item \textbf{Taille d'echantillon} : Minimum 500 predictions par groupe
+    \item \textbf{Puissance statistique} : > 80\% pour detecter amelioration de 10\%
+    \item \textbf{Intervalles de confiance} : 95\% pour toutes les metriques
+\end{itemize}
+
+\textbf{Decision de deploiement :}
+\begin{itemize}
+    \item \textbf{Deploiement complet} : Si amelioration > 10\% et p-value < 0.05
+    \item \textbf{Deploiement progressif} : Si amelioration 5-10\% et p-value < 0.05
+    \item \textbf{Rejet} : Si amelioration < 5\% ou p-value > 0.05
+    \item \textbf{Rollback immediat} : Si degradation > 5\% ou erreurs critiques
+\end{itemize}
+
+\subsubsection{Deploiement canary}
+
+Le deploiement canary complete la strategie A/B pour les mises a jour critiques.
+
+\textbf{Phases de deploiement :}
+\begin{enumerate}
+    \item \textbf{Phase 1 (Canary)} : 5\% du trafic pendant 24h
+    \item \textbf{Phase 2 (Validation)} : 25\% du trafic pendant 48h
+    \item \textbf{Phase 3 (Expansion)} : 50\% du trafic pendant 72h
+    \item \textbf{Phase 4 (Complet)} : 100\% du trafic si validation OK
+\end{enumerate}
+
+\textbf{Criteres de validation a chaque phase :}
+\begin{itemize}
+    \item Aucune degradation de performance (MAE, RMSE)
+    \item Taux d'erreur < 1\%
+    \item Latence P95 < 200ms
+    \item Aucune alerte critique
+    \item Feedback utilisateurs positif
+\end{itemize}
+
+\subsection{Gouvernance des modeles ML}
+
+\subsubsection{Cycle de vie des modeles}
+
+Un processus de gouvernance structure le cycle de vie des modeles.
+
+\textbf{Phases du cycle de vie :}
+\begin{enumerate}
+    \item \textbf{Developpement} : Experimentation et entrainement
+    \item \textbf{Validation} : Tests de qualite et validation metier
+    \item \textbf{Staging} : Deploiement en environnement de pre-production
+    \item \textbf{Production} : Deploiement en production avec monitoring
+    \item \textbf{Monitoring} : Surveillance continue des performances
+    \item \textbf{Reentrainement} : Mise a jour periodique ou declenchee
+    \item \textbf{Archivage} : Retrait et archivage des modeles obsoletes
+\end{enumerate}
+
+\textbf{Versioning des modeles :}
+\begin{itemize}
+    \item \textbf{Schema de version} : MAJOR.MINOR.PATCH (ex: 2.1.3)
+    \item \textbf{MAJOR} : Changement d'architecture ou de features
+    \item \textbf{MINOR} : Amelioration de performance ou nouveaux hyperparametres
+    \item \textbf{PATCH} : Correction de bugs ou ajustements mineurs
+    \item \textbf{Metadonnees} : Date, auteur, dataset, metriques, changements
+\end{itemize}
+
+\subsubsection{Registre des modeles}
+
+Un registre centralise (MLflow Model Registry) \cite{gift2020practical} gere tous les modeles.
+
+\textbf{Informations enregistrees :}
+\begin{itemize}
+    \item \textbf{Identite} : Nom, version, date de creation, auteur
+    \item \textbf{Artefacts} : Fichier modele, preprocessor, scaler, features
+    \item \textbf{Metriques} : RÂ², MAE, RMSE, MAPE sur train/val/test
+    \item \textbf{Hyperparametres} : Configuration complete du modele
+    \item \textbf{Dataset} : Version et hash du dataset d'entrainement
+    \item \textbf{Environnement} : Versions des librairies (requirements.txt)
+    \item \textbf{Statut} : Development, Staging, Production, Archived
+\end{itemize}
+
+\textbf{Workflow de promotion :}
+\begin{enumerate}
+    \item Modele cree â†’ Statut "Development"
+    \item Validation technique OK â†’ Statut "Staging"
+    \item Tests A/B OK â†’ Statut "Production"
+    \item Nouveau modele deploye â†’ Ancien modele "Archived"
+\end{enumerate}
+
+\subsubsection{Documentation et tracabilite}
+
+Une documentation complete assure la tracabilite et la reproductibilite.
+
+\textbf{Documentation obligatoire :}
+\begin{itemize}
+    \item \textbf{Model Card} : Description, usage, limitations, performances
+    \item \textbf{Data Card} : Description du dataset, sources, transformations
+    \item \textbf{Changelog} : Historique des modifications et raisons
+    \item \textbf{Runbook} : Procedures de deploiement et de rollback
+    \item \textbf{Incident Log} : Historique des incidents et resolutions
+\end{itemize}
+
+\textbf{Tracabilite complete :}
+\begin{itemize}
+    \item Lien entre modele et dataset d'entrainement
+    \item Lien entre modele et code source (Git commit)
+    \item Lien entre modele et experiences MLflow
+    \item Lien entre modele et tests de validation
+    \item Lien entre modele et deploiements en production
+\end{itemize}
+
+\subsection{Synthese du cadre qualite}
+
+Le cadre d'assurance qualite CRISP-ML(Q) mis en place garantit :
+
+\textbf{Qualite des donnees :}
+\begin{itemize}
+    \item 96\% de completude, 3.2\% d'erreurs, 0.8\% de violations
+    \item Tests automatises a chaque ingestion
+    \item Monitoring continu avec alertes multi-niveaux
+\end{itemize}
+
+\textbf{Qualite des modeles :}
+\begin{itemize}
+    \item Portes de qualite a 3 niveaux (technique, metier, operationnel)
+    \item Tests de robustesse et de derive
+    \item Validation statistique rigoureuse
+\end{itemize}
+
+\textbf{Qualite operationnelle :}
+\begin{itemize}
+    \item Monitoring en temps reel (performance, latence, disponibilite)
+    \item Dashboards dedies pour chaque dimension
+    \item Systeme d'alertes intelligent avec actions automatiques
+\end{itemize}
+
+\textbf{Gouvernance :}
+\begin{itemize}
+    \item Cycle de vie structure avec versioning
+    \item Registre centralise des modeles (MLflow)
+    \item Documentation complete et tracabilite totale
+    \item Tests A/B et deploiement canary
+\end{itemize}
+
+Ce cadre qualite assure la fiabilite et la perennite du systeme de machine learning en production, conformement aux exigences de la methodologie CRISP-ML(Q).
+
+\section{Synthese et perspectives}\label{chap3:synthesis}
+
+\subsection{Bilan des phases 1-3}
+
+Les trois premieres phases de CRISP-ML(Q) ont permis d'etablir une base solide pour le projet :
+
+\begin{itemize}
+    \item \textbf{Phase 1} : Objectifs metier clairs et criteres de succes quantifies
+    \item \textbf{Phase 2} : Comprehension approfondie des donnees et de leur qualite
+    \item \textbf{Phase 3} : Pipeline de donnees robuste et features optimisees
+\end{itemize}
+
+\subsection{Preparation aux phases suivantes}
+
+Les phases de modelisation et d'evaluation beneficieront de :
+
+\begin{itemize}
+    \item \textbf{Dataset prepare} : 14,567 echantillons avec 12 features
+    \item \textbf{Metriques de reference} : Baseline etablie (RÂ² = 0.45)
+    \item \textbf{Infrastructure} : Pipeline automatise et versionne
+\end{itemize}
+
+\subsection{Risques identifies et mitigations}
+
+\begin{itemize}
+    \item \textbf{Derive des donnees} : Monitoring continu et alertes
+    \item \textbf{Performance modele} : Validation croisee temporelle
+    \item \textbf{Integration} : Tests d'integration avec G.Pro
+\end{itemize}
+
+Le chapitre suivant detaillera la phase de modelisation et l'implementation des algorithmes de machine learning pour la prediction des temps de matelassage et l'optimisation de la planification.
+

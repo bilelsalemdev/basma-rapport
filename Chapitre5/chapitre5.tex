@@ -1,0 +1,510 @@
+\chapter{Agile 4-month delivery plan}\label{chap5}
+
+\lhead{Chapitre V: Plan de Livraison Agile}
+\dominitoc
+\rhead{\thepage}
+\minitoc
+
+\section{Introduction}
+Ce cinquième chapitre présente de manière structurée le plan de livraison agile du système de planification intelligente de production textile. L'approche méthodologique agile, fondée sur les principes d'itération et d'incrémentation, permet une livraison progressive et adaptative, garantissant une adéquation continue aux besoins métier évolutifs et une mitigation proactive des risques inhérents au projet. Le plan de développement est structuré en sprints successifs de deux semaines, chaque itération délivrant des livrables fonctionnels et testables permettant une validation continue par les parties prenantes.
+
+La méthodologie Scrum \cite{schwaber2020scrum} est adoptée comme cadre de référence pour orchestrer le développement, mobilisant des équipes pluridisciplinaires intégrant des data scientists, des développeurs logiciels, des experts métier et des utilisateurs finaux, garantissant ainsi une co-construction efficace de la solution \cite{cohn2005agile}.
+
+\section{Architecture Agile du Projet}
+
+\subsection{Équipe de Développement}
+L'équipe projet est composée de :
+\begin{itemize}
+    \item \textbf{Product Owner} : Responsable métier de l'atelier de coupe
+    \item \textbf{Scrum Master} : Facilitateur agile et coordinateur technique
+    \item \textbf{Data Scientists} (2) : Développement des modèles ML et analyse des données
+    \item \textbf{Développeurs Backend} (2) : API FastAPI et intégrations
+    \item \textbf{Développeurs Frontend} (2) : Interface React et dashboard
+    \item \textbf{DevOps Engineer} (1) : Infrastructure et déploiement
+    \item \textbf{Expert Métier} (1) : Validation fonctionnelle et tests utilisateurs
+\end{itemize}
+
+\subsection{Outils et Technologies}
+\begin{itemize}
+    \item \textbf{Gestion de projet} : Jira, Confluence
+    \item \textbf{Versioning} : Git, GitHub
+    \item \textbf{CI/CD} : GitHub Actions, Docker
+    \item \textbf{Communication} : Slack, Teams
+    \item \textbf{Documentation} : Notion, LaTeX
+\end{itemize}
+
+\section{Roadmap de Développement}
+
+\subsection{Phase 1 : Fondations (Sprints 1-4)}
+\textbf{Durée} : 8 semaines
+\textbf{Objectif} : Établir les fondations techniques et métier
+
+\begin{table}[H]
+\centering
+\caption{Roadmap Phase 1 - Fondations}
+\begin{tabular}{|p{2cm}|p{8cm}|p{3cm}|}
+\hline
+\textbf{Sprint} & \textbf{Livrables} & \textbf{Durée} \\
+\hline
+Sprint 1 & Analyse des besoins, architecture technique, setup environnement & 2 semaines \\
+\hline
+Sprint 2 & Pipeline de données, EDA, préparation des données & 2 semaines \\
+\hline
+Sprint 3 & Modèles ML de base, validation croisée, métriques & 2 semaines \\
+\hline
+Sprint 4 & Pipeline MLOps, tracking MLflow, registre des modèles & 2 semaines \\
+\hline
+\end{tabular}
+\label{tab:roadmap_phase1}
+\end{table}
+
+\subsection{Phase 2 : Développement Core (Sprints 5-8)}
+\textbf{Durée} : 8 semaines
+\textbf{Objectif} : Développement des fonctionnalités principales
+
+\begin{table}[H]
+\centering
+\caption{Roadmap Phase 2 - Développement Core}
+\begin{tabular}{|p{2cm}|p{8cm}|p{3cm}|}
+\hline
+\textbf{Sprint} & \textbf{Livrables} & \textbf{Durée} \\
+\hline
+Sprint 5 & API FastAPI, endpoints de prédiction, authentification & 2 semaines \\
+\hline
+Sprint 6 & Dashboard React, visualisations, interface utilisateur & 2 semaines \\
+\hline
+Sprint 7 & Système d'ordonnancement, optimisation, contraintes & 2 semaines \\
+\hline
+Sprint 8 & Intégration complète, tests end-to-end, documentation API & 2 semaines \\
+\hline
+\end{tabular}
+\label{tab:roadmap_phase2}
+\end{table}
+
+\subsection{Phase 3 : Optimisation et Production (Sprints 9-12)}
+\textbf{Durée} : 8 semaines
+\textbf{Objectif} : Optimisation, monitoring et mise en production
+
+\begin{table}[H]
+\centering
+\caption{Roadmap Phase 3 - Optimisation et Production}
+\begin{tabular}{|p{2cm}|p{8cm}|p{3cm}|}
+\hline
+\textbf{Sprint} & \textbf{Livrables} & \textbf{Durée} \\
+\hline
+Sprint 9 & Monitoring avancé, alertes, dashboards de surveillance & 2 semaines \\
+\hline
+Sprint 10 & Optimisation des performances, cache, scaling & 2 semaines \\
+\hline
+Sprint 11 & Tests de charge, sécurité, conformité & 2 semaines \\
+\hline
+Sprint 12 & Déploiement production, formation utilisateurs, support & 2 semaines \\
+\hline
+\end{tabular}
+\label{tab:roadmap_phase3}
+\end{table}
+
+\section{Détail des Sprints}
+
+\subsection{Sprint 1 : Analyse et Architecture}
+\textbf{Durée} : 2 semaines
+\textbf{Objectif} : Comprendre les besoins et définir l'architecture
+
+\subsubsection{User Stories}
+\begin{itemize}
+    \item En tant que responsable d'atelier, je veux comprendre les besoins de planification pour définir les priorités
+    \item En tant que data scientist, je veux analyser les données existantes pour identifier les patterns
+    \item En tant que développeur, je veux définir l'architecture technique pour planifier le développement
+\end{itemize}
+
+\subsubsection{Tâches Techniques}
+\begin{itemize}
+    \item Analyse des besoins métier (5 jours)
+    \item Audit des données existantes (3 jours)
+    \item Conception de l'architecture technique (4 jours)
+    \item Setup de l'environnement de développement (3 jours)
+\end{itemize}
+
+\subsubsection{Livrables}
+\begin{itemize}
+    \item Document d'analyse des besoins
+    \item Architecture technique détaillée
+    \item Environnement de développement opérationnel
+    \item Plan de projet détaillé
+\end{itemize}
+
+\subsection{Sprint 2 : Pipeline de Données}
+\textbf{Durée} : 2 semaines
+\textbf{Objectif} : Mettre en place le pipeline de données
+
+\subsubsection{User Stories}
+\begin{itemize}
+    \item En tant que data scientist, je veux un pipeline automatisé pour traiter les données
+    \item En tant qu'analyste, je veux visualiser les données pour comprendre les tendances
+    \item En tant que développeur, je veux des données nettoyées pour l'entraînement des modèles
+\end{itemize}
+
+\subsubsection{Tâches Techniques}
+\begin{itemize}
+    \item Développement du pipeline de préprocessing (6 jours)
+    \item Création des notebooks d'exploration (4 jours)
+    \item Mise en place de la validation des données (3 jours)
+    \item Documentation du pipeline (2 jours)
+\end{itemize}
+
+\subsubsection{Livrables}
+\begin{itemize}
+    \item Pipeline de données automatisé
+    \item Notebooks d'exploration des données
+    \item Documentation des données
+    \item Métriques de qualité des données
+\end{itemize}
+
+\subsection{Sprint 3 : Modèles de Machine Learning}
+\textbf{Durée} : 2 semaines
+\textbf{Objectif} : Développer les modèles de prédiction
+
+\subsubsection{User Stories}
+\begin{itemize}
+    \item En tant que responsable d'atelier, je veux prédire les temps de matelassage avec précision
+    \item En tant que data scientist, je veux comparer différents algorithmes pour choisir le meilleur
+    \item En tant qu'utilisateur, je veux des prédictions fiables pour la planification
+\end{itemize}
+
+\subsubsection{Tâches Techniques}
+\begin{itemize}
+    \item Développement du modèle de prédiction du temps (5 jours)
+    \item Implémentation de l'algorithme d'ordonnancement (4 jours)
+    \item Validation croisée et évaluation (3 jours)
+    \item Optimisation des hyperparamètres (3 jours)
+\end{itemize}
+
+\subsubsection{Livrables}
+\begin{itemize}
+    \item Modèle de prédiction du temps entraîné
+    \item Algorithme d'ordonnancement fonctionnel
+    \item Métriques de performance des modèles
+    \item Rapport d'évaluation des modèles
+\end{itemize}
+
+\subsection{Sprint 4 : Pipeline MLOps}
+\textbf{Durée} : 2 semaines
+\textbf{Objectif} : Mettre en place le pipeline MLOps
+
+\subsubsection{User Stories}
+\begin{itemize}
+    \item En tant que data scientist, je veux tracker mes expériences pour reproduire les résultats
+    \item En tant que DevOps, je veux automatiser le déploiement des modèles
+    \item En tant que responsable technique, je veux monitorer les performances des modèles
+\end{itemize}
+
+\subsubsection{Tâches Techniques}
+\begin{itemize}
+    \item Configuration de MLflow (3 jours)
+    \item Développement du pipeline d'entraînement automatisé (4 jours)
+    \item Mise en place du monitoring des modèles (3 jours)
+    \item Configuration du registre des modèles (3 jours)
+    \item Tests du pipeline MLOps (2 jours)
+\end{itemize}
+
+\subsubsection{Livrables}
+\begin{itemize}
+    \item Pipeline MLOps opérationnel
+    \item Interface MLflow configurée
+    \item Système de monitoring des modèles
+    \item Documentation MLOps
+\end{itemize}
+
+\section{Métriques et KPIs de Succès}
+
+\subsection{Métriques Techniques}
+\begin{itemize}
+    \item \textbf{Précision des modèles} : MAE < 15 minutes, R² > 0.85
+    \item \textbf{Performance API} : Temps de réponse < 200ms
+    \item \textbf{Disponibilité système} : Uptime > 99.5\%
+    \item \textbf{Couverture de tests} : > 80\%
+\end{itemize}
+
+\subsection{Métriques Métier}
+\begin{itemize}
+    \item \textbf{Réduction des retards} : -30\% des retards de livraison
+    \item \textbf{Optimisation des ressources} : +20\% d'efficacité des machines
+    \item \textbf{Satisfaction utilisateur} : Score NPS > 8/10
+    \item \textbf{Adoption du système} : 90\% des utilisateurs utilisent le système quotidiennement
+\end{itemize}
+
+\subsection{Métriques de Projet}
+\begin{itemize}
+    \item \textbf{Vélocité de l'équipe} : Story points par sprint
+    \item \textbf{Taux de livraison} : Pourcentage de user stories livrées à temps
+    \item \textbf{Qualité du code} : Nombre de bugs en production
+    \item \textbf{Satisfaction de l'équipe} : Retour d'expérience des développeurs
+\end{itemize}
+
+\section{Gestion des Risques}
+
+\subsection{Framework de gestion des risques}
+
+La gestion des risques suit une approche structurée basée sur le PMBOK \cite{schwaber2020scrum} :
+
+\begin{enumerate}
+    \item \textbf{Identification} : Brainstorming avec l'équipe et les stakeholders
+    \item \textbf{Analyse qualitative} : Évaluation probabilité × impact
+    \item \textbf{Analyse quantitative} : Estimation de l'impact financier et temporel
+    \item \textbf{Planification de réponse} : Stratégies d'évitement, mitigation, transfert, acceptation
+    \item \textbf{Monitoring} : Suivi continu et mise à jour du registre
+\end{enumerate}
+
+\subsection{Registre complet des risques}
+
+\begin{table}[H]
+\centering
+\caption{Registre détaillé des risques projet}
+\begin{tabular}{|p{3cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{3cm}|p{2cm}|}
+\hline
+\textbf{Risque} & \textbf{Prob.} & \textbf{Impact} & \textbf{Score} & \textbf{Mitigation} & \textbf{Propriétaire} \\
+\hline
+\multicolumn{6}{|c|}{\textbf{Risques Techniques}} \\
+\hline
+Performance modèles < cible & M & H & 6 & Tests intensifs, tuning & Data Scientist \\
+\hline
+Scalabilité insuffisante & F & H & 3 & Tests charge, cache & DevOps \\
+\hline
+Intégration G.Pro & M & H & 6 & API robuste, tests & Architecte \\
+\hline
+Qualité données & E & M & 6 & Validation auto, nettoyage & Data Engineer \\
+\hline
+Bugs critiques & M & M & 4 & Tests auto, CI/CD & Dev Lead \\
+\hline
+Sécurité données & F & H & 3 & Chiffrement, audit & RSSI \\
+\hline
+\multicolumn{6}{|c|}{\textbf{Risques Métier}} \\
+\hline
+Résistance changement & M & M & 4 & Formation, champions & Chef Projet \\
+\hline
+Évolution besoins & E & M & 6 & Agile, feedback & Product Owner \\
+\hline
+Budget dépassé & M & M & 4 & Suivi rigoureux, contingence & Chef Projet \\
+\hline
+Délai dépassé & M & M & 4 & Planning réaliste, sprints & Scrum Master \\
+\hline
+Turnover équipe & F & M & 2 & Documentation, formation & RH \\
+\hline
+Adoption faible & M & H & 6 & UX, formation, support & Product Owner \\
+\hline
+\multicolumn{6}{|c|}{\textbf{Risques Organisationnels}} \\
+\hline
+Sponsor désengagé & F & H & 3 & Communication régulière & Chef Projet \\
+\hline
+Conflits priorités & M & M & 4 & Comité pilotage & Product Owner \\
+\hline
+Ressources insuffisantes & F & M & 2 & Planification capacité & Chef Projet \\
+\hline
+\end{tabular}
+\caption*{Prob.: F=Faible, M=Moyenne, E=Élevée; Impact: F=Faible, M=Moyen, H=Haut; Score=Prob×Impact (1-9)}
+\label{tab:registre_risques_complet}
+\end{table}
+
+\subsection{Matrice de criticité}
+
+\begin{table}[H]
+\centering
+\caption{Matrice probabilité-impact des risques}
+\begin{tabular}{|p{2cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline
+\textbf{Impact →} & \textbf{Faible (1-3)} & \textbf{Moyen (4-6)} & \textbf{Haut (7-9)} \\
+\textbf{Prob. ↓} & & & \\
+\hline
+\textbf{Élevée} & - & Évolution besoins, Qualité données & - \\
+\hline
+\textbf{Moyenne} & - & Résistance, Budget, Délai, Bugs & Performance, Intégration, Adoption \\
+\hline
+\textbf{Faible} & Turnover, Ressources & - & Scalabilité, Sécurité, Sponsor \\
+\hline
+\end{tabular}
+\label{tab:matrice_criticite}
+\end{table}
+
+\textbf{Priorisation des actions :}
+\begin{itemize}
+    \item \textbf{Zone rouge (score 6-9)} : 6 risques nécessitant actions immédiates
+    \item \textbf{Zone orange (score 3-5)} : 6 risques à surveiller activement
+    \item \textbf{Zone verte (score 1-2)} : 3 risques à monitoring passif
+\end{itemize}
+
+\subsection{Plans de réponse détaillés}
+
+\subsubsection{Risque critique 1 : Performance modèles insuffisante}
+
+\textbf{Stratégie} : Mitigation + Plan de contingence
+
+\textbf{Actions préventives :}
+\begin{itemize}
+    \item Tests de performance dès Sprint 3
+    \item Optimisation hyperparamètres (Bayesian optimization)
+    \item Validation croisée rigoureuse (5 folds)
+    \item Benchmark avec baseline (régression linéaire)
+\end{itemize}
+
+\textbf{Plan de contingence :}
+\begin{itemize}
+    \item \textbf{Si R² < 0.75} : Enrichir features, tester autres algorithmes
+    \item \textbf{Si R² < 0.70} : Collecter plus de données, revoir features
+    \item \textbf{Si R² < 0.65} : Escalader, revoir approche ML
+\end{itemize}
+
+\textbf{Indicateurs d'alerte :}
+\begin{itemize}
+    \item R² validation < 0.75 après Sprint 3
+    \item MAE > 20 minutes après tuning
+    \item Gap train-validation > 15\%
+\end{itemize}
+
+\subsubsection{Risque critique 2 : Intégration avec G.Pro}
+
+\textbf{Stratégie} : Mitigation + Transfert partiel
+
+\textbf{Actions préventives :}
+\begin{itemize}
+    \item Tests d'intégration dès Sprint 1
+    \item API REST standardisée (OpenAPI spec)
+    \item Environnement de test isolé
+    \item Documentation API complète
+\end{itemize}
+
+\textbf{Plan de contingence :}
+\begin{itemize}
+    \item \textbf{Si API indisponible} : Import CSV manuel temporaire
+    \item \textbf{Si format incompatible} : Couche d'adaptation
+    \item \textbf{Si performance faible} : Cache + batch processing
+\end{itemize}
+
+\subsubsection{Risque critique 3 : Adoption utilisateurs faible}
+
+\textbf{Stratégie} : Mitigation + Acceptation partielle
+
+\textbf{Actions préventives :}
+\begin{itemize}
+    \item Co-conception avec utilisateurs finaux
+    \item Formation intensive (2 jours)
+    \item Champions utilisateurs identifiés
+    \item Support dédié pendant 3 mois
+    \item Quick wins démontrés rapidement
+\end{itemize}
+
+\textbf{Plan de contingence :}
+\begin{itemize}
+    \item \textbf{Si adoption < 70\%} : Formation supplémentaire, ajustements UX
+    \item \textbf{Si adoption < 50\%} : Revoir interface, simplifier workflow
+    \item \textbf{Si adoption < 30\%} : Analyse causes, refonte majeure
+\end{itemize}
+
+\subsection{Monitoring et reporting}
+
+\textbf{Fréquence de revue :}
+\begin{itemize}
+    \item \textbf{Quotidien} : Risques critiques (score ≥ 6)
+    \item \textbf{Hebdomadaire} : Tous les risques actifs (Sprint Review)
+    \item \textbf{Mensuel} : Registre complet (Comité de pilotage)
+\end{itemize}
+
+\textbf{Indicateurs de suivi :}
+\begin{itemize}
+    \item Nombre de risques par catégorie et niveau
+    \item Évolution du score de risque global
+    \item Taux de matérialisation des risques
+    \item Efficacité des plans de mitigation
+\end{itemize}
+
+\section{Plan de Communication}
+
+\subsection{Stakeholders}
+\begin{itemize}
+    \item \textbf{Sponsor Exécutif} : Directeur de production
+    \item \textbf{Utilisateurs Finaux} : Responsables d'atelier, opérateurs
+    \item \textbf{Équipe Technique} : Développeurs, data scientists
+    \item \textbf{Support IT} : Administrateurs système, sécurité
+\end{itemize}
+
+\subsection{Cadence de Communication}
+\begin{itemize}
+    \item \textbf{Daily Standups} : Quotidien, équipe de développement
+    \item \textbf{Sprint Reviews} : Bi-hebdomadaire, stakeholders
+    \item \textbf{Sprint Planning} : Bi-hebdomadaire, équipe complète
+    \item \textbf{Rétrospectives} : Bi-hebdomadaire, équipe de développement
+    \item \textbf{Steering Committee} : Mensuel, direction
+\end{itemize}
+
+\section{Plan de Formation et Adoption}
+
+\subsection{Formation des Utilisateurs}
+\begin{itemize}
+    \item \textbf{Formation initiale} : 2 jours pour les responsables d'atelier
+    \item \textbf{Formation pratique} : 1 jour pour les opérateurs
+    \item \textbf{Support continu} : Documentation, FAQ, hotline
+    \item \textbf{Formation avancée} : Modules optionnels pour les power users
+\end{itemize}
+
+\subsection{Stratégie d'Adoption}
+\begin{itemize}
+    \item \textbf{Pilote} : Déploiement sur un atelier pilote (Sprint 10)
+    \item \textbf{Rollout progressif} : Extension aux autres ateliers (Sprints 11-12)
+    \item \textbf{Champions} : Identification d'utilisateurs référents
+    \item \textbf{Feedback loop} : Collecte continue des retours utilisateurs
+\end{itemize}
+
+\section{Plan de Maintenance et Évolution}
+
+\subsection{Maintenance Préventive}
+\begin{itemize}
+    \item \textbf{Monitoring continu} : Surveillance 24/7 des performances
+    \item \textbf{Mises à jour de sécurité} : Patches mensuels
+    \item \textbf{Sauvegardes} : Sauvegardes quotidiennes des données et modèles
+    \item \textbf{Tests de récupération} : Tests trimestriels de disaster recovery
+\end{itemize}
+
+\subsection{Évolution du Système}
+\begin{itemize}
+    \item \textbf{Nouvelles fonctionnalités} : Développement trimestriel
+    \item \textbf{Amélioration des modèles} : Réentraînement mensuel
+    \item \textbf{Optimisation des performances} : Amélioration continue
+    \item \textbf{Intégrations} : Connexion avec nouveaux systèmes
+\end{itemize}
+
+\section{Budget et Ressources}
+
+\subsection{Budget Estimé}
+\begin{table}[H]
+\centering
+\caption{Répartition du Budget}
+\begin{tabular}{|p{4cm}|p{3cm}|p{3cm}|}
+\hline
+\textbf{Catégorie} & \textbf{Montant (TND)} & \textbf{Pourcentage} \\
+\hline
+Ressources humaines & 45,000 & 60\% \\
+\hline
+Infrastructure technique & 15,000 & 20\% \\
+\hline
+Formation et support & 7,500 & 10\% \\
+\hline
+Contingence & 7,500 & 10\% \\
+\hline
+\textbf{Total} & \textbf{75,000} & \textbf{100\%} \\
+\hline
+\end{tabular}
+\label{tab:budget}
+\end{table}
+
+\subsection{ROI Attendu}
+\begin{itemize}
+    \item \textbf{Réduction des coûts} : 25,000 TND/an (optimisation des ressources)
+    \item \textbf{Augmentation des revenus} : 15,000 TND/an (réduction des retards)
+    \item \textbf{ROI sur 3 ans} : 160\% (40,000 TND d'économies sur 75,000 TND d'investissement)
+\end{itemize}
+
+\section{Conclusion}
+Ce plan de livraison agile garantit une approche structurée et adaptative pour le développement du système de planification intelligente. La méthodologie Scrum, combinée à des sprints courts et des livrables fréquents, permet une adaptation continue aux besoins métier et une réduction des risques de projet.
+
+L'approche incrémentale assure une valeur métier délivrée rapidement, avec des retours utilisateurs intégrés à chaque étape. Le monitoring continu et la maintenance préventive garantissent la pérennité et l'évolution du système dans le temps.
+
+Le succès du projet repose sur l'engagement de toutes les parties prenantes, la qualité de la communication, et l'adoption progressive des nouvelles technologies par les utilisateurs finaux.

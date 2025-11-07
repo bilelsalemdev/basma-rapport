@@ -1,0 +1,743 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{lichtblau2015industrie}{article}{}
+      \name{author}{9}{}{%
+        {{hash=ea655d475d3ef14fe34073b7a005829a}{%
+           family={Lichtblau},
+           familyi={L\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+        {{hash=634ddb78b917689d93de0199aaaebaf8}{%
+           family={Stich},
+           familyi={S\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod}}}%
+        {{hash=c81af4a190515f7fdb00e79765dde9da}{%
+           family={Bertenrath},
+           familyi={B\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod}}}%
+        {{hash=22be033d0d864a144d0688ac075be79a}{%
+           family={Blum},
+           familyi={B\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7d30d7ac393f638c37fea4f0faad6402}{%
+           family={Bleider},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5f64e976bb0d189c2a9962ead53aa903}{%
+           family={Millack},
+           familyi={M\bibinitperiod},
+           given={Agnes},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3e663c54fad311ae35b8bdacda402ced}{%
+           family={Schmitt},
+           familyi={S\bibinitperiod},
+           given={Katharina},
+           giveni={K\bibinitperiod}}}%
+        {{hash=0d7c51f4800fe75c4f4807b801f56be1}{%
+           family={Schmitz},
+           familyi={S\bibinitperiod},
+           given={Edgar},
+           giveni={E\bibinitperiod}}}%
+        {{hash=422a37a93fce75915ff0792d8a8b908d}{%
+           family={Schröter},
+           familyi={S\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{022ea219e1645777f4833d63ac2e0598}
+      \strng{fullhash}{e8d0ebe21f445709ddb98b475cb61d9d}
+      \strng{bibnamehash}{022ea219e1645777f4833d63ac2e0598}
+      \strng{authorbibnamehash}{022ea219e1645777f4833d63ac2e0598}
+      \strng{authornamehash}{022ea219e1645777f4833d63ac2e0598}
+      \strng{authorfullhash}{e8d0ebe21f445709ddb98b475cb61d9d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Impuls-Stiftung des VDMA, Aachen-Köln}
+      \field{title}{IMPULS-Industrie 4.0-Readiness}
+      \field{year}{2015}
+    \endentry
+    \entry{xu2018industry}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6b979a18ef0db390620fae18cb0c5c8b}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Li\bibnamedelima Da},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=821e8a5bfca9c14f9f8a9172480b3a30}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Eric\bibnamedelima L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=a40d576b1592c607417a95d741c0e8d4}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ling},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{1e5c5aae39087f8d8a51234072fc1ce1}
+      \strng{fullhash}{af85de269b1e10b078318c1e741016f2}
+      \strng{bibnamehash}{af85de269b1e10b078318c1e741016f2}
+      \strng{authorbibnamehash}{af85de269b1e10b078318c1e741016f2}
+      \strng{authornamehash}{1e5c5aae39087f8d8a51234072fc1ce1}
+      \strng{authorfullhash}{af85de269b1e10b078318c1e741016f2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Production Research}
+      \field{number}{8}
+      \field{title}{Industry 4.0: state of the art and future trends}
+      \field{volume}{56}
+      \field{year}{2018}
+      \field{pages}{2941\bibrangedash 2962}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1080/00207543.2018.1444806
+      \endverb
+    \endentry
+    \entry{kagermann2013recommendations}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7cc90402cc1b8af1baf80ddad76cd91d}{%
+           family={Kagermann},
+           familyi={K\bibinitperiod},
+           given={Henning},
+           giveni={H\bibinitperiod}}}%
+        {{hash=6b4dfbd403cebfa1a009a4b06a397dc5}{%
+           family={Wahlster},
+           familyi={W\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=3c2fdf12fc56070c63b576d8ed432ee7}{%
+           family={Helbig},
+           familyi={H\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Forschungsunion}%
+      }
+      \strng{namehash}{211e36e9e58a8e7187448f7884ac94f6}
+      \strng{fullhash}{e8356fcf26bd83d7607f5815529b67b8}
+      \strng{bibnamehash}{e8356fcf26bd83d7607f5815529b67b8}
+      \strng{authorbibnamehash}{e8356fcf26bd83d7607f5815529b67b8}
+      \strng{authornamehash}{211e36e9e58a8e7187448f7884ac94f6}
+      \strng{authorfullhash}{e8356fcf26bd83d7607f5815529b67b8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Final report of the Industrie 4.0 Working Group}
+      \field{title}{Recommendations for implementing the strategic initiative INDUSTRIE 4.0}
+      \field{year}{2013}
+    \endentry
+    \entry{studer2021towards}{article}{}
+      \name{author}{7}{}{%
+        {{hash=d37b1def5524edc6edae1ef3e023066a}{%
+           family={Studer},
+           familyi={S\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a0b5ec13aadbb878cead55b1a1f4e310}{%
+           family={Bui},
+           familyi={B\bibinitperiod},
+           given={Thanh\bibnamedelima Binh},
+           giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=70c641c2950c60cc3f4cd6de2f3cb302}{%
+           family={Drescher},
+           familyi={D\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e023ce59b88afe67c01e92429f4e5095}{%
+           family={Hanuschkin},
+           familyi={H\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=779c61980bd5742318ce691f74269c5a}{%
+           family={Winkler},
+           familyi={W\bibinitperiod},
+           given={Ludwig},
+           giveni={L\bibinitperiod}}}%
+        {{hash=3056ae75062f09f639f9969672dd7ad2}{%
+           family={Peters},
+           familyi={P\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9f1b6144a45b1967e989e74552e37ada}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Klaus-Robert},
+           giveni={K\bibinithyphendelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{b4937c0ae23f90226b8b12e2f44e2dec}
+      \strng{fullhash}{f3e335d82f58a642dcca58bc5c3f8ee6}
+      \strng{bibnamehash}{b4937c0ae23f90226b8b12e2f44e2dec}
+      \strng{authorbibnamehash}{b4937c0ae23f90226b8b12e2f44e2dec}
+      \strng{authornamehash}{b4937c0ae23f90226b8b12e2f44e2dec}
+      \strng{authorfullhash}{f3e335d82f58a642dcca58bc5c3f8ee6}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Machine Learning and Knowledge Extraction}
+      \field{number}{2}
+      \field{title}{Towards CRISP-ML(Q): A machine learning process model with quality assurance methodology}
+      \field{volume}{3}
+      \field{year}{2021}
+      \field{pages}{392\bibrangedash 413}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.3390/make3020020
+      \endverb
+    \endentry
+    \entry{wirth2000crisp}{article}{}
+      \name{author}{2}{}{%
+        {{hash=93c4571a5818e3fd7fe299eb7352e55d}{%
+           family={Wirth},
+           familyi={W\bibinitperiod},
+           given={Rüdiger},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d5dfd4b665b86c69a99a0455c78004e8}{%
+           family={Hipp},
+           familyi={H\bibinitperiod},
+           given={Jochen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag London, UK}%
+      }
+      \strng{namehash}{c6be7756f27c3954c00f12c46ba4d2d5}
+      \strng{fullhash}{c6be7756f27c3954c00f12c46ba4d2d5}
+      \strng{bibnamehash}{c6be7756f27c3954c00f12c46ba4d2d5}
+      \strng{authorbibnamehash}{c6be7756f27c3954c00f12c46ba4d2d5}
+      \strng{authornamehash}{c6be7756f27c3954c00f12c46ba4d2d5}
+      \strng{authorfullhash}{c6be7756f27c3954c00f12c46ba4d2d5}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 4th international conference on the practical applications of knowledge discovery and data mining}
+      \field{title}{CRISP-DM: Towards a standard process model for data mining}
+      \field{volume}{1}
+      \field{year}{2000}
+      \field{pages}{29\bibrangedash 39}
+      \range{pages}{11}
+    \endentry
+    \entry{provost2013data}{book}{}
+      \name{author}{2}{}{%
+        {{hash=79fae1f3d670f588a9b7148774f77abf}{%
+           family={Provost},
+           familyi={P\bibinitperiod},
+           given={Foster},
+           giveni={F\bibinitperiod}}}%
+        {{hash=9c15aa0b2a7683cefeaa12c991d0b1c2}{%
+           family={Fawcett},
+           familyi={F\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Sebastopol, CA}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{dae13664ac149b971c2773b23b7fef73}
+      \strng{fullhash}{dae13664ac149b971c2773b23b7fef73}
+      \strng{bibnamehash}{dae13664ac149b971c2773b23b7fef73}
+      \strng{authorbibnamehash}{dae13664ac149b971c2773b23b7fef73}
+      \strng{authornamehash}{dae13664ac149b971c2773b23b7fef73}
+      \strng{authorfullhash}{dae13664ac149b971c2773b23b7fef73}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1449361327}
+      \field{title}{Data Science for Business: What You Need to Know about Data Mining and Data-Analytic Thinking}
+      \field{year}{2013}
+    \endentry
+    \entry{chen2016xgboost}{article}{}
+      \name{author}{2}{}{%
+        {{hash=48461ccdf50ba5a54e29a354aa734c0b}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Tianqi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c9ab8ac486d7f85ac914b1a8e51e512b}{%
+           family={Guestrin},
+           familyi={G\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{f79ceb030bcf791e5521f87ac6ada03b}
+      \strng{fullhash}{f79ceb030bcf791e5521f87ac6ada03b}
+      \strng{bibnamehash}{f79ceb030bcf791e5521f87ac6ada03b}
+      \strng{authorbibnamehash}{f79ceb030bcf791e5521f87ac6ada03b}
+      \strng{authornamehash}{f79ceb030bcf791e5521f87ac6ada03b}
+      \strng{authorfullhash}{f79ceb030bcf791e5521f87ac6ada03b}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}
+      \field{title}{XGBoost: A scalable tree boosting system}
+      \field{year}{2016}
+      \field{pages}{785\bibrangedash 794}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/2939672.2939785
+      \endverb
+    \endentry
+    \entry{lundberg2017unified}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2a1075150e1e1dad8127b019f7ca9031}{%
+           family={Lundberg},
+           familyi={L\bibinitperiod},
+           given={Scott\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ee964079d93879aaef2382a5fff343d3}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Su-In},
+           giveni={S\bibinithyphendelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{fullhash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{bibnamehash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{authorbibnamehash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{authornamehash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{authorfullhash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Neural Information Processing Systems}
+      \field{title}{A unified approach to interpreting model predictions}
+      \field{volume}{30}
+      \field{year}{2017}
+      \field{pages}{4765\bibrangedash 4774}
+      \range{pages}{10}
+    \endentry
+    \entry{perron2011operations}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=cab4121fa7ee691d860eeee4478c3458}{%
+           family={Perron},
+           familyi={P\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1ce99fc04a49c5e2b3719c57fc88574a}{%
+           family={Shaw},
+           familyi={S\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4fe99c5c8122a075651036b4485906cc}{%
+           family={Furnon},
+           familyi={F\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{a73ac093ed09dec8aaf89432a5e48306}
+      \strng{fullhash}{461297b68ed91142fc342f03a2683fee}
+      \strng{bibnamehash}{461297b68ed91142fc342f03a2683fee}
+      \strng{authorbibnamehash}{461297b68ed91142fc342f03a2683fee}
+      \strng{authornamehash}{a73ac093ed09dec8aaf89432a5e48306}
+      \strng{authorfullhash}{461297b68ed91142fc342f03a2683fee}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Principles and Practice of Constraint Programming}
+      \field{title}{Operations research and constraint programming at Google}
+      \field{year}{2011}
+      \field{pages}{2\bibrangedash 2}
+      \range{pages}{1}
+    \endentry
+    \entry{pinedo2016scheduling}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9ba8cb1c42bebe6f223ea723c1ef9ed5}{%
+           family={Pinedo},
+           familyi={P\bibinitperiod},
+           given={Michael\bibnamedelima L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham, Switzerland}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{9ba8cb1c42bebe6f223ea723c1ef9ed5}
+      \strng{fullhash}{9ba8cb1c42bebe6f223ea723c1ef9ed5}
+      \strng{bibnamehash}{9ba8cb1c42bebe6f223ea723c1ef9ed5}
+      \strng{authorbibnamehash}{9ba8cb1c42bebe6f223ea723c1ef9ed5}
+      \strng{authornamehash}{9ba8cb1c42bebe6f223ea723c1ef9ed5}
+      \strng{authorfullhash}{9ba8cb1c42bebe6f223ea723c1ef9ed5}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5th}
+      \field{isbn}{978-3319265803}
+      \field{title}{Scheduling: Theory, Algorithms, and Systems}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1007/978-3-319-26580-3
+      \endverb
+    \endentry
+    \entry{zheng2018feature}{book}{}
+      \name{author}{2}{}{%
+        {{hash=c13fb4f803b58840c527774ac5c341cf}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Alice},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8e567d74ee37d95e8f11d5449a95d67b}{%
+           family={Casari},
+           familyi={C\bibinitperiod},
+           given={Amanda},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Sebastopol, CA}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{a69eb49dbeefa2409448cfe537cae3ad}
+      \strng{fullhash}{a69eb49dbeefa2409448cfe537cae3ad}
+      \strng{bibnamehash}{a69eb49dbeefa2409448cfe537cae3ad}
+      \strng{authorbibnamehash}{a69eb49dbeefa2409448cfe537cae3ad}
+      \strng{authornamehash}{a69eb49dbeefa2409448cfe537cae3ad}
+      \strng{authorfullhash}{a69eb49dbeefa2409448cfe537cae3ad}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1491953242}
+      \field{title}{Feature Engineering for Machine Learning: Principles and Techniques for Data Scientists}
+      \field{year}{2018}
+    \endentry
+    \entry{guyon2003introduction}{article}{}
+      \name{author}{2}{}{%
+        {{hash=284a778b6c8e17f1aae38e288dc06036}{%
+           family={Guyon},
+           familyi={G\bibinitperiod},
+           given={Isabelle},
+           giveni={I\bibinitperiod}}}%
+        {{hash=af1237fe610213b60eefaf767e506435}{%
+           family={Elisseeff},
+           familyi={E\bibinitperiod},
+           given={André},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{975fa6513949a08fe98fc5ebc01f3ed8}
+      \strng{fullhash}{975fa6513949a08fe98fc5ebc01f3ed8}
+      \strng{bibnamehash}{975fa6513949a08fe98fc5ebc01f3ed8}
+      \strng{authorbibnamehash}{975fa6513949a08fe98fc5ebc01f3ed8}
+      \strng{authornamehash}{975fa6513949a08fe98fc5ebc01f3ed8}
+      \strng{authorfullhash}{975fa6513949a08fe98fc5ebc01f3ed8}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{title}{An introduction to variable and feature selection}
+      \field{volume}{3}
+      \field{year}{2003}
+      \field{pages}{1157\bibrangedash 1182}
+      \range{pages}{26}
+    \endentry
+    \entry{redman2001data}{book}{}
+      \name{author}{1}{}{%
+        {{hash=01c3cd9401af2aacb414e683fcadf87a}{%
+           family={Redman},
+           familyi={R\bibinitperiod},
+           given={Thomas\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA}%
+      }
+      \list{publisher}{1}{%
+        {Digital Press}%
+      }
+      \strng{namehash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{fullhash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{bibnamehash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{authorbibnamehash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{authornamehash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{authorfullhash}{01c3cd9401af2aacb414e683fcadf87a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1555582517}
+      \field{title}{Data Quality: The Field Guide}
+      \field{year}{2001}
+    \endentry
+    \entry{batini2009methodologies}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a1fe1314f667338ec159636486bb1d78}{%
+           family={Batini},
+           familyi={B\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8b48affcdf0c05fedb8e2dd48f94c17c}{%
+           family={Cappiello},
+           familyi={C\bibinitperiod},
+           given={Cinzia},
+           giveni={C\bibinitperiod}}}%
+        {{hash=544ef656415c4d195728857a8fc538da}{%
+           family={Francalanci},
+           familyi={F\bibinitperiod},
+           given={Chiara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=dcdae5c6d8455e0ba4c1dea9229f39c5}{%
+           family={Maurino},
+           familyi={M\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{ff34eceb3f9d16358bdbd8b72885027a}
+      \strng{fullhash}{e5e9f9b5651b7573354b779988e51885}
+      \strng{bibnamehash}{e5e9f9b5651b7573354b779988e51885}
+      \strng{authorbibnamehash}{e5e9f9b5651b7573354b779988e51885}
+      \strng{authornamehash}{ff34eceb3f9d16358bdbd8b72885027a}
+      \strng{authorfullhash}{e5e9f9b5651b7573354b779988e51885}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Computing Surveys (CSUR)}
+      \field{number}{3}
+      \field{title}{Methodologies for data quality assessment and improvement}
+      \field{volume}{41}
+      \field{year}{2009}
+      \field{pages}{1\bibrangedash 52}
+      \range{pages}{52}
+      \verb{doi}
+      \verb 10.1145/1541880.1541883
+      \endverb
+    \endentry
+    \entry{gift2020practical}{book}{}
+      \name{author}{2}{}{%
+        {{hash=388e92473633b0f1c936f49242c15967}{%
+           family={Gift},
+           familyi={G\bibinitperiod},
+           given={Noah},
+           giveni={N\bibinitperiod}}}%
+        {{hash=5af3e96e7255d9b4cf4027121168c57e}{%
+           family={Deza},
+           familyi={D\bibinitperiod},
+           given={Alfredo},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Sebastopol, CA}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{c63db487fc36ae809570991b253c9259}
+      \strng{fullhash}{c63db487fc36ae809570991b253c9259}
+      \strng{bibnamehash}{c63db487fc36ae809570991b253c9259}
+      \strng{authorbibnamehash}{c63db487fc36ae809570991b253c9259}
+      \strng{authornamehash}{c63db487fc36ae809570991b253c9259}
+      \strng{authorfullhash}{c63db487fc36ae809570991b253c9259}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1098103002}
+      \field{title}{Practical MLOps: Operationalizing Machine Learning Models}
+      \field{year}{2020}
+    \endentry
+    \entry{hastie2009elements}{book}{}
+      \name{author}{3}{}{%
+        {{hash=0cb8fe4210baa81c4b0e67913b4d2768}{%
+           family={Hastie},
+           familyi={H\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+        {{hash=88eea600247d798f8b2ce0b2dc614492}{%
+           family={Tibshirani},
+           familyi={T\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=971cf69058b64a94326dea0f2a8bbcce}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Jerome},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{45eb7d473651da447f1d77717e7f8650}
+      \strng{fullhash}{7ca1bfe876d5e037b6aed69704221267}
+      \strng{bibnamehash}{7ca1bfe876d5e037b6aed69704221267}
+      \strng{authorbibnamehash}{7ca1bfe876d5e037b6aed69704221267}
+      \strng{authornamehash}{45eb7d473651da447f1d77717e7f8650}
+      \strng{authorfullhash}{7ca1bfe876d5e037b6aed69704221267}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd}
+      \field{isbn}{978-0387848570}
+      \field{title}{The Elements of Statistical Learning: Data Mining, Inference, and Prediction}
+      \field{year}{2009}
+    \endentry
+    \entry{james2013introduction}{article}{}
+      \name{author}{4}{}{%
+        {{hash=df184c5fa522ac8a515ec4de13aef234}{%
+           family={James},
+           familyi={J\bibinitperiod},
+           given={Gareth},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1ab16961e0de50711fa6bd9425f9b4a6}{%
+           family={Witten},
+           familyi={W\bibinitperiod},
+           given={Daniela},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0cb8fe4210baa81c4b0e67913b4d2768}{%
+           family={Hastie},
+           familyi={H\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+        {{hash=88eea600247d798f8b2ce0b2dc614492}{%
+           family={Tibshirani},
+           familyi={T\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f8f737f83d9e451c1afaa13cdc120516}
+      \strng{fullhash}{da61646157a6be769f34984f5cb603b0}
+      \strng{bibnamehash}{da61646157a6be769f34984f5cb603b0}
+      \strng{authorbibnamehash}{da61646157a6be769f34984f5cb603b0}
+      \strng{authornamehash}{f8f737f83d9e451c1afaa13cdc120516}
+      \strng{authorfullhash}{da61646157a6be769f34984f5cb603b0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Springer}
+      \field{title}{An Introduction to Statistical Learning: with Applications in R}
+      \field{volume}{112}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1007/978-1-4614-7138-7
+      \endverb
+    \endentry
+    \entry{schwaber2020scrum}{book}{}
+      \name{author}{2}{}{%
+        {{hash=ee6f08fcba839e09471a0bc69152b6a5}{%
+           family={Schwaber},
+           familyi={S\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod}}}%
+        {{hash=6e3f26f6f816a26c6ab36bc7a899bcde}{%
+           family={Sutherland},
+           familyi={S\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Scrum.org}%
+      }
+      \strng{namehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{fullhash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{bibnamehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{authorbibnamehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{authornamehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{authorfullhash}{303ea1dc92fd8c772eac56316b2074ef}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Scrum Guide: The Definitive Guide to Scrum: The Rules of the Game}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://scrumguides.org/
+      \endverb
+      \verb{url}
+      \verb https://scrumguides.org/
+      \endverb
+    \endentry
+    \entry{cohn2005agile}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d33712bcde2d63bad054a832b61d01e8}{%
+           family={Cohn},
+           familyi={C\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Upper Saddle River, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{d33712bcde2d63bad054a832b61d01e8}
+      \strng{fullhash}{d33712bcde2d63bad054a832b61d01e8}
+      \strng{bibnamehash}{d33712bcde2d63bad054a832b61d01e8}
+      \strng{authorbibnamehash}{d33712bcde2d63bad054a832b61d01e8}
+      \strng{authornamehash}{d33712bcde2d63bad054a832b61d01e8}
+      \strng{authorfullhash}{d33712bcde2d63bad054a832b61d01e8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0131479418}
+      \field{title}{Agile Estimating and Planning}
+      \field{year}{2005}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
