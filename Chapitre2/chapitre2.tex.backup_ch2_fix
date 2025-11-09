@@ -329,7 +329,8 @@ Dans l'atelier de coupe Bacovet, la gestion opérationnelle repose sur deux 
 \begin{table}[H]
 \centering
 \caption{Résumé du fonctionnement du logiciel Divatex}
-\begin{tabular}{|p{3.5cm}|p{10.5cm}|}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|l|l|}
 \hline
 \textbf{Ãlément} & \textbf{Description} \\
 \hline
@@ -339,16 +340,18 @@ Entrées & Données des rouleaux (référence, quantité, emplacement), ordres d
 \hline
 Processus & Lancement des commandes, réservation des rouleaux, création des matériaux et accessoires, suivi de consommation et réception \\
 \hline
-Sorties & Mise à jour des stocks, statut matière des OF, historique des mouvements, rapports de consommation \\
+Sorties & Mise a jour des stocks, statut matière des OF, historique des mouvements, rapports de consommation \\
 \hline
 \end{tabular}
+\end{adjustbox}
 \end{table}
 
 \textbf{-G.Pro}, quant a lui, est opérationnel a partir de la zone de \textbf{départage} et jusqu'au \textbf{contrôle qualité confection}. Il assure la traçabilité des paquets grâce a un tag circulaire contenant les informations de l'ordre de fabrication (OF) et permet le suivi manuel de l'avancement des commandes post-coupe.
 \begin{table}[H]
 \centering
 \caption{Résumé du fonctionnement du logiciel G.Pro}
-\begin{tabular}{|p{3.5cm}|p{10.5cm}|}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|l|l|}
 \hline
 \textbf{Ãlément} & \textbf{Description} \\
 \hline
@@ -361,6 +364,7 @@ Processus & Suivi de progression des paquets, détection via tag, contrôle qual
 Sorties & Statut des OF, temps de production (saisie manuelle), rapports de progression, historique des mouvements post-coupe \\
 \hline
 \end{tabular}
+\end{adjustbox}
 \end{table}
 
 
@@ -374,11 +378,14 @@ Malgré leur rôle essentiel, ces deux systèmes fonctionnent de manière indép
 
 Pour synthétiser la situation actuelle, une carte mentale a été construite (Fi-
 gure 3.1). Elle présente :
-\begin{figure}[H]
-\centering
-\includegraphics[angle=90,width=0.40\textheight,keepaspectratio]{Chapitre2/images/23.png}
-\caption{Carte mentale}
-\label{form}
+    \begin{figure}[H]
+  \centering
+\begin{minipage}[b]{1,1\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Chapitre2/images/23.png}
+    \caption{Carte mentala}
+    \label{form}
+  \end{minipage}
 \end{figure}
 \subsubsection*{1. Problème principal}
 \begin{itemize}
@@ -476,16 +483,19 @@ Deux approches principales sont utilisées :
 % Figures 2.9 et 2.10 placées directement après le paragraphe de chronométrage direct
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.85\textwidth]{Chapitre2/images/IMG_20250614_141256_509.jpg}
-  \caption{Fiche d'enregistrement (modèle Rim)}
-  \label{chpp3}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.85\textwidth]{Chapitre2/images/IMG_20250614_141303_456.jpg}
-  \caption{Fiche d'enregistrement (modèle Leotard 500g pink)}
-  \label{chp3}
+  \begin{minipage}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Chapitre2/images/IMG_20250614_141256_509.jpg}
+    \caption{Fiche d'enregistrement (modèle Rim)}
+    \label{chpp3}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.50\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Chapitre2/images/IMG_20250614_141303_456.jpg}
+    \caption{Fiche d'enregistrement (modèle Leotard 500g pink)}
+    \label{chp3}
+  \end{minipage}
 \end{figure}
 
 \end{itemize}
@@ -497,7 +507,7 @@ Afin de compléter la collecte terrain, une \textbf{analyse documentaire} a ét�
 \paragraph{Aperçu (intégration directe du PDF)}
 Ã défaut de captures déja extraites, les pages clés du document sont intégrées ci-dessous directement depuis le PDF.
 
-\includepdf[pages=1,angle=90,scale=0.85,pagecommand=\thispagestyle{plain}]{Chapitre2/analyse_deroulement_coupe.pdf}
+\includepdf[pages=1,scale=0.95,pagecommand=\thispagestyle{plain}]{Chapitre2/analyse_deroulement_coupe.pdf}
 
 \paragraph{Description synthétique du document}
 Le document \textit{analyse deroulement COUPE} présente, sous forme structurée et illustrée, le déroulement réel des opérations dans la salle de coupe. Il décrit successivement les étapes de préparation (CAO, vérification OF et matières), de matelassage (manuel et automatique), de coupe (robotisée et/ou manuelle), puis de départage et vignettage, en précisant pour chaque étape les acteurs impliqués, les supports utilisés, les temps observés, ainsi que les incidents/perturbations relevés (pannes, attentes, changements de priorité, relaxation tissu, etc.).

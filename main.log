@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.6)  9 NOV 2025 22:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.6)  9 NOV 2025 23:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2439,8 +2439,8 @@ t>
 File: Chapitre1/images/process-Page-4.drawio.png Graphic file (type png)
 <use Chapitre1/images/process-Page-4.drawio.png>
 Package pdftex.def Info: Chapitre1/images/process-Page-4.drawio.png  used on in
-put line 108.
-(pdftex.def)             Requested size: 145.68152pt x 483.69684pt.
+put line 107.
+(pdftex.def)             Requested size: 172.64076pt x 573.19939pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2467,18 +2467,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: Chapitre1/images/ZONE matellas.jpg Graphic file (type jpg)
 <use Chapitre1/images/ZONE matellas.jpg>
 Package pdftex.def Info: Chapitre1/images/ZONE matellas.jpg  used on input line
- 137.
+ 136.
 (pdftex.def)             Requested size: 283.11266pt x 142.26378pt.
-<Chapitre1/images/8.jpg, id=2239, 313.9228pt x 181.42781pt>
-File: Chapitre1/images/8.jpg Graphic file (type jpg)
-<use Chapitre1/images/8.jpg>
-Package pdftex.def Info: Chapitre1/images/8.jpg  used on input line 153.
-(pdftex.def)             Requested size: 192.0548pt x 110.99469pt.
-<Chapitre1/images/9.jpg, id=2240, 263.48438pt x 219.82124pt>
-File: Chapitre1/images/9.jpg Graphic file (type jpg)
-<use Chapitre1/images/9.jpg>
-Package pdftex.def Info: Chapitre1/images/9.jpg  used on input line 160.
-(pdftex.def)             Requested size: 213.39568pt x 178.0408pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2489,11 +2479,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9 <basma-rapport/Chapitre1/images/ZONE matellas.jpg>]
-<Chapitre1/images/16.jpg, id=2250, 392.21532pt x 219.82124pt>
+<Chapitre1/images/8.jpg, id=2247, 313.9228pt x 181.42781pt>
+File: Chapitre1/images/8.jpg Graphic file (type jpg)
+<use Chapitre1/images/8.jpg>
+Package pdftex.def Info: Chapitre1/images/8.jpg  used on input line 152.
+(pdftex.def)             Requested size: 192.0548pt x 110.99469pt.
+<Chapitre1/images/9.jpg, id=2248, 263.48438pt x 219.82124pt>
+File: Chapitre1/images/9.jpg Graphic file (type jpg)
+<use Chapitre1/images/9.jpg>
+Package pdftex.def Info: Chapitre1/images/9.jpg  used on input line 159.
+(pdftex.def)             Requested size: 213.39568pt x 178.0408pt.
+<Chapitre1/images/16.jpg, id=2249, 392.21532pt x 219.82124pt>
 File: Chapitre1/images/16.jpg Graphic file (type jpg)
 <use Chapitre1/images/16.jpg>
-Package pdftex.def Info: Chapitre1/images/16.jpg  used on input line 176.
+Package pdftex.def Info: Chapitre1/images/16.jpg  used on input line 175.
 (pdftex.def)             Requested size: 256.07741pt x 143.52946pt.
+
+Underfull \vbox (badness 3769) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2504,18 +2507,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [10 <basma-rapport/Chapitre1/images/8.jpg> <basma-rapport/Chapitre1/images/9.jp
-g> <basma-rapport/Chapitre1/images/16.jpg>]
+g>]
 <Chapitre1/images/14.jpg, id=2257, 500.62032pt x 782.925pt>
 File: Chapitre1/images/14.jpg Graphic file (type jpg)
 <use Chapitre1/images/14.jpg>
-Package pdftex.def Info: Chapitre1/images/14.jpg  used on input line 195.
+Package pdftex.def Info: Chapitre1/images/14.jpg  used on input line 194.
 (pdftex.def)             Requested size: 213.39568pt x 333.73625pt.
-<Chapitre1/images/13.jpg, id=2258, 350.81062pt x 437.38406pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11 <basma-rapport/Chapitre1/images/16.jpg>]
+<Chapitre1/images/13.jpg, id=2266, 350.81062pt x 437.38406pt>
 File: Chapitre1/images/13.jpg Graphic file (type jpg)
 <use Chapitre1/images/13.jpg>
-Package pdftex.def Info: Chapitre1/images/13.jpg  used on input line 207.
+Package pdftex.def Info: Chapitre1/images/13.jpg  used on input line 206.
 (pdftex.def)             Requested size: 213.39568pt x 266.06306pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2524,9 +2543,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11 <basma-rapport/Chapitre1/images/14.jpg>]
+[12 <basma-rapport/Chapitre1/images/14.jpg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 228.
+(Font)              <10.95> on input line 227.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2536,7 +2555,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12 <basma-rapport/Chapitre1/images/13.jpg>]
+[13 <basma-rapport/Chapitre1/images/13.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2545,7 +2564,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13]
+[14]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2554,7 +2573,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[14]) (basma-rapport/Chapitre2/chapitre2.tex
+[15]) (basma-rapport/Chapitre2/chapitre2.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2563,7 +2582,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[15]
+[16]
 Chapitre 2.
 Package minitoc(hints) Info: I0045
 (minitoc(hints))             The \dominitoc command 
@@ -2576,7 +2595,7 @@ Package minitoc Info: I0006
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16
+ [17
 
 ]
 
@@ -2587,7 +2606,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17]
+[18]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
 9.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
@@ -2607,7 +2626,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18]
+[19]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2616,8 +2635,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19]
-<Chapitre2/images/21.jpg, id=2320, 301.125pt x 411.03563pt>
+[20]
+<Chapitre2/images/21.jpg, id=2324, 301.125pt x 411.03563pt>
 File: Chapitre2/images/21.jpg Graphic file (type jpg)
 <use Chapitre2/images/21.jpg>
 Package pdftex.def Info: Chapitre2/images/21.jpg  used on input line 159.
@@ -2627,7 +2646,7 @@ Underfull \hbox (badness 4072) in paragraph at lines 160--160
 []\T1/lmr/m/n/12 Figure 2.1: |For-mu-laire
  []
 
-<Chapitre2/images/20.jpg, id=2321, 656.4525pt x 448.67625pt>
+<Chapitre2/images/20.jpg, id=2325, 656.4525pt x 448.67625pt>
 File: Chapitre2/images/20.jpg Graphic file (type jpg)
 <use Chapitre2/images/20.jpg>
 Package pdftex.def Info: Chapitre2/images/20.jpg  used on input line 166.
@@ -2637,7 +2656,7 @@ Underfull \hbox (badness 1454) in paragraph at lines 167--167
 []\T1/lmr/m/n/12 Figure 2.2: |Dia-gramme
  []
 
-<Chapitre2/images/22.jpg, id=2322, 331.99031pt x 460.72125pt>
+<Chapitre2/images/22.jpg, id=2326, 331.99031pt x 460.72125pt>
 File: Chapitre2/images/22.jpg Graphic file (type jpg)
 <use Chapitre2/images/22.jpg>
 Package pdftex.def Info: Chapitre2/images/22.jpg  used on input line 173.
@@ -2650,9 +2669,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20 <basma-rapport/Chapitre2/images/21.jpg> <basma-rapport/Chapitre2/images/20.
+[21 <basma-rapport/Chapitre2/images/21.jpg> <basma-rapport/Chapitre2/images/20.
 jpg> <basma-rapport/Chapitre2/images/22.jpg>]
-<Chapitre2/images/Capture d'Ã©cran 2025-06-04 084317.png, id=2327, 704.6325pt x
+<Chapitre2/images/Capture d'Ã©cran 2025-06-04 084317.png, id=2331, 704.6325pt x
  426.09187pt>
 File: Chapitre2/images/Capture d'Ã©cran 2025-06-04 084317.png Graphic file (typ
 e png)
@@ -2660,7 +2679,7 @@ e png)
 Package pdftex.def Info: Chapitre2/images/Capture d'Ã©cran 2025-06-04 084317.pn
 g  used on input line 194.
 (pdftex.def)             Requested size: 192.0548pt x 116.13211pt.
-<Chapitre2/images/Capture d'Ã©cran 2025-06-04 084501.png, id=2328, 679.03688pt 
+<Chapitre2/images/Capture d'Ã©cran 2025-06-04 084501.png, id=2332, 679.03688pt 
 x 285.31593pt>
 File: Chapitre2/images/Capture d'Ã©cran 2025-06-04 084501.png Graphic file (typ
 e png)
@@ -2677,16 +2696,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/d
+[22{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/d
 vips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc} <basm
 a-rapport/Chapitre2/images/Capture d'Ã©cran 2025-06-04 084317.png> <basma-rappo
 rt/Chapitre2/images/Capture d'Ã©cran 2025-06-04 084501.png>]
-<Chapitre2/images/score1.png, id=2343, 682.80093pt x 413.29407pt>
+<Chapitre2/images/score1.png, id=2347, 682.80093pt x 413.29407pt>
 File: Chapitre2/images/score1.png Graphic file (type png)
 <use Chapitre2/images/score1.png>
 Package pdftex.def Info: Chapitre2/images/score1.png  used on input line 251.
 (pdftex.def)             Requested size: 235.03522pt x 142.26378pt.
-<Chapitre2/images/Capture d'Ã©cran 2025-06-04 090245.png, id=2344, 343.2825pt x
+<Chapitre2/images/Capture d'Ã©cran 2025-06-04 090245.png, id=2348, 343.2825pt x
  372.64218pt>
 File: Chapitre2/images/Capture d'Ã©cran 2025-06-04 090245.png Graphic file (typ
 e png)
@@ -2703,7 +2722,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22 <basma-rapport/Chapitre2/images/score1.png> <basma-rapport/Chapitre2/images
+[23 <basma-rapport/Chapitre2/images/score1.png> <basma-rapport/Chapitre2/images
 /Capture d'Ã©cran 2025-06-04 090245.png>]
 Overfull \hbox (35.8976pt too wide) in paragraph at lines 313--313
 []\T1/lmr/bx/n/17.28 Partie II : Ap-pli-ca-tion de la mé-tho-do-lo-gie DMAIC 
@@ -2717,7 +2736,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[23]
+[24]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2726,26 +2745,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[24]
-<Chapitre2/images/23.png, id=2360, 3745.995pt x 1457.445pt>
+[25]
+<Chapitre2/images/23.png, id=2364, 3745.995pt x 1457.445pt>
 File: Chapitre2/images/23.png Graphic file (type png)
 <use Chapitre2/images/23.png>
-Package pdftex.def Info: Chapitre2/images/23.png  used on input line 385.
-(pdftex.def)             Requested size: 469.47308pt x 182.64719pt.
+Package pdftex.def Info: Chapitre2/images/23.png  used on input line 379.
+(pdftex.def)             Requested size: 3745.98592pt x 1457.44145pt.
 
-Overfull \hbox (42.68173pt too wide) in paragraph at lines 383--389
- [][] 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[25 <basma-rapport/Chapitre2/images/23.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2755,57 +2764,73 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [26]
-<Chapitre2/images/IMG_20250614_141256_509.jpg, id=2379, 721.94719pt x 260.47313
+Overfull \vbox (43.39655pt too high) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[27 <basma-rapport/Chapitre2/images/23.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[28]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[29]
+<Chapitre2/images/IMG_20250614_141256_509.jpg, id=2392, 721.94719pt x 260.47313
 pt>
 File: Chapitre2/images/IMG_20250614_141256_509.jpg Graphic file (type jpg)
 <use Chapitre2/images/IMG_20250614_141256_509.jpg>
 Package pdftex.def Info: Chapitre2/images/IMG_20250614_141256_509.jpg  used on 
-input line 488.
-(pdftex.def)             Requested size: 192.0548pt x 69.29134pt.
-
-Underfull \hbox (badness 2042) in paragraph at lines 489--489
-[]\T1/lmr/m/n/12 Figure 2.9: |Fiche d'en-re-gis-tre-ment
- []
-
-<Chapitre2/images/IMG_20250614_141303_456.jpg, id=2380, 887.56593pt x 288.3272p
+input line 479.
+(pdftex.def)             Requested size: 362.77525pt x 130.88408pt.
+<Chapitre2/images/IMG_20250614_141303_456.jpg, id=2393, 887.56593pt x 288.3272p
 t>
 File: Chapitre2/images/IMG_20250614_141303_456.jpg Graphic file (type jpg)
 <use Chapitre2/images/IMG_20250614_141303_456.jpg>
 Package pdftex.def Info: Chapitre2/images/IMG_20250614_141303_456.jpg  used on 
-input line 495.
-(pdftex.def)             Requested size: 213.39568pt x 69.31871pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[27]
-<Chapitre2/analyse_deroulement_coupe.pdf, id=2385, 845.07718pt x 597.432pt>
+input line 486.
+(pdftex.def)             Requested size: 362.77525pt x 117.84535pt.
+<Chapitre2/analyse_deroulement_coupe.pdf, id=2394, 845.07718pt x 597.432pt>
 File: Chapitre2/analyse_deroulement_coupe.pdf Graphic file (type pdf)
 <use Chapitre2/analyse_deroulement_coupe.pdf>
 Package pdftex.def Info: Chapitre2/analyse_deroulement_coupe.pdf  used on input
- line 510.
+ line 500.
 (pdftex.def)             Requested size: 845.07512pt x 597.43054pt.
 File: Chapitre2/analyse_deroulement_coupe.pdf Graphic file (type pdf)
 <use Chapitre2/analyse_deroulement_coupe.pdf>
 Package pdftex.def Info: Chapitre2/analyse_deroulement_coupe.pdf  used on input
- line 510.
+ line 500.
 (pdftex.def)             Requested size: 845.07512pt x 597.43054pt.
-<Chapitre2/analyse_deroulement_coupe.pdf, id=2388, page=1, 845.07718pt x 597.43
+<Chapitre2/analyse_deroulement_coupe.pdf, id=2397, page=1, 845.07718pt x 597.43
 2pt>
 File: Chapitre2/analyse_deroulement_coupe.pdf Graphic file (type pdf)
 <use Chapitre2/analyse_deroulement_coupe.pdf, page 1>
 Package pdftex.def Info: Chapitre2/analyse_deroulement_coupe.pdf , page1 used o
-n input line 510.
+n input line 500.
 (pdftex.def)             Requested size: 845.07512pt x 597.43054pt.
 File: Chapitre2/analyse_deroulement_coupe.pdf Graphic file (type pdf)
 <use Chapitre2/analyse_deroulement_coupe.pdf, page 1>
 Package pdftex.def Info: Chapitre2/analyse_deroulement_coupe.pdf , page1 used o
-n input line 510.
-(pdftex.def)             Requested size: 802.81877pt x 567.55719pt.
+n input line 500.
+(pdftex.def)             Requested size: 845.07512pt x 597.43054pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2815,24 +2840,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28 <basma-rapport/Chapitre2/images/IMG_20250614_141256_509.jpg> <basma-rapport
+[30 <basma-rapport/Chapitre2/images/IMG_20250614_141256_509.jpg> <basma-rapport
 /Chapitre2/images/IMG_20250614_141303_456.jpg>]
 File: Chapitre2/analyse_deroulement_coupe.pdf Graphic file (type pdf)
 <use Chapitre2/analyse_deroulement_coupe.pdf, page 1>
 Package pdftex.def Info: Chapitre2/analyse_deroulement_coupe.pdf , page1 used o
-n input line 510.
-(pdftex.def)             Requested size: 802.81877pt x 567.55719pt.
+n input line 500.
+(pdftex.def)             Requested size: 845.07512pt x 597.43054pt.
 File: Chapitre2/analyse_deroulement_coupe.pdf Graphic file (type pdf)
 <use Chapitre2/analyse_deroulement_coupe.pdf, page 1>
 Package pdftex.def Info: Chapitre2/analyse_deroulement_coupe.pdf , page1 used o
-n input line 510.
-(pdftex.def)             Requested size: 802.81877pt x 567.55719pt.
+n input line 500.
+(pdftex.def)             Requested size: 845.07512pt x 597.43054pt.
 File: Chapitre2/analyse_deroulement_coupe.pdf Graphic file (type pdf)
 <use Chapitre2/analyse_deroulement_coupe.pdf, page 1>
 Package pdftex.def Info: Chapitre2/analyse_deroulement_coupe.pdf , page1 used o
-n input line 510.
-(pdftex.def)             Requested size: 802.81877pt x 567.55719pt.
- [29
+n input line 500.
+(pdftex.def)             Requested size: 845.07512pt x 597.43054pt.
+ [31
 
  <basma-rapport/Chapitre2/analyse_deroulement_coupe.pdf>]
 
@@ -2843,8 +2868,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30]
-Overfull \hbox (21.70294pt too wide) in paragraph at lines 553--554
+[32]
+Overfull \hbox (21.70294pt too wide) in paragraph at lines 543--544
 []\T1/lmr/bx/n/12 Stockage et contrôle qua-lité \T1/lmr/m/n/12 : trans-fert ver
 s trois zones de sto-ckage (avant/après
  []
@@ -2857,7 +2882,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[31]
+[33]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2866,12 +2891,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32]
-<Chapitre2/images/ishikawa_beige.png, id=2424, 770.88pt x 578.16pt>
+[34]
+<Chapitre2/images/ishikawa_beige.png, id=2433, 770.88pt x 578.16pt>
 File: Chapitre2/images/ishikawa_beige.png Graphic file (type png)
 <use Chapitre2/images/ishikawa_beige.png>
 Package pdftex.def Info: Chapitre2/images/ishikawa_beige.png  used on input lin
-e 684.
+e 674.
 (pdftex.def)             Requested size: 405.45047pt x 304.08551pt.
 
 
@@ -2882,7 +2907,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33 <basma-rapport/Chapitre2/images/ishikawa_beige.png (PNG copy)>]
+[35 <basma-rapport/Chapitre2/images/ishikawa_beige.png (PNG copy)>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2891,8 +2916,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34]
-Overfull \hbox (3.31262pt too wide) in paragraph at lines 776--777
+[36]
+Overfull \hbox (3.31262pt too wide) in paragraph at lines 766--767
  \T1/lmr/bx/n/12 2.4.5.2.3 Schéma de fonc-tion-ne-ment de l'al-go-rithme[][] \T
 1/lmr/m/n/12 La Fi-gure [][]2.12[][] illustre
  []
@@ -2905,7 +2930,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[35]
+[37]
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -2913,7 +2938,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.824 }
+l.814 }
        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2925,7 +2950,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.824 }
+l.814 }
        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2937,7 +2962,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.824 }
+l.814 }
        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2949,7 +2974,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.824 }
+l.814 }
        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2961,7 +2986,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.824 }
+l.814 }
        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2973,7 +2998,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.824 }
+l.814 }
        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2985,7 +3010,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.824 }
+l.814 }
        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2993,7 +3018,7 @@ If that doesn't work, type  X <return>  to quit.
 
 Package pgf Warning: Returning node center instead of a point on node border. D
 id you specify a point identical to the center of node ``status2''? on input li
-ne 824.
+ne 814.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3003,8 +3028,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[36]
-Overfull \hbox (6.53732pt too wide) in paragraph at lines 877--878
+[38]
+Overfull \hbox (6.53732pt too wide) in paragraph at lines 867--868
 \T1/lmr/m/n/12 La phase \T1/lmr/bx/n/12 Contrô-ler \T1/lmr/m/n/12 (Control) con
 sti-tue la der-nière étape de la mé-tho-do-lo-gie DMAIC.
  []
@@ -3017,25 +3042,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[37]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[38]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[39]) (basma-rapport/Chapitre3/chapitre3.tex
+[39]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3045,6 +3052,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [40]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[41]) (basma-rapport/Chapitre3/chapitre3.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[42]
 Chapitre 3.
 Package minitoc(hints) Info: I0045
 (minitoc(hints))             The \dominitoc command 
@@ -3056,7 +3081,7 @@ Package minitoc Info: I0006
 (minitoc)             main.mtc0 is empty on input line 7.
 (basma-rapport/Chapitre3/section1_ia_industrie40.tex
 
-LaTeX Warning: Citation 'russell2010artificial' on page 41 undefined on input l
+LaTeX Warning: Citation 'russell2010artificial' on page 43 undefined on input l
 ine 5.
 
 
@@ -3066,7 +3091,7 @@ sent l'IA comme
  []
 
 
-LaTeX Warning: Citation 'mitchell1997machine' on page 41 undefined on input lin
+LaTeX Warning: Citation 'mitchell1997machine' on page 43 undefined on input lin
 e 13.
 
 
@@ -3074,7 +3099,7 @@ Overfull \hbox (2.52634pt too wide) in paragraph at lines 52--53
  [][]\T1/lmr/m/n/10 Récompenses/Pénalités 
  []
 
-[41
+[43
 
 ]
 
@@ -3085,9 +3110,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[42]
+[44]
 
-LaTeX Warning: Citation 'schwab2017fourth' on page 43 undefined on input line 9
+LaTeX Warning: Citation 'schwab2017fourth' on page 45 undefined on input line 9
 2.
 
 
@@ -3103,9 +3128,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[43]
+[45]
 
-LaTeX Warning: Citation 'rÃ¼ÃŸmann2015industry' on page 44 undefined on input l
+LaTeX Warning: Citation 'rÃ¼ÃŸmann2015industry' on page 46 undefined on input l
 ine 181.
 
 
@@ -3122,7 +3147,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[44]
+[46]
 Overfull \hbox (44.88577pt too wide) in paragraph at lines 230--231
 []\T1/lmr/bx/n/12 Caractéristiques \T1/lmr/m/n/12 : Vo-lume (pé-ta-oc-tets), Vé
 -lo-cité (temps réel), Va-riété (structuré/non-
@@ -3148,7 +3173,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[45])
+[47])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3157,8 +3182,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[46]
-<Chapitre3/images/python.png, id=2487, 1284.8pt x 380.42125pt>
+[48]
+<Chapitre3/images/python.png, id=2502, 1284.8pt x 380.42125pt>
 File: Chapitre3/images/python.png Graphic file (type png)
 <use Chapitre3/images/python.png>
 Package pdftex.def Info: Chapitre3/images/python.png  used on input line 33.
@@ -3180,8 +3205,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[47 <basma-rapport/Chapitre3/images/python.png>]
-<Chapitre3/images/pbib.png, id=2494, 947.54pt x 696.6025pt>
+[49 <basma-rapport/Chapitre3/images/python.png>]
+<Chapitre3/images/pbib.png, id=2509, 947.54pt x 696.6025pt>
 File: Chapitre3/images/pbib.png Graphic file (type png)
 <use Chapitre3/images/pbib.png>
 Package pdftex.def Info: Chapitre3/images/pbib.png  used on input line 64.
@@ -3198,7 +3223,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[48]
+[50]
 Underfull \hbox (badness 10000) in paragraph at lines 79--79
 []|\T1/lmr/m/n/12 Preprocessing,
  []
@@ -3269,7 +3294,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[49 <basma-rapport/Chapitre3/images/pbib.png (PNG copy)>]
+[51 <basma-rapport/Chapitre3/images/pbib.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 110--110
 []|\T1/lmr/m/n/12 Visualisations
  []
@@ -3377,7 +3402,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[50]
+[52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3389,7 +3414,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[51]
+[53]
 Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []|\T1/lmr/m/n/12 Framework Ja-
  []
@@ -3422,7 +3447,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[52]
+[54]
 Overfull \hbox (58.00928pt too wide) in paragraph at lines 329--330
  [][] 
  []
@@ -3459,7 +3484,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[53]
+[55]
 Overfull \hbox (1.85284pt too wide) in paragraph at lines 373--373
 []|\T1/lmr/m/n/12 Conteneurisation
  []
@@ -3496,7 +3521,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[54]
+[56]
 Overfull \hbox (15.52739pt too wide) in paragraph at lines 491--491
  [][]\T1/lmr/bx/n/12 DevOpsInfrastructure 
  []
@@ -3513,7 +3538,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[55]
+[57]
 Underfull \hbox (badness 10000) in paragraph at lines 508--508
 []|\T1/lmr/m/n/12 pandas 2.0.3, NumPy
  []
@@ -3570,7 +3595,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[56]
+[58]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3582,7 +3607,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[57]
+[59]
 Overfull \hbox (1.30531pt too wide) in paragraph at lines 639--640
 \T1/lmr/m/n/12 La mé-tho-do-lo-gie CRISP-ML(Q) (\T1/lmr/m/it/12 Cross-Industry 
 Stan-dard Pro-cess for Ma-chine Lear-
@@ -3596,7 +3621,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[58]
+[60]
 Overfull \hbox (7.7736pt too wide) in paragraph at lines 648--649
 []\T1/lmr/bx/n/12 Monitoring non in-té-gré \T1/lmr/m/n/12 : Pas de mé-ca-nismes
  de sur-veillance post-déploiement 
@@ -3610,28 +3635,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[59]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[60]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [61]
-Underfull \vbox (badness 2772) has occurred while \output is active []
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3650,6 +3654,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [63]
+Underfull \vbox (badness 2772) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3659,11 +3666,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [64]
-Overfull \hbox (0.39365pt too wide) in paragraph at lines 978--979
-[]\T1/lmr/bx/n/12 Besoins fonc-tion-nels \T1/lmr/m/n/12 : Consul-ta-tion plan-n
-ing simple, sai-sie ra-pide avan-
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3682,6 +3684,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [66]
+Overfull \hbox (0.39365pt too wide) in paragraph at lines 978--979
+[]\T1/lmr/bx/n/12 Besoins fonc-tion-nels \T1/lmr/m/n/12 : Consul-ta-tion plan-n
+ing simple, sai-sie ra-pide avan-
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3727,10 +3734,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [71]
-Overfull \hbox (13.38693pt too wide) in paragraph at lines 1407--1407
-[]\T1/lmr/bx/n/17.28 Phase 2 : Com-pre-hen-sion des don-nees (Data
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3749,6 +3752,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [73]
+Overfull \hbox (13.38693pt too wide) in paragraph at lines 1407--1407
+[]\T1/lmr/bx/n/17.28 Phase 2 : Com-pre-hen-sion des don-nees (Data
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3794,11 +3801,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [78]
-Overfull \hbox (0.62784pt too wide) in paragraph at lines 1840--1841
-[]\T1/lmr/m/n/12 Longeur_Matela > Lon-geur_Trace (ma-te-las doit etre plus long
- que trace) 
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3817,6 +3819,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [80]
+Overfull \hbox (0.62784pt too wide) in paragraph at lines 1840--1841
+[]\T1/lmr/m/n/12 Longeur_Matela > Lon-geur_Trace (ma-te-las doit etre plus long
+ que trace) 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3844,9 +3851,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [83]
-Underfull \vbox (badness 1496) has occurred while \output is active []
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3865,7 +3869,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [85]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1496) has occurred while \output is active []
 
 
 
@@ -3886,6 +3890,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [87]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3940,6 +3947,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [93]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[94]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[95]
 ! Undefined control sequence.
 l.2704 \node
             [check] (o1) at (9,-1.5) {Disponibilite\\>99.5\%};
@@ -4056,7 +4081,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[94]
+[96]
 ! Undefined control sequence.
 \endtikzpicture ...r@layerlist@globally \endscope 
                                                   \let \pgf@baseline =\pgf@s...
@@ -4216,24 +4241,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[95]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[96]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [97]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -4289,6 +4296,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [103]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[104]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[105]
 Underfull \hbox (badness 1005) in paragraph at lines 3251--3252
 []|\T1/lmr/m/n/12 Moyenne - Ac-cep-ta-tion uti-li-sa-
  []
@@ -4301,28 +4326,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[104]
+[106]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[105]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[106]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4341,15 +4348,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [108]
-Underfull \hbox (badness 1127) in paragraph at lines 3533--3534
-[]|\T1/lmr/m/n/12 Regularisation L1 (se-lec-tion de fea-
- []
-
-
-Underfull \hbox (badness 4229) in paragraph at lines 3539--3540
-[]|\T1/lmr/m/n/12 Metrique d'eva-lua-tion (Root Mean
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4368,6 +4366,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [110]
+Underfull \hbox (badness 1127) in paragraph at lines 3533--3534
+[]|\T1/lmr/m/n/12 Regularisation L1 (se-lec-tion de fea-
+ []
+
+
+Underfull \hbox (badness 4229) in paragraph at lines 3539--3540
+[]|\T1/lmr/m/n/12 Metrique d'eva-lua-tion (Root Mean
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4467,11 +4474,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [121]
-LaTeX Font Info:    Trying to load font information for LGR+lmr on input line 4
-343.
- (/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrlmr.fd
-File: lgrlmr.fd 2017/07/29 v1.2 Scalable Greek Latin Modern Regular
-)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4489,7 +4491,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[123]) (basma-rapport/Chapitre4/chapitre4.tex
+[123]
+LaTeX Font Info:    Trying to load font information for LGR+lmr on input line 4
+343.
+ (/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrlmr.fd
+File: lgrlmr.fd 2017/07/29 v1.2 Scalable Greek Latin Modern Regular
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4499,10 +4506,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [124]
-Chapitre 4.
-[125
 
-]
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[125]) (basma-rapport/Chapitre4/chapitre4.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4512,18 +4524,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [126]
+Chapitre 4.
+[127
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[127]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4541,7 +4545,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[129]) (basma-rapport/Chapitre5/chapitre5.tex
+[129]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4559,23 +4566,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[131]
-Chapitre 5.
-Package minitoc(hints) Info: I0045
-(minitoc(hints))             The \dominitoc command 
-(minitoc(hints))             has been invoked more than once 
-(minitoc(hints))              on input line 5.
-Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM main.toc on input line 5.
-Package minitoc Info: I0006
-(minitoc)             main.mtc0 is empty on input line 7.
-[132
+[131]) (basma-rapport/Chapitre5/chapitre5.tex
 
-]
-Underfull \hbox (badness 3428) in paragraph at lines 79--79
-[]|\T1/lmr/m/n/12 Système d'or-don-nan-ce-ment, op-ti-mi-sa-tion,
- []
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[132]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4585,15 +4585,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [133]
+Chapitre 5.
+Package minitoc(hints) Info: I0045
+(minitoc(hints))             The \dominitoc command 
+(minitoc(hints))             has been invoked more than once 
+(minitoc(hints))              on input line 5.
+Package minitoc Info: I0024
+(minitoc)             PREPARING MINITOCS FROM main.toc on input line 5.
+Package minitoc Info: I0006
+(minitoc)             main.mtc0 is empty on input line 7.
+[134
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+]
+Underfull \hbox (badness 3428) in paragraph at lines 79--79
+[]|\T1/lmr/m/n/12 Système d'or-don-nan-ce-ment, op-ti-mi-sa-tion,
+ []
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[134]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4612,6 +4619,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [136]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[137]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[138]
 Overfull \hbox (14.74095pt too wide) in paragraph at lines 272--273
 []|\T1/lmr/bx/n/12 Propriétaire| 
  []
@@ -4743,7 +4768,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[137]
+[139]
 Underfull \hbox (badness 10000) in paragraph at lines 324--324
 []|\T1/lmr/bx/n/12 Impact
  []
@@ -4780,24 +4805,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[138]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[139]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [140]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -4808,6 +4815,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [141]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[142]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[143]
 Underfull \hbox (badness 10000) in paragraph at lines 493--493
 []|\T1/lmr/bx/n/12 Montant
  []
@@ -4826,7 +4851,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[142]
+[144]
 Chapitre 6.
 Package minitoc(hints) Info: I0045
 (minitoc(hints))             The \dominitoc command 
@@ -4923,27 +4948,9 @@ If that doesn't work, type  X <return>  to quit.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [143
+ [145
 
 ]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[144]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[145]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4980,6 +4987,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [149]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[150]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[151]
 Overfull \hbox (30.15887pt too wide) in paragraph at lines 328--328
 []      \T1/lmtt/m/n/12 <MachineUtilizationChart data={dashboardData.machine_ut
 ilization} />[] 
@@ -5005,7 +5030,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[150]
+[152]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -5014,7 +5039,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[151]
+[153]
 Overfull \hbox (11.63387pt too wide) in paragraph at lines 445--445
 []      \T1/lmtt/m/n/12 description: 'Simulate adding new machines to increase 
 capacity',[] 
@@ -5044,7 +5069,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[152]
+[154]
 Overfull \hbox (5.45886pt too wide) in paragraph at lines 472--472
 []            \T1/lmtt/m/n/12 raise FileNotFoundError(f"Model file not found at
  {path}")[] 
@@ -5070,7 +5095,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[153]
+[155]
 Overfull \hbox (48.68388pt too wide) in paragraph at lines 537--537
 []        \T1/lmtt/m/n/12 self.start_date = start_date if start_date else datet
 ime.now().date()[] 
@@ -5106,7 +5131,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[154]
+[156]
 Overfull \hbox (61.03389pt too wide) in paragraph at lines 556--556
 []\T1/lmtt/m/n/12 def create_access_token(data: dict, expires_delta: Optional[t
 imedelta] = None):[] 
@@ -5132,24 +5157,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[155]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[156]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [157]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -5160,11 +5167,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [158]
-Overfull \hbox (85.7339pt too wide) in paragraph at lines 747--747
-[]\T1/lmtt/m/n/12 def cached_prediction(nbr_plies, longeur_trace, longeur_matel
-as, largeur, machine):[] 
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -5183,6 +5185,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [160]
+Overfull \hbox (85.7339pt too wide) in paragraph at lines 747--747
+[]\T1/lmtt/m/n/12 def cached_prediction(nbr_plies, longeur_trace, longeur_matel
+as, largeur, machine):[] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[161]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[162]
 Overfull \hbox (79.5589pt too wide) in paragraph at lines 835--835
 []    \T1/lmtt/m/n/12 drift_score = calculate_drift_score(current_performance, 
 baseline_performance)[] 
@@ -5196,7 +5221,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[161]) (basma-rapport/ConclusionGenerale/conclusion.tex
+[163]) (basma-rapport/ConclusionGenerale/conclusion.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -5205,7 +5230,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[162]
+[164]
 Overfull \hbox (7.11188pt too wide) in paragraph at lines 1--1
 [][] 
  []
@@ -5213,7 +5238,7 @@ Overfull \hbox (7.11188pt too wide) in paragraph at lines 1--1
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [163
+ [165
 
 ])
 
@@ -5224,7 +5249,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[164]
+[166]
 Overfull \hbox (7.11188pt too wide) in paragraph at lines 359--359
 [][] 
  []
@@ -5233,7 +5258,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 3
 62.
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [165
+) [167
 
 ]
 
@@ -5244,7 +5269,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[166]
+[168]
 Overfull \hbox (7.11188pt too wide) in paragraph at lines 366--366
 [][] 
  []
@@ -5267,7 +5292,7 @@ Overfull \hbox (18.61261pt too wide) in paragraph at lines 388--390
 m/fr/web-hosting/glossary/what-
  []
 
-[167
+[169
 
 ]
 Package minitoc Info: I0009
@@ -5291,7 +5316,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the main.log file.
 
-[168] (basma-rapport/main.aux)
+[170] (basma-rapport/main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -5307,31 +5332,207 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54059 strings out of 474222
- 1176445 string characters out of 5748733
- 2085547 words of memory out of 5000000
+ 54106 strings out of 474222
+ 1177218 string characters out of 5748733
+ 2085548 words of memory out of 5000000
  74603 multiletter control sequences out of 15000+600000
  647785 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,19n,117p,1547b,2287s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1200.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on basma-rapport/main.pdf (182 pages, 2838438 bytes).
+ 110i,20n,117p,1547b,2287s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{table.caption.123} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.111} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.109} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.107} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.103} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.101} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.98} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.95} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.93} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.90} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.88} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.77} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.74} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.61} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.58} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.55} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.53} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.49} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.47} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.40} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.38} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.34} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.129} has been referenced but does no
+t exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.113} has been referenced but does no
+t exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.110} has been referenced but does no
+t exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.108} has been referenced but does no
+t exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.106} has been referenced but does no
+t exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.102} has been referenced but does no
+t exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.100} has been referenced but does no
+t exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.97} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.94} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.91} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.89} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.87} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.75} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.73} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.59} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.57} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.54} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.52} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.48} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.42} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.39} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.37} has been referenced but does not
+ exist, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1200.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+sy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
+Output written on basma-rapport/main.pdf (184 pages, 2840052 bytes).
 PDF statistics:
- 3446 PDF objects out of 3580 (max. 8388607)
- 3136 compressed objects within 32 object streams
- 811 named destinations out of 1000 (max. 500000)
+ 3507 PDF objects out of 3580 (max. 8388607)
+ 3195 compressed objects within 32 object streams
+ 858 named destinations out of 1000 (max. 500000)
  3136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
