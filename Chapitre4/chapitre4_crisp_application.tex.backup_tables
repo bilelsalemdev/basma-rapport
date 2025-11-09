@@ -1,0 +1,259 @@
+% ============================================================================
+% CHAPITRE IV : APPLICATION DE LA MÉTHODOLOGIE CRISP-ML(Q)
+% ============================================================================
+% Ce fichier présente l'application de la méthodologie CRISP-ML(Q) au sein
+% de l'atelier de coupe Bacovet pour le développement d'un système intelligent
+% de planification du matelassage.
+%
+% INTÉGRATION DANS LE DOCUMENT PRINCIPAL :
+% Ajouter dans main.tex : \input{Chapitre4/chapitre4_crisp_application.tex}
+%
+% STRUCTURE DES IMAGES :
+% Les images doivent être placées dans : Chapitre4/images/crisp/
+%
+% REMPLACEMENT DES PLACEHOLDERS :
+% Remplacer les \fbox{\parbox{...}} par :
+% \includegraphics[width=0.8\textwidth]{Chapitre4/images/crisp/nom_image.png}
+% ============================================================================
+
+\chapter{Application de la méthodologie CRISP-ML(Q) au sein de l'atelier de coupe Bacovet}\label{chap:crisp-methodology}
+
+
+Ce chapitre présente l'application de la méthodologie CRISP-ML(Q) (Cross Industry Standard Process for Machine Learning with Quality assurance) au sein de l'entreprise Bacovet, dans le cadre d'un projet de développement d'un système intelligent de planification du matelassage. L'objectif est d'exploiter les données issues du processus de coupe pour modéliser et prédire le temps de matelassage, afin d'optimiser la disponibilité des tables de matelassage et de réduire les retards de production.
+
+Nous détaillerons dans ce chapitre les trois premières phases du cycle CRISP-ML(Q)~:
+\begin{itemize}
+    \item la compréhension du métier (Business Understanding),
+    \item la compréhension et l'analyse des données (Data Analysis),
+    \item et la préparation des données (Data Preparation),
+\end{itemize}
+en lien direct avec le contexte industriel et numérique de Bacovet.
+
+% ============================================================================
+% SECTION 1: COMPRÉHENSION DU MÉTIER (BUSINESS UNDERSTANDING)
+% ============================================================================
+
+\section{Compréhension du métier~: Business Understanding}\label{sec:crisp-business}
+
+
+\subsection{Contexte de la planification dans l'atelier de coupe Bacovet}\label{subsec:crisp-contexte}
+
+L'atelier de coupe constitue une étape stratégique du processus de production textile chez Bacovet. Il est responsable de la préparation des tissus nécessaires à la confection et influence directement la performance globale des ateliers suivants (sérigraphie, confection, finition).
+
+La phase de matelassage joue un rôle essentiel~: elle conditionne la capacité journalière de coupe. Bacovet dispose de six tables de matelassage, chacune d'une capacité maximale de 20~mètres. Un matelas de tissu ne dépasse pas 7~mètres, ce qui impose une gestion rigoureuse des enchaînements de commandes.
+
+Actuellement, la planification du matelassage s'effectue manuellement à travers un drive partagé, sans connexion automatique avec le logiciel de suivi G.Pro. Cette absence d'intégration numérique entraîne une visibilité limitée sur la disponibilité des tables et peut provoquer des retards cumulés ou une sous-utilisation des ressources.
+
+L'objectif du projet est donc de mettre en place une solution intelligente permettant~:
+\begin{itemize}
+    \item d'identifier en temps réel la disponibilité des tables de matelassage,
+    \item de prédire le temps de matelassage selon les caractéristiques des commandes,
+    \item et d'automatiser la planification des matelas à lancer selon la charge et les priorités.
+\end{itemize}
+
+
+\begin{figure}[H]
+\centering
+% Placeholder pour l'image - Remplacer par :
+% \includegraphics[width=0.8\textwidth]{Chapitre4/images/crisp/zone_matelassage.png}
+\fbox{\parbox{0.8\textwidth}{\centering\vspace{3cm}
+[Image à insérer~: Vue générale de la zone de matelassage avec les 6 tables de 20 mètres]
+\vspace{3cm}}}
+\caption{Vue générale de la zone de matelassage de l'atelier de coupe Bacovet (6 tables de 20 mètres chacune)}
+\label{fig:crisp-zone-matelassage}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+% Placeholder pour l'image - Remplacer par :
+% \includegraphics[width=0.8\textwidth]{Chapitre4/images/crisp/planning_drive.png}
+\fbox{\parbox{0.8\textwidth}{\centering\vspace{3cm}
+[Image à insérer~: Capture d'écran du fichier Excel ou du drive partagé montrant le planning journalier]
+\vspace{3cm}}}
+\caption{Extrait du planning journalier actuel partagé sur le drive}
+\label{fig:crisp-planning-drive}
+\end{figure}
+
+
+\subsection{Outils et technologies utilisés dans la planification}\label{subsec:crisp-outils}
+
+Bacovet s'appuie sur un écosystème de logiciels pour la gestion de la production~:
+
+\textbf{Divatex} --- outil de planification et de gestion des stocks, utilisé pour le lancement des commandes, la réservation des rouleaux et le suivi des consommations.
+
+\textbf{G.Pro} --- système de suivi de production couvrant les zones de départage, de préparation vignette et de contrôle qualité. Il permet la traçabilité des paquets via un tag circulaire.
+
+\textbf{Drive partagé} --- utilisé pour planifier et communiquer les fabrications journalières entre les ateliers, mais sans synchronisation automatique avec les autres systèmes.
+
+
+\begin{figure}[H]
+\centering
+% Placeholder pour l'image - Remplacer par :
+% \includegraphics[width=0.8\textwidth]{Chapitre4/images/crisp/interface_divatex.png}
+\fbox{\parbox{0.8\textwidth}{\centering\vspace{3cm}
+[Image à insérer~: Capture d'écran de l'interface Divatex]
+\vspace{3cm}}}
+\caption{Interface du logiciel Divatex utilisée pour la gestion des rouleaux et la planification des commandes}
+\label{fig:crisp-interface-divatex}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+% Placeholder pour l'image - Remplacer par :
+% \includegraphics[width=0.8\textwidth]{Chapitre4/images/crisp/interface_gpro.png}
+\fbox{\parbox{0.8\textwidth}{\centering\vspace{3cm}
+[Image à insérer~: Capture d'écran de l'interface G.Pro]
+\vspace{3cm}}}
+\caption{Interface G.Pro assurant le suivi des ordres de fabrication et la traçabilité des paquets}
+\label{fig:crisp-interface-gpro}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+% Placeholder pour l'image - Remplacer par :
+% \includegraphics[width=0.8\textwidth]{Chapitre4/images/crisp/flux_information.png}
+% OU utiliser le template TikZ ci-dessous :
+%
+% \begin{tikzpicture}[node distance=2cm, auto]
+%   \node[service] (divatex) {Divatex};
+%   \node[service, right of=divatex, node distance=3.5cm] (drive) {Drive partagé};
+%   \node[service, right of=drive, node distance=3.5cm] (gpro) {G.Pro};
+%   \node[service, below of=drive, node distance=2.5cm] (ia) {Solution IA};
+%   
+%   \draw[arrow] (divatex) -- (drive);
+%   \draw[arrow] (drive) -- (gpro);
+%   \draw[arrow] (divatex) -- (ia);
+%   \draw[arrow] (gpro) -- (ia);
+%   \draw[arrow] (drive) -- (ia);
+% \end{tikzpicture}
+\fbox{\parbox{0.8\textwidth}{\centering\vspace{3cm}
+[Image à insérer~: Schéma illustrant les connexions entre Divatex, Drive, G.Pro et la solution IA]
+\vspace{3cm}}}
+\caption{Schéma des flux d'information entre Divatex, Drive, G.Pro et la solution IA proposée}
+\label{fig:crisp-flux-information}
+\end{figure}
+
+
+% ============================================================================
+% SECTION 2: COMPRÉHENSION ET ANALYSE DES DONNÉES
+% ============================================================================
+
+\section{Compréhension et analyse des données~: Data Understanding \& Analysis}\label{sec:crisp-data-understanding}
+
+Cette étape vise à analyser les données collectées depuis le processus de matelassage afin d'identifier les variables influençant la durée de traitement.
+
+Les \textbf{variables d'entrée} utilisées dans le modèle sont~:
+\begin{itemize}
+    \item Longueur du matelas (m),
+    \item Largeur du matelas (m),
+    \item Nombre de plis,
+    \item Nombre de tables utilisées,
+    \item Temps de travail journalier (s).
+\end{itemize}
+
+La \textbf{variable de sortie} est le temps de matelassage d'un pli (s).
+
+Ces données sont extraites à partir des enregistrements internes et des observations terrain effectuées dans l'atelier. Elles permettent de modéliser la relation entre les caractéristiques du matelas et le temps nécessaire à son traitement.
+
+
+\begin{figure}[H]
+\centering
+% Placeholder pour l'image - Remplacer par :
+% \includegraphics[width=0.9\textwidth]{Chapitre4/images/crisp/dataset_extrait.png}
+\fbox{\parbox{0.9\textwidth}{\centering\vspace{3cm}
+[Image à insérer~: Tableau de données montrant les variables et valeurs]
+\vspace{3cm}}}
+\caption{Extrait du jeu de données collecté pour la modélisation du temps de matelassage}
+\label{fig:crisp-dataset-extrait}
+\end{figure}
+
+
+Une première analyse statistique a permis d'identifier des corrélations fortes entre la longueur du matelas, le nombre de plis et le temps de matelassage. Ces observations justifient le choix de ces variables dans la modélisation.
+
+
+\begin{figure}[H]
+\centering
+% Placeholder pour l'image - Remplacer par :
+% \includegraphics[width=0.8\textwidth]{Chapitre4/images/crisp/correlation_longueur.png}
+\fbox{\parbox{0.8\textwidth}{\centering\vspace{3cm}
+[Image à insérer~: Graphique ou scatter plot montrant la corrélation]
+\vspace{3cm}}}
+\caption{Visualisation exploratoire~: corrélation entre la longueur du matelas et le temps de matelassage}
+\label{fig:crisp-correlation-longueur}
+\end{figure}
+
+
+% ============================================================================
+% SECTION 3: PRÉPARATION DES DONNÉES
+% ============================================================================
+
+\section{Préparation des données~: Data Preparation}\label{sec:crisp-data-preparation}
+
+Avant la modélisation, les données ont été nettoyées et normalisées afin d'assurer leur qualité et leur cohérence. Les étapes principales sont~:
+
+\begin{enumerate}
+    \item Suppression des valeurs manquantes,
+    \item Correction des incohérences de mesure,
+    \item Transformation des unités (conversion du temps en secondes),
+    \item Normalisation des variables pour faciliter l'apprentissage du modèle.
+\end{enumerate}
+
+
+\begin{figure}[H]
+\centering
+% Placeholder pour l'image - Remplacer par :
+% \includegraphics[width=0.9\textwidth]{Chapitre4/images/crisp/pipeline_preparation.png}
+% OU utiliser le template TikZ ci-dessous :
+%
+% \begin{tikzpicture}[node distance=2.5cm, auto]
+%   \node[boxstep] (collecte) {Collecte\\des données};
+%   \node[boxstep, right of=collecte] (nettoyage) {Nettoyage\\(valeurs manquantes)};
+%   \node[boxstep, right of=nettoyage] (transformation) {Transformation\\(unités)};
+%   \node[boxstep, right of=transformation] (normalisation) {Normalisation};
+%   
+%   \draw[arrow] (collecte) -- (nettoyage);
+%   \draw[arrow] (nettoyage) -- (transformation);
+%   \draw[arrow] (transformation) -- (normalisation);
+% \end{tikzpicture}
+\fbox{\parbox{0.9\textwidth}{\centering\vspace{3cm}
+[Image à insérer~: Schéma représentant les étapes de préparation~: collecte → nettoyage → transformation → normalisation]
+\vspace{3cm}}}
+\caption{Pipeline de préparation des données pour le modèle de prédiction}
+\label{fig:crisp-pipeline-preparation}
+\end{figure}
+
+
+% ============================================================================
+% SECTION 4: MODÉLISATION ET SOLUTION PROPOSÉE
+% ============================================================================
+
+\section{Modélisation et solution proposée (aperçu)}\label{sec:crisp-modeling}
+
+Une fois les données préparées, le modèle d'apprentissage automatique est entraîné pour prédire le temps de matelassage à partir des variables d'entrée. Les résultats sont intégrés dans un prototype de système intelligent permettant de visualiser la disponibilité des tables et de planifier automatiquement les matelas.
+
+
+\begin{figure}[H]
+\centering
+% Placeholder pour l'image - Remplacer par :
+% \includegraphics[width=0.9\textwidth]{Chapitre4/images/crisp/prototype_interface.png}
+\fbox{\parbox{0.9\textwidth}{\centering\vspace{3cm}
+[Image à insérer~: Maquette ou interface simulée du système IA]
+\vspace{3cm}}}
+\caption{Prototype d'interface du système intelligent de planification des tables de matelassage}
+\label{fig:crisp-prototype-interface}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+% Placeholder pour l'image - Remplacer par :
+% \includegraphics[width=0.8\textwidth]{Chapitre4/images/crisp/comparaison_temps.png}
+\fbox{\parbox{0.8\textwidth}{\centering\vspace{3cm}
+[Image à insérer~: Graphique de performance du modèle – courbe ou bar chart]
+\vspace{3cm}}}
+\caption{Comparaison entre les temps réels et les temps prédits par le modèle}
+\label{fig:crisp-comparaison-temps}
+\end{figure}

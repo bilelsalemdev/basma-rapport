@@ -15,60 +15,60 @@
 \contentsline {figure}{\numberline {1.11}{\ignorespaces Contrôle Qualité }}{11}{figure.caption.13}%
 \contentsline {figure}{\numberline {1.12}{\ignorespaces Atelier de confection }}{12}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Mener une action d'amélioration d'un atelier de travail avec Audit, les outils lean 4.0}{15}{chapter.2}%
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Formulaire Google Forms}}{19}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Diagramme circulaire (Pie chart)}}{19}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Histogramme / Diagramme en barres (Bar chart)}}{19}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Détail des résultats par critère}}{20}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces tableau complet des critères, scores et niveaux}}{20}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces {\emph {Tableau récapitulatif des scores par domaine}}}}{21}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Diagramme de Radar}}{21}{figure.caption.22}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Carte mentala}}{24}{figure.caption.25}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Fiche d'enregistrement (modèle Rim)}}{27}{figure.caption.33}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Fiche d'enregistrement (modèle Leotard 500g pink)}}{27}{figure.caption.33}%
+\contentsline {xchapter}{Mener une action d'amélioration d'un atelier de travail avec Audit, les outils lean 4.0}{16}{chapter.2}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Formulaire Google Forms}}{20}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Diagramme circulaire (Pie chart)}}{20}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Histogramme / Diagramme en barres (Bar chart)}}{20}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Détail des résultats par critère}}{21}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces tableau complet des critères, scores et niveaux}}{21}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces {\emph {Tableau récapitulatif des scores par domaine}}}}{22}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Diagramme de Radar}}{22}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Carte mentala}}{25}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Fiche d'enregistrement (modèle Rim)}}{28}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Fiche d'enregistrement (modèle Leotard 500g pink)}}{28}{figure.caption.33}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces {\emph {Diagramme d'Ishikawa : Analyse des causes racines des retards dans l'atelier de coupe}}}}{33}{figure.caption.37}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Diagramme de flux de l'algorithme de gestion des tables de matelassage}}{36}{figure.caption.39}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Exemple de suivi du taux de disponibilité des tables sur 12 semaines}}{38}{figure.caption.42}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Exemple de suivi du taux de disponibilité des tables sur 12 semaines}}{39}{figure.caption.42}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Intelligence Artificielle, Industrie 4.0 et Méthodologie CRISP-ML(Q)}{41}{chapter.3}%
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Paradigmes d'apprentissage en Machine Learning}}{42}{figure.caption.43}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Les quatre révolutions industrielles}}{43}{figure.caption.44}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Les neuf piliers technologiques de l'Industrie 4.0}}{44}{figure.caption.45}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Langage de programmation Python}}{47}{figure.caption.46}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Bibliothèques de manipulation de données - pandas et NumPy}}{48}{figure.caption.48}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Architecture de communication backend avec FastAPI, Pydantic et Uvicorn}}{51}{figure.caption.52}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Architecture frontend avec React, Recharts et Axios - Flux de données et interactions}}{52}{figure.caption.54}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Architecture de l'infrastructure DevOps - Diagramme de classes UML (Docker 24.0, Git 2.41, pytest 7.4.0, PostgreSQL 15.3)}}{54}{figure.caption.57}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Architecture complète de la stack technologique - Diagramme UML des couches fonctionnelles}}{55}{figure.caption.59}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Processus CRISP-ML(Q) avec portes de qualité}}{58}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Workflow de feature engineering}}{79}{figure.caption.73}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Architecture du pipeline de preparation des donnees}}{85}{figure.caption.75}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Framework d'assurance qualite integre au processus CRISP-ML(Q)}}{86}{figure.caption.76}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Code Python - Définition et initialisation des algorithmes candidats}}{103}{figure.caption.87}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Comparaison des performances des algorithmes candidats (R², MAE)}}{105}{figure.caption.89}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Code Python - Processus d'entraînement du modèle XGBoost}}{108}{figure.caption.91}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Courbes d'apprentissage - Évolution de l'erreur RMSE pendant l'entraînement}}{109}{figure.caption.92}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Logs d'entraînement - Sortie console avec progression et métriques}}{110}{figure.caption.94}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Code Python - Optimisation des hyperparamètres via Random Search}}{113}{figure.caption.97}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Exploration de l'espace des hyperparamètres - Configurations testées}}{115}{figure.caption.100}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Top 10 des configurations d'hyperparamètres testées}}{116}{figure.caption.102}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Code Python - Implémentation de la validation croisée temporelle}}{118}{figure.caption.106}%
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Performances par fold - Validation croisée temporelle}}{119}{figure.caption.108}%
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Tableau détaillé des résultats de validation croisée avec statistiques}}{121}{figure.caption.110}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Bibliothèques de manipulation de données - pandas et NumPy}}{49}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Architecture de communication backend avec FastAPI, Pydantic et Uvicorn}}{52}{figure.caption.52}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Architecture frontend avec React, Recharts et Axios - Flux de données et interactions}}{53}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Architecture de l'infrastructure DevOps - Diagramme de classes UML (Docker 24.0, Git 2.41, pytest 7.4.0, PostgreSQL 15.3)}}{56}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Architecture complète de la stack technologique - Diagramme UML des couches fonctionnelles}}{58}{figure.caption.59}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Processus CRISP-ML(Q) avec portes de qualité}}{60}{figure.caption.60}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Workflow de feature engineering}}{81}{figure.caption.73}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Architecture du pipeline de preparation des donnees}}{87}{figure.caption.75}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Framework d'assurance qualite integre au processus CRISP-ML(Q)}}{88}{figure.caption.76}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Code Python - Définition et initialisation des algorithmes candidats}}{106}{figure.caption.87}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Comparaison des performances des algorithmes candidats (R², MAE)}}{107}{figure.caption.89}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Code Python - Processus d'entraînement du modèle XGBoost}}{110}{figure.caption.91}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Courbes d'apprentissage - Évolution de l'erreur RMSE pendant l'entraînement}}{112}{figure.caption.92}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Logs d'entraînement - Sortie console avec progression et métriques}}{113}{figure.caption.94}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Code Python - Optimisation des hyperparamètres via Random Search}}{116}{figure.caption.97}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Exploration de l'espace des hyperparamètres - Configurations testées}}{118}{figure.caption.100}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Top 10 des configurations d'hyperparamètres testées}}{119}{figure.caption.102}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Code Python - Implémentation de la validation croisée temporelle}}{121}{figure.caption.106}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Performances par fold - Validation croisée temporelle}}{122}{figure.caption.108}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Tableau détaillé des résultats de validation croisée avec statistiques}}{123}{figure.caption.110}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Application de la méthodologie CRISP-ML(Q) au sein de l'atelier de coupe Bacovet}{123}{chapter.4}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Vue générale de la zone de matelassage de l'atelier de coupe Bacovet (6 tables de 20 mètres chacune)}}{124}{figure.caption.113}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Extrait du planning journalier actuel partagé sur le drive}}{124}{figure.caption.114}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Interface du logiciel Divatex utilisée pour la gestion des rouleaux et la planification des commandes}}{125}{figure.caption.115}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Interface G.Pro assurant le suivi des ordres de fabrication et la traçabilité des paquets}}{125}{figure.caption.116}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Schéma des flux d'information entre Divatex, Drive, G.Pro et la solution IA proposée}}{126}{figure.caption.117}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Extrait du jeu de données collecté pour la modélisation du temps de matelassage}}{127}{figure.caption.118}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Visualisation exploratoire~: corrélation entre la longueur du matelas et le temps de matelassage}}{127}{figure.caption.119}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Pipeline de préparation des données pour le modèle de prédiction}}{128}{figure.caption.120}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Prototype d'interface du système intelligent de planification des tables de matelassage}}{128}{figure.caption.121}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Comparaison entre les temps réels et les temps prédits par le modèle}}{129}{figure.caption.122}%
+\contentsline {xchapter}{Application de la méthodologie CRISP-ML(Q) au sein de l'atelier de coupe Bacovet}{125}{chapter.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Vue générale de la zone de matelassage de l'atelier de coupe Bacovet (6 tables de 20 mètres chacune)}}{126}{figure.caption.113}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Extrait du planning journalier actuel partagé sur le drive}}{126}{figure.caption.114}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Interface du logiciel Divatex utilisée pour la gestion des rouleaux et la planification des commandes}}{127}{figure.caption.115}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Interface G.Pro assurant le suivi des ordres de fabrication et la traçabilité des paquets}}{127}{figure.caption.116}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Schéma des flux d'information entre Divatex, Drive, G.Pro et la solution IA proposée}}{128}{figure.caption.117}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Extrait du jeu de données collecté pour la modélisation du temps de matelassage}}{129}{figure.caption.118}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Visualisation exploratoire~: corrélation entre la longueur du matelas et le temps de matelassage}}{129}{figure.caption.119}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Pipeline de préparation des données pour le modèle de prédiction}}{130}{figure.caption.120}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Prototype d'interface du système intelligent de planification des tables de matelassage}}{130}{figure.caption.121}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Comparaison entre les temps réels et les temps prédits par le modèle}}{131}{figure.caption.122}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Agile 4-month delivery plan}{130}{chapter.5}%
+\contentsline {xchapter}{Agile 4-month delivery plan}{132}{chapter.5}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Service IA and dashboard}{141}{chapter.6}%
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Architecture des services IA}}{142}{figure.caption.129}%
+\contentsline {xchapter}{Service IA and dashboard}{143}{chapter.6}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Architecture des services IA}}{144}{figure.caption.129}%

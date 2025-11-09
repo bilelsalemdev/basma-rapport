@@ -17,15 +17,15 @@ Le système d'intelligence artificielle est structuré en plusieurs services sp�
 
 \begin{figure}[H]
 \centering
-\begin{tikzpicture}[node distance=2.5cm, auto]
+\begin{tikzpicture}[node distance=2cm, auto]
     % Services
     \node[service] (frontend) {Interface Utilisateur\\React Dashboard};
     \node[service, below of=frontend] (api) {API Gateway\\FastAPI};
-    \node[service, below left of=api, xshift=-2.5cm] (predict) {Service Prédiction\\Time Predictor};
-    \node[service, below right of=api, xshift=2.5cm] (schedule) {Service Ordonnancement\\Scheduler};
-    \node[service, below of=api, yshift=-1.5cm] (analytics) {Service Analytics\\KPIs \& Reports};
-    \node[service, below left of=analytics, xshift=-1.5cm] (mlflow) {MLflow\\Model Registry};
-    \node[service, below right of=analytics, xshift=1.5cm] (db) {Base de Données\\PostgreSQL};
+    \node[service, below left of=api, xshift=-2cm] (predict) {Service Prédiction\\Time Predictor};
+    \node[service, below right of=api, xshift=2cm] (schedule) {Service Ordonnancement\\Scheduler};
+    \node[service, below of=api, yshift=-1cm] (analytics) {Service Analytics\\KPIs \& Reports};
+    \node[service, below left of=analytics, xshift=-1cm] (mlflow) {MLflow\\Model Registry};
+    \node[service, below right of=analytics, xshift=1cm] (db) {Base de Données\\PostgreSQL};
 
     % Connexions
     \draw[arrow] (frontend) -- (api);

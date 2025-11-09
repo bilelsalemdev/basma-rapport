@@ -224,7 +224,6 @@ La méthode SIPOC permet d'identifier les éléments clés du projet et de clari
 \small
 \caption{Analyse SIPOC du projet}
 \label{tab:sipoc}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|p{10cm}|}
 \hline
 \rowcolor{gray!30}
@@ -241,7 +240,6 @@ La méthode SIPOC permet d'identifier les éléments clés du projet et de clari
 \textbf{Customers} & Responsable d'atelier, chefs d'équipe, opérateurs, direction générale, service qualité \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \end{table}
 
 \subsection{Objectifs du projet}
@@ -266,7 +264,6 @@ La méthode QQOQCCP permet de définir précisément le périmètre d'interventi
 \small
 \caption{Analyse QQOQCCP du projet}
 \label{tab:qqoqccp}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|p{10cm}|}
 \hline
 \rowcolor{gray!30}
@@ -287,7 +284,6 @@ La méthode QQOQCCP permet de définir précisément le périmètre d'interventi
 \textbf{Pourquoi ?} & \textbf{Problèmes :} absence de système digitalisé, pertes de temps, manque de visibilité. \textbf{Bénéfices attendus :} réduction des temps d'attente (20-30\%), amélioration du taux d'utilisation des machines (15-25\%), visibilité en temps réel \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \end{table}
 
 \subsection{Limites et contraintes}

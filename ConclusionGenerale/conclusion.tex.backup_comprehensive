@@ -1,11 +1,10 @@
-\styledtitle{Conclusion~générale}
+\styledtitle{Conclusion générale}
 \vspace{1cm}
 \label{chap:ConclusionPers}
 \addstarredchapter{Conclusion générale} 
 \lhead{Conclusion générale et perspectives}
 \rhead{\thepage}
 
-\begin{spacing}{1.5}
 Ce rapport de recherche a présenté de manière exhaustive l'ensemble des travaux réalisés dans le cadre de ce projet de fin d'études, visant à digitaliser et optimiser les activités de planification au sein d'un atelier de coupe textile selon les principes fondamentaux de l'Industrie 4.0. La mobilisation rigoureuse de la méthodologie DMAIC (\textit{Define, Measure, Analyze, Improve, Control}), issue du référentiel Lean Six Sigma, a permis d'identifier de manière systématique les dysfonctionnements structurels et organisationnels du processus existant, de formuler des solutions innovantes fondées sur la modélisation mathématique et l'intelligence artificielle, et de concevoir une architecture technologique intégrée combinant des modèles de machine learning prédictifs, des systèmes de capture de données (capteurs RFID), et des outils de visualisation dynamique en temps réel.
 
 Ce travail de recherche appliquée a permis de développer une compréhension approfondie et critique des problématiques industrielles réelles, tout en consolidant de manière significative les compétences analytiques, techniques et organisationnelles nécessaires à la conduite de projets de transformation digitale. Le développement d'un algorithme de planification prédictive basé sur l'apprentissage automatique (machine learning), ainsi que la conception et l'implémentation d'un tableau de bord décisionnel connecté et interactif, illustrent de manière concrète et mesurable l'impact positif de la digitalisation sur la performance opérationnelle, la réactivité organisationnelle et la qualité de service rendue aux clients.
@@ -17,5 +16,3 @@ Au-delà des résultats académiques obtenus, ce projet de recherche ouvre des p
 Des axes d'amélioration à moyen et long terme sont également envisagés pour renforcer davantage les capacités prédictives et décisionnelles du système. Parmi ces perspectives stratégiques, figurent notamment l'intégration d'un jumeau numérique (\textit{digital twin}) de l'atelier de coupe, permettant une simulation et une optimisation en temps réel des processus de production, ainsi que l'exploitation de modèles d'apprentissage profond (\textit{deep learning}) pour des prédictions encore plus robustes et adaptatives face à la complexité croissante des environnements de production.
 
 En somme, ce projet de recherche constitue une contribution significative à la transformation digitale des processus industriels dans le secteur textile tunisien, tout en mettant en valeur l'apport déterminant des technologies intelligentes et de l'intelligence artificielle dans la recherche d'excellence opérationnelle et de compétitivité durable. Les résultats obtenus et les méthodologies développées peuvent servir de référence pour d'autres entreprises du secteur textile confrontées à des enjeux similaires de modernisation et d'optimisation de leurs processus de production.
-
-\end{spacing}

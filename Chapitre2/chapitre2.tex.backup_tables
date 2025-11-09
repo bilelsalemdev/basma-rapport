@@ -89,7 +89,6 @@ Ce système permet :
 \begin{table}[H]
 \centering
 \caption{Exemple de statut temps réel}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|}
 \hline
 \textbf{Table} & \textbf{Heure actuelle} & \textbf{Statut} \\
@@ -101,7 +100,6 @@ T2 & 09:00 & Disponible \\
 T3 & 09:00 & Occupée (jusqu'a 09:45) \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \end{table}
 
 \subsubsection{Bénéfices attendus}
@@ -221,7 +219,6 @@ Le questionnaire a été administré auprès de \textbf{11 personnes} travaillan
 Le tableau détaillé met en évidence les critères les moins avancés :
 \begin{table}[H]
 \centering
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|c|c|}
 \hline
 \rowcolor{lightgray}
@@ -236,7 +233,6 @@ Suivi de l'avancement & \textcolor{dangerred}{23\%} & Non implémenté \\
 Visualisation des performances & \textcolor{dangerred}{27\%} & Non implémenté \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \caption{Critères constituant des leviers prioritaires d'amélioration}
 \label{tab:criteres_prioritaires}
 \end{table}
@@ -329,7 +325,6 @@ Dans l'atelier de coupe Bacovet, la gestion opérationnelle repose sur deux 
 \begin{table}[H]
 \centering
 \caption{Résumé du fonctionnement du logiciel Divatex}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|}
 \hline
 \textbf{Ãlément} & \textbf{Description} \\
@@ -343,14 +338,12 @@ Processus & Lancement des commandes, réservation des rouleaux, création des ma
 Sorties & Mise a jour des stocks, statut matière des OF, historique des mouvements, rapports de consommation \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \end{table}
 
 \textbf{-G.Pro}, quant a lui, est opérationnel a partir de la zone de \textbf{départage} et jusqu'au \textbf{contrôle qualité confection}. Il assure la traçabilité des paquets grâce a un tag circulaire contenant les informations de l'ordre de fabrication (OF) et permet le suivi manuel de l'avancement des commandes post-coupe.
 \begin{table}[H]
 \centering
 \caption{Résumé du fonctionnement du logiciel G.Pro}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|}
 \hline
 \textbf{Ãlément} & \textbf{Description} \\
@@ -364,7 +357,6 @@ Processus & Suivi de progression des paquets, détection via tag, contrôle qual
 Sorties & Statut des OF, temps de production (saisie manuelle), rapports de progression, historique des mouvements post-coupe \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \end{table}
 
 
@@ -439,8 +431,7 @@ Le tableau~\ref{tab:forces_faiblesses} présente une synthèse des forces et fai
     \centering
     \caption{Analyse des forces et faiblesses du système actuel}
     \label{tab:forces_faiblesses}
-    \begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{|l|l|}
+    \begin{tabular}{|l|l|}
         \hline
         \rowcolor{green!10}
         \textbf{Forces} & \textbf{Faiblesses} \\
@@ -458,7 +449,6 @@ Le tableau~\ref{tab:forces_faiblesses} présente une synthèse des forces et fai
         & Retards ou anomalies détectés trop tardivement \\
         \hline
     \end{tabular}
-\end{adjustbox}
 \end{table}
 \subsubsection{Conclusion de la phase "Définir"}
 
@@ -565,7 +555,6 @@ Les activités mesurées et leurs ordres de grandeur observés sont :
 
 \begin{table}[H]
 \centering
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|}
 \hline
 \textbf{Ãlément} & \textbf{Valeur} \\
@@ -583,7 +572,6 @@ Effectif sur les tables & 17 opérateurs \\
 Zones de stock & 3 (avant/après sérigraphie) \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \caption{Paramètres techniques de l'atelier}
 
 
@@ -619,7 +607,6 @@ Les données mesurées ont permis d'identifier les durées moyennes suivantes :
 \begin{table}[H]
 \centering
 \caption{Analyse des temps observés par activité}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|}
 \hline
 \textbf{Activité} & \textbf{Durée moyenne} & \textbf{Observations} \\
@@ -635,7 +622,6 @@ Coupe robotisée & 25 a 40 min & Dépend des pannes / files d'attente \\
 Départage + vignettage & 45 a 60 min & Poste critique, coordination multiple \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:temps_observes_analyse}
 \end{table}
 
@@ -657,7 +643,6 @@ L'analyse croisée a permis de mettre en évidence :
 \begin{table}[H]
 \centering
 \caption{Analyse des ressources et limitations}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|}
 \hline
 \textbf{Ressource} & \textbf{Capacité théorique} & \textbf{Limitation observée} \\
@@ -671,7 +656,6 @@ Opérateurs sur tables & 17 personnes & Charge inégale, pas de standardisation 
 Départage / vignettage & 13 postes & Coordination complexe entre les t'ches \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:ressources_limitations}
 \end{table}
 
@@ -702,7 +686,6 @@ L'analyse directe des données collectées lors de la phase Mesurer a permis de 
 \begin{table}[H]
 \centering
 \caption{Synthèse des causes par catégorie}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|}
 \hline
 \textbf{Catégorie} & \textbf{Cause racine identifiée} \\
@@ -718,7 +701,6 @@ Main d'Åuvre & Hétérogénéité des performances entre opérateurs \\
 Matière & Tissu nécessitant relaxation longue (doublure : 72h) \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:synthese_causes_racines}
 \end{table}
 
@@ -843,7 +825,6 @@ Ce système permet :
 \begin{table}[H]
 \centering
 \caption{Exemple de statut temps réel}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|}
 \hline
 \textbf{Table} & \textbf{Heure actuelle} & \textbf{Statut} \\
@@ -855,7 +836,6 @@ T2 & 09:00 & Disponible \\
 T3 & 09:00 & Occupée (jusqu'a 09:45) \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \end{table}
 
 \subsubsection{Bénéfices attendus}
@@ -893,7 +873,6 @@ Pour assurer un suivi efficace des améliorations, plusieurs \textbf{indicateurs
 \caption{Indicateurs de performance pour le suivi de l'amélioration}
 \small
 \renewcommand{\arraystretch}{1.3}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|>{\raggedright\arraybackslash}p{4.5cm}|>{\raggedright\arraybackslash}p{6.5cm}|>{\centering\arraybackslash}p{2cm}|}
 \hline
 \rowcolor{lightgray}
@@ -910,7 +889,6 @@ Taux d'utilisation de l'algorithme & Fréquence d'utilisation de l'outil de gest
 Respect du planning & Pourcentage d'opérations réalisées dans les délais prévus & > 80\% \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \end{table}
 
 Ces indicateurs sont mesurés de manière \textbf{hebdomadaire} et font l'objet d'une revue mensuelle avec l'équipe de production pour identifier les éventuelles dérives et mettre en place des actions correctives.

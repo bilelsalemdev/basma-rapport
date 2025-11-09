@@ -154,8 +154,8 @@ Les frameworks de développement assurent la création d'une application web com
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[
-    node distance=2.0cm,
-    box/.style={rectangle, draw, fill=blue!10, text width=7cm, text centered, rounded corners, minimum height=1.2cm, font=\small, thick},
+    node distance=1.5cm,
+    box/.style={rectangle, draw, fill=blue!10, text width=8cm, text centered, rounded corners, minimum height=1.2cm, font=\small, thick},
     arrow/.style={->, >=stealth, thick, blue!70},
     label/.style={font=\footnotesize\itshape, text=gray}
 ]
@@ -253,8 +253,8 @@ Les frameworks de développement assurent la création d'une application web com
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[
-    node distance=3.0cm,
-    component/.style={rectangle, draw, thick, text width=3.5cm, text centered, rounded corners, minimum height=1.5cm, font=\normalsize},
+    node distance=1.8cm,
+    component/.style={rectangle, draw, thick, text width=3.8cm, text centered, rounded corners, minimum height=1.5cm, font=\normalsize},
     arrow/.style={->, >=stealth, thick, blue!70},
     data/.style={->, >=stealth, thick, red!70},
     label/.style={font=\small, text=gray}
@@ -266,49 +266,49 @@ Les frameworks de développement assurent la création d'une application web com
     \small Application Web Frontend
 };
 
-% Ligne des trois composants (côte à côte) - espacement augmenté
-\node[component, fill=cyan!15, below left=3.2cm and 2.8cm of app] (react) {
+% Ligne des trois composants (côte à côte) - espacement réduit
+\node[component, fill=cyan!15, below left=2.5cm and 2.2cm of app] (react) {
     \textbf{React v18.2.0}\\[2pt]
     \small Framework UI\\
     \small Composants réutilisables
 };
 
-\node[component, fill=green!15, below=3.2cm of app] (recharts) {
+\node[component, fill=green!15, below=2.5cm of app] (recharts) {
     \textbf{Recharts v2.8.0}\\[2pt]
     \small Visualisations\\
     \small interactives
 };
 
-\node[component, fill=yellow!20, below right=3.2cm and 2.8cm of app] (axios) {
+\node[component, fill=yellow!20, below right=2.5cm and 2.2cm of app] (axios) {
     \textbf{Axios v1.5.0}\\[2pt]
     \small Client HTTP\\
     \small pour API
 };
 
 % Annotations sous chaque composant
-\node[below=0.2cm of react, font=\footnotesize, text width=3.5cm, align=center, text=blue!70] {
+\node[below=0.1cm of react, font=\footnotesize, text width=3.8cm, align=center, text=blue!70] {
     JSX → DOM dynamique\\
     Virtual DOM pour performance
 };
 
-\node[below=0.2cm of recharts, font=\footnotesize, text width=3.5cm, align=center, text=blue!70] {
+\node[below=0.1cm of recharts, font=\footnotesize, text width=3.8cm, align=center, text=blue!70] {
     Graphiques interactifs\\
     Composants React natifs
 };
 
-\node[below=0.2cm of axios, font=\footnotesize, text width=3.5cm, align=center, text=blue!70] {
+\node[below=0.1cm of axios, font=\footnotesize, text width=3.8cm, align=center, text=blue!70] {
     Requêtes HTTP asynchrones\\
     Gestion des erreurs
 };
 
-% Interface utilisateur (en bas) - plus bas pour éviter chevauchement
-\node[component, fill=green!20, below=6.8cm of app] (ui) {
+% Interface utilisateur (en bas) - plus bas
+\node[component, fill=green!20, below=5.2cm of app] (ui) {
     \textbf{\large Interface Utilisateur}\\[2pt]
     \small Dashboard interactif
 };
 
-% API Backend - positionné en dessous d'Axios avec plus d'espace
-\node[component, fill=red!15, below=2.5cm of axios, text width=3.5cm] (api) {
+% API Backend - positionné en dessous d'Axios
+\node[component, fill=red!15, below=2cm of axios, text width=3.8cm] (api) {
     \textbf{API Backend}\\[2pt]
     \small api.example.com
 };
@@ -420,7 +420,7 @@ L'infrastructure et les outils DevOps assurent la reproductibilité, la qualité
 };
 
 % Classe Docker (en bas à gauche)
-\node[class, below=4.5cm of annotation, xshift=-6cm] (docker) {
+\node[class, below=4cm of annotation, xshift=-5cm] (docker) {
     \textbf{Docker}\\[3pt]
     \rule{3cm}{0.4pt}\\[2pt]
     \scriptsize
@@ -434,7 +434,7 @@ L'infrastructure et les outils DevOps assurent la reproductibilité, la qualité
 };
 
 % Classe Git (centre-gauche)
-\node[class, below=4.5cm of annotation, xshift=-2cm] (git) {
+\node[class, below=4cm of annotation, xshift=-1.7cm] (git) {
     \textbf{Git}\\[3pt]
     \rule{3cm}{0.4pt}\\[2pt]
     \scriptsize
@@ -448,7 +448,7 @@ L'infrastructure et les outils DevOps assurent la reproductibilité, la qualité
 };
 
 % Classe Pytest (centre-droite)
-\node[class, below=4.5cm of annotation, xshift=2cm] (pytest) {
+\node[class, below=4cm of annotation, xshift=1.7cm] (pytest) {
     \textbf{Pytest}\\[3pt]
     \rule{3cm}{0.4pt}\\[2pt]
     \scriptsize
@@ -462,7 +462,7 @@ L'infrastructure et les outils DevOps assurent la reproductibilité, la qualité
 };
 
 % Classe PostgreSQL (en bas à droite)
-\node[class, below=4.5cm of annotation, xshift=6cm] (postgresql) {
+\node[class, below=4cm of annotation, xshift=5cm] (postgresql) {
     \textbf{PostgreSQL}\\[3pt]
     \rule{3cm}{0.4pt}\\[2pt]
     \scriptsize
@@ -697,7 +697,7 @@ La figure \ref{fig:crispml_process} illustre le processus complet CRISP-ML(Q) av
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[
-    node distance=2.5cm,
+    node distance=1.8cm,
     phase/.style={rectangle, draw, fill=blue!20, text width=3.2cm, text centered, rounded corners, minimum height=1cm, font=\small},
     arrow/.style={->, >=stealth, thick},
     quality/.style={rectangle, draw, fill=green!20, text width=2.8cm, text centered, rounded corners, minimum height=0.8cm, font=\footnotesize}
@@ -827,7 +827,6 @@ Le Business Model Canvas permet de visualiser la proposition de valeur du system
 \begin{table}[H]
 \centering
 \caption{Business Model Canvas du systeme IA de planification}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{2}{|c|}{\textbf{Proposition de valeur}} \\
@@ -863,7 +862,6 @@ Le Business Model Canvas permet de visualiser la proposition de valeur du system
 - Experts ML externes & - Support : 5,000 TND/an \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:business_model_canvas}
 \end{table}
 
@@ -885,7 +883,6 @@ L'objectif principal du projet est de developper un systeme d'intelligence artif
 \begin{table}[H]
 \centering
 \caption{Objectifs operationnels avec metriques de succes}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Objectif} & \textbf{Baseline} & \textbf{Cible} & \textbf{Gain attendu} \\
@@ -907,7 +904,6 @@ Temps attente inter-etapes & 45 min & 20 min & -56\% attente \\
 Satisfaction utilisateurs & 3,2/5 & 4,5/5 & +41\% satisfaction \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:operational_objectives}
 \end{table}
 
@@ -1242,7 +1238,6 @@ Les criteres de succes du projet sont definis selon quatre dimensions complement
 \begin{table}[H]
 \centering
 \caption{Criteres de succes techniques}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Critere} & \textbf{Seuil minimum} & \textbf{Cible} & \textbf{Methode de mesure} \\
@@ -1262,7 +1257,6 @@ Disponibilite & > 99\% & > 99,5\% & Monitoring 24/7 \\
 Scalabilite & 150 OF/jour & 200 OF/jour & Tests de charge \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:technical_success_criteria}
 \end{table}
 
@@ -1271,7 +1265,6 @@ Scalabilite & 150 OF/jour & 200 OF/jour & Tests de charge \\
 \begin{table}[H]
 \centering
 \caption{Criteres de succes metier}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Critere} & \textbf{Seuil minimum} & \textbf{Cible} & \textbf{Methode de mesure} \\
@@ -1291,7 +1284,6 @@ Satisfaction users & > 3,8/5 & > 4,5/5 & Enquete trimestrielle \\
 Taux adoption & > 85\% & > 90\% & Logs d'utilisation \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:business_success_criteria}
 \end{table}
 
@@ -2128,7 +2120,6 @@ Reduction de la dimensionnalite pour eviter l'overfitting.
 \begin{table}[H]
 \centering
 \caption{Features finales pour modelisation}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Feature} & \textbf{Type} & \textbf{Correlation} & \textbf{Importance} \\
@@ -2158,7 +2149,6 @@ charge\_machine\_jour & Numerique & 0.31* & 0.04 \\
 Type\_Tissu (one-hot) & Categorielle & Variable & 0.02 \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \caption*{*** p<0.001, ** p<0.01, * p<0.05}
 \label{tab:final_features}
 \end{table}
@@ -2322,7 +2312,7 @@ La figure \ref{fig:quality_framework} illustre le framework complet d'assurance 
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[
-    node distance=2.0cm,
+    node distance=1.2cm,
     dimension/.style={rectangle, draw, fill=blue!20, text width=2.5cm, text centered, rounded corners, minimum height=1cm, font=\footnotesize},
     check/.style={rectangle, draw, fill=orange!20, text width=2.2cm, text centered, rounded corners, minimum height=0.7cm, font=\scriptsize},
     arrow/.style={->, >=stealth, thick}
@@ -2377,7 +2367,6 @@ La qualite des donnees est evaluee selon six dimensions critiques definies par l
 \begin{table}[H]
 \centering
 \caption{Criteres de qualite des donnees}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Dimension} & \textbf{Critere} & \textbf{Seuil} & \textbf{Resultat} \\
@@ -2395,7 +2384,6 @@ Unicite & Absence de doublons & 100\% & 100\% \\
 Validite & Conformite aux formats & 100\% & 100\% \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:data_quality_criteria}
 \end{table}
 
@@ -2446,7 +2434,6 @@ La qualite des modeles de machine learning est evaluee selon cinq dimensions com
 \begin{table}[H]
 \centering
 \caption{Criteres de qualite des modeles ML}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Dimension} & \textbf{Metrique} & \textbf{Seuil} & \textbf{Resultat} \\
@@ -2462,7 +2449,6 @@ Generalisation & Ã‰cart train-test & <10\% & 6.2\% \\
 Stabilite & Variance predictions & <15\% & 8.7\% \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:model_quality_criteria}
 \end{table}
 
@@ -2516,7 +2502,6 @@ Le code developpe respecte les standards de qualite suivants :
 \begin{table}[H]
 \centering
 \caption{Standards de qualite du code}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Critere} & \textbf{Standard} & \textbf{Seuil} & \textbf{Resultat} \\
@@ -2534,7 +2519,6 @@ Type hints & mypy & >90\% & 94.5\% \\
 Style PEP8 & flake8 & 0 erreur & 0 erreur \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:code_quality_standards}
 \end{table}
 
@@ -2580,7 +2564,6 @@ La qualite operationnelle du systeme en production est evaluee selon quatre dime
 \begin{table}[H]
 \centering
 \caption{Criteres de qualite operationnelle}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Dimension} & \textbf{Metrique} & \textbf{Seuil} & \textbf{Cible} \\
@@ -2594,7 +2577,6 @@ Scalabilite & Debit & >100 req/min & >200 req/min \\
 Fiabilite & Taux d'erreur & <0.1\% & <0.01\% \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:operational_quality_criteria}
 \end{table}
 
@@ -2789,7 +2771,6 @@ Un systeme de monitoring continu surveille la qualite des donnees en production.
 \begin{table}[H]
 \centering
 \caption{Alertes de qualite des donnees}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Alerte} & \textbf{Seuil} & \textbf{Niveau} & \textbf{Action} \\
@@ -2805,7 +2786,6 @@ Violations contraintes & > 2\% & Ã‰leve & Investigation + alerte \\
 Delai de fraicheur & > 48h & Moyen & Alerte equipe data \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:data_quality_alerts}
 \end{table}
 
@@ -2964,7 +2944,6 @@ Un systeme d'alertes multi-niveaux notifie les equipes en cas de probleme.
 \begin{table}[H]
 \centering
 \caption{Systeme d'alertes de monitoring}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Type d'alerte} & \textbf{Condition} & \textbf{Niveau} & \textbf{Action automatique} \\
@@ -2982,7 +2961,6 @@ Disponibilite faible & < 99\% (24h) & Ã‰leve & Notification + investigation \
 Outliers excessifs & > 10\% & Moyen & Rapport qualite donnees \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:monitoring_alerts}
 \end{table}
 
@@ -3703,7 +3681,6 @@ L'efficacite computationnelle est un critere important pour permettre le reentra
 \begin{table}[H]
 \centering
 \caption{Ressources computationnelles utilisees pour l'entrainement}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|}
 \hline
 \textbf{Metrique} & \textbf{Valeur} & \textbf{Commentaire} \\
@@ -3719,7 +3696,6 @@ Memoire RAM & 2.3 GB & Pic d'utilisation memoire \\
 Taille du modele sauvegarde & 8.7 MB & Format pickle compresse \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:training_resources}
 \end{table}
 
@@ -3768,7 +3744,6 @@ Le modele XGBoost entraine avec la configuration initiale atteint des performanc
 \begin{table}[H]
 \centering
 \caption{Performances du modele XGBoost apres entrainement initial}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|c|c|c|}
 \hline
 \textbf{Metrique} & \textbf{Train} & \textbf{Validation} & \textbf{Objectif} \\
@@ -3784,7 +3759,6 @@ MAPE (erreur absolue moyenne en \%) & 7.4\% & 9.7\% & < 15\% \\
 Ecart train-validation & \multicolumn{2}{c|}{6.2\%} & < 10\% \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:training_results}
 \end{table}
 
@@ -3865,7 +3839,6 @@ L'espace de recherche des hyperparametres a ete defini en s'appuyant sur l'exper
 \begin{table}[H]
 \centering
 \caption{Espace de recherche des hyperparametres XGBoost}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Hyperparametre} & \textbf{Plage} & \textbf{Type} & \textbf{Valeur initiale} \\
@@ -3889,7 +3862,6 @@ reg\_alpha & [0, 1] & Reel & 0.1 \\
 reg\_lambda & [0, 5] & Reel & 1.0 \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:hyperparameter_search_space}
 \end{table}
 
@@ -3949,7 +3921,6 @@ Apres exploration de 247 configurations differentes (100 Random Search + 147 Gri
 \begin{table}[H]
 \centering
 \caption{Hyperparametres optimaux identifies}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Hyperparametre} & \textbf{Valeur initiale} & \textbf{Valeur optimale} & \textbf{Variation} \\
@@ -3973,7 +3944,6 @@ reg\_alpha & 0.1 & 0.15 & +50\% \\
 reg\_lambda & 1.0 & 1.5 & +50\% \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:optimal_hyperparameters}
 \end{table}
 
@@ -3995,7 +3965,6 @@ L'optimisation des hyperparametres a permis d'ameliorer significativement les pe
 \begin{table}[H]
 \centering
 \caption{Comparaison avant/apres optimisation des hyperparametres}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|c|c|c|}
 \hline
 \textbf{Metrique} & \textbf{Avant optimisation} & \textbf{Apres optimisation} & \textbf{Amelioration} \\
@@ -4013,7 +3982,6 @@ Ecart train-validation & 6.2\% & 4.8\% & -22.6\% \\
 Temps d'entrainement & 45s & 62s & +37.8\% \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:optimization_improvement}
 \end{table}
 
@@ -4060,7 +4028,6 @@ Une analyse de sensibilite a ete realisee pour identifier les hyperparametres ay
 \begin{table}[H]
 \centering
 \caption{Analyse de sensibilite des hyperparametres}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|c|l|}
 \hline
 \textbf{Hyperparametre} & \textbf{Impact sur RÂ²} & \textbf{Interpretation} \\
@@ -4084,7 +4051,6 @@ reg\_alpha & 0.12 & Impact faible - Regularisation L1 \\
 gamma & 0.08 & Impact tres faible - Seuil de gain \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:hyperparameter_sensitivity}
 \end{table}
 
@@ -4132,7 +4098,6 @@ La configuration optimale identifiee a ete validee sur l'ensemble de test (15\% 
 \begin{table}[H]
 \centering
 \caption{Performances de la configuration optimale sur ensemble de test}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|c|c|c|}
 \hline
 \textbf{Metrique} & \textbf{Validation} & \textbf{Test} & \textbf{Ecart} \\
@@ -4146,7 +4111,6 @@ RMSE & 18.4 min & 19.1 min & +3.8\% \\
 MAPE & 8.9\% & 9.3\% & +4.5\% \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:optimal_test_performance}
 \end{table}
 
@@ -4176,7 +4140,6 @@ Pour les donnees de series temporelles, la validation croisee classique (K-Fold)
 \begin{table}[H]
 \centering
 \caption{Configuration de la validation croisee temporelle}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|l|l|}
 \hline
 \textbf{Parametre} & \textbf{Valeur} & \textbf{Justification} \\
@@ -4192,7 +4155,6 @@ Gap temporel & 0 jours & Pas de gap entre train et validation \\
 Strategie & Expanding window & Fenetre d'entrainement croissante \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:cross_validation_config}
 \end{table}
 
@@ -4201,7 +4163,6 @@ Strategie & Expanding window & Fenetre d'entrainement croissante \\
 \begin{table}[H]
 \centering
 \caption{Decoupage des folds pour validation croisee temporelle}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|c|l|l|l|}
 \hline
 \textbf{Fold} & \textbf{Periode entrainement} & \textbf{Periode validation} & \textbf{Taille train} \\
@@ -4217,7 +4178,6 @@ Strategie & Expanding window & Fenetre d'entrainement croissante \\
 5 & Janvier - Avril & Mai (semaine 1-2) & 80\% \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:cross_validation_folds}
 \end{table}
 
@@ -4323,7 +4283,6 @@ Une analyse de variance a ete realisee pour determiner si les differences de per
 \begin{table}[H]
 \centering
 \caption{Analyse de variance (ANOVA) des performances par fold}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|c|c|c|}
 \hline
 \textbf{Source de variation} & \textbf{Somme des carres} & \textbf{F-statistic} & \textbf{p-value} \\
@@ -4333,7 +4292,6 @@ Entre folds & 0.00082 & 1.23 & 0.412 \\
 Intra-fold (residuelle) & 0.00267 & - & - \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:anova_results}
 \end{table}
 
@@ -4406,7 +4364,6 @@ Sur la base des resultats de validation croisee, les intervalles de confiance a 
 \begin{table}[H]
 \centering
 \caption{Intervalles de confiance a 95\% des performances}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|l|c|c|}
 \hline
 \textbf{Metrique} & \textbf{Moyenne} & \textbf{Intervalle de confiance 95\%} \\
@@ -4420,7 +4377,6 @@ RMSE (min) & 18.6 & [18.0, 19.2] \\
 MAPE (\%) & 9.0 & [8.5, 9.5] \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:confidence_intervals}
 \end{table}
 

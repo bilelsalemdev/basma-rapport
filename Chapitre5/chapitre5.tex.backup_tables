@@ -42,7 +42,6 @@ L'équipe projet est composée de :
 \begin{table}[H]
 \centering
 \caption{Roadmap Phase 1 - Fondations}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|p{2cm}|p{8cm}|p{3cm}|}
 \hline
 \textbf{Sprint} & \textbf{Livrables} & \textbf{Durée} \\
@@ -56,7 +55,6 @@ Sprint 3 & Modèles ML de base, validation croisée, métriques & 2 semaines \\
 Sprint 4 & Pipeline MLOps, tracking MLflow, registre des modèles & 2 semaines \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:roadmap_phase1}
 \end{table}
 
@@ -67,7 +65,6 @@ Sprint 4 & Pipeline MLOps, tracking MLflow, registre des modèles & 2 semaines \
 \begin{table}[H]
 \centering
 \caption{Roadmap Phase 2 - Développement Core}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|p{2cm}|p{8cm}|p{3cm}|}
 \hline
 \textbf{Sprint} & \textbf{Livrables} & \textbf{Durée} \\
@@ -81,7 +78,6 @@ Sprint 7 & Système d'ordonnancement, optimisation, contraintes & 2 semaines \\
 Sprint 8 & Intégration complète, tests end-to-end, documentation API & 2 semaines \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:roadmap_phase2}
 \end{table}
 
@@ -92,7 +88,6 @@ Sprint 8 & Intégration complète, tests end-to-end, documentation API & 2 semai
 \begin{table}[H]
 \centering
 \caption{Roadmap Phase 3 - Optimisation et Production}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|p{2cm}|p{8cm}|p{3cm}|}
 \hline
 \textbf{Sprint} & \textbf{Livrables} & \textbf{Durée} \\
@@ -106,7 +101,6 @@ Sprint 11 & Tests de charge, sécurité, conformité & 2 semaines \\
 Sprint 12 & Déploiement production, formation utilisateurs, support & 2 semaines \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:roadmap_phase3}
 \end{table}
 
@@ -266,7 +260,6 @@ La gestion des risques suit une approche structurée basée sur le PMBOK \cite{s
 \begin{table}[H]
 \centering
 \caption{Registre détaillé des risques projet}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|p{3cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{3cm}|p{2cm}|}
 \hline
 \textbf{Risque} & \textbf{Prob.} & \textbf{Impact} & \textbf{Score} & \textbf{Mitigation} & \textbf{Propriétaire} \\
@@ -308,7 +301,6 @@ Conflits priorités & M & M & 4 & Comité pilotage & Product Owner \\
 Ressources insuffisantes & F & M & 2 & Planification capacité & Chef Projet \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \caption*{Prob.: F=Faible, M=Moyenne, E=Élevée; Impact: F=Faible, M=Moyen, H=Haut; Score=Prob×Impact (1-9)}
 \label{tab:registre_risques_complet}
 \end{table}
@@ -318,7 +310,6 @@ Ressources insuffisantes & F & M & 2 & Planification capacité & Chef Projet \\
 \begin{table}[H]
 \centering
 \caption{Matrice probabilité-impact des risques}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|p{2cm}|p{3cm}|p{3cm}|p{3cm}|}
 \hline
 \textbf{Impact →} & \textbf{Faible (1-3)} & \textbf{Moyen (4-6)} & \textbf{Haut (7-9)} \\
@@ -331,7 +322,6 @@ Ressources insuffisantes & F & M & 2 & Planification capacité & Chef Projet \\
 \textbf{Faible} & Turnover, Ressources & - & Scalabilité, Sécurité, Sponsor \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:matrice_criticite}
 \end{table}
 
@@ -487,7 +477,6 @@ Ressources insuffisantes & F & M & 2 & Planification capacité & Chef Projet \\
 \begin{table}[H]
 \centering
 \caption{Répartition du Budget}
-\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{|p{4cm}|p{3cm}|p{3cm}|}
 \hline
 \textbf{Catégorie} & \textbf{Montant (TND)} & \textbf{Pourcentage} \\
@@ -503,7 +492,6 @@ Contingence & 7,500 & 10\% \\
 \textbf{Total} & \textbf{75,000} & \textbf{100\%} \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \label{tab:budget}
 \end{table}
 

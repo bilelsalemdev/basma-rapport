@@ -154,8 +154,8 @@ Les frameworks de développement assurent la création d'une application web com
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[
-    node distance=2.0cm,
-    box/.style={rectangle, draw, fill=blue!10, text width=7cm, text centered, rounded corners, minimum height=1.2cm, font=\small, thick},
+    node distance=1.5cm,
+    box/.style={rectangle, draw, fill=blue!10, text width=8cm, text centered, rounded corners, minimum height=1.2cm, font=\small, thick},
     arrow/.style={->, >=stealth, thick, blue!70},
     label/.style={font=\footnotesize\itshape, text=gray}
 ]
@@ -253,8 +253,8 @@ Les frameworks de développement assurent la création d'une application web com
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[
-    node distance=3.0cm,
-    component/.style={rectangle, draw, thick, text width=3.5cm, text centered, rounded corners, minimum height=1.5cm, font=\normalsize},
+    node distance=1.8cm,
+    component/.style={rectangle, draw, thick, text width=3.8cm, text centered, rounded corners, minimum height=1.5cm, font=\normalsize},
     arrow/.style={->, >=stealth, thick, blue!70},
     data/.style={->, >=stealth, thick, red!70},
     label/.style={font=\small, text=gray}
@@ -266,49 +266,49 @@ Les frameworks de développement assurent la création d'une application web com
     \small Application Web Frontend
 };
 
-% Ligne des trois composants (côte à côte) - espacement augmenté
-\node[component, fill=cyan!15, below left=3.2cm and 2.8cm of app] (react) {
+% Ligne des trois composants (côte à côte) - espacement réduit
+\node[component, fill=cyan!15, below left=2.5cm and 2.2cm of app] (react) {
     \textbf{React v18.2.0}\\[2pt]
     \small Framework UI\\
     \small Composants réutilisables
 };
 
-\node[component, fill=green!15, below=3.2cm of app] (recharts) {
+\node[component, fill=green!15, below=2.5cm of app] (recharts) {
     \textbf{Recharts v2.8.0}\\[2pt]
     \small Visualisations\\
     \small interactives
 };
 
-\node[component, fill=yellow!20, below right=3.2cm and 2.8cm of app] (axios) {
+\node[component, fill=yellow!20, below right=2.5cm and 2.2cm of app] (axios) {
     \textbf{Axios v1.5.0}\\[2pt]
     \small Client HTTP\\
     \small pour API
 };
 
 % Annotations sous chaque composant
-\node[below=0.2cm of react, font=\footnotesize, text width=3.5cm, align=center, text=blue!70] {
+\node[below=0.1cm of react, font=\footnotesize, text width=3.8cm, align=center, text=blue!70] {
     JSX → DOM dynamique\\
     Virtual DOM pour performance
 };
 
-\node[below=0.2cm of recharts, font=\footnotesize, text width=3.5cm, align=center, text=blue!70] {
+\node[below=0.1cm of recharts, font=\footnotesize, text width=3.8cm, align=center, text=blue!70] {
     Graphiques interactifs\\
     Composants React natifs
 };
 
-\node[below=0.2cm of axios, font=\footnotesize, text width=3.5cm, align=center, text=blue!70] {
+\node[below=0.1cm of axios, font=\footnotesize, text width=3.8cm, align=center, text=blue!70] {
     Requêtes HTTP asynchrones\\
     Gestion des erreurs
 };
 
-% Interface utilisateur (en bas) - plus bas pour éviter chevauchement
-\node[component, fill=green!20, below=6.8cm of app] (ui) {
+% Interface utilisateur (en bas) - plus bas
+\node[component, fill=green!20, below=5.2cm of app] (ui) {
     \textbf{\large Interface Utilisateur}\\[2pt]
     \small Dashboard interactif
 };
 
-% API Backend - positionné en dessous d'Axios avec plus d'espace
-\node[component, fill=red!15, below=2.5cm of axios, text width=3.5cm] (api) {
+% API Backend - positionné en dessous d'Axios
+\node[component, fill=red!15, below=2cm of axios, text width=3.8cm] (api) {
     \textbf{API Backend}\\[2pt]
     \small api.example.com
 };
@@ -420,7 +420,7 @@ L'infrastructure et les outils DevOps assurent la reproductibilité, la qualité
 };
 
 % Classe Docker (en bas à gauche)
-\node[class, below=4.5cm of annotation, xshift=-6cm] (docker) {
+\node[class, below=4cm of annotation, xshift=-5cm] (docker) {
     \textbf{Docker}\\[3pt]
     \rule{3cm}{0.4pt}\\[2pt]
     \scriptsize
@@ -434,7 +434,7 @@ L'infrastructure et les outils DevOps assurent la reproductibilité, la qualité
 };
 
 % Classe Git (centre-gauche)
-\node[class, below=4.5cm of annotation, xshift=-2cm] (git) {
+\node[class, below=4cm of annotation, xshift=-1.7cm] (git) {
     \textbf{Git}\\[3pt]
     \rule{3cm}{0.4pt}\\[2pt]
     \scriptsize
@@ -448,7 +448,7 @@ L'infrastructure et les outils DevOps assurent la reproductibilité, la qualité
 };
 
 % Classe Pytest (centre-droite)
-\node[class, below=4.5cm of annotation, xshift=2cm] (pytest) {
+\node[class, below=4cm of annotation, xshift=1.7cm] (pytest) {
     \textbf{Pytest}\\[3pt]
     \rule{3cm}{0.4pt}\\[2pt]
     \scriptsize
@@ -462,7 +462,7 @@ L'infrastructure et les outils DevOps assurent la reproductibilité, la qualité
 };
 
 % Classe PostgreSQL (en bas à droite)
-\node[class, below=4.5cm of annotation, xshift=6cm] (postgresql) {
+\node[class, below=4cm of annotation, xshift=5cm] (postgresql) {
     \textbf{PostgreSQL}\\[3pt]
     \rule{3cm}{0.4pt}\\[2pt]
     \scriptsize
@@ -697,7 +697,7 @@ La figure \ref{fig:crispml_process} illustre le processus complet CRISP-ML(Q) av
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[
-    node distance=2.5cm,
+    node distance=1.8cm,
     phase/.style={rectangle, draw, fill=blue!20, text width=3.2cm, text centered, rounded corners, minimum height=1cm, font=\small},
     arrow/.style={->, >=stealth, thick},
     quality/.style={rectangle, draw, fill=green!20, text width=2.8cm, text centered, rounded corners, minimum height=0.8cm, font=\footnotesize}
@@ -2322,7 +2322,7 @@ La figure \ref{fig:quality_framework} illustre le framework complet d'assurance 
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[
-    node distance=2.0cm,
+    node distance=1.2cm,
     dimension/.style={rectangle, draw, fill=blue!20, text width=2.5cm, text centered, rounded corners, minimum height=1cm, font=\footnotesize},
     check/.style={rectangle, draw, fill=orange!20, text width=2.2cm, text centered, rounded corners, minimum height=0.7cm, font=\scriptsize},
     arrow/.style={->, >=stealth, thick}
