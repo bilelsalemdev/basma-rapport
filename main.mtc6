@@ -1,112 +1,153 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Introduction}{\reset@font\mtcSfont 41}{section.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.1}Vue d'ensemble du processus CRISP-ML(Q)}{\reset@font\mtcSSfont 41}{subsection.3.1.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Outils et bibliothèques utilisés}{\reset@font\mtcSfont 42}{section.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Introduction}{\reset@font\mtcSSfont 42}{subsection.3.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Écosystème Data Science et Machine Learning}{\reset@font\mtcSSfont 43}{subsection.3.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.2.1}Bibliothèques de manipulation de données}{\reset@font\mtcSSSfont 43}{subsubsection.3.2.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.2.2}Bibliothèques de Machine Learning}{\reset@font\mtcSSSfont 44}{subsubsection.3.2.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.2.3}Bibliothèques de visualisation}{\reset@font\mtcSSSfont 45}{subsubsection.3.2.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.3}Frameworks de développement}{\reset@font\mtcSSfont 46}{subsection.3.2.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.3.1}Backend et API}{\reset@font\mtcSSSfont 46}{subsubsection.3.2.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.3.2}Frontend et interface utilisateur}{\reset@font\mtcSSSfont 47}{subsubsection.3.2.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.4}Outils d'optimisation et d'ordonnancement}{\reset@font\mtcSSfont 48}{subsection.3.2.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.5}Infrastructure et DevOps}{\reset@font\mtcSSfont 49}{subsection.3.2.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.6}Stack technologique complète}{\reset@font\mtcSSfont 50}{subsection.3.2.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.7}Justification des choix et intégration CRISP-ML(Q)}{\reset@font\mtcSSfont 50}{subsection.3.2.7}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Phase 1 : Comprehension metier (Business Understanding)}{\reset@font\mtcSfont 52}{section.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.1}Contexte strategique et enjeux}{\reset@font\mtcSSfont 52}{subsection.3.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.1.1}Contexte industriel}{\reset@font\mtcSSSfont 52}{subsubsection.3.3.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.2}Business Model Canvas}{\reset@font\mtcSSfont 52}{subsection.3.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.3}Objectifs metier detailles}{\reset@font\mtcSSfont 53}{subsection.3.3.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.3.1}Objectifs strategiques}{\reset@font\mtcSSSfont 53}{subsubsection.3.3.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.3.2}Objectifs operationnels quantifiables}{\reset@font\mtcSSSfont 54}{subsubsection.3.3.3.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.3.3}Objectifs techniques ML}{\reset@font\mtcSSSfont 54}{subsubsection.3.3.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.4}Analyse approfondie des parties prenantes}{\reset@font\mtcSSfont 54}{subsection.3.3.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.4.1}Matrice pouvoir-interet}{\reset@font\mtcSSSfont 54}{subsubsection.3.3.4.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.4.2}Besoins detailles par profil utilisateur}{\reset@font\mtcSSSfont 54}{subsubsection.3.3.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.5}Analyse des processus metier}{\reset@font\mtcSSfont 56}{subsection.3.3.5}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.5.1}Cartographie du processus actuel (AS-IS)}{\reset@font\mtcSSSfont 56}{subsubsection.3.3.5.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.5.2}Processus cible optimise (TO-BE)}{\reset@font\mtcSSSfont 57}{subsubsection.3.3.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.6}Analyse des risques metier}{\reset@font\mtcSSfont 58}{subsection.3.3.6}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.6.1}Registre des risques}{\reset@font\mtcSSSfont 58}{subsubsection.3.3.6.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.6.2}Plan de mitigation des risques critiques}{\reset@font\mtcSSSfont 59}{subsubsection.3.3.6.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.7}Criteres de succes et metriques de performance}{\reset@font\mtcSSfont 60}{subsection.3.3.7}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.7.1}Criteres techniques ML}{\reset@font\mtcSSSfont 60}{subsubsection.3.3.7.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.7.2}Criteres metier operationnels}{\reset@font\mtcSSSfont 60}{subsubsection.3.3.7.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.7.3}Criteres de qualite logicielle}{\reset@font\mtcSSSfont 60}{subsubsection.3.3.7.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.7.4}Criteres financiers}{\reset@font\mtcSSSfont 61}{subsubsection.3.3.7.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.8}Contraintes et hypotheses du projet}{\reset@font\mtcSSfont 61}{subsection.3.3.8}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.8.1}Contraintes identifiees}{\reset@font\mtcSSSfont 61}{subsubsection.3.3.8.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.8.2}Hypotheses du projet}{\reset@font\mtcSSSfont 62}{subsubsection.3.3.8.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.9}Synthese de la phase Business Understanding}{\reset@font\mtcSSfont 63}{subsection.3.3.9}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}Phase 2 : Comprehension des donnees (Data Understanding)}{\reset@font\mtcSfont 63}{section.3.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.1}Objectifs de la phase Data Understanding}{\reset@font\mtcSSfont 63}{subsection.3.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.2}Inventaire et collecte des donnees}{\reset@font\mtcSSfont 63}{subsection.3.4.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.2.1}Sources de donnees identifiees}{\reset@font\mtcSSSfont 63}{subsubsection.3.4.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.2.2}Caracteristiques des sources de donnees}{\reset@font\mtcSSSfont 65}{subsubsection.3.4.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.2.3}Dataset principal : PSC\_X\_1 - COUPE.csv}{\reset@font\mtcSSSfont 65}{subsubsection.3.4.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.3}Dictionnaire de donnees}{\reset@font\mtcSSfont 65}{subsection.3.4.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.4}Exploration des donnees}{\reset@font\mtcSSfont 66}{subsection.3.4.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.4.1}Analyse du dataset principal}{\reset@font\mtcSSSfont 66}{subsubsection.3.4.4.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.4.2}Variables d'interet}{\reset@font\mtcSSSfont 66}{subsubsection.3.4.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.5}Analyse de la qualite des donnees}{\reset@font\mtcSSfont 67}{subsection.3.4.5}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.5.1}Valeurs manquantes}{\reset@font\mtcSSSfont 67}{subsubsection.3.4.5.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.5.2}Valeurs aberrantes}{\reset@font\mtcSSSfont 67}{subsubsection.3.4.5.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.5.3}Coherence des donnees}{\reset@font\mtcSSSfont 67}{subsubsection.3.4.5.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.6}Analyse exploratoire des donnees}{\reset@font\mtcSSfont 67}{subsection.3.4.6}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.6.1}Distribution des variables}{\reset@font\mtcSSSfont 67}{subsubsection.3.4.6.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.6.2}Correlations}{\reset@font\mtcSSSfont 67}{subsubsection.3.4.6.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.6.3}Patterns temporels}{\reset@font\mtcSSSfont 68}{subsubsection.3.4.6.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.5}Phase 3 : Preparation des donnees (Data Preparation)}{\reset@font\mtcSfont 68}{section.3.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.1}Objectifs de la phase Data Preparation}{\reset@font\mtcSSfont 68}{subsection.3.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.2}Nettoyage des donnees}{\reset@font\mtcSSfont 68}{subsection.3.5.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.2.1}Traitement des valeurs manquantes}{\reset@font\mtcSSSfont 68}{subsubsection.3.5.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.2.2}Traitement des valeurs aberrantes}{\reset@font\mtcSSSfont 69}{subsubsection.3.5.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.2.3}Standardisation des formats}{\reset@font\mtcSSSfont 70}{subsubsection.3.5.2.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.2.4}Validation de la coherence}{\reset@font\mtcSSSfont 71}{subsubsection.3.5.2.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.3}Ingenierie des caracteristiques (Feature Engineering)}{\reset@font\mtcSSfont 71}{subsection.3.5.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.3.1}Strategie de feature engineering}{\reset@font\mtcSSSfont 71}{subsubsection.3.5.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.3.2}Workflow de feature engineering}{\reset@font\mtcSSSfont 72}{subsubsection.3.5.3.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.3.3}Features temporelles}{\reset@font\mtcSSSfont 72}{subsubsection.3.5.3.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.3.4}Features derivees (domaine metier)}{\reset@font\mtcSSSfont 73}{subsubsection.3.5.3.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.3.5}Encodage des variables categorielles}{\reset@font\mtcSSSfont 74}{subsubsection.3.5.3.5}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.3.6}Normalisation et standardisation}{\reset@font\mtcSSSfont 75}{subsubsection.3.5.3.6}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.3.7}Selection de features}{\reset@font\mtcSSSfont 75}{subsubsection.3.5.3.7}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.4}Segmentation des donnees}{\reset@font\mtcSSfont 76}{subsection.3.5.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.4.1}Division temporelle}{\reset@font\mtcSSSfont 76}{subsubsection.3.5.4.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.4.2}Stratification}{\reset@font\mtcSSSfont 76}{subsubsection.3.5.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.5}Validation de la preparation}{\reset@font\mtcSSfont 76}{subsection.3.5.5}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.5.1}Metriques de qualite}{\reset@font\mtcSSSfont 76}{subsubsection.3.5.5.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.5.2}Tests de regression}{\reset@font\mtcSSSfont 77}{subsubsection.3.5.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.6}Pipeline de donnees}{\reset@font\mtcSSfont 77}{subsection.3.5.6}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.6.1}Architecture du pipeline}{\reset@font\mtcSSSfont 77}{subsubsection.3.5.6.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.6.2}Composants du pipeline}{\reset@font\mtcSSSfont 77}{subsubsection.3.5.6.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.6.3}Architecture du pipeline de donnees}{\reset@font\mtcSSSfont 77}{subsubsection.3.5.6.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.6.4}Orchestration}{\reset@font\mtcSSSfont 78}{subsubsection.3.5.6.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.6}Phase 3 (suite) : Cadre d'assurance qualite}{\reset@font\mtcSfont 79}{section.3.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.1}Introduction au cadre qualite CRISP-ML(Q)}{\reset@font\mtcSSfont 79}{subsection.3.6.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.1.1}Framework d'assurance qualite}{\reset@font\mtcSSSfont 79}{subsubsection.3.6.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.2}Metriques de qualite des donnees}{\reset@font\mtcSSfont 79}{subsection.3.6.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.2.1}Framework de qualite des donnees}{\reset@font\mtcSSSfont 79}{subsubsection.3.6.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.2.2}Tests de qualite automatises}{\reset@font\mtcSSSfont 80}{subsubsection.3.6.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.2.3}Monitoring de la qualite des donnees}{\reset@font\mtcSSSfont 80}{subsubsection.3.6.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.3}Portes de qualite des modeles (Quality Gates)}{\reset@font\mtcSSfont 81}{subsection.3.6.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.3.1}Framework de validation multi-niveaux}{\reset@font\mtcSSSfont 81}{subsubsection.3.6.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.3.2}Matrice de validation des modeles}{\reset@font\mtcSSSfont 81}{subsubsection.3.6.3.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.3.3}Tests de robustesse}{\reset@font\mtcSSSfont 81}{subsubsection.3.6.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.4}Framework de monitoring en production}{\reset@font\mtcSSfont 82}{subsection.3.6.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.4.1}Architecture de monitoring}{\reset@font\mtcSSSfont 82}{subsubsection.3.6.4.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.4.2}Dashboards de monitoring}{\reset@font\mtcSSSfont 83}{subsubsection.3.6.4.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.4.3}Systeme d'alertes intelligent}{\reset@font\mtcSSSfont 84}{subsubsection.3.6.4.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.5}Strategie de tests A/B}{\reset@font\mtcSSfont 84}{subsection.3.6.5}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.5.1}Framework de tests A/B}{\reset@font\mtcSSSfont 84}{subsubsection.3.6.5.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.5.2}Deploiement canary}{\reset@font\mtcSSSfont 85}{subsubsection.3.6.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.6}Gouvernance des modeles ML}{\reset@font\mtcSSfont 85}{subsection.3.6.6}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.6.1}Cycle de vie des modeles}{\reset@font\mtcSSSfont 85}{subsubsection.3.6.6.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.6.2}Registre des modeles}{\reset@font\mtcSSSfont 86}{subsubsection.3.6.6.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.6.3}Documentation et tracabilite}{\reset@font\mtcSSSfont 86}{subsubsection.3.6.6.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.7}Synthese du cadre qualite}{\reset@font\mtcSSfont 87}{subsection.3.6.7}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.7}Synthese et perspectives}{\reset@font\mtcSfont 87}{section.3.7}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.1}Bilan des phases 1-3}{\reset@font\mtcSSfont 87}{subsection.3.7.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.2}Preparation aux phases suivantes}{\reset@font\mtcSSfont 88}{subsection.3.7.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.3}Risques identifies et mitigations}{\reset@font\mtcSSfont 88}{subsection.3.7.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Intelligence Artificielle et Industrie 4.0}{\reset@font\mtcSfont 41}{section.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.1}Qu'est-ce que l'Intelligence Artificielle?}{\reset@font\mtcSSfont 41}{subsection.3.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.1.1}Définitions et concepts fondamentaux}{\reset@font\mtcSSSfont 41}{subsubsection.3.1.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.1.2}Paradigmes d'apprentissage en Machine Learning}{\reset@font\mtcSSSfont 42}{subsubsection.3.1.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.2}L'Industrie 4.0 et la Transformation Digitale}{\reset@font\mtcSSfont 43}{subsection.3.1.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.2.1}Définition de l'Industrie 4.0}{\reset@font\mtcSSSfont 43}{subsubsection.3.1.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.2.2}Les quatre révolutions industrielles}{\reset@font\mtcSSSfont 43}{subsubsection.3.1.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.2.3}Les piliers technologiques de l'Industrie 4.0}{\reset@font\mtcSSSfont 44}{subsubsection.3.1.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Outils et bibliothèques utilisés}{\reset@font\mtcSfont 47}{section.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Introduction}{\reset@font\mtcSSfont 47}{subsection.3.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Écosystème Data Science et Machine Learning}{\reset@font\mtcSSfont 47}{subsection.3.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.2.1}Bibliothèques de manipulation de données}{\reset@font\mtcSSSfont 48}{subsubsection.3.2.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.2.2}Bibliothèques de Machine Learning}{\reset@font\mtcSSSfont 48}{subsubsection.3.2.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.2.3}Bibliothèques de visualisation}{\reset@font\mtcSSSfont 49}{subsubsection.3.2.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.3}Frameworks de développement}{\reset@font\mtcSSfont 49}{subsection.3.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.3.1}Backend et API}{\reset@font\mtcSSSfont 50}{subsubsection.3.2.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.3.2}Frontend et interface utilisateur}{\reset@font\mtcSSSfont 51}{subsubsection.3.2.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.4}Outils d'optimisation et d'ordonnancement}{\reset@font\mtcSSfont 52}{subsection.3.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.5}Infrastructure et DevOps}{\reset@font\mtcSSfont 53}{subsection.3.2.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.6}Stack technologique complète}{\reset@font\mtcSSfont 54}{subsection.3.2.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Méthodologie CRISP-ML(Q)}{\reset@font\mtcSfont 56}{section.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.1}Introduction à CRISP-ML(Q)}{\reset@font\mtcSSfont 56}{subsection.3.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.1.1}De CRISP-DM à CRISP-ML(Q)}{\reset@font\mtcSSSfont 56}{subsubsection.3.3.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.1.2}Pourquoi CRISP-ML(Q) pour l'IA industrielle?}{\reset@font\mtcSSSfont 56}{subsubsection.3.3.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.2}Vue d'ensemble du processus CRISP-ML(Q)}{\reset@font\mtcSSfont 57}{subsection.3.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.3}Les six phases de CRISP-ML(Q)}{\reset@font\mtcSSfont 58}{subsection.3.3.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.3.1}Phase 1: Business Understanding}{\reset@font\mtcSSSfont 58}{subsubsection.3.3.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.3.2}Phase 2: Data Understanding}{\reset@font\mtcSSSfont 58}{subsubsection.3.3.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.3.3}Phase 3: Data Preparation}{\reset@font\mtcSSSfont 59}{subsubsection.3.3.3.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.3.4}Phase 4: Modeling}{\reset@font\mtcSSSfont 59}{subsubsection.3.3.3.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.3.5}Phase 5: Evaluation}{\reset@font\mtcSSSfont 59}{subsubsection.3.3.3.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.3.6}Phase 6: Deployment}{\reset@font\mtcSSSfont 59}{subsubsection.3.3.3.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.4}Portes de qualité (Quality Gates)}{\reset@font\mtcSSfont 59}{subsection.3.3.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}Phase 1 : Comprehension metier (Business Understanding)}{\reset@font\mtcSfont 60}{section.3.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.1}Contexte strategique et enjeux}{\reset@font\mtcSSfont 60}{subsection.3.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.1.1}Contexte industriel}{\reset@font\mtcSSSfont 60}{subsubsection.3.4.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.2}Business Model Canvas}{\reset@font\mtcSSfont 60}{subsection.3.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.3}Objectifs metier detailles}{\reset@font\mtcSSfont 61}{subsection.3.4.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.3.1}Objectifs strategiques}{\reset@font\mtcSSSfont 61}{subsubsection.3.4.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.3.2}Objectifs operationnels quantifiables}{\reset@font\mtcSSSfont 62}{subsubsection.3.4.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.3.3}Objectifs techniques ML}{\reset@font\mtcSSSfont 62}{subsubsection.3.4.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.4}Analyse approfondie des parties prenantes}{\reset@font\mtcSSfont 62}{subsection.3.4.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.4.1}Matrice pouvoir-interet}{\reset@font\mtcSSSfont 62}{subsubsection.3.4.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.4.2}Besoins detailles par profil utilisateur}{\reset@font\mtcSSSfont 63}{subsubsection.3.4.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.5}Analyse des processus metier}{\reset@font\mtcSSfont 64}{subsection.3.4.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.5.1}Cartographie du processus actuel (AS-IS)}{\reset@font\mtcSSSfont 64}{subsubsection.3.4.5.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.5.2}Processus cible optimise (TO-BE)}{\reset@font\mtcSSSfont 65}{subsubsection.3.4.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.6}Analyse des risques metier}{\reset@font\mtcSSfont 66}{subsection.3.4.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.6.1}Registre des risques}{\reset@font\mtcSSSfont 66}{subsubsection.3.4.6.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.6.2}Plan de mitigation des risques critiques}{\reset@font\mtcSSSfont 66}{subsubsection.3.4.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.7}Criteres de succes et metriques de performance}{\reset@font\mtcSSfont 67}{subsection.3.4.7}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.7.1}Criteres techniques ML}{\reset@font\mtcSSSfont 68}{subsubsection.3.4.7.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.7.2}Criteres metier operationnels}{\reset@font\mtcSSSfont 68}{subsubsection.3.4.7.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.7.3}Criteres de qualite logicielle}{\reset@font\mtcSSSfont 68}{subsubsection.3.4.7.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.7.4}Criteres financiers}{\reset@font\mtcSSSfont 68}{subsubsection.3.4.7.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.8}Contraintes et hypotheses du projet}{\reset@font\mtcSSfont 69}{subsection.3.4.8}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.8.1}Contraintes identifiees}{\reset@font\mtcSSSfont 69}{subsubsection.3.4.8.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.8.2}Hypotheses du projet}{\reset@font\mtcSSSfont 69}{subsubsection.3.4.8.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.9}Synthese de la phase Business Understanding}{\reset@font\mtcSSfont 70}{subsection.3.4.9}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.5}Phase 2 : Comprehension des donnees (Data Understanding)}{\reset@font\mtcSfont 71}{section.3.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.1}Objectifs de la phase Data Understanding}{\reset@font\mtcSSfont 71}{subsection.3.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.2}Inventaire et collecte des donnees}{\reset@font\mtcSSfont 71}{subsection.3.5.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.2.1}Sources de donnees identifiees}{\reset@font\mtcSSSfont 71}{subsubsection.3.5.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.2.2}Caracteristiques des sources de donnees}{\reset@font\mtcSSSfont 72}{subsubsection.3.5.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.2.3}Dataset principal : PSC\_X\_1 - COUPE.csv}{\reset@font\mtcSSSfont 72}{subsubsection.3.5.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.3}Dictionnaire de donnees}{\reset@font\mtcSSfont 73}{subsection.3.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.4}Exploration des donnees}{\reset@font\mtcSSfont 73}{subsection.3.5.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.4.1}Analyse du dataset principal}{\reset@font\mtcSSSfont 73}{subsubsection.3.5.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.4.2}Variables d'interet}{\reset@font\mtcSSSfont 73}{subsubsection.3.5.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.5}Analyse de la qualite des donnees}{\reset@font\mtcSSfont 74}{subsection.3.5.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.5.1}Valeurs manquantes}{\reset@font\mtcSSSfont 74}{subsubsection.3.5.5.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.5.2}Valeurs aberrantes}{\reset@font\mtcSSSfont 74}{subsubsection.3.5.5.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.5.3}Coherence des donnees}{\reset@font\mtcSSSfont 74}{subsubsection.3.5.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.6}Analyse exploratoire des donnees}{\reset@font\mtcSSfont 74}{subsection.3.5.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.6.1}Distribution des variables}{\reset@font\mtcSSSfont 74}{subsubsection.3.5.6.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.6.2}Correlations}{\reset@font\mtcSSSfont 74}{subsubsection.3.5.6.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.6.3}Patterns temporels}{\reset@font\mtcSSSfont 75}{subsubsection.3.5.6.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.6}Phase 3 : Preparation des donnees (Data Preparation)}{\reset@font\mtcSfont 75}{section.3.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.1}Objectifs de la phase Data Preparation}{\reset@font\mtcSSfont 75}{subsection.3.6.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.2}Nettoyage des donnees}{\reset@font\mtcSSfont 75}{subsection.3.6.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.2.1}Traitement des valeurs manquantes}{\reset@font\mtcSSSfont 75}{subsubsection.3.6.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.2.2}Traitement des valeurs aberrantes}{\reset@font\mtcSSSfont 76}{subsubsection.3.6.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.2.3}Standardisation des formats}{\reset@font\mtcSSSfont 77}{subsubsection.3.6.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.2.4}Validation de la coherence}{\reset@font\mtcSSSfont 78}{subsubsection.3.6.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.3}Ingenierie des caracteristiques (Feature Engineering)}{\reset@font\mtcSSfont 78}{subsection.3.6.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.3.1}Strategie de feature engineering}{\reset@font\mtcSSSfont 78}{subsubsection.3.6.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.3.2}Workflow de feature engineering}{\reset@font\mtcSSSfont 79}{subsubsection.3.6.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.3.3}Features temporelles}{\reset@font\mtcSSSfont 79}{subsubsection.3.6.3.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.3.4}Features derivees (domaine metier)}{\reset@font\mtcSSSfont 80}{subsubsection.3.6.3.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.3.5}Encodage des variables categorielles}{\reset@font\mtcSSSfont 81}{subsubsection.3.6.3.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.3.6}Normalisation et standardisation}{\reset@font\mtcSSSfont 82}{subsubsection.3.6.3.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.3.7}Selection de features}{\reset@font\mtcSSSfont 82}{subsubsection.3.6.3.7}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.4}Segmentation des donnees}{\reset@font\mtcSSfont 83}{subsection.3.6.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.4.1}Division temporelle}{\reset@font\mtcSSSfont 83}{subsubsection.3.6.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.4.2}Stratification}{\reset@font\mtcSSSfont 83}{subsubsection.3.6.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.5}Validation de la preparation}{\reset@font\mtcSSfont 83}{subsection.3.6.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.5.1}Metriques de qualite}{\reset@font\mtcSSSfont 83}{subsubsection.3.6.5.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.5.2}Tests de regression}{\reset@font\mtcSSSfont 84}{subsubsection.3.6.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.6}Pipeline de donnees}{\reset@font\mtcSSfont 84}{subsection.3.6.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.6.1}Architecture du pipeline}{\reset@font\mtcSSSfont 84}{subsubsection.3.6.6.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.6.2}Composants du pipeline}{\reset@font\mtcSSSfont 84}{subsubsection.3.6.6.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.6.3}Architecture du pipeline de donnees}{\reset@font\mtcSSSfont 84}{subsubsection.3.6.6.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.6.6.4}Orchestration}{\reset@font\mtcSSSfont 85}{subsubsection.3.6.6.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.7}Phase 3 (suite) : Cadre d'assurance qualite}{\reset@font\mtcSfont 86}{section.3.7}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.1}Introduction au cadre qualite CRISP-ML(Q)}{\reset@font\mtcSSfont 86}{subsection.3.7.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.1.1}Framework d'assurance qualite}{\reset@font\mtcSSSfont 86}{subsubsection.3.7.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.2}Qualite des donnees}{\reset@font\mtcSSfont 86}{subsection.3.7.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.2.1}Criteres de qualite des donnees}{\reset@font\mtcSSSfont 86}{subsubsection.3.7.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.2.2}Processus de validation des donnees}{\reset@font\mtcSSSfont 87}{subsubsection.3.7.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.3}Qualite des modeles}{\reset@font\mtcSSfont 88}{subsection.3.7.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.3.1}Criteres de qualite des modeles ML}{\reset@font\mtcSSSfont 88}{subsubsection.3.7.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.3.2}Tests de robustesse}{\reset@font\mtcSSSfont 88}{subsubsection.3.7.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.4}Qualite du code}{\reset@font\mtcSSfont 89}{subsection.3.7.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.4.1}Standards de qualite du code}{\reset@font\mtcSSSfont 89}{subsubsection.3.7.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.4.2}Architecture et maintenabilite}{\reset@font\mtcSSSfont 89}{subsubsection.3.7.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.5}Qualite operationnelle}{\reset@font\mtcSSfont 90}{subsection.3.7.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.5.1}Criteres de qualite operationnelle}{\reset@font\mtcSSSfont 90}{subsubsection.3.7.5.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.5.2}Plan de monitoring}{\reset@font\mtcSSSfont 90}{subsubsection.3.7.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.6}Portes de qualite (Quality Gates)}{\reset@font\mtcSSfont 91}{subsection.3.7.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.6.1}Quality Gate 1 : Data Quality}{\reset@font\mtcSSSfont 91}{subsubsection.3.7.6.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.6.2}Quality Gate 2 : Model Quality}{\reset@font\mtcSSSfont 91}{subsubsection.3.7.6.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.6.3}Quality Gate 3 : Production Quality}{\reset@font\mtcSSSfont 92}{subsubsection.3.7.6.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.7}Synthese du cadre qualite}{\reset@font\mtcSSfont 92}{subsection.3.7.7}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.8}Metriques de qualite des donnees}{\reset@font\mtcSSfont 93}{subsection.3.7.8}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.8.1}Framework de qualite des donnees}{\reset@font\mtcSSSfont 93}{subsubsection.3.7.8.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.8.2}Tests de qualite automatises}{\reset@font\mtcSSSfont 93}{subsubsection.3.7.8.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.8.3}Monitoring de la qualite des donnees}{\reset@font\mtcSSSfont 94}{subsubsection.3.7.8.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.9}Portes de qualite des modeles (Quality Gates)}{\reset@font\mtcSSfont 94}{subsection.3.7.9}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.9.1}Framework de validation multi-niveaux}{\reset@font\mtcSSSfont 94}{subsubsection.3.7.9.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.9.2}Matrice de validation des modeles}{\reset@font\mtcSSSfont 95}{subsubsection.3.7.9.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.9.3}Tests de robustesse}{\reset@font\mtcSSSfont 95}{subsubsection.3.7.9.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.10}Framework de monitoring en production}{\reset@font\mtcSSfont 95}{subsection.3.7.10}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.10.1}Architecture de monitoring}{\reset@font\mtcSSSfont 95}{subsubsection.3.7.10.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.10.2}Dashboards de monitoring}{\reset@font\mtcSSSfont 96}{subsubsection.3.7.10.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.10.3}Systeme d'alertes intelligent}{\reset@font\mtcSSSfont 97}{subsubsection.3.7.10.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.11}Strategie de tests A/B}{\reset@font\mtcSSfont 97}{subsection.3.7.11}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.11.1}Framework de tests A/B}{\reset@font\mtcSSSfont 97}{subsubsection.3.7.11.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.11.2}Deploiement canary}{\reset@font\mtcSSSfont 97}{subsubsection.3.7.11.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.12}Gouvernance des modeles ML}{\reset@font\mtcSSfont 98}{subsection.3.7.12}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.12.1}Cycle de vie des modeles}{\reset@font\mtcSSSfont 98}{subsubsection.3.7.12.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.12.2}Registre des modeles}{\reset@font\mtcSSSfont 98}{subsubsection.3.7.12.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.7.12.3}Documentation et tracabilite}{\reset@font\mtcSSSfont 99}{subsubsection.3.7.12.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.13}Synthese du cadre qualite}{\reset@font\mtcSSfont 99}{subsection.3.7.13}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.8}Synthese et perspectives}{\reset@font\mtcSfont 100}{section.3.8}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.8.1}Bilan des phases 1-3}{\reset@font\mtcSSfont 100}{subsection.3.8.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.8.2}Preparation aux phases suivantes}{\reset@font\mtcSSfont 100}{subsection.3.8.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.8.3}Risques identifies et mitigations}{\reset@font\mtcSSfont 100}{subsection.3.8.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.8.4}Phase 4 : Modelisation (Modeling)}{\reset@font\mtcSSfont 100}{subsection.3.8.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.8.4.1}Introduction a la phase de modelisation}{\reset@font\mtcSSSfont 101}{subsubsection.3.8.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.8.4.2}Selection des algorithmes}{\reset@font\mtcSSSfont 101}{subsubsection.3.8.4.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.8.4.3}Entrainement des modeles}{\reset@font\mtcSSSfont 106}{subsubsection.3.8.4.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.8.4.4}Optimisation des hyperparametres}{\reset@font\mtcSSSfont 111}{subsubsection.3.8.4.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.8.4.5}Validation croisee}{\reset@font\mtcSSSfont 117}{subsubsection.3.8.4.5}}

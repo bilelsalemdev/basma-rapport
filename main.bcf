@@ -2365,28 +2365,26 @@
     <bcf:citekey order="1" intorder="1">lichtblau2015industrie</bcf:citekey>
     <bcf:citekey order="2" intorder="1">xu2018industry</bcf:citekey>
     <bcf:citekey order="2" intorder="2">kagermann2013recommendations</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">studer2021towards</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">wirth2000crisp</bcf:citekey>
-    <bcf:citekey order="4" intorder="2">provost2013data</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">chen2016xgboost</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">lundberg2017unified</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">perron2011operations</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">pinedo2016scheduling</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">zheng2018feature</bcf:citekey>
-    <bcf:citekey order="9" intorder="2">guyon2003introduction</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">chen2016xgboost</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">redman2001data</bcf:citekey>
-    <bcf:citekey order="11" intorder="2">batini2009methodologies</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">gift2020practical</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">studer2021towards</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">hastie2009elements</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">pinedo2016scheduling</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">chen2016xgboost</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">james2013introduction</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">lundberg2017unified</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">schwaber2020scrum</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">cohn2005agile</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">schwaber2020scrum</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">russell2010artificial</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">mitchell1997machine</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">kagermann2013recommendations</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">schwab2017fourth</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">rüßmann2015industry</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">chen2016xgboost</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">studer2021towards</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">wirth2000crisp</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">lundberg2017unified</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">perron2011operations</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">pinedo2016scheduling</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">zheng2018feature</bcf:citekey>
+    <bcf:citekey order="14" intorder="2">guyon2003introduction</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">chen2016xgboost</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">redman2001data</bcf:citekey>
+    <bcf:citekey order="16" intorder="2">batini2009methodologies</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">gift2020practical</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">schwaber2020scrum</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">cohn2005agile</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">schwaber2020scrum</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

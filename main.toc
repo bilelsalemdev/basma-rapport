@@ -12,8 +12,11 @@
 \contentsline {section}{\numberline {1.3}Organisation et organigramme}{6}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Processus global chez BACOVET}{6}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}Processus détaillé de l'atelier de coupe}{7}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Durabilité et responsabilité environnementale}{12}{subsection.1.4.2}%
-\contentsline {section}{\numberline {1.5}Cadre du projet}{13}{section.1.5}%
+\contentsline {section}{\numberline {1.5}Cadre du projet}{12}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Définition du projet (Méthode SIPOC)}{12}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Objectifs du projet}{13}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Périmètre du projet (Méthode QQOQCCP)}{13}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.4}Limites et contraintes}{13}{subsection.1.5.4}%
 \contentsline {section}{\numberline {1.6}Conclusion du chapitre}{14}{section.1.6}%
 \contentsline {chapter}{\numberline {2}Mener une action d'amélioration d'un atelier de travail avec Audit, les outils lean 4.0}{15}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduction}{15}{section.2.1}%
@@ -86,294 +89,285 @@
 \contentsline {subsubsection}{\numberline {2.4.6.1}Objectifs de la phase de contrôle}{37}{subsubsection.2.4.6.1}%
 \contentsline {subsubsection}{\numberline {2.4.6.2}Mise en place d'indicateurs de performance (KPI)}{38}{subsubsection.2.4.6.2}%
 \contentsline {subsubsection}{\numberline {2.4.6.3}Système de suivi et de visualisation}{38}{subsubsection.2.4.6.3}%
-\contentsline {subsubsection}{\numberline {2.4.6.4}Mécanismes de contrôle et d'alerte}{38}{subsubsection.2.4.6.4}%
+\contentsline {subsubsection}{\numberline {2.4.6.4}Mécanismes de contrôle et d'alerte}{39}{subsubsection.2.4.6.4}%
 \contentsline {subsubsection}{\numberline {2.4.6.5}Standardisation des procédures}{39}{subsubsection.2.4.6.5}%
 \contentsline {subsubsection}{\numberline {2.4.6.6}Amélioration continue}{39}{subsubsection.2.4.6.6}%
-\contentsline {subsubsection}{\numberline {2.4.6.7}Conclusion de la phase Contrôler}{39}{subsubsection.2.4.6.7}%
-\contentsline {chapter}{\numberline {3}CRISP-ML(Q) phases }{41}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduction}{41}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Vue d'ensemble du processus CRISP-ML(Q)}{41}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Outils et bibliothèques utilisés}{42}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Introduction}{42}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Écosystème Data Science et Machine Learning}{43}{subsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.2.1}Bibliothèques de manipulation de données}{43}{subsubsection.3.2.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2.2}Bibliothèques de Machine Learning}{44}{subsubsection.3.2.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.2.3}Bibliothèques de visualisation}{45}{subsubsection.3.2.2.3}%
-\contentsline {subsection}{\numberline {3.2.3}Frameworks de développement}{46}{subsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.3.1}Backend et API}{46}{subsubsection.3.2.3.1}%
-\contentsline {subsubsection}{\numberline {3.2.3.2}Frontend et interface utilisateur}{47}{subsubsection.3.2.3.2}%
-\contentsline {subsection}{\numberline {3.2.4}Outils d'optimisation et d'ordonnancement}{48}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Infrastructure et DevOps}{49}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Stack technologique complète}{50}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Justification des choix et intégration CRISP-ML(Q)}{50}{subsection.3.2.7}%
-\contentsline {section}{\numberline {3.3}Phase 1 : Comprehension metier (Business Understanding)}{52}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Contexte strategique et enjeux}{52}{subsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.1}Contexte industriel}{52}{subsubsection.3.3.1.1}%
-\contentsline {subsection}{\numberline {3.3.2}Business Model Canvas}{52}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Objectifs metier detailles}{53}{subsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.3.1}Objectifs strategiques}{53}{subsubsection.3.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.3.2}Objectifs operationnels quantifiables}{54}{subsubsection.3.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3.3}Objectifs techniques ML}{54}{subsubsection.3.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Analyse approfondie des parties prenantes}{54}{subsection.3.3.4}%
-\contentsline {subsubsection}{\numberline {3.3.4.1}Matrice pouvoir-interet}{54}{subsubsection.3.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.3.4.2}Besoins detailles par profil utilisateur}{54}{subsubsection.3.3.4.2}%
-\contentsline {subsection}{\numberline {3.3.5}Analyse des processus metier}{56}{subsection.3.3.5}%
-\contentsline {subsubsection}{\numberline {3.3.5.1}Cartographie du processus actuel (AS-IS)}{56}{subsubsection.3.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.3.5.2}Processus cible optimise (TO-BE)}{57}{subsubsection.3.3.5.2}%
-\contentsline {subsection}{\numberline {3.3.6}Analyse des risques metier}{58}{subsection.3.3.6}%
-\contentsline {subsubsection}{\numberline {3.3.6.1}Registre des risques}{58}{subsubsection.3.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.3.6.2}Plan de mitigation des risques critiques}{59}{subsubsection.3.3.6.2}%
-\contentsline {subsection}{\numberline {3.3.7}Criteres de succes et metriques de performance}{60}{subsection.3.3.7}%
-\contentsline {subsubsection}{\numberline {3.3.7.1}Criteres techniques ML}{60}{subsubsection.3.3.7.1}%
-\contentsline {subsubsection}{\numberline {3.3.7.2}Criteres metier operationnels}{60}{subsubsection.3.3.7.2}%
-\contentsline {subsubsection}{\numberline {3.3.7.3}Criteres de qualite logicielle}{60}{subsubsection.3.3.7.3}%
-\contentsline {subsubsection}{\numberline {3.3.7.4}Criteres financiers}{61}{subsubsection.3.3.7.4}%
-\contentsline {subsection}{\numberline {3.3.8}Contraintes et hypotheses du projet}{61}{subsection.3.3.8}%
-\contentsline {subsubsection}{\numberline {3.3.8.1}Contraintes identifiees}{61}{subsubsection.3.3.8.1}%
-\contentsline {subsubsection}{\numberline {3.3.8.2}Hypotheses du projet}{62}{subsubsection.3.3.8.2}%
-\contentsline {subsection}{\numberline {3.3.9}Synthese de la phase Business Understanding}{63}{subsection.3.3.9}%
-\contentsline {section}{\numberline {3.4}Phase 2 : Comprehension des donnees (Data Understanding)}{63}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Objectifs de la phase Data Understanding}{63}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Inventaire et collecte des donnees}{63}{subsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.2.1}Sources de donnees identifiees}{63}{subsubsection.3.4.2.1}%
-\contentsline {subsubsection}{\numberline {3.4.2.2}Caracteristiques des sources de donnees}{65}{subsubsection.3.4.2.2}%
-\contentsline {subsubsection}{\numberline {3.4.2.3}Dataset principal : PSC\_X\_1 - COUPE.csv}{65}{subsubsection.3.4.2.3}%
-\contentsline {subsection}{\numberline {3.4.3}Dictionnaire de donnees}{65}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Exploration des donnees}{66}{subsection.3.4.4}%
-\contentsline {subsubsection}{\numberline {3.4.4.1}Analyse du dataset principal}{66}{subsubsection.3.4.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.4.2}Variables d'interet}{66}{subsubsection.3.4.4.2}%
-\contentsline {subsection}{\numberline {3.4.5}Analyse de la qualite des donnees}{67}{subsection.3.4.5}%
-\contentsline {subsubsection}{\numberline {3.4.5.1}Valeurs manquantes}{67}{subsubsection.3.4.5.1}%
-\contentsline {subsubsection}{\numberline {3.4.5.2}Valeurs aberrantes}{67}{subsubsection.3.4.5.2}%
-\contentsline {subsubsection}{\numberline {3.4.5.3}Coherence des donnees}{67}{subsubsection.3.4.5.3}%
-\contentsline {subsection}{\numberline {3.4.6}Analyse exploratoire des donnees}{67}{subsection.3.4.6}%
-\contentsline {subsubsection}{\numberline {3.4.6.1}Distribution des variables}{67}{subsubsection.3.4.6.1}%
-\contentsline {subsubsection}{\numberline {3.4.6.2}Correlations}{67}{subsubsection.3.4.6.2}%
-\contentsline {subsubsection}{\numberline {3.4.6.3}Patterns temporels}{68}{subsubsection.3.4.6.3}%
-\contentsline {section}{\numberline {3.5}Phase 3 : Preparation des donnees (Data Preparation)}{68}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Objectifs de la phase Data Preparation}{68}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Nettoyage des donnees}{68}{subsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.1}Traitement des valeurs manquantes}{68}{subsubsection.3.5.2.1}%
-\contentsline {subsubsection}{\numberline {3.5.2.2}Traitement des valeurs aberrantes}{69}{subsubsection.3.5.2.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.3}Standardisation des formats}{70}{subsubsection.3.5.2.3}%
-\contentsline {subsubsection}{\numberline {3.5.2.4}Validation de la coherence}{71}{subsubsection.3.5.2.4}%
-\contentsline {subsection}{\numberline {3.5.3}Ingenierie des caracteristiques (Feature Engineering)}{71}{subsection.3.5.3}%
-\contentsline {subsubsection}{\numberline {3.5.3.1}Strategie de feature engineering}{71}{subsubsection.3.5.3.1}%
-\contentsline {subsubsection}{\numberline {3.5.3.2}Workflow de feature engineering}{72}{subsubsection.3.5.3.2}%
-\contentsline {subsubsection}{\numberline {3.5.3.3}Features temporelles}{72}{subsubsection.3.5.3.3}%
-\contentsline {subsubsection}{\numberline {3.5.3.4}Features derivees (domaine metier)}{73}{subsubsection.3.5.3.4}%
-\contentsline {subsubsection}{\numberline {3.5.3.5}Encodage des variables categorielles}{74}{subsubsection.3.5.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.3.6}Normalisation et standardisation}{75}{subsubsection.3.5.3.6}%
-\contentsline {subsubsection}{\numberline {3.5.3.7}Selection de features}{75}{subsubsection.3.5.3.7}%
-\contentsline {subsection}{\numberline {3.5.4}Segmentation des donnees}{76}{subsection.3.5.4}%
-\contentsline {subsubsection}{\numberline {3.5.4.1}Division temporelle}{76}{subsubsection.3.5.4.1}%
-\contentsline {subsubsection}{\numberline {3.5.4.2}Stratification}{76}{subsubsection.3.5.4.2}%
-\contentsline {subsection}{\numberline {3.5.5}Validation de la preparation}{76}{subsection.3.5.5}%
-\contentsline {subsubsection}{\numberline {3.5.5.1}Metriques de qualite}{76}{subsubsection.3.5.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.5.2}Tests de regression}{77}{subsubsection.3.5.5.2}%
-\contentsline {subsection}{\numberline {3.5.6}Pipeline de donnees}{77}{subsection.3.5.6}%
-\contentsline {subsubsection}{\numberline {3.5.6.1}Architecture du pipeline}{77}{subsubsection.3.5.6.1}%
-\contentsline {subsubsection}{\numberline {3.5.6.2}Composants du pipeline}{77}{subsubsection.3.5.6.2}%
-\contentsline {subsubsection}{\numberline {3.5.6.3}Architecture du pipeline de donnees}{77}{subsubsection.3.5.6.3}%
-\contentsline {subsubsection}{\numberline {3.5.6.4}Orchestration}{78}{subsubsection.3.5.6.4}%
-\contentsline {section}{\numberline {3.6}Phase 3 (suite) : Cadre d'assurance qualite}{79}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Introduction au cadre qualite CRISP-ML(Q)}{79}{subsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.1.1}Framework d'assurance qualite}{79}{subsubsection.3.6.1.1}%
-\contentsline {subsection}{\numberline {3.6.2}Metriques de qualite des donnees}{79}{subsection.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.2.1}Framework de qualite des donnees}{79}{subsubsection.3.6.2.1}%
-\contentsline {subsubsection}{\numberline {3.6.2.2}Tests de qualite automatises}{80}{subsubsection.3.6.2.2}%
-\contentsline {subsubsection}{\numberline {3.6.2.3}Monitoring de la qualite des donnees}{80}{subsubsection.3.6.2.3}%
-\contentsline {subsection}{\numberline {3.6.3}Portes de qualite des modeles (Quality Gates)}{81}{subsection.3.6.3}%
-\contentsline {subsubsection}{\numberline {3.6.3.1}Framework de validation multi-niveaux}{81}{subsubsection.3.6.3.1}%
-\contentsline {subsubsection}{\numberline {3.6.3.2}Matrice de validation des modeles}{81}{subsubsection.3.6.3.2}%
-\contentsline {subsubsection}{\numberline {3.6.3.3}Tests de robustesse}{81}{subsubsection.3.6.3.3}%
-\contentsline {subsection}{\numberline {3.6.4}Framework de monitoring en production}{82}{subsection.3.6.4}%
-\contentsline {subsubsection}{\numberline {3.6.4.1}Architecture de monitoring}{82}{subsubsection.3.6.4.1}%
-\contentsline {subsubsection}{\numberline {3.6.4.2}Dashboards de monitoring}{83}{subsubsection.3.6.4.2}%
-\contentsline {subsubsection}{\numberline {3.6.4.3}Systeme d'alertes intelligent}{84}{subsubsection.3.6.4.3}%
-\contentsline {subsection}{\numberline {3.6.5}Strategie de tests A/B}{84}{subsection.3.6.5}%
-\contentsline {subsubsection}{\numberline {3.6.5.1}Framework de tests A/B}{84}{subsubsection.3.6.5.1}%
-\contentsline {subsubsection}{\numberline {3.6.5.2}Deploiement canary}{85}{subsubsection.3.6.5.2}%
-\contentsline {subsection}{\numberline {3.6.6}Gouvernance des modeles ML}{85}{subsection.3.6.6}%
-\contentsline {subsubsection}{\numberline {3.6.6.1}Cycle de vie des modeles}{85}{subsubsection.3.6.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.6.2}Registre des modeles}{86}{subsubsection.3.6.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.6.3}Documentation et tracabilite}{86}{subsubsection.3.6.6.3}%
-\contentsline {subsection}{\numberline {3.6.7}Synthese du cadre qualite}{87}{subsection.3.6.7}%
-\contentsline {section}{\numberline {3.7}Synthese et perspectives}{87}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Bilan des phases 1-3}{87}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Preparation aux phases suivantes}{88}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Risques identifies et mitigations}{88}{subsection.3.7.3}%
-\contentsline {chapter}{\numberline {4}Modeling, Evaluation, Deployment (MLOps)}{89}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{89}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Phase 4 : Modélisation (Modeling)}{89}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Sélection des techniques de modélisation}{89}{subsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.1.1}Modèle de prédiction du temps}{89}{subsubsection.4.2.1.1}%
-\contentsline {subsubsection}{\numberline {4.2.1.2}Justification du choix : XGBoost}{90}{subsubsection.4.2.1.2}%
-\contentsline {subsubsection}{\numberline {4.2.1.3}Formulation mathématique de XGBoost}{90}{subsubsection.4.2.1.3}%
-\contentsline {subsubsection}{\numberline {4.2.1.4}Hyperparamètres optimisés}{92}{subsubsection.4.2.1.4}%
-\contentsline {subsubsection}{\numberline {4.2.1.5}Complexité algorithmique}{92}{subsubsection.4.2.1.5}%
-\contentsline {subsubsection}{\numberline {4.2.1.6}Modèle d'optimisation de la planification}{93}{subsubsection.4.2.1.6}%
-\contentsline {subsection}{\numberline {4.2.2}Ingénierie des caractéristiques avancées}{93}{subsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.2.1}Features temporelles}{93}{subsubsection.4.2.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2.2}Features d'interaction}{93}{subsubsection.4.2.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.2.3}Features de contexte}{93}{subsubsection.4.2.2.3}%
-\contentsline {subsection}{\numberline {4.2.3}Validation et sélection de modèles}{93}{subsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.3.1}Stratégie de validation}{93}{subsubsection.4.2.3.1}%
-\contentsline {subsubsection}{\numberline {4.2.3.2}Sélection des hyperparamètres}{94}{subsubsection.4.2.3.2}%
-\contentsline {section}{\numberline {4.3}Implémentation des modèles}{94}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Modèle de prédiction du temps (Time Predictor)}{94}{subsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.1.1}Architecture du modèle}{94}{subsubsection.4.3.1.1}%
-\contentsline {subsubsection}{\numberline {4.3.1.2}Caractéristiques du modèle final}{94}{subsubsection.4.3.1.2}%
-\contentsline {subsection}{\numberline {4.3.2}Modèle d'optimisation de la planification (Scheduler)}{94}{subsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.2.1}Formulation du problème}{94}{subsubsection.4.3.2.1}%
-\contentsline {subsubsection}{\numberline {4.3.2.2}Algorithme d'optimisation}{95}{subsubsection.4.3.2.2}%
-\contentsline {subsubsection}{\numberline {4.3.2.3}Métriques d'optimisation}{95}{subsubsection.4.3.2.3}%
-\contentsline {section}{\numberline {4.4}Phase 5 : Évaluation (Evaluation)}{95}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Évaluation du modèle de prédiction}{95}{subsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.1.1}Métriques de performance}{95}{subsubsection.4.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.4.1.2}Analyse des erreurs}{95}{subsubsection.4.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.4.1.3}Interprétabilité du modèle avec SHAP}{96}{subsubsection.4.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.4.1.4}Validation croisée temporelle}{97}{subsubsection.4.4.1.4}%
-\contentsline {subsubsection}{\numberline {4.4.1.5}Courbes d'apprentissage}{98}{subsubsection.4.4.1.5}%
-\contentsline {subsubsection}{\numberline {4.4.1.6}Courbes de validation}{98}{subsubsection.4.4.1.6}%
-\contentsline {subsubsection}{\numberline {4.4.1.7}Matrice de comparaison des modèles}{99}{subsubsection.4.4.1.7}%
-\contentsline {subsubsection}{\numberline {4.4.1.8}Tests de significativité statistique}{99}{subsubsection.4.4.1.8}%
-\contentsline {subsection}{\numberline {4.4.2}Évaluation du modèle d'optimisation}{100}{subsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.1}Métriques d'optimisation}{100}{subsubsection.4.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.4.2.2}Analyse de robustesse}{100}{subsubsection.4.4.2.2}%
-\contentsline {section}{\numberline {4.5}Intégration et déploiement}{100}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Architecture du système}{100}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Pipeline de production}{100}{subsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.2.1}Entraînement automatique}{100}{subsubsection.4.5.2.1}%
-\contentsline {subsubsection}{\numberline {4.5.2.2}Serving en production}{100}{subsubsection.4.5.2.2}%
-\contentsline {subsection}{\numberline {4.5.3}Gestion des modèles}{101}{subsection.4.5.3}%
-\contentsline {subsubsection}{\numberline {4.5.3.1}Versioning}{101}{subsubsection.4.5.3.1}%
-\contentsline {subsubsection}{\numberline {4.5.3.2}Monitoring}{101}{subsubsection.4.5.3.2}%
-\contentsline {section}{\numberline {4.6}Validation métier}{101}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Tests avec les utilisateurs}{101}{subsection.4.6.1}%
-\contentsline {subsubsection}{\numberline {4.6.1.1}Protocole de test}{101}{subsubsection.4.6.1.1}%
-\contentsline {subsubsection}{\numberline {4.6.1.2}Métriques de satisfaction}{101}{subsubsection.4.6.1.2}%
-\contentsline {subsection}{\numberline {4.6.2}Impact métier mesuré}{102}{subsection.4.6.2}%
-\contentsline {subsubsection}{\numberline {4.6.2.1}KPIs opérationnels}{102}{subsubsection.4.6.2.1}%
-\contentsline {subsubsection}{\numberline {4.6.2.2}ROI du projet}{102}{subsubsection.4.6.2.2}%
-\contentsline {section}{\numberline {4.7}Synthèse et perspectives}{102}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Bilan de la modélisation}{102}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Limitations identifiées}{102}{subsection.4.7.2}%
-\contentsline {subsection}{\numberline {4.7.3}Améliorations futures}{103}{subsection.4.7.3}%
-\contentsline {chapter}{\numberline {5}Agile 4-month delivery plan}{104}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{104}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Architecture Agile du Projet}{104}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Équipe de Développement}{104}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Outils et Technologies}{105}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Roadmap de Développement}{105}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Phase 1 : Fondations (Sprints 1-4)}{105}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Phase 2 : Développement Core (Sprints 5-8)}{105}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Phase 3 : Optimisation et Production (Sprints 9-12)}{105}{subsection.5.3.3}%
-\contentsline {section}{\numberline {5.4}Détail des Sprints}{106}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Sprint 1 : Analyse et Architecture}{106}{subsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.1.1}User Stories}{106}{subsubsection.5.4.1.1}%
-\contentsline {subsubsection}{\numberline {5.4.1.2}Tâches Techniques}{106}{subsubsection.5.4.1.2}%
-\contentsline {subsubsection}{\numberline {5.4.1.3}Livrables}{106}{subsubsection.5.4.1.3}%
-\contentsline {subsection}{\numberline {5.4.2}Sprint 2 : Pipeline de Données}{106}{subsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.2.1}User Stories}{106}{subsubsection.5.4.2.1}%
-\contentsline {subsubsection}{\numberline {5.4.2.2}Tâches Techniques}{107}{subsubsection.5.4.2.2}%
-\contentsline {subsubsection}{\numberline {5.4.2.3}Livrables}{107}{subsubsection.5.4.2.3}%
-\contentsline {subsection}{\numberline {5.4.3}Sprint 3 : Modèles de Machine Learning}{107}{subsection.5.4.3}%
-\contentsline {subsubsection}{\numberline {5.4.3.1}User Stories}{107}{subsubsection.5.4.3.1}%
-\contentsline {subsubsection}{\numberline {5.4.3.2}Tâches Techniques}{107}{subsubsection.5.4.3.2}%
-\contentsline {subsubsection}{\numberline {5.4.3.3}Livrables}{107}{subsubsection.5.4.3.3}%
-\contentsline {subsection}{\numberline {5.4.4}Sprint 4 : Pipeline MLOps}{108}{subsection.5.4.4}%
-\contentsline {subsubsection}{\numberline {5.4.4.1}User Stories}{108}{subsubsection.5.4.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.4.2}Tâches Techniques}{108}{subsubsection.5.4.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.4.3}Livrables}{108}{subsubsection.5.4.4.3}%
-\contentsline {section}{\numberline {5.5}Métriques et KPIs de Succès}{108}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Métriques Techniques}{108}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Métriques Métier}{109}{subsection.5.5.2}%
-\contentsline {subsection}{\numberline {5.5.3}Métriques de Projet}{109}{subsection.5.5.3}%
-\contentsline {section}{\numberline {5.6}Gestion des Risques}{109}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Framework de gestion des risques}{109}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}Registre complet des risques}{110}{subsection.5.6.2}%
-\contentsline {subsection}{\numberline {5.6.3}Matrice de criticité}{110}{subsection.5.6.3}%
-\contentsline {subsection}{\numberline {5.6.4}Plans de réponse détaillés}{111}{subsection.5.6.4}%
-\contentsline {subsubsection}{\numberline {5.6.4.1}Risque critique 1 : Performance modèles insuffisante}{111}{subsubsection.5.6.4.1}%
-\contentsline {subsubsection}{\numberline {5.6.4.2}Risque critique 2 : Intégration avec G.Pro}{111}{subsubsection.5.6.4.2}%
-\contentsline {subsubsection}{\numberline {5.6.4.3}Risque critique 3 : Adoption utilisateurs faible}{112}{subsubsection.5.6.4.3}%
-\contentsline {subsection}{\numberline {5.6.5}Monitoring et reporting}{112}{subsection.5.6.5}%
-\contentsline {section}{\numberline {5.7}Plan de Communication}{112}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}Stakeholders}{112}{subsection.5.7.1}%
-\contentsline {subsection}{\numberline {5.7.2}Cadence de Communication}{113}{subsection.5.7.2}%
-\contentsline {section}{\numberline {5.8}Plan de Formation et Adoption}{113}{section.5.8}%
-\contentsline {subsection}{\numberline {5.8.1}Formation des Utilisateurs}{113}{subsection.5.8.1}%
-\contentsline {subsection}{\numberline {5.8.2}Stratégie d'Adoption}{113}{subsection.5.8.2}%
-\contentsline {section}{\numberline {5.9}Plan de Maintenance et Évolution}{113}{section.5.9}%
-\contentsline {subsection}{\numberline {5.9.1}Maintenance Préventive}{113}{subsection.5.9.1}%
-\contentsline {subsection}{\numberline {5.9.2}Évolution du Système}{114}{subsection.5.9.2}%
-\contentsline {section}{\numberline {5.10}Budget et Ressources}{114}{section.5.10}%
-\contentsline {subsection}{\numberline {5.10.1}Budget Estimé}{114}{subsection.5.10.1}%
-\contentsline {subsection}{\numberline {5.10.2}ROI Attendu}{114}{subsection.5.10.2}%
-\contentsline {section}{\numberline {5.11}Conclusion}{114}{section.5.11}%
-\contentsline {chapter}{\numberline {6}Service IA and dashboard}{115}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introduction}{115}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Architecture des Services IA}{115}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Vue d'ensemble de l'architecture}{115}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Composants principaux}{116}{subsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.2.1}Service de Prédiction}{116}{subsubsection.6.2.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2.2}Service d'Ordonnancement}{116}{subsubsection.6.2.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.2.3}Service Analytics}{117}{subsubsection.6.2.2.3}%
-\contentsline {section}{\numberline {6.3}Spécifications des APIs}{117}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}API de Prédiction}{117}{subsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.1}Endpoint de prédiction simple}{117}{subsubsection.6.3.1.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.2}Endpoint de prédiction en lot}{118}{subsubsection.6.3.1.2}%
-\contentsline {subsection}{\numberline {6.3.2}API d'Ordonnancement}{118}{subsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.2.1}Endpoint d'optimisation de planification}{118}{subsubsection.6.3.2.1}%
-\contentsline {subsection}{\numberline {6.3.3}API Analytics}{119}{subsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {6.3.3.1}Endpoint de calcul des KPIs}{119}{subsubsection.6.3.3.1}%
-\contentsline {section}{\numberline {6.4}Interface Utilisateur}{120}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Architecture du Dashboard React}{120}{subsection.6.4.1}%
-\contentsline {subsubsection}{\numberline {6.4.1.1}Structure des composants}{120}{subsubsection.6.4.1.1}%
-\contentsline {subsubsection}{\numberline {6.4.1.2}Gestion d'état}{121}{subsubsection.6.4.1.2}%
-\contentsline {subsection}{\numberline {6.4.2}Pages principales}{121}{subsection.6.4.2}%
-\contentsline {subsubsection}{\numberline {6.4.2.1}Dashboard Principal}{121}{subsubsection.6.4.2.1}%
-\contentsline {subsubsection}{\numberline {6.4.2.2}Page de Planification}{122}{subsubsection.6.4.2.2}%
-\contentsline {subsubsection}{\numberline {6.4.2.3}Page Analytics}{123}{subsubsection.6.4.2.3}%
-\contentsline {subsubsection}{\numberline {6.4.2.4}Simulateur What-If}{123}{subsubsection.6.4.2.4}%
-\contentsline {section}{\numberline {6.5}Intégration des Modèles ML}{125}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Service de Prédiction}{125}{subsection.6.5.1}%
-\contentsline {subsubsection}{\numberline {6.5.1.1}Chargement des modèles}{125}{subsubsection.6.5.1.1}%
-\contentsline {subsubsection}{\numberline {6.5.1.2}Préprocessing des données}{125}{subsubsection.6.5.1.2}%
-\contentsline {subsection}{\numberline {6.5.2}Service d'Ordonnancement}{126}{subsection.6.5.2}%
-\contentsline {subsubsection}{\numberline {6.5.2.1}Modélisation des contraintes}{126}{subsubsection.6.5.2.1}%
-\contentsline {section}{\numberline {6.6}Sécurité et Authentification}{127}{section.6.6}%
-\contentsline {subsection}{\numberline {6.6.1}Système d'authentification}{127}{subsection.6.6.1}%
-\contentsline {subsubsection}{\numberline {6.6.1.1}Génération des tokens}{127}{subsubsection.6.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.6.1.2}Vérification des tokens}{127}{subsubsection.6.6.1.2}%
-\contentsline {subsection}{\numberline {6.6.2}Contrôle d'accès basé sur les rôles (RBAC)}{127}{subsection.6.6.2}%
-\contentsline {section}{\numberline {6.7}Monitoring et Observabilité}{128}{section.6.7}%
-\contentsline {subsection}{\numberline {6.7.1}Métriques de performance}{128}{subsection.6.7.1}%
-\contentsline {subsubsection}{\numberline {6.7.1.1}Métriques des modèles}{128}{subsubsection.6.7.1.1}%
-\contentsline {subsubsection}{\numberline {6.7.1.2}Métriques des services}{128}{subsubsection.6.7.1.2}%
-\contentsline {subsection}{\numberline {6.7.2}Alertes et notifications}{128}{subsection.6.7.2}%
-\contentsline {section}{\numberline {6.8}Documentation Technique}{129}{section.6.8}%
-\contentsline {subsection}{\numberline {6.8.1}Documentation API}{129}{subsection.6.8.1}%
-\contentsline {subsection}{\numberline {6.8.2}Guide de déploiement}{129}{subsection.6.8.2}%
-\contentsline {subsubsection}{\numberline {6.8.2.1}Configuration Docker}{129}{subsubsection.6.8.2.1}%
-\contentsline {subsubsection}{\numberline {6.8.2.2}Docker Compose}{129}{subsubsection.6.8.2.2}%
-\contentsline {subsection}{\numberline {6.8.3}Tests et validation}{130}{subsection.6.8.3}%
-\contentsline {subsubsection}{\numberline {6.8.3.1}Tests unitaires}{130}{subsubsection.6.8.3.1}%
-\contentsline {subsubsection}{\numberline {6.8.3.2}Tests d'intégration}{130}{subsubsection.6.8.3.2}%
-\contentsline {section}{\numberline {6.9}Performance et Optimisation}{131}{section.6.9}%
-\contentsline {subsection}{\numberline {6.9.1}Optimisations des modèles}{131}{subsection.6.9.1}%
-\contentsline {subsubsection}{\numberline {6.9.1.1}Cache des prédictions}{131}{subsubsection.6.9.1.1}%
-\contentsline {subsubsection}{\numberline {6.9.1.2}Prédiction en lot}{131}{subsubsection.6.9.1.2}%
-\contentsline {subsection}{\numberline {6.9.2}Optimisations de l'ordonnancement}{132}{subsection.6.9.2}%
-\contentsline {subsubsection}{\numberline {6.9.2.1}Parallélisation}{132}{subsubsection.6.9.2.1}%
-\contentsline {section}{\numberline {6.10}Évolutivité et Maintenance}{133}{section.6.10}%
-\contentsline {subsection}{\numberline {6.10.1}Architecture évolutive}{133}{subsection.6.10.1}%
-\contentsline {subsubsection}{\numberline {6.10.1.1}Microservices}{133}{subsubsection.6.10.1.1}%
-\contentsline {subsubsection}{\numberline {6.10.1.2}API Gateway}{133}{subsubsection.6.10.1.2}%
-\contentsline {subsection}{\numberline {6.10.2}Maintenance des modèles}{133}{subsection.6.10.2}%
-\contentsline {subsubsection}{\numberline {6.10.2.1}Monitoring de la dérive}{133}{subsubsection.6.10.2.1}%
-\contentsline {subsubsection}{\numberline {6.10.2.2}Réentraînement automatique}{133}{subsubsection.6.10.2.2}%
-\contentsline {section}{\numberline {6.11}Conclusion}{134}{section.6.11}%
-\contentsline {starchapter}{Conclusion générale}{135}{section.6.11}%
-\contentsline {chapter}{Webographie}{139}{section.6.11}%
+\contentsline {subsubsection}{\numberline {2.4.6.7}Conclusion de la phase Contrôler}{40}{subsubsection.2.4.6.7}%
+\contentsline {chapter}{\numberline {3}Intelligence Artificielle, Industrie 4.0 et Méthodologie CRISP-ML(Q)}{41}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Intelligence Artificielle et Industrie 4.0}{41}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Qu'est-ce que l'Intelligence Artificielle?}{41}{subsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1.1}Définitions et concepts fondamentaux}{41}{subsubsection.3.1.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1.2}Paradigmes d'apprentissage en Machine Learning}{42}{subsubsection.3.1.1.2}%
+\contentsline {subsection}{\numberline {3.1.2}L'Industrie 4.0 et la Transformation Digitale}{43}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}Définition de l'Industrie 4.0}{43}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}Les quatre révolutions industrielles}{43}{subsubsection.3.1.2.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}Les piliers technologiques de l'Industrie 4.0}{44}{subsubsection.3.1.2.3}%
+\contentsline {section}{\numberline {3.2}Outils et bibliothèques utilisés}{47}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Introduction}{47}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Écosystème Data Science et Machine Learning}{47}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}Bibliothèques de manipulation de données}{48}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}Bibliothèques de Machine Learning}{48}{subsubsection.3.2.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.3}Bibliothèques de visualisation}{49}{subsubsection.3.2.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}Frameworks de développement}{49}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}Backend et API}{50}{subsubsection.3.2.3.1}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}Frontend et interface utilisateur}{51}{subsubsection.3.2.3.2}%
+\contentsline {subsection}{\numberline {3.2.4}Outils d'optimisation et d'ordonnancement}{52}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Infrastructure et DevOps}{53}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Stack technologique complète}{54}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}Méthodologie CRISP-ML(Q)}{56}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Introduction à CRISP-ML(Q)}{56}{subsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.1}De CRISP-DM à CRISP-ML(Q)}{56}{subsubsection.3.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.2}Pourquoi CRISP-ML(Q) pour l'IA industrielle?}{56}{subsubsection.3.3.1.2}%
+\contentsline {subsection}{\numberline {3.3.2}Vue d'ensemble du processus CRISP-ML(Q)}{57}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Les six phases de CRISP-ML(Q)}{58}{subsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}Phase 1: Business Understanding}{58}{subsubsection.3.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}Phase 2: Data Understanding}{58}{subsubsection.3.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}Phase 3: Data Preparation}{59}{subsubsection.3.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.4}Phase 4: Modeling}{59}{subsubsection.3.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.3.5}Phase 5: Evaluation}{59}{subsubsection.3.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.3.6}Phase 6: Deployment}{59}{subsubsection.3.3.3.6}%
+\contentsline {subsection}{\numberline {3.3.4}Portes de qualité (Quality Gates)}{59}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Phase 1 : Comprehension metier (Business Understanding)}{60}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Contexte strategique et enjeux}{60}{subsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.1}Contexte industriel}{60}{subsubsection.3.4.1.1}%
+\contentsline {subsection}{\numberline {3.4.2}Business Model Canvas}{60}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Objectifs metier detailles}{61}{subsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.3.1}Objectifs strategiques}{61}{subsubsection.3.4.3.1}%
+\contentsline {subsubsection}{\numberline {3.4.3.2}Objectifs operationnels quantifiables}{62}{subsubsection.3.4.3.2}%
+\contentsline {subsubsection}{\numberline {3.4.3.3}Objectifs techniques ML}{62}{subsubsection.3.4.3.3}%
+\contentsline {subsection}{\numberline {3.4.4}Analyse approfondie des parties prenantes}{62}{subsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.4.1}Matrice pouvoir-interet}{62}{subsubsection.3.4.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.4.2}Besoins detailles par profil utilisateur}{63}{subsubsection.3.4.4.2}%
+\contentsline {subsection}{\numberline {3.4.5}Analyse des processus metier}{64}{subsection.3.4.5}%
+\contentsline {subsubsection}{\numberline {3.4.5.1}Cartographie du processus actuel (AS-IS)}{64}{subsubsection.3.4.5.1}%
+\contentsline {subsubsection}{\numberline {3.4.5.2}Processus cible optimise (TO-BE)}{65}{subsubsection.3.4.5.2}%
+\contentsline {subsection}{\numberline {3.4.6}Analyse des risques metier}{66}{subsection.3.4.6}%
+\contentsline {subsubsection}{\numberline {3.4.6.1}Registre des risques}{66}{subsubsection.3.4.6.1}%
+\contentsline {subsubsection}{\numberline {3.4.6.2}Plan de mitigation des risques critiques}{66}{subsubsection.3.4.6.2}%
+\contentsline {subsection}{\numberline {3.4.7}Criteres de succes et metriques de performance}{67}{subsection.3.4.7}%
+\contentsline {subsubsection}{\numberline {3.4.7.1}Criteres techniques ML}{68}{subsubsection.3.4.7.1}%
+\contentsline {subsubsection}{\numberline {3.4.7.2}Criteres metier operationnels}{68}{subsubsection.3.4.7.2}%
+\contentsline {subsubsection}{\numberline {3.4.7.3}Criteres de qualite logicielle}{68}{subsubsection.3.4.7.3}%
+\contentsline {subsubsection}{\numberline {3.4.7.4}Criteres financiers}{68}{subsubsection.3.4.7.4}%
+\contentsline {subsection}{\numberline {3.4.8}Contraintes et hypotheses du projet}{69}{subsection.3.4.8}%
+\contentsline {subsubsection}{\numberline {3.4.8.1}Contraintes identifiees}{69}{subsubsection.3.4.8.1}%
+\contentsline {subsubsection}{\numberline {3.4.8.2}Hypotheses du projet}{69}{subsubsection.3.4.8.2}%
+\contentsline {subsection}{\numberline {3.4.9}Synthese de la phase Business Understanding}{70}{subsection.3.4.9}%
+\contentsline {section}{\numberline {3.5}Phase 2 : Comprehension des donnees (Data Understanding)}{71}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Objectifs de la phase Data Understanding}{71}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Inventaire et collecte des donnees}{71}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}Sources de donnees identifiees}{71}{subsubsection.3.5.2.1}%
+\contentsline {subsubsection}{\numberline {3.5.2.2}Caracteristiques des sources de donnees}{72}{subsubsection.3.5.2.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.3}Dataset principal : PSC\_X\_1 - COUPE.csv}{72}{subsubsection.3.5.2.3}%
+\contentsline {subsection}{\numberline {3.5.3}Dictionnaire de donnees}{73}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Exploration des donnees}{73}{subsection.3.5.4}%
+\contentsline {subsubsection}{\numberline {3.5.4.1}Analyse du dataset principal}{73}{subsubsection.3.5.4.1}%
+\contentsline {subsubsection}{\numberline {3.5.4.2}Variables d'interet}{73}{subsubsection.3.5.4.2}%
+\contentsline {subsection}{\numberline {3.5.5}Analyse de la qualite des donnees}{74}{subsection.3.5.5}%
+\contentsline {subsubsection}{\numberline {3.5.5.1}Valeurs manquantes}{74}{subsubsection.3.5.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.5.2}Valeurs aberrantes}{74}{subsubsection.3.5.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.5.3}Coherence des donnees}{74}{subsubsection.3.5.5.3}%
+\contentsline {subsection}{\numberline {3.5.6}Analyse exploratoire des donnees}{74}{subsection.3.5.6}%
+\contentsline {subsubsection}{\numberline {3.5.6.1}Distribution des variables}{74}{subsubsection.3.5.6.1}%
+\contentsline {subsubsection}{\numberline {3.5.6.2}Correlations}{74}{subsubsection.3.5.6.2}%
+\contentsline {subsubsection}{\numberline {3.5.6.3}Patterns temporels}{75}{subsubsection.3.5.6.3}%
+\contentsline {section}{\numberline {3.6}Phase 3 : Preparation des donnees (Data Preparation)}{75}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Objectifs de la phase Data Preparation}{75}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Nettoyage des donnees}{75}{subsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.1}Traitement des valeurs manquantes}{75}{subsubsection.3.6.2.1}%
+\contentsline {subsubsection}{\numberline {3.6.2.2}Traitement des valeurs aberrantes}{76}{subsubsection.3.6.2.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.3}Standardisation des formats}{77}{subsubsection.3.6.2.3}%
+\contentsline {subsubsection}{\numberline {3.6.2.4}Validation de la coherence}{78}{subsubsection.3.6.2.4}%
+\contentsline {subsection}{\numberline {3.6.3}Ingenierie des caracteristiques (Feature Engineering)}{78}{subsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.3.1}Strategie de feature engineering}{78}{subsubsection.3.6.3.1}%
+\contentsline {subsubsection}{\numberline {3.6.3.2}Workflow de feature engineering}{79}{subsubsection.3.6.3.2}%
+\contentsline {subsubsection}{\numberline {3.6.3.3}Features temporelles}{79}{subsubsection.3.6.3.3}%
+\contentsline {subsubsection}{\numberline {3.6.3.4}Features derivees (domaine metier)}{80}{subsubsection.3.6.3.4}%
+\contentsline {subsubsection}{\numberline {3.6.3.5}Encodage des variables categorielles}{81}{subsubsection.3.6.3.5}%
+\contentsline {subsubsection}{\numberline {3.6.3.6}Normalisation et standardisation}{82}{subsubsection.3.6.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.3.7}Selection de features}{82}{subsubsection.3.6.3.7}%
+\contentsline {subsection}{\numberline {3.6.4}Segmentation des donnees}{83}{subsection.3.6.4}%
+\contentsline {subsubsection}{\numberline {3.6.4.1}Division temporelle}{83}{subsubsection.3.6.4.1}%
+\contentsline {subsubsection}{\numberline {3.6.4.2}Stratification}{83}{subsubsection.3.6.4.2}%
+\contentsline {subsection}{\numberline {3.6.5}Validation de la preparation}{83}{subsection.3.6.5}%
+\contentsline {subsubsection}{\numberline {3.6.5.1}Metriques de qualite}{83}{subsubsection.3.6.5.1}%
+\contentsline {subsubsection}{\numberline {3.6.5.2}Tests de regression}{84}{subsubsection.3.6.5.2}%
+\contentsline {subsection}{\numberline {3.6.6}Pipeline de donnees}{84}{subsection.3.6.6}%
+\contentsline {subsubsection}{\numberline {3.6.6.1}Architecture du pipeline}{84}{subsubsection.3.6.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.6.2}Composants du pipeline}{84}{subsubsection.3.6.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.6.3}Architecture du pipeline de donnees}{84}{subsubsection.3.6.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.6.4}Orchestration}{85}{subsubsection.3.6.6.4}%
+\contentsline {section}{\numberline {3.7}Phase 3 (suite) : Cadre d'assurance qualite}{86}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Introduction au cadre qualite CRISP-ML(Q)}{86}{subsection.3.7.1}%
+\contentsline {subsubsection}{\numberline {3.7.1.1}Framework d'assurance qualite}{86}{subsubsection.3.7.1.1}%
+\contentsline {subsection}{\numberline {3.7.2}Qualite des donnees}{86}{subsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.2.1}Criteres de qualite des donnees}{86}{subsubsection.3.7.2.1}%
+\contentsline {subsubsection}{\numberline {3.7.2.2}Processus de validation des donnees}{87}{subsubsection.3.7.2.2}%
+\contentsline {subsection}{\numberline {3.7.3}Qualite des modeles}{88}{subsection.3.7.3}%
+\contentsline {subsubsection}{\numberline {3.7.3.1}Criteres de qualite des modeles ML}{88}{subsubsection.3.7.3.1}%
+\contentsline {subsubsection}{\numberline {3.7.3.2}Tests de robustesse}{88}{subsubsection.3.7.3.2}%
+\contentsline {subsection}{\numberline {3.7.4}Qualite du code}{89}{subsection.3.7.4}%
+\contentsline {subsubsection}{\numberline {3.7.4.1}Standards de qualite du code}{89}{subsubsection.3.7.4.1}%
+\contentsline {subsubsection}{\numberline {3.7.4.2}Architecture et maintenabilite}{89}{subsubsection.3.7.4.2}%
+\contentsline {subsection}{\numberline {3.7.5}Qualite operationnelle}{90}{subsection.3.7.5}%
+\contentsline {subsubsection}{\numberline {3.7.5.1}Criteres de qualite operationnelle}{90}{subsubsection.3.7.5.1}%
+\contentsline {subsubsection}{\numberline {3.7.5.2}Plan de monitoring}{90}{subsubsection.3.7.5.2}%
+\contentsline {subsection}{\numberline {3.7.6}Portes de qualite (Quality Gates)}{91}{subsection.3.7.6}%
+\contentsline {subsubsection}{\numberline {3.7.6.1}Quality Gate 1 : Data Quality}{91}{subsubsection.3.7.6.1}%
+\contentsline {subsubsection}{\numberline {3.7.6.2}Quality Gate 2 : Model Quality}{91}{subsubsection.3.7.6.2}%
+\contentsline {subsubsection}{\numberline {3.7.6.3}Quality Gate 3 : Production Quality}{92}{subsubsection.3.7.6.3}%
+\contentsline {subsection}{\numberline {3.7.7}Synthese du cadre qualite}{92}{subsection.3.7.7}%
+\contentsline {subsection}{\numberline {3.7.8}Metriques de qualite des donnees}{93}{subsection.3.7.8}%
+\contentsline {subsubsection}{\numberline {3.7.8.1}Framework de qualite des donnees}{93}{subsubsection.3.7.8.1}%
+\contentsline {subsubsection}{\numberline {3.7.8.2}Tests de qualite automatises}{93}{subsubsection.3.7.8.2}%
+\contentsline {subsubsection}{\numberline {3.7.8.3}Monitoring de la qualite des donnees}{94}{subsubsection.3.7.8.3}%
+\contentsline {subsection}{\numberline {3.7.9}Portes de qualite des modeles (Quality Gates)}{94}{subsection.3.7.9}%
+\contentsline {subsubsection}{\numberline {3.7.9.1}Framework de validation multi-niveaux}{94}{subsubsection.3.7.9.1}%
+\contentsline {subsubsection}{\numberline {3.7.9.2}Matrice de validation des modeles}{95}{subsubsection.3.7.9.2}%
+\contentsline {subsubsection}{\numberline {3.7.9.3}Tests de robustesse}{95}{subsubsection.3.7.9.3}%
+\contentsline {subsection}{\numberline {3.7.10}Framework de monitoring en production}{95}{subsection.3.7.10}%
+\contentsline {subsubsection}{\numberline {3.7.10.1}Architecture de monitoring}{95}{subsubsection.3.7.10.1}%
+\contentsline {subsubsection}{\numberline {3.7.10.2}Dashboards de monitoring}{96}{subsubsection.3.7.10.2}%
+\contentsline {subsubsection}{\numberline {3.7.10.3}Systeme d'alertes intelligent}{97}{subsubsection.3.7.10.3}%
+\contentsline {subsection}{\numberline {3.7.11}Strategie de tests A/B}{97}{subsection.3.7.11}%
+\contentsline {subsubsection}{\numberline {3.7.11.1}Framework de tests A/B}{97}{subsubsection.3.7.11.1}%
+\contentsline {subsubsection}{\numberline {3.7.11.2}Deploiement canary}{97}{subsubsection.3.7.11.2}%
+\contentsline {subsection}{\numberline {3.7.12}Gouvernance des modeles ML}{98}{subsection.3.7.12}%
+\contentsline {subsubsection}{\numberline {3.7.12.1}Cycle de vie des modeles}{98}{subsubsection.3.7.12.1}%
+\contentsline {subsubsection}{\numberline {3.7.12.2}Registre des modeles}{98}{subsubsection.3.7.12.2}%
+\contentsline {subsubsection}{\numberline {3.7.12.3}Documentation et tracabilite}{99}{subsubsection.3.7.12.3}%
+\contentsline {subsection}{\numberline {3.7.13}Synthese du cadre qualite}{99}{subsection.3.7.13}%
+\contentsline {section}{\numberline {3.8}Synthese et perspectives}{100}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Bilan des phases 1-3}{100}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Preparation aux phases suivantes}{100}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}Risques identifies et mitigations}{100}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}Phase 4 : Modelisation (Modeling)}{100}{subsection.3.8.4}%
+\contentsline {subsubsection}{\numberline {3.8.4.1}Introduction a la phase de modelisation}{101}{subsubsection.3.8.4.1}%
+\contentsline {subsubsection}{\numberline {3.8.4.2}Selection des algorithmes}{101}{subsubsection.3.8.4.2}%
+\contentsline {subsubsection}{\numberline {3.8.4.3}Entrainement des modeles}{106}{subsubsection.3.8.4.3}%
+\contentsline {subsubsection}{\numberline {3.8.4.4}Optimisation des hyperparametres}{111}{subsubsection.3.8.4.4}%
+\contentsline {subsubsection}{\numberline {3.8.4.5}Validation croisee}{117}{subsubsection.3.8.4.5}%
+\contentsline {chapter}{\numberline {4}Application de la méthodologie CRISP-ML(Q) au sein de l'atelier de coupe Bacovet}{123}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Compréhension du métier~: Business Understanding}{123}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Contexte de la planification dans l'atelier de coupe Bacovet}{123}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Outils et technologies utilisés dans la planification}{125}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Compréhension et analyse des données~: Data Understanding \& Analysis}{126}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Préparation des données~: Data Preparation}{127}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Modélisation et solution proposée (aperçu)}{128}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Agile 4-month delivery plan}{130}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{130}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Architecture Agile du Projet}{130}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Équipe de Développement}{130}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Outils et Technologies}{130}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Roadmap de Développement}{131}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Phase 1 : Fondations (Sprints 1-4)}{131}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Phase 2 : Développement Core (Sprints 5-8)}{131}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Phase 3 : Optimisation et Production (Sprints 9-12)}{131}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}Détail des Sprints}{132}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Sprint 1 : Analyse et Architecture}{132}{subsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.1.1}User Stories}{132}{subsubsection.5.4.1.1}%
+\contentsline {subsubsection}{\numberline {5.4.1.2}Tâches Techniques}{132}{subsubsection.5.4.1.2}%
+\contentsline {subsubsection}{\numberline {5.4.1.3}Livrables}{132}{subsubsection.5.4.1.3}%
+\contentsline {subsection}{\numberline {5.4.2}Sprint 2 : Pipeline de Données}{132}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}User Stories}{132}{subsubsection.5.4.2.1}%
+\contentsline {subsubsection}{\numberline {5.4.2.2}Tâches Techniques}{133}{subsubsection.5.4.2.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.3}Livrables}{133}{subsubsection.5.4.2.3}%
+\contentsline {subsection}{\numberline {5.4.3}Sprint 3 : Modèles de Machine Learning}{133}{subsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.3.1}User Stories}{133}{subsubsection.5.4.3.1}%
+\contentsline {subsubsection}{\numberline {5.4.3.2}Tâches Techniques}{133}{subsubsection.5.4.3.2}%
+\contentsline {subsubsection}{\numberline {5.4.3.3}Livrables}{133}{subsubsection.5.4.3.3}%
+\contentsline {subsection}{\numberline {5.4.4}Sprint 4 : Pipeline MLOps}{133}{subsection.5.4.4}%
+\contentsline {subsubsection}{\numberline {5.4.4.1}User Stories}{134}{subsubsection.5.4.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.4.2}Tâches Techniques}{134}{subsubsection.5.4.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.4.3}Livrables}{134}{subsubsection.5.4.4.3}%
+\contentsline {section}{\numberline {5.5}Métriques et KPIs de Succès}{134}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Métriques Techniques}{134}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Métriques Métier}{134}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Métriques de Projet}{135}{subsection.5.5.3}%
+\contentsline {section}{\numberline {5.6}Gestion des Risques}{135}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Framework de gestion des risques}{135}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Registre complet des risques}{136}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Matrice de criticité}{136}{subsection.5.6.3}%
+\contentsline {subsection}{\numberline {5.6.4}Plans de réponse détaillés}{137}{subsection.5.6.4}%
+\contentsline {subsubsection}{\numberline {5.6.4.1}Risque critique 1 : Performance modèles insuffisante}{137}{subsubsection.5.6.4.1}%
+\contentsline {subsubsection}{\numberline {5.6.4.2}Risque critique 2 : Intégration avec G.Pro}{137}{subsubsection.5.6.4.2}%
+\contentsline {subsubsection}{\numberline {5.6.4.3}Risque critique 3 : Adoption utilisateurs faible}{137}{subsubsection.5.6.4.3}%
+\contentsline {subsection}{\numberline {5.6.5}Monitoring et reporting}{138}{subsection.5.6.5}%
+\contentsline {section}{\numberline {5.7}Plan de Communication}{138}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Stakeholders}{138}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Cadence de Communication}{138}{subsection.5.7.2}%
+\contentsline {section}{\numberline {5.8}Plan de Formation et Adoption}{139}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Formation des Utilisateurs}{139}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}Stratégie d'Adoption}{139}{subsection.5.8.2}%
+\contentsline {section}{\numberline {5.9}Plan de Maintenance et Évolution}{139}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Maintenance Préventive}{139}{subsection.5.9.1}%
+\contentsline {subsection}{\numberline {5.9.2}Évolution du Système}{139}{subsection.5.9.2}%
+\contentsline {section}{\numberline {5.10}Budget et Ressources}{140}{section.5.10}%
+\contentsline {subsection}{\numberline {5.10.1}Budget Estimé}{140}{subsection.5.10.1}%
+\contentsline {subsection}{\numberline {5.10.2}ROI Attendu}{140}{subsection.5.10.2}%
+\contentsline {section}{\numberline {5.11}Conclusion}{140}{section.5.11}%
+\contentsline {chapter}{\numberline {6}Service IA and dashboard}{141}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{141}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Architecture des Services IA}{141}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Vue d'ensemble de l'architecture}{141}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Composants principaux}{142}{subsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}Service de Prédiction}{142}{subsubsection.6.2.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2.2}Service d'Ordonnancement}{142}{subsubsection.6.2.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.3}Service Analytics}{143}{subsubsection.6.2.2.3}%
+\contentsline {section}{\numberline {6.3}Spécifications des APIs}{143}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}API de Prédiction}{143}{subsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.1}Endpoint de prédiction simple}{143}{subsubsection.6.3.1.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.2}Endpoint de prédiction en lot}{144}{subsubsection.6.3.1.2}%
+\contentsline {subsection}{\numberline {6.3.2}API d'Ordonnancement}{144}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}Endpoint d'optimisation de planification}{144}{subsubsection.6.3.2.1}%
+\contentsline {subsection}{\numberline {6.3.3}API Analytics}{145}{subsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.1}Endpoint de calcul des KPIs}{145}{subsubsection.6.3.3.1}%
+\contentsline {section}{\numberline {6.4}Interface Utilisateur}{146}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Architecture du Dashboard React}{146}{subsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.1.1}Structure des composants}{146}{subsubsection.6.4.1.1}%
+\contentsline {subsubsection}{\numberline {6.4.1.2}Gestion d'état}{147}{subsubsection.6.4.1.2}%
+\contentsline {subsection}{\numberline {6.4.2}Pages principales}{147}{subsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.2.1}Dashboard Principal}{147}{subsubsection.6.4.2.1}%
+\contentsline {subsubsection}{\numberline {6.4.2.2}Page de Planification}{148}{subsubsection.6.4.2.2}%
+\contentsline {subsubsection}{\numberline {6.4.2.3}Page Analytics}{149}{subsubsection.6.4.2.3}%
+\contentsline {subsubsection}{\numberline {6.4.2.4}Simulateur What-If}{149}{subsubsection.6.4.2.4}%
+\contentsline {section}{\numberline {6.5}Intégration des Modèles ML}{150}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Service de Prédiction}{150}{subsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.1.1}Chargement des modèles}{150}{subsubsection.6.5.1.1}%
+\contentsline {subsubsection}{\numberline {6.5.1.2}Préprocessing des données}{151}{subsubsection.6.5.1.2}%
+\contentsline {subsection}{\numberline {6.5.2}Service d'Ordonnancement}{151}{subsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.1}Modélisation des contraintes}{151}{subsubsection.6.5.2.1}%
+\contentsline {section}{\numberline {6.6}Sécurité et Authentification}{152}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Système d'authentification}{152}{subsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.1.1}Génération des tokens}{152}{subsubsection.6.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.6.1.2}Vérification des tokens}{153}{subsubsection.6.6.1.2}%
+\contentsline {subsection}{\numberline {6.6.2}Contrôle d'accès basé sur les rôles (RBAC)}{153}{subsection.6.6.2}%
+\contentsline {section}{\numberline {6.7}Monitoring et Observabilité}{153}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Métriques de performance}{153}{subsection.6.7.1}%
+\contentsline {subsubsection}{\numberline {6.7.1.1}Métriques des modèles}{153}{subsubsection.6.7.1.1}%
+\contentsline {subsubsection}{\numberline {6.7.1.2}Métriques des services}{154}{subsubsection.6.7.1.2}%
+\contentsline {subsection}{\numberline {6.7.2}Alertes et notifications}{154}{subsection.6.7.2}%
+\contentsline {section}{\numberline {6.8}Documentation Technique}{154}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Documentation API}{154}{subsection.6.8.1}%
+\contentsline {subsection}{\numberline {6.8.2}Guide de déploiement}{154}{subsection.6.8.2}%
+\contentsline {subsubsection}{\numberline {6.8.2.1}Configuration Docker}{154}{subsubsection.6.8.2.1}%
+\contentsline {subsubsection}{\numberline {6.8.2.2}Docker Compose}{155}{subsubsection.6.8.2.2}%
+\contentsline {subsection}{\numberline {6.8.3}Tests et validation}{155}{subsection.6.8.3}%
+\contentsline {subsubsection}{\numberline {6.8.3.1}Tests unitaires}{156}{subsubsection.6.8.3.1}%
+\contentsline {subsubsection}{\numberline {6.8.3.2}Tests d'intégration}{156}{subsubsection.6.8.3.2}%
+\contentsline {section}{\numberline {6.9}Performance et Optimisation}{156}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}Optimisations des modèles}{156}{subsection.6.9.1}%
+\contentsline {subsubsection}{\numberline {6.9.1.1}Cache des prédictions}{156}{subsubsection.6.9.1.1}%
+\contentsline {subsubsection}{\numberline {6.9.1.2}Prédiction en lot}{157}{subsubsection.6.9.1.2}%
+\contentsline {subsection}{\numberline {6.9.2}Optimisations de l'ordonnancement}{157}{subsection.6.9.2}%
+\contentsline {subsubsection}{\numberline {6.9.2.1}Parallélisation}{157}{subsubsection.6.9.2.1}%
+\contentsline {section}{\numberline {6.10}Évolutivité et Maintenance}{158}{section.6.10}%
+\contentsline {subsection}{\numberline {6.10.1}Architecture évolutive}{158}{subsection.6.10.1}%
+\contentsline {subsubsection}{\numberline {6.10.1.1}Microservices}{158}{subsubsection.6.10.1.1}%
+\contentsline {subsubsection}{\numberline {6.10.1.2}API Gateway}{158}{subsubsection.6.10.1.2}%
+\contentsline {subsection}{\numberline {6.10.2}Maintenance des modèles}{158}{subsection.6.10.2}%
+\contentsline {subsubsection}{\numberline {6.10.2.1}Monitoring de la dérive}{158}{subsubsection.6.10.2.1}%
+\contentsline {subsubsection}{\numberline {6.10.2.2}Réentraînement automatique}{159}{subsubsection.6.10.2.2}%
+\contentsline {section}{\numberline {6.11}Conclusion}{159}{section.6.11}%
+\contentsline {starchapter}{Conclusion générale}{160}{section.6.11}%
+\contentsline {chapter}{Webographie}{164}{section.6.11}%

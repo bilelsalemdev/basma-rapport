@@ -1,0 +1,24 @@
+\documentclass[a4paper,12pt]{report}
+
+% Packages essentiels
+\usepackage[provide=*,french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{shapes.symbols,shapes.geometric,arrows.meta,positioning,backgrounds}
+
+% TikZ styles (requis pour les templates de diagrammes)
+\tikzstyle{service} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzset{boxstep/.style={rectangle, rounded corners, draw, align=center, minimum width=3.5cm, minimum height=1.2cm, font=\small, fill=gray!10}}
+\tikzset{step/.code={\pgfkeysalso{boxstep}}}
+
+\begin{document}
+
+% Test du Chapitre 4 - Application CRISP-ML(Q)
+\input{Chapitre4/chapitre4_crisp_application.tex}
+
+\end{document}

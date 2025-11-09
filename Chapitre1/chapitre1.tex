@@ -210,44 +210,93 @@ Les pièces sont conditionnées puis transférées à l'atelier de confection. C
   \end{minipage}
     \end{figure}
 \end{enumerate}
- \subsection{Durabilité et responsabilité environnementale}
-Consciente des enjeux climatiques et environnementaux actuels, Bacosport, et par extension sa filiale Bacovet, s'inscrivent dans une démarche de production durable et responsable. L'entreprise considère la préservation de l'environnement comme un pilier fondamental de sa stratégie de développement industriel.
-
-Dans cette optique, plusieurs initiatives écologiques majeures ont été mises en œuvre, notamment le projet photovoltaïque visant à transformer les sites de production en véritables sources d'énergie renouvelable. Cette transition énergétique permet non seulement de réduire significativement l'empreinte carbone de l'entreprise, mais également de renforcer son indépendance énergétique.
-
-À ce jour, plus de 300 panneaux solaires ont été installés sur le site de Jammel, entraînant une réduction de 60 % de la dépendance énergétique du site. Fort de ce succès, le projet sera prochainement répliqué sur le site de Boumerdes, où est implantée Bacovet, consolidant ainsi la stratégie de transition énergétique du groupe.
-
-L'ensemble de ces initiatives s'inscrit dans un engagement global de réduction de l'impact environnemental, tout en maintenant un haut niveau de qualité et de performance industrielle.
-Par ce positionnement, Bacovet démontre qu'il est possible d'allier efficacité économique, innovation technologique et durabilité environnementale, en cohérence avec les objectifs de l'Industrie 4.0 verte.
-\begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.50\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Chapitre1/images/17.jpg}
-    \caption{le projet photovoltaïque }
-    \label{form}
-  \end{minipage}
-  \end{figure}
 
 \section{Cadre du projet}\label{chap1:cadre}
-Dans un environnement industriel caractérisé par une intensification de la concurrence internationale et des exigences croissantes en matière de qualité, de réactivité, de traçabilité et d'optimisation des coûts, le secteur textile tunisien est confronté à l'impératif d'une évolution rapide et structurée vers des modes de production plus performants et plus flexibles.
 
-Au sein de l'écosystème organisationnel du groupe BACOSPORT, la société BACOVET occupe une position stratégique déterminante dans la chaîne de valeur textile. L'entreprise regroupe plusieurs activités complémentaires et interdépendantes, notamment la coupe industrielle, la sérigraphie, la confection et le contrôle qualité, contribuant ainsi de manière substantielle à la performance globale du groupe sur les marchés nationaux et internationaux.
+L'atelier de coupe de BACOVET, bien que performant, souffre de l'absence d'un système digitalisé de planification et de suivi en temps réel. Cette lacune génère des pertes de temps, un manque de visibilité sur la production et une capacité limitée d'anticipation des retards. Ce projet vise à développer une solution numérique intelligente intégrant les principes de l'Industrie 4.0 pour optimiser la gestion de l'atelier.
 
-Cependant, l'analyse critique de l'existant révèle que l'atelier de coupe, bien que structuré et performant sur le plan opérationnel, présente des limitations structurelles significatives liées à l'absence d'un système digitalisé intégré d'ordonnancement, de suivi et de contrôle en temps réel. Cette lacune technologique et organisationnelle génère des pertes de temps opérationnelles non négligeables, une visibilité restreinte sur l'avancement des opérations, et une capacité limitée d'anticipation des retards ou de réactivité face aux imprévus de production.
+\subsection{Définition du projet (Méthode SIPOC)}
 
-Dans cette perspective, le présent projet de recherche s'inscrit dans une démarche structurée de transformation digitale ciblée, visant à intégrer de manière progressive et cohérente les principes fondamentaux de l'Industrie 4.0 au sein de l'atelier de coupe de BACOVET. 
+La méthode SIPOC permet d'identifier les éléments clés du projet et de clarifier son périmètre d'intervention.
 
-L'objectif principal de cette recherche consiste à concevoir, développer et mettre en place une solution numérique intelligente, fondée sur l'intelligence artificielle et les technologies de l'information, permettant de réaliser les objectifs opérationnels suivants :
-  \begin{itemize}
- \item Assurer un suivi en temps réel et une traçabilité complète des opérations, notamment au niveau des phases critiques de matelassage et de coupe
+\begin{table}[htbp]
+\centering
+\small
+\caption{Analyse SIPOC du projet}
+\label{tab:sipoc}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\rowcolor{gray!30}
+\textbf{Élément} & \textbf{Description} \\
+\hline
+\textbf{Suppliers} & Direction BACOVET, service informatique, opérateurs de l'atelier, fournisseurs de technologies IA \\
+\hline
+\textbf{Inputs} & Données historiques de production, spécifications techniques des machines, contraintes opérationnelles, cahier des charges \\
+\hline
+\textbf{Process} & Diagnostic DMAIC, collecte et préparation des données, développement d'algorithmes IA, conception du tableau de bord, tests et déploiement \\
+\hline
+\textbf{Outputs} & Modèle prédictif IA, tableau de bord en temps réel, système d'ordonnancement, documentation technique, KPIs \\
+\hline
+\textbf{Customers} & Responsable d'atelier, chefs d'équipe, opérateurs, direction générale, service qualité \\
+\hline
+\end{tabular}
+\end{table}
 
- \item Optimiser la gestion des plannings de production et l'allocation des ressources disponibles (machines, opérateurs)
+\subsection{Objectifs du projet}
 
- \item Garantir une traçabilité exhaustive des opérations et des flux de production
+\textbf{Objectif général :} Concevoir et déployer une solution numérique intelligente pour optimiser la gestion de l'atelier de coupe, intégrant l'IA et les principes de l'Industrie 4.0.
 
- \item Améliorer significativement les performances opérationnelles de l'atelier, mesurées par des indicateurs clés de performance (KPIs) quantifiables
-    \end{itemize}
+\textbf{Objectifs spécifiques :}
+\begin{enumerate}
+    \item Réaliser un diagnostic complet de l'atelier selon la méthodologie DMAIC
+    \item Développer un modèle IA de prédiction des temps de matelassage (précision > 85\%)
+    \item Concevoir un système d'ordonnancement intelligent optimisant l'allocation des ressources
+    \item Créer un tableau de bord de pilotage en temps réel avec KPIs pertinents
+    \item Valider et déployer la solution avec formation des utilisateurs
+\end{enumerate}
+
+\subsection{Périmètre du projet (Méthode QQOQCCP)}
+
+La méthode QQOQCCP permet de définir précisément le périmètre d'intervention du projet.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Analyse QQOQCCP du projet}
+\label{tab:qqoqccp}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\rowcolor{gray!30}
+\textbf{Question} & \textbf{Réponse} \\
+\hline
+\textbf{Qui ?} & Étudiant en Master Génie Industriel, encadrement académique (ENIM) et professionnel (BACOVET), utilisateurs finaux (chefs d'équipe, opérateurs) \\
+\hline
+\textbf{Quoi ?} & Transformation digitale de l'atelier de coupe : modèle prédictif IA, système d'ordonnancement, tableau de bord en temps réel, documentation technique \\
+\hline
+\textbf{Où ?} & Atelier de coupe de BACOVET, Boumerdes, Tunisie. \textbf{Exclusions :} ateliers de sérigraphie, confection et contrôle qualité \\
+\hline
+\textbf{Quand ?} & 4 mois (février-mai 2025) : Diagnostic (1 mois), Développement (1,5 mois), Tests et déploiement (1 mois), Formation et clôture (0,5 mois) \\
+\hline
+\textbf{Comment ?} & Méthodologies : DMAIC (diagnostic), CRISP-ML(Q) (développement IA), Agile/Scrum. Technologies : Python, Machine Learning, FastAPI, React, PostgreSQL \\
+\hline
+\textbf{Combien ?} & 1 étudiant à temps plein, encadrement hebdomadaire, collaboration avec 3 opérateurs et 2 chefs d'équipe, accès aux données historiques (2 ans) \\
+\hline
+\textbf{Pourquoi ?} & \textbf{Problèmes :} absence de système digitalisé, pertes de temps, manque de visibilité. \textbf{Bénéfices attendus :} réduction des temps d'attente (20-30\%), amélioration du taux d'utilisation des machines (15-25\%), visibilité en temps réel \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Limites et contraintes}
+
+\begin{itemize}
+    \item \textbf{Périmètre limité :} Atelier de coupe uniquement (matelassage et coupe)
+    \item \textbf{Durée :} 4 mois imposant une approche MVP (Minimum Viable Product)
+    \item \textbf{Intégration :} Respect de l'infrastructure informatique existante de BACOVET
+    \item \textbf{Données :} Qualité et complétude des données historiques à vérifier
+    \item \textbf{Adoption :} Accompagnement au changement et formation nécessaires
+\end{itemize}
+
+Cette définition structurée du cadre du projet, appuyée sur les méthodes SIPOC et QQOQCCP, permet d'établir une base solide pour la conduite du projet et garantit une compréhension partagée entre toutes les parties prenantes. Elle constitue également un référentiel pour l'évaluation de l'atteinte des objectifs et la mesure de la performance du projet.
 
 \section{Conclusion du chapitre}\label{chap1:conclusion}
 Ce chapitre a établi le cadre contextuel et organisationnel de la recherche en présentant l'entreprise d'accueil BACOVET et son positionnement stratégique dans l'écosystème textile tunisien. L'analyse critique de l'existant a permis d'identifier les limitations structurelles de l'atelier de coupe, notamment l'absence d'un système digitalisé intégré. 

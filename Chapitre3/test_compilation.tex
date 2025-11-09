@@ -1,0 +1,39 @@
+\documentclass[12pt,a4paper]{report}
+
+% Packages essentiels
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning,calc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{minitoc}
+\usepackage{fancyhdr}
+
+% Configuration
+\graphicspath{{Chapitre3/images/}}
+
+% En-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\begin{document}
+
+% Initialiser minitoc
+\dominitoc
+\tableofcontents
+
+% Inclure le chapitre 3
+\input{chapitre3.tex}
+
+\end{document}
