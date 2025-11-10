@@ -2382,9 +2382,6 @@
     <bcf:citekey order="16" intorder="1">redman2001data</bcf:citekey>
     <bcf:citekey order="16" intorder="2">batini2009methodologies</bcf:citekey>
     <bcf:citekey order="17" intorder="1">gift2020practical</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">schwaber2020scrum</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">cohn2005agile</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">schwaber2020scrum</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

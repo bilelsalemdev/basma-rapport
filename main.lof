@@ -65,4 +65,9 @@
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Prototype d'interface du système intelligent de planification des tables de matelassage}}{130}{figure.caption.109}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Comparaison entre les temps réels et les temps prédits par le modèle}}{130}{figure.caption.110}%
 \addvspace {10\p@ }
+<<<<<<< HEAD
 \contentsline {xchapter}{Agile 4-month delivery plan}{131}{chapter.5}%
+=======
+\contentsline {xchapter}{Service IA and dashboard}{137}{chapter.5}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Architecture des services IA}}{138}{figure.caption.112}%
+>>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da

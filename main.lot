@@ -64,6 +64,7 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Application de la méthodologie CRISP-ML(Q) au sein de l'atelier de coupe Bacovet}{124}{chapter.4}%
 \addvspace {10\p@ }
+<<<<<<< HEAD
 \contentsline {xchapter}{Agile 4-month delivery plan}{131}{chapter.5}%
 \contentsline {table}{\numberline {5.1}{\ignorespaces Roadmap Phase 1 - Fondations}}{132}{table.caption.111}%
 \contentsline {table}{\numberline {5.2}{\ignorespaces Roadmap Phase 2 - Développement Core}}{132}{table.caption.112}%
@@ -71,3 +72,6 @@
 \contentsline {table}{\numberline {5.4}{\ignorespaces Registre détaillé des risques projet}}{137}{table.caption.114}%
 \contentsline {table}{\numberline {5.5}{\ignorespaces Matrice probabilité-impact des risques}}{137}{table.caption.115}%
 \contentsline {table}{\numberline {5.6}{\ignorespaces Répartition du Budget}}{140}{table.caption.116}%
+=======
+\contentsline {xchapter}{Service IA and dashboard}{137}{chapter.5}%
+>>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
