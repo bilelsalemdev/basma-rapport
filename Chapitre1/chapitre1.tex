@@ -100,131 +100,201 @@ Chez BACOVET, la chaîne de production textile est structurée en plusieurs éta
     \label{ajouter}
 \end{center}
  \end{figure}
- \subsection{Processus détaillé de l'atelier de coupe}
-L'atelier de coupe joue un rôle essentiel dans la production textile chez BACOVET. C'est à ce niveau que les rouleaux de tissu, qui représentent la matière la plus chère, sont découpés en pièces précises. Une bonne coupe permet de limiter les pertes de tissu et de garantir que toutes les pièces ont les bonnes dimensions. Cet atelier se situe entre l'approvisionnement des matières et l'assemblage final. Une gestion efficace de cette étape aide à respecter les délais, à bien utiliser les ressources, et à assurer la qualité des produits. Le respect des procédures (du marquage à la vérification finale) permet de réduire les erreurs et d'améliorer la performance globale.La figure\ref{A}présente Processus détaillé de l'atelier de coupe
+\subsection{Processus détaillé de l'atelier de coupe}
+L'atelier de coupe joue un rôle essentiel dans la production textile chez BACOVET. C'est à ce niveau que les rouleaux de tissu, qui représentent la matière la plus chère, sont découpés en pièces précises. Une bonne coupe permet de limiter les pertes de tissu et de garantir que toutes les pièces ont les bonnes dimensions. Cet atelier se situe entre l'approvisionnement des matières et l'assemblage final. Une gestion efficace de cette étape aide à respecter les délais, à bien utiliser les ressources, et à assurer la qualité des produits. Le respect des procédures (du marquage à la vérification finale) permet de réduire les erreurs et d'améliorer la performance globale. La figure~\ref{fig:processus-atelier-coupe} présente le processus détaillé de l'atelier de coupe.
+
 \begin{figure}[H]
 \begin{center}
     \includegraphics[width=0.95\textwidth,height=0.85\textheight,keepaspectratio]{Chapitre1/images/process-Page-4.drawio.png}
-     \captionof{figure}{\emph{Diagramme de séquence:"Processus détaillé de l'atelier de coupe  "}}
-    \label{A}
+     \captionof{figure}{\emph{Diagramme de séquence : Processus détaillé de l'atelier de coupe}}
+    \label{fig:processus-atelier-coupe}
 \end{center}
 \end{figure}
+
 \begin{enumerate}
-    \item \textbf Réception des ordres de fabrication (OF)
+    \item \textbf{Réception des ordres de fabrication (OF)}
     
- L'atelier reçoit des ordres de fabrication (OF) qui indiquent les modèles à produire, les quantités et les tissus à utiliser. Ces ordres sont envoyés depuis la planification. On vérifie que toutes les informations sont correctes et que les rouleaux de tissu sont disponibles. Ensuite, le travail est réparti entre les équipes.
-Suivi : temps entre la réception de l'OF et le début de la coupe, vérification des données reçues.
+L'atelier reçoit des ordres de fabrication (OF) qui indiquent les modèles à produire, les quantités et les tissus à utiliser. Ces ordres sont envoyés depuis la planification. On vérifie que toutes les informations sont correctes et que les rouleaux de tissu sont disponibles.
 
-Outils : lecteurs de codes-barres pour scanner les rouleaux.
-\item \textbf Relaxation du tissu (si nécessaire)
+\item \textbf{Relaxation du tissu (si nécessaire)}
 
-Certains tissus doivent « se détendre » avant d'être découpés, pour éviter qu'ils ne rétrécissent plus tard. Cette étape se fait en laissant reposer le tissu à l'air libre ou à la vapeur pendant 24 à 72 heures.
+Certains tissus doivent se détendre avant d'être découpés, pour éviter qu'ils ne rétrécissent plus tard. Cette étape se fait en laissant reposer le tissu à l'air libre ou à la vapeur pendant 24 à 72 heures.
 
-Suivi : durée de relaxation, taux de retrait mesuré après repos.
+\item \textbf{Préparation des rouleaux et découpe du papier}
 
-Outils : capteurs de température et d'humidité dans la zone de repos.
-\item \textbf Préparation des rouleaux et découpe du papier
+Avant la coupe, les rouleaux de tissu sont préparés. On vérifie leur longueur, leur largeur et leur couleur. On coupe le papier de base (papier matelas) qui sera placé sous le tissu pour la coupe.
 
-Avant la coupe, les rouleaux de tissu sont préparés. On vérifie leur longueur, leur largeur et leur couleur  On coupe le papier de base (papier matelas) qui sera placé sous le tissu pour la coupe.
-Suivi : temps de préparation, gaspillage de papier, précision des mesures.
-\item \textbf Matelassage
+\item \textbf{Matelassage}
 
 Le tissu est empilé en plusieurs couches sur la table de coupe. Le nombre de plis est défini selon l'épaisseur du tissu et le volume de production.
+
 \begin{figure}[H]
 \begin{center}
-
     \includegraphics[height=5cm]{Chapitre1/images/ZONE matellas.jpg}
      \captionof{figure}{\emph{Zone matelassage}}
-    \label{A}
+    \label{fig:zone-matelassage}
 \end{center}
 \end{figure}
 
-\item \textbf Placement et marquage
+\item \textbf{Placement et marquage}
 
-L'étape de placement et de marquage est essentielle pour bien préparer la coupe. Le placement consiste à organiser les patrons sur le tissu de façon à utiliser le moins de matière possible, tout en respectant le sens du tissu, le droit fil et les motifs (comme les rayures). Cela permet d'éviter le gaspillage et d'assurer un bon rendu final. Ensuite, le marquage sert à tracer les contours des pièces, à indiquer les repères nécessaires au montage (comme les crans ou les emplacements de poches), et à numéroter les pièces pour faciliter leur suivi. Une vérification finale est faite avant la découpe pour s'assurer que tout est bien positionné.
-\item \textbf coupe
+L'étape de placement et de marquage est essentielle pour bien préparer la coupe. Le placement consiste à organiser les patrons sur le tissu de façon à utiliser le moins de matière possible, tout en respectant le sens du tissu, le droit fil et les motifs. Le marquage sert à tracer les contours des pièces et à indiquer les repères nécessaires au montage.
 
-Avant de commencer la coupe, il faut préparer tous les outils nécessaires. Cela comprend la vérification de l'affûtage des lames, le bon fonctionnement des machines, ainsi que la préparation des accessoires comme les pinces, les règles ou les équerres. La coupe peut ensuite se faire de différentes manières selon le type de production. Pour les petites séries, on utilise souvent la coupe manuelle avec des ciseaux, en suivant les tracés avec précision, surtout dans les zones courbes, tout en respectant les tolérances. Pour les plus grandes séries, la coupe mécanique est préférée, avec des machines à lame verticale. Il faut alors régler la hauteur de coupe selon l'épaisseur du matelas et surveiller la qualité du travail tout au long du processus. Enfin, la coupe automatisée permet une grande précision grâce à la programmation des machines. Les données de placement sont chargées, et la coupe se fait automatiquement avec un contrôle qualité en temps réel.
+\item \textbf{Coupe}
+
+La coupe peut se faire de différentes manières selon le type de production. Pour les petites séries, on utilise la coupe manuelle avec des ciseaux. Pour les plus grandes séries, la coupe mécanique est préférée, avec des machines à lame verticale. La coupe automatisée permet une grande précision grâce à la programmation des machines.
+
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.45\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Chapitre1/images/8.jpg}
-    \caption{coupe automatiseé }
-    \label{form}
+    \caption{Coupe automatisée}
+    \label{fig:coupe-auto}
   \end{minipage}
    \hfill
   \begin{minipage}[b]{0.50\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{Chapitre1/images/9.jpg }
-    
-      \label{inscri}
-
+    \includegraphics[width=\textwidth]{Chapitre1/images/9.jpg}
+    \caption{Machine de coupe}
+    \label{fig:machine-coupe}
   \end{minipage}
-  \end{figure}
-\item \textbf  Déchargement des Pièces Coupées
+\end{figure}
 
-Les pièces découpées sont triées et empilées avec soin. Cette étape requiert une vigilance particulière afin d'éviter les mélanges ou les endommagements
-\item \textbf  Sérigraphie / Heat Transfert (si nécessaire)
+\item \textbf{Déchargement des pièces coupées}
 
-Certaines pièces nécessitent un marquage par sérigraphie ou transfert thermique. Cette étape permet l'identification ou la décoration des produits. Des capteurs contrôlent la température et la pression appliquées.
+Les pièces découpées sont triées et empilées avec soin. Cette étape requiert une vigilance particulière afin d'éviter les mélanges ou les endommagements.
+
+\item \textbf{Sérigraphie / Heat Transfert (si nécessaire)}
+
+Certaines pièces nécessitent un marquage par sérigraphie ou transfert thermique. Cette étape permet l'identification ou la décoration des produits.
+
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.60\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Chapitre1/images/16.jpg}
-    \caption{Machine Sérigraphie }
-    \label{form}
+    \caption{Machine Sérigraphie}
+    \label{fig:serigraphie}
   \end{minipage}
-    \end{figure}
-\item \textbf Préparation et Contrôle des Vignettes
+\end{figure}
+
+\item \textbf{Préparation et contrôle des vignettes}
 
 Des vignettes contenant les informations essentielles (taille, modèle, OF) sont générées et associées aux pièces. Leur exactitude est cruciale pour le bon déroulement des étapes suivantes.
-KPI : Taux d'exactitude des données.
-\item \textbf Départage
 
-Le départage consiste à trier les pièces selon les tailles et les modèles. Il s'agit d'une opération de précision qui facilite le travail de l'atelier de confection
-\item \textbf  Contrôle Qualité Final
+\item \textbf{Départage}
 
-Avant expédition, chaque lot est inspecté pour valider sa conformité. Cette étape est cruciale pour garantir un niveau de qualité élevé
+Le départage consiste à trier les pièces selon les tailles et les modèles. Il s'agit d'une opération de précision qui facilite le travail de l'atelier de confection.
+
+\item \textbf{Contrôle qualité final}
+
+Avant expédition, chaque lot est inspecté pour valider sa conformité. Cette étape est cruciale pour garantir un niveau de qualité élevé.
+
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.50\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Chapitre1/images/14.jpg}
-    \caption{Contrôle Qualité }
-    \label{form}
+    \caption{Contrôle Qualité}
+    \label{fig:controle-qualite}
   \end{minipage}
-    \end{figure}
-\item \textbf  Expédition vers l'Atelier de Confection
+\end{figure}
+
+\item \textbf{Expédition vers l'atelier de confection}
 
 Les pièces sont conditionnées puis transférées à l'atelier de confection. Cette étape est suivie informatiquement via G.Pro, assurant une traçabilité complète.
+
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.50\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Chapitre1/images/13.jpg}
-    \caption{Atelier de confection }
-    \label{form}
+    \caption{Atelier de confection}
+    \label{fig:atelier-confection}
   \end{minipage}
-    \end{figure}
+\end{figure}
 \end{enumerate}
+
+\subsection{Personnel de l'atelier de coupe}
+L'atelier de coupe mobilise une équipe de quarante-quatre personnes organisées selon une structure hiérarchique claire :
+
+\begin{itemize}
+    \item \textbf{Un responsable d'atelier} : assure la supervision générale et la planification des opérations
+    \item \textbf{Deux chefs d'équipe} : encadrent les opérateurs et suivent la production quotidienne
+    \item \textbf{Vingt opérateurs de matelassage} : préparent et empilent les tissus selon les spécifications
+    \item \textbf{Six opérateurs de coupe} : découpent les pièces et assurent la maintenance de premier niveau des machines
+    \item \textbf{Treize opératrices de départage} : trient et classent les pièces coupées par taille et modèle
+    \item \textbf{Deux contrôleurs qualité} : vérifient la conformité des lots et assurent la traçabilité
+\end{itemize}
+
+L'outil central de coordination est le \textit{dispatch sheet}, document de planification quotidienne. Il synthétise les ordres de fabrication en cours, les quantités à produire, les priorités et les délais. Chaque matin, le responsable distribue les dispatch sheets aux chefs d'équipe, qui répartissent les tâches entre les opérateurs. Cette pratique garantit une visibilité claire sur les objectifs et facilite le suivi de l'avancement, contribuant à la réduction des temps d'attente et à l'optimisation des ressources.
+
+\subsection{Matériels et paramètres techniques}\label{sec:parametres-techniques-atelier}
+L'atelier dispose d'équipements adaptés aux différents volumes de production. Les tables de coupe (15 à 20 mètres) permettent le matelassage de plusieurs dizaines de plis. Les machines se déclinent en trois catégories : outils manuels pour les petites séries, machines à lame verticale pour les volumes moyens, et systèmes automatisés à commande numérique pour les grandes séries, intégrant des logiciels de placement optimisé.
+
+Le flux logistique s'organise autour de zones fonctionnelles : réception et relaxation (conditions contrôlées), matelassage, coupe, départage et conditionnement. Des chariots élévateurs et transpalettes facilitent les déplacements entre zones.
+
+Le tableau~\ref{tab:parametres-atelier} présente les paramètres techniques détaillés de l'atelier de coupe.
+
+\begin{table}[H]
+\centering
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Élément} & \textbf{Valeur} \\
+\hline
+Nombre de tables & 6 (dont 1 automatique, 4 manuelles, 1 vide) \\
+\hline
+Chariot matelasseur automatique & 1 \\
+\hline
+Robots de coupe & 2 (translation horizontale sur 5 tables) \\
+\hline
+Effectif sur les tables & 17 opérateurs \\
+\hline
+Équipe de départage & 13 postes / 13 personnes \\
+\hline
+Zones de stock & 3 (avant/après sérigraphie) \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Paramètres techniques de l'atelier de coupe}
+\label{tab:parametres-atelier}
+\end{table}
 
 \section{Cadre du projet}\label{chap1:cadre}
 
 L'atelier de coupe de BACOVET, bien que performant, souffre de l'absence d'un système digitalisé de planification et de suivi en temps réel. Cette lacune génère des pertes de temps, un manque de visibilité sur la production et une capacité limitée d'anticipation des retards. Ce projet vise à développer une solution numérique intelligente intégrant les principes de l'Industrie 4.0 pour optimiser la gestion de l'atelier.
 
+\subsection{Visualisation de la situation actuelle de l'atelier de coupe}
+
+Afin de mieux comprendre le contexte opérationnel et les limites du système actuel, la Figure~\ref{fig:carte_mentale_atelier_chap1} présente la carte mentale de la situation existante de l'atelier de coupe de BACOVET, réalisée à l'aide de l'outil Coggle. Cette représentation synthétise les flux d'information et les ruptures digitales entre les différents outils utilisés (Divatex et G.Pro).
+
+On observe notamment :
+
+\begin{itemize}
+    \item \textbf{Une fragmentation du système d'information} entre Divatex (gestion amont) et G.Pro (suivi aval) sans interconnexion.
+    \item \textbf{Une zone grise manuelle} au niveau des étapes de matelassage et coupe, où aucun suivi numérique ni mesure automatique des temps n'est effectué.
+    \item \textbf{Une absence de visibilité globale} : les temps réels, les retards et les performances ne sont pas mesurés, entraînant un manque d'anticipation et de réactivité.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[angle=90,width=0.40\textheight,keepaspectratio]{Chapitre2/images/23.png}
+\caption{Carte mentale de la situation actuelle de l'atelier de coupe}
+\label{fig:carte_mentale_atelier_chap1}
+\end{figure}
+
 \subsection{Définition du projet (Méthode SIPOC)}
 
 La méthode SIPOC permet d'identifier les éléments clés du projet et de clarifier son périmètre d'intervention.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
-\small
+\captionsetup{justification=centering}
 \caption{Analyse SIPOC du projet}
 \label{tab:sipoc}
-\begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{|l|p{10cm}|}
+\begin{tabular}{|p{1.35cm}|p{4.45cm}|}
 \hline
 \rowcolor{gray!30}
 \textbf{Élément} & \textbf{Description} \\
@@ -240,7 +310,6 @@ La méthode SIPOC permet d'identifier les éléments clés du projet et de clari
 \textbf{Customers} & Responsable d'atelier, chefs d'équipe, opérateurs, direction générale, service qualité \\
 \hline
 \end{tabular}
-\end{adjustbox}
 \end{table}
 
 \subsection{Objectifs du projet}

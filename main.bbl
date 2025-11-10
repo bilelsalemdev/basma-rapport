@@ -558,89 +558,6 @@
       \field{title}{Practical MLOps: Operationalizing Machine Learning Models}
       \field{year}{2020}
     \endentry
-    \entry{hastie2009elements}{book}{}
-      \name{author}{3}{}{%
-        {{hash=0cb8fe4210baa81c4b0e67913b4d2768}{%
-           family={Hastie},
-           familyi={H\bibinitperiod},
-           given={Trevor},
-           giveni={T\bibinitperiod}}}%
-        {{hash=88eea600247d798f8b2ce0b2dc614492}{%
-           family={Tibshirani},
-           familyi={T\bibinitperiod},
-           given={Robert},
-           giveni={R\bibinitperiod}}}%
-        {{hash=971cf69058b64a94326dea0f2a8bbcce}{%
-           family={Friedman},
-           familyi={F\bibinitperiod},
-           given={Jerome},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {New York, NY}%
-      }
-      \list{publisher}{1}{%
-        {Springer Science \& Business Media}%
-      }
-      \strng{namehash}{45eb7d473651da447f1d77717e7f8650}
-      \strng{fullhash}{7ca1bfe876d5e037b6aed69704221267}
-      \strng{bibnamehash}{7ca1bfe876d5e037b6aed69704221267}
-      \strng{authorbibnamehash}{7ca1bfe876d5e037b6aed69704221267}
-      \strng{authornamehash}{45eb7d473651da447f1d77717e7f8650}
-      \strng{authorfullhash}{7ca1bfe876d5e037b6aed69704221267}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{2nd}
-      \field{isbn}{978-0387848570}
-      \field{title}{The Elements of Statistical Learning: Data Mining, Inference, and Prediction}
-      \field{year}{2009}
-    \endentry
-    \entry{james2013introduction}{article}{}
-      \name{author}{4}{}{%
-        {{hash=df184c5fa522ac8a515ec4de13aef234}{%
-           family={James},
-           familyi={J\bibinitperiod},
-           given={Gareth},
-           giveni={G\bibinitperiod}}}%
-        {{hash=1ab16961e0de50711fa6bd9425f9b4a6}{%
-           family={Witten},
-           familyi={W\bibinitperiod},
-           given={Daniela},
-           giveni={D\bibinitperiod}}}%
-        {{hash=0cb8fe4210baa81c4b0e67913b4d2768}{%
-           family={Hastie},
-           familyi={H\bibinitperiod},
-           given={Trevor},
-           giveni={T\bibinitperiod}}}%
-        {{hash=88eea600247d798f8b2ce0b2dc614492}{%
-           family={Tibshirani},
-           familyi={T\bibinitperiod},
-           given={Robert},
-           giveni={R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{f8f737f83d9e451c1afaa13cdc120516}
-      \strng{fullhash}{da61646157a6be769f34984f5cb603b0}
-      \strng{bibnamehash}{da61646157a6be769f34984f5cb603b0}
-      \strng{authorbibnamehash}{da61646157a6be769f34984f5cb603b0}
-      \strng{authornamehash}{f8f737f83d9e451c1afaa13cdc120516}
-      \strng{authorfullhash}{da61646157a6be769f34984f5cb603b0}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Springer}
-      \field{title}{An Introduction to Statistical Learning: with Applications in R}
-      \field{volume}{112}
-      \field{year}{2013}
-      \verb{doi}
-      \verb 10.1007/978-1-4614-7138-7
-      \endverb
-    \endentry
     \entry{schwaber2020scrum}{book}{}
       \name{author}{2}{}{%
         {{hash=ee6f08fcba839e09471a0bc69152b6a5}{%
@@ -663,8 +580,8 @@
       \strng{authorbibnamehash}{303ea1dc92fd8c772eac56316b2074ef}
       \strng{authornamehash}{303ea1dc92fd8c772eac56316b2074ef}
       \strng{authorfullhash}{303ea1dc92fd8c772eac56316b2074ef}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Scrum Guide: The Definitive Guide to Scrum: The Rules of the Game}
@@ -696,8 +613,8 @@
       \strng{authorbibnamehash}{d33712bcde2d63bad054a832b61d01e8}
       \strng{authornamehash}{d33712bcde2d63bad054a832b61d01e8}
       \strng{authorfullhash}{d33712bcde2d63bad054a832b61d01e8}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-0131479418}
