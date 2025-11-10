@@ -1,0 +1,79 @@
+\babel@toc {french}{}\relax 
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Liste des figures}{ii}{chapter*.1}%
+\contentsline {chapter}{Liste des tableaux}{ii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Cadre du projet et étude de l'existant}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Présentation de l'entreprise d'accueil : Bacovet}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Historique et identité}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Partenariats stratégiques et présence mondiale}{3}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Certifications de Bacovet}{3}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Organisation et organigramme}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Processus global chez BACOVET}{4}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Processus détaillé de l'atelier de coupe}{5}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Personnel de l'atelier de coupe}{10}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Matériels et paramètres techniques}{11}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5}Cadre du projet}{11}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Visualisation de la situation actuelle de l'atelier de coupe}{11}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Définition du projet (Méthode SIPOC)}{14}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Objectifs du projet}{14}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.4}Périmètre du projet (Méthode QQOQCCP)}{14}{subsection.1.5.4}%
+\contentsline {subsection}{\numberline {1.5.5}Limites et contraintes}{14}{subsection.1.5.5}%
+\contentsline {section}{\numberline {1.6}Conclusion du chapitre}{16}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Mener une action d'amélioration d'un atelier de travail avec Audit, les outils lean 4.0}{17}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{17}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Partie I : Audit de maturité digitale}{18}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Introduction a l'audit IMPULS}{18}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Objectifs de l'audit}{18}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Phase Innover : Propositions d'amélioration}{18}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Constat principal}{18}{subsubsection.2.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.3.2}Proposition : Algorithme intelligent de gestion des tables de matelassage}{18}{subsubsection.2.2.3.2}%
+\contentsline {paragraph}{\numberline {2.2.3.2.1}Principe de fonctionnement}{19}{paragraph.2.2.3.2.1}%
+\contentsline {paragraph}{\numberline {2.2.3.2.2}Pseudocode de l'algorithme}{19}{paragraph.2.2.3.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3.3}Application pratique}{19}{subsubsection.2.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.4}Bénéfices attendus}{20}{subsubsection.2.2.3.4}%
+\contentsline {subsection}{\numberline {2.2.4}Méthodologie d'évaluation}{20}{subsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.4.1}Choix du questionnaire IMPULS}{20}{subsubsection.2.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.2.4.2}Mode de diffusion}{20}{subsubsection.2.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.2.4.3}Cible de l'enquete}{20}{subsubsection.2.2.4.3}%
+\contentsline {subsection}{\numberline {2.2.5}Déroulement de l'enquete}{21}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Résultats de l'évaluation de la maturité digitale}{21}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Méthodologie d'évaluation}{21}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Détail des scores par critère}{22}{subsection.2.3.2}%
+\contentsline {paragraph}{\numberline {2.3.2.0.1}Analyse du déroulement de coupe (extrait documentaire)}{22}{paragraph.2.3.2.0.1}%
+\contentsline {paragraph}{\numberline {2.3.2.0.2}Aperçu (intégration directe du PDF)}{22}{paragraph.2.3.2.0.2}%
+\contentsline {paragraph}{\numberline {2.3.2.0.3}Description synthétique du document}{26}{paragraph.2.3.2.0.3}%
+\contentsline {paragraph}{\numberline {2.3.2.0.4}Objectifs de l'analyse documentaire}{26}{paragraph.2.3.2.0.4}%
+\contentsline {paragraph}{\numberline {2.3.2.0.5}Principaux enseignements}{26}{paragraph.2.3.2.0.5}%
+\contentsline {paragraph}{\numberline {2.3.2.0.6}Limites et précautions}{26}{paragraph.2.3.2.0.6}%
+\contentsline {paragraph}{\numberline {2.3.2.0.7}Conclusion opérationnelle}{27}{paragraph.2.3.2.0.7}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}Description synthétique des processus mesurés}{27}{subsubsection.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}Constats clés de la collecte}{27}{subsubsection.2.3.2.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.3}Paramètres techniques de l'atelier (référence)}{27}{subsubsection.2.3.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.2.4}Synthèse de la phase de mesure}{28}{subsubsection.2.3.2.4}%
+\contentsline {subsection}{\numberline {2.3.3}Phase 3 : Analyze (Analyser)}{28}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Objectif de la phase Analyse}{28}{subsubsection.2.3.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.3.2}Méthodes d'analyse utilisées}{28}{subsubsection.2.3.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3.3}Analyse des temps réels par activité}{28}{subsubsection.2.3.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.4}Analyse des perturbations}{28}{subsubsection.2.3.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.3.5}Capacités et limites techniques observées}{29}{subsubsection.2.3.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.3.6}Diagramme d'Ishikawa}{29}{subsubsection.2.3.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.3.7}Analyse directe des données mesurées}{30}{subsubsection.2.3.3.7}%
+\contentsline {subsubsection}{\numberline {2.3.3.8}Synthèse des causes racines identifiées}{30}{subsubsection.2.3.3.8}%
+\contentsline {subsubsection}{\numberline {2.3.3.9}Conclusion de la phase Analyse}{30}{subsubsection.2.3.3.9}%
+\contentsline {subsection}{\numberline {2.3.4}Phase 4 : Improve (Améliorer)}{30}{subsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.4.1}Constat principal}{30}{subsubsection.2.3.4.1}%
+\contentsline {subsubsection}{\numberline {2.3.4.2}Proposition : Algorithme intelligent de gestion des tables de matelassage}{31}{subsubsection.2.3.4.2}%
+\contentsline {paragraph}{\numberline {2.3.4.2.1}Principe de fonctionnement}{31}{paragraph.2.3.4.2.1}%
+\contentsline {paragraph}{\numberline {2.3.4.2.2}Pseudocode de l'algorithme}{31}{paragraph.2.3.4.2.2}%
+\contentsline {paragraph}{\numberline {2.3.4.2.3}Schéma de fonctionnement de l'algorithme}{32}{paragraph.2.3.4.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.4.3}Application pratique}{32}{subsubsection.2.3.4.3}%
+\contentsline {subsubsection}{\numberline {2.3.4.4}Bénéfices attendus}{33}{subsubsection.2.3.4.4}%
+\contentsline {subsection}{\numberline {2.3.5}Phase Contrôler : Pérennisation des améliorations}{33}{subsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.5.1}Objectifs de la phase de contrôle}{33}{subsubsection.2.3.5.1}%
+\contentsline {subsubsection}{\numberline {2.3.5.2}Mise en place d'indicateurs de performance (KPI)}{34}{subsubsection.2.3.5.2}%
+\contentsline {subsubsection}{\numberline {2.3.5.3}Système de suivi et de visualisation}{34}{subsubsection.2.3.5.3}%
+\contentsline {subsubsection}{\numberline {2.3.5.4}Mécanismes de contrôle et d'alerte}{35}{subsubsection.2.3.5.4}%
+\contentsline {subsubsection}{\numberline {2.3.5.5}Standardisation des procédures}{35}{subsubsection.2.3.5.5}%
+\contentsline {subsubsection}{\numberline {2.3.5.6}Amélioration continue}{36}{subsubsection.2.3.5.6}%
+\contentsline {subsubsection}{\numberline {2.3.5.7}Conclusion de la phase Contrôler}{36}{subsubsection.2.3.5.7}%

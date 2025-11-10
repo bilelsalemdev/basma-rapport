@@ -1,0 +1,225 @@
+\documentclass[a4paper,12pt, twoside,openright]{report}
+\usepackage[provide=*,french]{babel}
+\selectlanguage{french}
+
+% Force French language support
+\AtBeginDocument{%
+  \renewcommand{\contentsname}{Table des matières}%
+  \renewcommand{\listfigurename}{Liste des figures}%
+  \renewcommand{\listtablename}{Liste des tableaux}%
+  \renewcommand{\chaptername}{Chapitre}%
+  \renewcommand{\figurename}{Figure}%
+  \renewcommand{\tablename}{Tableau}%
+}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\DeclareUnicodeCharacter{00A0}{~}
+\DeclareUnicodeCharacter{2019}{'}
+\DeclareUnicodeCharacter{0080}{}
+\DeclareUnicodeCharacter{0089}{}
+\DeclareUnicodeCharacter{0093}{\guillemotleft}
+\DeclareUnicodeCharacter{0099}{}
+\DeclareUnicodeCharacter{2265}{$\geq$}
+\DeclareUnicodeCharacter{251C}{|}
+\DeclareUnicodeCharacter{2500}{-}
+\DeclareUnicodeCharacter{2502}{|}
+\DeclareUnicodeCharacter{2514}{`}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{newunicodechar}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{geometry}
+\geometry{margin=3cm}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{shapes.symbols,shapes.geometric,arrows.meta,positioning,backgrounds}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{multirow}
+\usepackage{csquotes}
+\usepackage{textgreek}
+\usepackage{xcolor}
+\usepackage{sectsty}
+
+\tikzstyle{service} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzset{boxstep/.style={rectangle, rounded corners, draw, align=center, minimum width=3.5cm, minimum height=1.2cm, font=\small, fill=gray!10}}
+\tikzset{step/.code={\pgfkeysalso{boxstep}}}
+
+\usepackage{array}
+\usepackage{tabularx}
+
+\chapterfont{\color{black}}
+\usepackage{color}
+
+\usepackage[pdftex,pdfborder={0 0 0},colorlinks=true,linkcolor=black,citecolor=red]{hyperref}	
+
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{hyperref}
+
+\usepackage{colortbl}
+\arrayrulecolor{black}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot[\thepage]{}
+\cfoot{}
+\rfoot[]{\thepage}
+\fancyhead[RO, LE] {}	
+\fancyhead[RE]{\bfseries\nouppercase{\leftmark}}
+\fancyhead[LO]{\bfseries\nouppercase{\rightmark}} 
+
+\let\headruleORIG\headrule
+\renewcommand{\headrule}{\color{black} \headruleORIG}
+\renewcommand{\headrulewidth}{1.0pt}
+
+\fancypagestyle{plain}{
+  \fancyhead{}
+  \fancyfoot{}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else%
+  \hbox{}%
+  \thispagestyle{empty}%
+  \newpage%
+  \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+
+\newenvironment{vcenterpage}
+{\newpage\vspace*{\fill}\thispagestyle{empty}\renewcommand{\headrulewidth}{0pt}}
+{\vspace*{\fill}}
+
+\usepackage{url} 
+\urlstyle{sf} 
+
+\usepackage[francais]{minitoc}
+
+\usepackage{graphicx} 
+
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+
+\usepackage{lscape}
+\usepackage{longtable}
+\usepackage{tabulary}
+\usepackage{array, supertabular}
+\usepackage{multirow}
+\usepackage{etoolbox}
+\appto\TPTnoteSettings{\footnotesize}
+\addto\captionsfrench{\def\tablename{{\textsc{Tableau}}}}
+
+\usepackage{afterpage}
+
+\def\blankpage{%
+      \clearpage%
+      \thispagestyle{empty}%
+      \addtocounter{page}{-1}%
+      \null%
+      \clearpage}
+\usepackage[intoc]{nomencl}
+\renewcommand{\nomname}{Liste des Abr\'eviations}
+\makenomenclature
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\addto\captionsfrench{\renewcommand{\listfigurename}{Liste des figures}}
+\usepackage[final]{pdfpages} 
+
+\usepackage{float} 
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage[style=ieee,backend=biber]{biblatex}
+\addbibresource{biblio.bib}
+
+\pagestyle{fancy}
+
+\usepackage{fancyhdr}
+\fancyhf{}
+
+\definecolor{bleu}{RGB}{0, 0, 128}
+\definecolor{dangerred}{RGB}{220, 53, 69}
+\definecolor{warningorange}{RGB}{255, 193, 7}
+\definecolor{successgreen}{RGB}{40, 167, 69}
+
+\newenvironment{methodBox}
+{\begin{quote}\textbf{Méthode:}}
+{\end{quote}}
+
+\newenvironment{warningBox}
+{\begin{quote}\textbf{Attention:}}
+{\end{quote}}
+
+\newcommand{\styledtitle}[1]{
+    \cleardoublepage
+    \thispagestyle{empty}
+    \noindent
+    \begin{minipage}[t]{0.05\linewidth}
+        \rule{1cm}{1.8cm}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.93\linewidth}
+        \vspace{-0.2cm}
+        \hrule height 0.4pt \vspace{0.3cm}
+        {\Huge \textbf{\mbox{#1}}}\par
+        \vspace{0.3cm}
+    \end{minipage}
+}
+
+\usepackage{pdfpages}
+
+\begin{document}
+
+\dominitoc
+
+\let\cleardoublepage\clearpage
+
+\newpage
+\thispagestyle{empty}
+
+\newpage
+
+\dominitoc	
+\setcounter{tocdepth}{3}
+
+\pagenumbering{roman}
+\pagenumbering{roman}
+
+\lhead{Table des matières}
+\rhead{\thepage}
+\tableofcontents
+\renewcommand{\contentsname}{Table des matières}
+
+\newpage
+\addcontentsline{toc}{chapter}{Liste des figures}
+\lhead{Liste des figures}
+\rhead{\thepage}
+\listoffigures
+\addcontentsline{toc}{chapter}{Liste des tableaux}
+\newpage
+\lhead{Liste des tableaux}
+\rhead{\thepage}
+\listoftables 
+\rhead{\thepage}
+
+\setcounter{secnumdepth}{5}
+\setcounter{minitocdepth}{4}
+
+\setcounter{tocdepth}{5}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% ONLY CHAPTERS 1 AND 2
+\setcounter{chapter}{0}
+
+\input{Chapitre1/chapitre1.tex}
+\input{Chapitre2/chapitre2.tex}
+
+\end{document}
