@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.6)  10 NOV 2025 10:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.6)  10 NOV 2025 12:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2316,17 +2316,17 @@ Package minitoc Info: I0006
 [4
 
 ]
-<Chapitre1/images/2.jpg, id=1788, 325.96782pt x 67.75313pt>
+<Chapitre1/images/2.jpg, id=1833, 325.96782pt x 67.75313pt>
 File: Chapitre1/images/2.jpg Graphic file (type jpg)
 <use Chapitre1/images/2.jpg>
 Package pdftex.def Info: Chapitre1/images/2.jpg  used on input line 24.
 (pdftex.def)             Requested size: 192.0548pt x 39.92023pt.
-<Chapitre1/images/1.jpg, id=1789, 276.28218pt x 164.11313pt>
+<Chapitre1/images/1.jpg, id=1834, 276.28218pt x 164.11313pt>
 File: Chapitre1/images/1.jpg Graphic file (type jpg)
 <use Chapitre1/images/1.jpg>
 Package pdftex.def Info: Chapitre1/images/1.jpg  used on input line 31.
 (pdftex.def)             Requested size: 213.39568pt x 126.75813pt.
-<Chapitre1/images/3.png, id=1790, 792.71156pt x 244.66406pt>
+<Chapitre1/images/3.png, id=1835, 792.71156pt x 244.66406pt>
 File: Chapitre1/images/3.png Graphic file (type png)
 <use Chapitre1/images/3.png>
 Package pdftex.def Info: Chapitre1/images/3.png  used on input line 52.
@@ -2342,23 +2342,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5 <basma-rapport/Chapitre1/images/2.jpg> <basma-rapport/Chapitre1/images/1.jpg
 > <basma-rapport/Chapitre1/images/3.png>]
-<Chapitre1/images/4.png, id=1797, 302.12875pt x 167.62625pt>
+<Chapitre1/images/4.png, id=1842, 302.12875pt x 167.62625pt>
 File: Chapitre1/images/4.png Graphic file (type png)
 <use Chapitre1/images/4.png>
 Package pdftex.def Info: Chapitre1/images/4.png  used on input line 70.
 (pdftex.def)             Requested size: 192.0548pt x 106.55402pt.
-<Chapitre1/images/5.png, id=1798, 342.27875pt x 148.555pt>
+<Chapitre1/images/5.png, id=1843, 342.27875pt x 148.555pt>
 File: Chapitre1/images/5.png Graphic file (type png)
 <use Chapitre1/images/5.png>
 Package pdftex.def Info: Chapitre1/images/5.png  used on input line 77.
 (pdftex.def)             Requested size: 213.39568pt x 92.61996pt.
-<Chapitre1/images/Organigramme.drawio.png, id=1799, 1305.87875pt x 423.5825pt>
+<Chapitre1/images/Organigramme.drawio.png, id=1844, 1305.87875pt x 423.5825pt>
 File: Chapitre1/images/Organigramme.drawio.png Graphic file (type png)
 <use Chapitre1/images/Organigramme.drawio.png>
 Package pdftex.def Info: Chapitre1/images/Organigramme.drawio.png  used on inpu
 t line 88.
 (pdftex.def)             Requested size: 192.0548pt x 62.29367pt.
-<Chapitre1/images/process-Page-3.drawio.png, id=1801, 158.5925pt x 517.935pt>
+<Chapitre1/images/process-Page-3.drawio.png, id=1846, 158.5925pt x 517.935pt>
 File: Chapitre1/images/process-Page-3.drawio.png Graphic file (type png)
 <use Chapitre1/images/process-Page-3.drawio.png>
 Package pdftex.def Info: Chapitre1/images/process-Page-3.drawio.png  used on in
@@ -2378,7 +2378,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6 <basma-rapport/Chapitre1/images/4.png> <basma-rapport/Chapitre1/images/5.png
 > <basma-rapport/Chapitre1/images/Organigramme.drawio.png>]
-<Chapitre1/images/process-Page-4.drawio.png, id=1810, 432.61626pt x 1436.36626p
+<Chapitre1/images/process-Page-4.drawio.png, id=1856, 432.61626pt x 1436.36626p
 t>
 File: Chapitre1/images/process-Page-4.drawio.png Graphic file (type png)
 <use Chapitre1/images/process-Page-4.drawio.png>
@@ -2407,18 +2407,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8 <basma-rapport/Chapitre1/images/process-Page-4.drawio.png>]
-<Chapitre1/images/ZONE matellas.jpg, id=1823, 301.125pt x 151.3153pt>
+<Chapitre1/images/ZONE matellas.jpg, id=1869, 301.125pt x 151.3153pt>
 File: Chapitre1/images/ZONE matellas.jpg Graphic file (type jpg)
 <use Chapitre1/images/ZONE matellas.jpg>
 Package pdftex.def Info: Chapitre1/images/ZONE matellas.jpg  used on input line
  133.
 (pdftex.def)             Requested size: 283.11266pt x 142.26378pt.
-<Chapitre1/images/8.jpg, id=1824, 313.9228pt x 181.42781pt>
+<Chapitre1/images/8.jpg, id=1870, 313.9228pt x 181.42781pt>
 File: Chapitre1/images/8.jpg Graphic file (type jpg)
 <use Chapitre1/images/8.jpg>
 Package pdftex.def Info: Chapitre1/images/8.jpg  used on input line 151.
 (pdftex.def)             Requested size: 192.0548pt x 110.99469pt.
-<Chapitre1/images/9.jpg, id=1825, 263.48438pt x 219.82124pt>
+<Chapitre1/images/9.jpg, id=1871, 263.48438pt x 219.82124pt>
 File: Chapitre1/images/9.jpg Graphic file (type jpg)
 <use Chapitre1/images/9.jpg>
 Package pdftex.def Info: Chapitre1/images/9.jpg  used on input line 158.
@@ -2433,12 +2433,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9 <basma-rapport/Chapitre1/images/ZONE matellas.jpg>]
-<Chapitre1/images/16.jpg, id=1835, 392.21532pt x 219.82124pt>
+<Chapitre1/images/16.jpg, id=1881, 392.21532pt x 219.82124pt>
 File: Chapitre1/images/16.jpg Graphic file (type jpg)
 <use Chapitre1/images/16.jpg>
 Package pdftex.def Info: Chapitre1/images/16.jpg  used on input line 176.
 (pdftex.def)             Requested size: 256.07741pt x 143.52946pt.
-<Chapitre1/images/14.jpg, id=1836, 500.62032pt x 782.925pt>
+<Chapitre1/images/14.jpg, id=1882, 500.62032pt x 782.925pt>
 File: Chapitre1/images/14.jpg Graphic file (type jpg)
 <use Chapitre1/images/14.jpg>
 Package pdftex.def Info: Chapitre1/images/14.jpg  used on input line 198.
@@ -2454,7 +2454,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10 <basma-rapport/Chapitre1/images/8.jpg> <basma-rapport/Chapitre1/images/9.jp
 g> <basma-rapport/Chapitre1/images/16.jpg>]
-<Chapitre1/images/13.jpg, id=1846, 350.81062pt x 437.38406pt>
+<Chapitre1/images/13.jpg, id=1891, 350.81062pt x 437.38406pt>
 File: Chapitre1/images/13.jpg Graphic file (type jpg)
 <use Chapitre1/images/13.jpg>
 Package pdftex.def Info: Chapitre1/images/13.jpg  used on input line 212.
@@ -2490,7 +2490,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13]
-<Chapitre2/images/23.png, id=1864, 3745.995pt x 1457.445pt>
+<Chapitre2/images/23.png, id=1909, 3745.995pt x 1457.445pt>
 File: Chapitre2/images/23.png Graphic file (type png)
 <use Chapitre2/images/23.png>
 Package pdftex.def Info: Chapitre2/images/23.png  used on input line 283.
@@ -2603,7 +2603,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [22]
-<Chapitre2/images/21.jpg, id=1921, 301.125pt x 411.03563pt>
+<Chapitre2/images/21.jpg, id=1967, 301.125pt x 411.03563pt>
 File: Chapitre2/images/21.jpg Graphic file (type jpg)
 <use Chapitre2/images/21.jpg>
 Package pdftex.def Info: Chapitre2/images/21.jpg  used on input line 159.
@@ -2613,7 +2613,7 @@ Underfull \hbox (badness 4072) in paragraph at lines 160--160
 []\T1/lmr/m/n/12 Figure 2.1: |For-mu-laire
  []
 
-<Chapitre2/images/20.jpg, id=1922, 656.4525pt x 448.67625pt>
+<Chapitre2/images/20.jpg, id=1968, 656.4525pt x 448.67625pt>
 File: Chapitre2/images/20.jpg Graphic file (type jpg)
 <use Chapitre2/images/20.jpg>
 Package pdftex.def Info: Chapitre2/images/20.jpg  used on input line 166.
@@ -2623,7 +2623,7 @@ Underfull \hbox (badness 1454) in paragraph at lines 167--167
 []\T1/lmr/m/n/12 Figure 2.2: |Dia-gramme
  []
 
-<Chapitre2/images/22.jpg, id=1923, 331.99031pt x 460.72125pt>
+<Chapitre2/images/22.jpg, id=1969, 331.99031pt x 460.72125pt>
 File: Chapitre2/images/22.jpg Graphic file (type jpg)
 <use Chapitre2/images/22.jpg>
 Package pdftex.def Info: Chapitre2/images/22.jpg  used on input line 173.
@@ -2638,14 +2638,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [23 <basma-rapport/Chapitre2/images/21.jpg> <basma-rapport/Chapitre2/images/20.
 jpg> <basma-rapport/Chapitre2/images/22.jpg>]
-<Chapitre2/images/IMG_20250614_141256_509.jpg, id=1928, 721.94719pt x 260.47313
+<Chapitre2/images/IMG_20250614_141256_509.jpg, id=1974, 721.94719pt x 260.47313
 pt>
 File: Chapitre2/images/IMG_20250614_141256_509.jpg Graphic file (type jpg)
 <use Chapitre2/images/IMG_20250614_141256_509.jpg>
 Package pdftex.def Info: Chapitre2/images/IMG_20250614_141256_509.jpg  used on 
 input line 192.
 (pdftex.def)             Requested size: 721.94542pt x 260.47249pt.
-<Chapitre2/images/IMG_20250614_141303_456.jpg, id=1929, 887.56593pt x 288.3272p
+<Chapitre2/images/IMG_20250614_141303_456.jpg, id=1975, 887.56593pt x 288.3272p
 t>
 File: Chapitre2/images/IMG_20250614_141303_456.jpg Graphic file (type jpg)
 <use Chapitre2/images/IMG_20250614_141303_456.jpg>
@@ -2859,7 +2859,7 @@ Things are pretty mixed up, but I think the worst is over.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 208.
 
-<Chapitre2/analyse_deroulement_coupe.pdf, id=1930, 845.07718pt x 597.432pt>
+<Chapitre2/analyse_deroulement_coupe.pdf, id=1976, 845.07718pt x 597.432pt>
 File: Chapitre2/analyse_deroulement_coupe.pdf Graphic file (type pdf)
 <use Chapitre2/analyse_deroulement_coupe.pdf>
 Package pdftex.def Info: Chapitre2/analyse_deroulement_coupe.pdf  used on input
@@ -2870,7 +2870,7 @@ File: Chapitre2/analyse_deroulement_coupe.pdf Graphic file (type pdf)
 Package pdftex.def Info: Chapitre2/analyse_deroulement_coupe.pdf  used on input
  line 213.
 (pdftex.def)             Requested size: 845.07512pt x 597.43054pt.
-<Chapitre2/analyse_deroulement_coupe.pdf, id=1933, page=1, 845.07718pt x 597.43
+<Chapitre2/analyse_deroulement_coupe.pdf, id=1979, page=1, 845.07718pt x 597.43
 2pt>
 File: Chapitre2/analyse_deroulement_coupe.pdf Graphic file (type pdf)
 <use Chapitre2/analyse_deroulement_coupe.pdf, page 1>
@@ -2959,7 +2959,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [30]
-<Chapitre2/images/ishikawa_beige.png, id=1977, 770.88pt x 578.16pt>
+<Chapitre2/images/ishikawa_beige.png, id=2022, 770.88pt x 578.16pt>
 File: Chapitre2/images/ishikawa_beige.png Graphic file (type png)
 <use Chapitre2/images/ishikawa_beige.png>
 Package pdftex.def Info: Chapitre2/images/ishikawa_beige.png  used on input lin
@@ -3246,7 +3246,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [44]
-<Chapitre3/images/python.png, id=2044, 1284.8pt x 380.42125pt>
+<Chapitre3/images/python.png, id=2089, 1284.8pt x 380.42125pt>
 File: Chapitre3/images/python.png Graphic file (type png)
 <use Chapitre3/images/python.png>
 Package pdftex.def Info: Chapitre3/images/python.png  used on input line 33.
@@ -3269,7 +3269,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [45 <basma-rapport/Chapitre3/images/python.png>]
-<Chapitre3/images/pbib.png, id=2050, 947.54pt x 696.6025pt>
+<Chapitre3/images/pbib.png, id=2095, 947.54pt x 696.6025pt>
 File: Chapitre3/images/pbib.png Graphic file (type png)
 <use Chapitre3/images/pbib.png>
 Package pdftex.def Info: Chapitre3/images/pbib.png  used on input line 64.
@@ -4707,7 +4707,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[135]) (basma-rapport/Chapitre5/chapitre5.tex
+[135]) (basma-rapport/Chapitre6/chapitre6.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4726,13 +4726,96 @@ Package minitoc Info: I0024
 (minitoc)             PREPARING MINITOCS FROM main.toc on input line 5.
 Package minitoc Info: I0006
 (minitoc)             main.mtc0 is empty on input line 7.
-[137
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 ...vice] (frontend) {Interface Utilisateur\\R
+                                                  eact Dashboard};
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ..., below of=frontend] (api) {API Gateway\\F
+                                                  astAPI};
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...=-2.5cm] (predict) {Service PrÃ©diction\\T
+                                                  ime Predictor};
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...5cm] (schedule) {Service Ordonnancement\\S
+                                                  cheduler};
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...=-1.5cm] (analytics) {Service Analytics\\K
+                                                  PIs \& Reports};
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 ...lytics, xshift=-1.5cm] (mlflow) {MLflow\\M
+                                                  odel Registry};
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...s, xshift=1.5cm] (db) {Base de DonnÃ©es\\P
+                                                  ostgreSQL};
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [137
 
 ]
-Underfull \hbox (badness 3428) in paragraph at lines 79--79
-[]|\T1/lmr/m/n/12 Système d'or-don-nan-ce-ment, op-ti-mi-sa-tion,
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4760,6 +4843,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [140]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4769,125 +4855,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [141]
-Overfull \hbox (14.74095pt too wide) in paragraph at lines 272--273
-[]|\T1/lmr/bx/n/12 Propriétaire| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 276--276
-[]|\T1/lmr/m/n/12 Performance
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 276--276
-[]|\T1/lmr/m/n/12 Tests in-ten-sifs,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
-[]|\T1/lmr/m/n/12 Data
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
-[]|\T1/lmr/m/n/12 Tests charge,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
-[]|\T1/lmr/m/n/12 Intégration
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
-[]|\T1/lmr/m/n/12 API ro-buste,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 284--284
-[]|\T1/lmr/m/n/12 Tests auto,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 290--290
-[]|\T1/lmr/m/n/12 Formation,
- []
-
-
-Underfull \hbox (badness 4193) in paragraph at lines 290--291
-[]|\T1/lmr/m/n/12 Chef Pro-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-[]|\T1/lmr/m/n/12 Évolution be-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
-[]|\T1/lmr/m/n/12 Product
- []
-
-
-Underfull \hbox (badness 4193) in paragraph at lines 294--295
-[]|\T1/lmr/m/n/12 Chef Pro-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]|\T1/lmr/m/n/12 Planning réa-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
-[]|\T1/lmr/m/n/12 Scrum
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 298--298
-[]|\T1/lmr/m/n/12 Documentation,
- []
-
-
-Underfull \hbox (badness 5302) in paragraph at lines 300--300
-[]|\T1/lmr/m/n/12 UX, for-ma-tion,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
-[]|\T1/lmr/m/n/12 Product
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 304--304
-[]|\T1/lmr/m/n/12 Sponsor désen-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 304--304
-[]|\T1/lmr/m/n/12 Communication
- []
-
-
-Underfull \hbox (badness 4193) in paragraph at lines 304--305
-[]|\T1/lmr/m/n/12 Chef Pro-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
-[]|\T1/lmr/m/n/12 Product
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 308--308
-[]|\T1/lmr/m/n/12 Ressources in-
- []
-
-
-Underfull \hbox (badness 4193) in paragraph at lines 308--309
-[]|\T1/lmr/m/n/12 Chef Pro-
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4897,34 +4864,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [142]
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
-[]|\T1/lmr/bx/n/12 Impact
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
-[]|\T1/lmr/m/n/12 Évolution be-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
-\T1/lmr/m/n/12 soins, Qua-lité
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
-[]|\T1/lmr/m/n/12 Turnover, Res-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
-[]|\T1/lmr/m/n/12 Scalabilité, Sé-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4934,6 +4873,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [143]
+Overfull \hbox (30.15887pt too wide) in paragraph at lines 328--328
+[]      \T1/lmtt/m/n/12 <MachineUtilizationChart data={dashboardData.machine_ut
+ilization} />[] 
+ []
+
+
+Overfull \hbox (5.45886pt too wide) in paragraph at lines 375--375
+[]  \T1/lmtt/m/n/12 const { register, handleSubmit, formState: { errors } } = u
+seForm();[] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4943,6 +4893,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [144]
+Overfull \hbox (42.50888pt too wide) in paragraph at lines 375--375
+[]      \T1/lmtt/m/n/12 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid
+-cols-4 gap-4">[] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4952,6 +4907,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [145]
+Overfull \hbox (11.63387pt too wide) in paragraph at lines 445--445
+[]      \T1/lmtt/m/n/12 description: 'Simulate adding new machines to increase 
+capacity',[] 
+ []
+
+
+Overfull \hbox (30.15887pt too wide) in paragraph at lines 445--445
+[]    \T1/lmtt/m/n/12 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-c
+ols-3 gap-4">[] 
+ []
+
+
+Overfull \hbox (42.50888pt too wide) in paragraph at lines 445--445
+[]          \T1/lmtt/m/n/12 className={`p-4 rounded-lg border-2 transition-all 
+duration-200 ${[] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4961,13 +4933,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [146]
-Underfull \hbox (badness 10000) in paragraph at lines 493--493
-[]|\T1/lmr/bx/n/12 Montant
+Overfull \hbox (5.45886pt too wide) in paragraph at lines 472--472
+[]            \T1/lmtt/m/n/12 raise FileNotFoundError(f"Model file not found at
+ {path}")[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--497
-[]|\T1/lmr/m/n/12 Infrastructure tech-
+Overfull \hbox (36.33388pt too wide) in paragraph at lines 498--498
+[]    \T1/lmtt/m/n/12 for col in ['Nbr Plies', 'Longeur Tracé', 'Longeur Matela
+', 'Largeur']:[] 
  []
 
 
@@ -4978,7 +4952,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[147]) (basma-rapport/ConclusionGenerale/conclusion.tex
+[147]
+Overfull \hbox (5.45886pt too wide) in paragraph at lines 498--498
+[]        \T1/lmtt/m/n/12 df['Volume_Matelas'] = df['Nbr Plies'] * df['Surface_
+Matelas'][] 
+ []
+
+
+Overfull \hbox (48.68388pt too wide) in paragraph at lines 537--537
+[]        \T1/lmtt/m/n/12 self.start_date = start_date if start_date else datet
+ime.now().date()[] 
+ []
+
+
+Overfull \hbox (110.42691pt too wide) in paragraph at lines 537--537
+[]        \T1/lmtt/m/n/12 start_var = self.model.NewIntVar(0, self.horizon * 24
+ * 60, f'start_{task_id}')[] 
+ []
+
+
+Overfull \hbox (85.7269pt too wide) in paragraph at lines 537--537
+[]        \T1/lmtt/m/n/12 end_var = self.model.NewIntVar(0, self.horizon * 24 *
+ 60, f'end_{task_id}')[] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4988,6 +4985,111 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [148]
+Overfull \hbox (30.15187pt too wide) in paragraph at lines 537--537
+[]            \T1/lmtt/m/n/12 due_date_minutes = (due_date - self.start_date).d
+ays * 24 * 60[] 
+ []
+
+
+Overfull \hbox (61.03389pt too wide) in paragraph at lines 556--556
+[]\T1/lmtt/m/n/12 def create_access_token(data: dict, expires_delta: Optional[t
+imedelta] = None):[] 
+ []
+
+
+Overfull \hbox (17.80887pt too wide) in paragraph at lines 556--556
+[]    \T1/lmtt/m/n/12 encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm
+=ALGORITHM)[] 
+ []
+
+
+Overfull \hbox (11.63387pt too wide) in paragraph at lines 570--570
+[]        \T1/lmtt/m/n/12 payload = jwt.decode(token, SECRET_KEY, algorithms=[A
+LGORITHM])[] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[149]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[150]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[151]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[152]
+Overfull \hbox (85.7339pt too wide) in paragraph at lines 747--747
+[]\T1/lmtt/m/n/12 def cached_prediction(nbr_plies, longeur_trace, longeur_matel
+as, largeur, machine):[] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[153]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[154]
+Overfull \hbox (79.5589pt too wide) in paragraph at lines 835--835
+[]    \T1/lmtt/m/n/12 drift_score = calculate_drift_score(current_performance, 
+baseline_performance)[] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[155]) (basma-rapport/ConclusionGenerale/conclusion.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[156]
 Overfull \hbox (7.11188pt too wide) in paragraph at lines 1--1
 [][] 
  []
@@ -4995,7 +5097,7 @@ Overfull \hbox (7.11188pt too wide) in paragraph at lines 1--1
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [149
+ [157
 
 ])
 
@@ -5006,7 +5108,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[150]
+[158]
 Overfull \hbox (7.11188pt too wide) in paragraph at lines 358--358
 [][] 
  []
@@ -5015,7 +5117,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 3
 61.
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [151
+) [159
 
 ]
 
@@ -5026,7 +5128,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[152]
+[160]
 Overfull \hbox (7.11188pt too wide) in paragraph at lines 365--365
 [][] 
  []
@@ -5049,7 +5151,7 @@ Overfull \hbox (22.13762pt too wide) in paragraph at lines 387--389
 m/fr/web-hosting/glossary/what-
  []
 
-[153
+[161
 
 ]
 
@@ -5085,26 +5187,34 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the main.log file.
 
-[154] (basma-rapport/main.aux)
+[162] (basma-rapport/main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C5741B770E61986D7061C6DD1766B292;65923.
+(rerunfilecheck)             Checksum: 969903C84C5D9B0698F8A0927BCBEA89;67807.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53783 strings out of 474222
- 1170282 string characters out of 5748733
- 2086638 words of memory out of 5000000
- 74446 multiletter control sequences out of 15000+600000
+ 53840 strings out of 474222
+ 1171411 string characters out of 5748733
+ 2054245 words of memory out of 5000000
+ 74494 multiletter control sequences out of 15000+600000
  647785 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,20n,117p,1547b,2287s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -5122,10 +5232,10 @@ texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on basma-rapport/main.pdf (166 pages, 2677223 bytes).
+Output written on basma-rapport/main.pdf (174 pages, 2689296 bytes).
 PDF statistics:
- 2924 PDF objects out of 2984 (max. 8388607)
- 2643 compressed objects within 27 object streams
- 698 named destinations out of 1000 (max. 500000)
- 2492 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2996 PDF objects out of 3580 (max. 8388607)
+ 2706 compressed objects within 28 object streams
+ 707 named destinations out of 1000 (max. 500000)
+ 2580 words of extra memory for PDF output out of 10000 (max. 10000000)
 

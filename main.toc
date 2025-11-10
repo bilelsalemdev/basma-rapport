@@ -239,57 +239,68 @@
 \contentsline {section}{\numberline {4.2}Compréhension et analyse des données~: Data Understanding \& Analysis}{133}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Préparation des données~: Data Preparation}{135}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Modélisation et solution proposée (aperçu)}{135}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Agile 4-month delivery plan}{137}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Service IA and dashboard}{137}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Introduction}{137}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Architecture Agile du Projet}{137}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Équipe de Développement}{137}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Outils et Technologies}{138}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Roadmap de Développement}{138}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Phase 1 : Fondations (Sprints 1-4)}{138}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Phase 2 : Développement Core (Sprints 5-8)}{138}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Phase 3 : Optimisation et Production (Sprints 9-12)}{139}{subsection.5.3.3}%
-\contentsline {section}{\numberline {5.4}Détail des Sprints}{139}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Sprint 1 : Analyse et Architecture}{139}{subsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.1.1}User Stories}{139}{subsubsection.5.4.1.1}%
-\contentsline {subsubsection}{\numberline {5.4.1.2}Tâches Techniques}{139}{subsubsection.5.4.1.2}%
-\contentsline {subsubsection}{\numberline {5.4.1.3}Livrables}{139}{subsubsection.5.4.1.3}%
-\contentsline {subsection}{\numberline {5.4.2}Sprint 2 : Pipeline de Données}{140}{subsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.2.1}User Stories}{140}{subsubsection.5.4.2.1}%
-\contentsline {subsubsection}{\numberline {5.4.2.2}Tâches Techniques}{140}{subsubsection.5.4.2.2}%
-\contentsline {subsubsection}{\numberline {5.4.2.3}Livrables}{140}{subsubsection.5.4.2.3}%
-\contentsline {subsection}{\numberline {5.4.3}Sprint 3 : Modèles de Machine Learning}{140}{subsection.5.4.3}%
-\contentsline {subsubsection}{\numberline {5.4.3.1}User Stories}{140}{subsubsection.5.4.3.1}%
-\contentsline {subsubsection}{\numberline {5.4.3.2}Tâches Techniques}{141}{subsubsection.5.4.3.2}%
-\contentsline {subsubsection}{\numberline {5.4.3.3}Livrables}{141}{subsubsection.5.4.3.3}%
-\contentsline {subsection}{\numberline {5.4.4}Sprint 4 : Pipeline MLOps}{141}{subsection.5.4.4}%
-\contentsline {subsubsection}{\numberline {5.4.4.1}User Stories}{141}{subsubsection.5.4.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.4.2}Tâches Techniques}{141}{subsubsection.5.4.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.4.3}Livrables}{141}{subsubsection.5.4.4.3}%
-\contentsline {section}{\numberline {5.5}Métriques et KPIs de Succès}{142}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Métriques Techniques}{142}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Métriques Métier}{142}{subsection.5.5.2}%
-\contentsline {subsection}{\numberline {5.5.3}Métriques de Projet}{142}{subsection.5.5.3}%
-\contentsline {section}{\numberline {5.6}Gestion des Risques}{142}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Framework de gestion des risques}{142}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}Registre complet des risques}{143}{subsection.5.6.2}%
-\contentsline {subsection}{\numberline {5.6.3}Matrice de criticité}{144}{subsection.5.6.3}%
-\contentsline {subsection}{\numberline {5.6.4}Plans de réponse détaillés}{144}{subsection.5.6.4}%
-\contentsline {subsubsection}{\numberline {5.6.4.1}Risque critique 1 : Performance modèles insuffisante}{144}{subsubsection.5.6.4.1}%
-\contentsline {subsubsection}{\numberline {5.6.4.2}Risque critique 2 : Intégration avec G.Pro}{145}{subsubsection.5.6.4.2}%
-\contentsline {subsubsection}{\numberline {5.6.4.3}Risque critique 3 : Adoption utilisateurs faible}{145}{subsubsection.5.6.4.3}%
-\contentsline {subsection}{\numberline {5.6.5}Monitoring et reporting}{145}{subsection.5.6.5}%
-\contentsline {section}{\numberline {5.7}Plan de Communication}{146}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}Stakeholders}{146}{subsection.5.7.1}%
-\contentsline {subsection}{\numberline {5.7.2}Cadence de Communication}{146}{subsection.5.7.2}%
-\contentsline {section}{\numberline {5.8}Plan de Formation et Adoption}{146}{section.5.8}%
-\contentsline {subsection}{\numberline {5.8.1}Formation des Utilisateurs}{146}{subsection.5.8.1}%
-\contentsline {subsection}{\numberline {5.8.2}Stratégie d'Adoption}{147}{subsection.5.8.2}%
-\contentsline {section}{\numberline {5.9}Plan de Maintenance et Évolution}{147}{section.5.9}%
-\contentsline {subsection}{\numberline {5.9.1}Maintenance Préventive}{147}{subsection.5.9.1}%
-\contentsline {subsection}{\numberline {5.9.2}Évolution du Système}{147}{subsection.5.9.2}%
-\contentsline {section}{\numberline {5.10}Budget et Ressources}{147}{section.5.10}%
-\contentsline {subsection}{\numberline {5.10.1}Budget Estimé}{147}{subsection.5.10.1}%
-\contentsline {subsection}{\numberline {5.10.2}ROI Attendu}{147}{subsection.5.10.2}%
-\contentsline {section}{\numberline {5.11}Conclusion}{148}{section.5.11}%
-\contentsline {starchapter}{Conclusion générale}{149}{section.5.11}%
-\contentsline {chapter}{Webographie}{153}{section.5.11}%
+\contentsline {section}{\numberline {5.2}Architecture des Services IA}{137}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Vue d'ensemble de l'architecture}{137}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Composants principaux}{138}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}Service de Prédiction}{138}{subsubsection.5.2.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}Service d'Ordonnancement}{138}{subsubsection.5.2.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.3}Service Analytics}{139}{subsubsection.5.2.2.3}%
+\contentsline {section}{\numberline {5.3}Spécifications des APIs}{139}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}API de Prédiction}{139}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.1}Endpoint de prédiction simple}{139}{subsubsection.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.2}Endpoint de prédiction en lot}{140}{subsubsection.5.3.1.2}%
+\contentsline {subsection}{\numberline {5.3.2}API d'Ordonnancement}{140}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}Endpoint d'optimisation de planification}{140}{subsubsection.5.3.2.1}%
+\contentsline {subsection}{\numberline {5.3.3}API Analytics}{142}{subsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.3.1}Endpoint de calcul des KPIs}{142}{subsubsection.5.3.3.1}%
+\contentsline {section}{\numberline {5.4}Interface Utilisateur}{143}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Architecture du Dashboard React}{143}{subsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.1.1}Structure des composants}{143}{subsubsection.5.4.1.1}%
+\contentsline {subsubsection}{\numberline {5.4.1.2}Gestion d'état}{143}{subsubsection.5.4.1.2}%
+\contentsline {subsection}{\numberline {5.4.2}Pages principales}{143}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}Dashboard Principal}{143}{subsubsection.5.4.2.1}%
+\contentsline {subsubsection}{\numberline {5.4.2.2}Page de Planification}{144}{subsubsection.5.4.2.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.3}Page Analytics}{145}{subsubsection.5.4.2.3}%
+\contentsline {subsubsection}{\numberline {5.4.2.4}Simulateur What-If}{146}{subsubsection.5.4.2.4}%
+\contentsline {section}{\numberline {5.5}Intégration des Modèles ML}{147}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Service de Prédiction}{147}{subsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.1}Chargement des modèles}{147}{subsubsection.5.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.2}Préprocessing des données}{147}{subsubsection.5.5.1.2}%
+\contentsline {subsection}{\numberline {5.5.2}Service d'Ordonnancement}{148}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}Modélisation des contraintes}{148}{subsubsection.5.5.2.1}%
+\contentsline {section}{\numberline {5.6}Sécurité et Authentification}{149}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Système d'authentification}{149}{subsection.5.6.1}%
+\contentsline {subsubsection}{\numberline {5.6.1.1}Génération des tokens}{149}{subsubsection.5.6.1.1}%
+\contentsline {subsubsection}{\numberline {5.6.1.2}Vérification des tokens}{149}{subsubsection.5.6.1.2}%
+\contentsline {subsection}{\numberline {5.6.2}Contrôle d'accès basé sur les rôles (RBAC)}{149}{subsection.5.6.2}%
+\contentsline {section}{\numberline {5.7}Monitoring et Observabilité}{150}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Métriques de performance}{150}{subsection.5.7.1}%
+\contentsline {subsubsection}{\numberline {5.7.1.1}Métriques des modèles}{150}{subsubsection.5.7.1.1}%
+\contentsline {subsubsection}{\numberline {5.7.1.2}Métriques des services}{150}{subsubsection.5.7.1.2}%
+\contentsline {subsection}{\numberline {5.7.2}Alertes et notifications}{150}{subsection.5.7.2}%
+\contentsline {section}{\numberline {5.8}Documentation Technique}{151}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Documentation API}{151}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}Guide de déploiement}{151}{subsection.5.8.2}%
+\contentsline {subsubsection}{\numberline {5.8.2.1}Configuration Docker}{151}{subsubsection.5.8.2.1}%
+\contentsline {subsubsection}{\numberline {5.8.2.2}Docker Compose}{151}{subsubsection.5.8.2.2}%
+\contentsline {subsection}{\numberline {5.8.3}Tests et validation}{152}{subsection.5.8.3}%
+\contentsline {subsubsection}{\numberline {5.8.3.1}Tests unitaires}{152}{subsubsection.5.8.3.1}%
+\contentsline {subsubsection}{\numberline {5.8.3.2}Tests d'intégration}{152}{subsubsection.5.8.3.2}%
+\contentsline {section}{\numberline {5.9}Performance et Optimisation}{153}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Optimisations des modèles}{153}{subsection.5.9.1}%
+\contentsline {subsubsection}{\numberline {5.9.1.1}Cache des prédictions}{153}{subsubsection.5.9.1.1}%
+\contentsline {subsubsection}{\numberline {5.9.1.2}Prédiction en lot}{153}{subsubsection.5.9.1.2}%
+\contentsline {subsection}{\numberline {5.9.2}Optimisations de l'ordonnancement}{154}{subsection.5.9.2}%
+\contentsline {subsubsection}{\numberline {5.9.2.1}Parallélisation}{154}{subsubsection.5.9.2.1}%
+\contentsline {section}{\numberline {5.10}Évolutivité et Maintenance}{155}{section.5.10}%
+\contentsline {subsection}{\numberline {5.10.1}Architecture évolutive}{155}{subsection.5.10.1}%
+\contentsline {subsubsection}{\numberline {5.10.1.1}Microservices}{155}{subsubsection.5.10.1.1}%
+\contentsline {subsubsection}{\numberline {5.10.1.2}API Gateway}{155}{subsubsection.5.10.1.2}%
+\contentsline {subsection}{\numberline {5.10.2}Maintenance des modèles}{155}{subsection.5.10.2}%
+\contentsline {subsubsection}{\numberline {5.10.2.1}Monitoring de la dérive}{155}{subsubsection.5.10.2.1}%
+\contentsline {subsubsection}{\numberline {5.10.2.2}Réentraînement automatique}{155}{subsubsection.5.10.2.2}%
+\contentsline {section}{\numberline {5.11}Conclusion}{156}{section.5.11}%
+\contentsline {starchapter}{Conclusion générale}{157}{section.5.11}%
+\contentsline {chapter}{Webographie}{161}{section.5.11}%
