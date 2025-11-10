@@ -1,927 +1,711 @@
-﻿\chapter{Mener une action d'amélioration d'un atelier de travail avec  Audit, les outils lean 4.0}\label{chap2}
-
-\lhead{Chapitre II: Audit et DMAIC }
-\dominitoc 
-\rhead{\thepage}
-\begin{spacing}{2}
-\minitoc
-\end{spacing}
-\section{Introduction}
-\label{chap2:intro}
-
-Ce deuxième chapitre présente de manière structurée et systématique la démarche méthodologique employée pour analyser et améliorer les performances de l'atelier de coupe. L'architecture de ce chapitre s'organise en deux parties complémentaires et interdépendantes.
-
-La première partie expose le \textbf{diagnostic de maturité digitale} de l'atelier de coupe réalisé au travers d'un \textbf{audit approfondi} et structuré, fondé sur le référentiel international \textbf{IMPULS} (Industrie 4.0 Maturity Index) spécifiquement conçu pour l'évaluation de la maturité digitale industrielle. Cet audit méthodologique permet d'évaluer de manière objective et quantifiée le niveau de digitalisation actuel de l'atelier, et d'identifier de manière priorisée les axes stratégiques d'amélioration en cohérence avec les standards de l'Industrie 4.0.
-
-La seconde partie détaille l'application rigoureuse et systématique de la \textbf{méthodologie DMAIC} (\textit{Define, Measure, Analyze, Improve, Control}), issue du référentiel \textbf{Lean Six Sigma}, mise en Åuvre dans le cadre d'une \textbf{action d'amélioration Lean 4.0} visant a identifier de manière structurée les dysfonctionnements opérationnels de l'atelier de coupe, a quantifier leurs impacts, a analyser leurs causes racines, et a proposer des solutions d'amélioration fondées sur des données objectives.
-
-L'objectif principal de cette démarche méthodologique combinée est d'établir une base solide, rigoureuse et fondée sur des preuves empiriques pour la conception et le développement de \textbf{solutions digitales intelligentes}, en s'appuyant a la fois sur une \textbf{évaluation objective du niveau de maturité digitale} et sur une \textbf{analyse quantitative approfondie des performances actuelles} de l'atelier.
-
-\section{Partie I : Audit de maturité digitale}
-
-\subsection{Introduction a l'audit IMPULS}
-
-Dans un contexte de transformation numérique croissante, il est essentiel d'\textbf{évaluer le niveau de maturité digitale} des différents services de production. L'audit de maturité digitale permet d'identifier les forces, les faiblesses et les opportunités d'évolution vers les standards de l'Industrie 4.0.
-
-\subsection{Objectifs de l'audit}
-
-\begin{itemize}
-\item Ãvaluer le niveau d'intégration des technologies numériques dans l'atelier de coupe
-\item Identifier les axes d'amélioration en lien avec l'excellence opérationnelle et l'Industrie 4.0
-\item Préparer un plan d'action de transformation digitale adapté a la réalité terrain
-\end{itemize}
-
-
-
-\subsection{Phase Innover : Propositions d'amélioration}
-
-\subsubsection{Constat principal}
-
-L'analyse de la phase \textit{Analyze} a révélé plusieurs dysfonctionnements limitant la performance de l'atelier de coupe, notamment une \textbf{saturation rapide des tables de matelassage} due a l'absence de système de planification et de suivi en temps réel.
-
-Ces contraintes se traduisent par :
-\begin{itemize}
-  \item Une \textbf{indisponibilité fréquente} des tables lors des pics d'activité ;
-  \item Des \textbf{conflits de planification} entre opérateurs, dus a un manque de visibilité globale sur les ressources ;
-  \item L'absence d'un \textbf{outil numérique} permettant de synchroniser le planning avec l'état réel des tables.
-\end{itemize}
-
-Ces constats soulignent la nécessité d'un \textbf{pilotage intelligent des ressources}, s'inscrivant pleinement dans la logique de l'Industrie 4.0, ou la digitalisation et l'automatisation des processus permettent de renforcer la réactivité et l'efficacité opérationnelle.
-
-\subsubsection{Proposition : Algorithme intelligent de gestion des tables de matelassage}
-
-Afin d'optimiser la planification et l'utilisation des ressources physiques de l'atelier, nous proposons un \textbf{algorithme de gestion dynamique} des tables de matelassage. Cet outil vise a offrir une \textbf{visualisation en temps réel} de la disponibilité des tables, tout en anticipant les conflits d'utilisation.
-
-\paragraph{Principe de fonctionnement}
-Chaque table est identifiée par un code unique (T1, T2, \dots, T6). Le système compare en continu l'heure actuelle avec le planning de matelassage. Il met automatiquement a jour le statut de chaque table selon trois états possibles : \textit{Occupée} (en cours d'utilisation), \textit{Réservée} (prévue pour une opération a venir) et \textit{Disponible} (libre pour un nouveau matelas).
-
-\paragraph{Pseudocode de l'algorithme}
-\begin{verbatim}
-Entrées :
-  Tables = {T1, T2, â¦, T6}
-  Planning (heure début, durée prévue)
-  Heure actuelle = H
-
-Pour chaque table T[i] :
-  Si (H >= heure début[i] ET H < heure fin prévue[i]) :
-      Statut[T[i]] = "Occupée"
-  Sinon si (H < heure début[i]) :
-      Statut[T[i]] = "Réservée"
-  Sinon :
-      Statut[T[i]] = "Disponible"
-
-Afficher le statut de chaque table
-\end{verbatim}
-
-\subsubsection{Application pratique}
-L'algorithme peut etre déployé sous plusieurs formes :
-\begin{itemize}
-  \item \textbf{Une feuille Excel automatisée}, avec macros et mise a jour minute par minute ;
-  \item \textbf{Une interface web locale}, connectée aux données de production et accessible depuis le poste du chef d'atelier.
-\end{itemize}
-Ce système permet :
-\begin{itemize}
-  \item de \textbf{visualiser en temps réel} la disponibilité de chaque table ;
-  \item d'\textbf{éviter les conflits} ou chevauchements de planning ;
-  \item d'\textbf{améliorer la fluidité} du flux de travail entre préparation, matelassage et coupe.
-\end{itemize}
-
-\begin{table}[H]
-\centering
-\caption{Exemple de statut temps réel}
-\begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{|l|l|l|}
-\hline
-\textbf{Table} & \textbf{Heure actuelle} & \textbf{Statut} \\
-\hline
-T1 & 09:00 & Occupée (jusqu'a 09:30) \\
-\hline
-T2 & 09:00 & Disponible \\
-\hline
-T3 & 09:00 & Occupée (jusqu'a 09:45) \\
-\hline
-\end{tabular}
-\end{adjustbox}
-\end{table}
-
-\subsubsection{Bénéfices attendus}
-L'intégration de cet algorithme dans le système de gestion de production offre plusieurs avantages :
-\begin{itemize}
-  \item \textbf{Réduction du temps d'attente} entre les opérations de coupe ;
-  \item \textbf{Optimisation de l'utilisation des ressources existantes} sans investissement matériel supplémentaire ;
-  \item \textbf{Amélioration de la coordination} entre opérateurs et planificateurs ;
-  \item \textbf{Digitalisation partielle du pilotage de production}, contribuant a la transition vers une \textbf{usine connectée}.
-\end{itemize}
-Ainsi, cette solution constitue une première étape vers la \textbf{transformation numérique} de l'atelier, en s'inscrivant dans une démarche \textit{Lean 4.0} conciliant \textbf{amélioration continue} et \textbf{technologies intelligentes}.
-
-\subsection{Méthodologie d'évaluation}
-
-\subsubsection{Choix du questionnaire IMPULS}
-
-Le questionnaire \textbf{IMPULS â Industrie 4.0 Readiness} \cite{lichtblau2015industrie} a été choisi pour sa pertinence dans l'analyse de la maturité digitale industrielle \cite{xu2018industry, kagermann2013recommendations}. Il couvre les thématiques suivantes :
-\begin{itemize}
-   \item Efficacité des processus
-   \item Automatisation, innovation et intégration numérique
-   \item Gestion des performances et des flux
-   \item Amélioration continue et flexibilité
-\end{itemize}
-
-\subsubsection{Mode de diffusion}
-
-Le questionnaire a été administré en ligne via Google Forms, avec un accompagnement en présentiel pour aider les répondants a bien comprendre chaque question technique.
-
-\subsubsection{Cible de l'enquete}
-
-L'enquete a ciblé \textbf{11 personnes clés} de l'atelier de coupe, incluant :
-\begin{itemize}
-  \item Chef d'atelier
-  \item Agents d'ordonnancement/planification
-  \item Opérateurs machine
-  \item Responsables qualité coupe
-  \item Responsable maintenance
-\end{itemize}
-Ces profils ont été choisis en fonction de leur connaissance du fonctionnement réel
-de l'atelier et de leur implication dans les processus numériques ou manuels actuels.
-\subsection{Déroulement de l'enquete}
-\begin{itemize}
-  \item  \textbf  Préparation : création du formulaire Google Forms (Figure \ref{form}), adaptation des questions a l'environnement Bacovet.
-
-  \item  \textbf  Lancement : envoi du lien aux personnes concernées, accompagnement en face a face sur place.
-
-  \item  \textbf  Assistance : chaque répondant a été guidé par l'auteur du projet pour expliciter les critères du questionnaire.
-
-  \item  \textbf  Collecte et consolidation : les réponses ont été collectées automatiquement, puis exploitées pour l'analyse.(Les Figures \ref{20};\ref{22})
- \end{itemize}
- \begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.30\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Chapitre2/images/21.jpg}
-    \caption{Formulaire Google Forms}
-    \label{form}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.30\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Chapitre2/images/20.jpg}
-    \caption{Diagramme circulaire (Pie chart)}
-    \label{20}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.30\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Chapitre2/images/22.jpg}
-    \caption{Histogramme / Diagramme en barres (Bar chart)}
-    \label{22}
-  \end{minipage}
-\end{figure}
-
-
-\section{Résultats de l'évaluation de la maturité digitale}
-\subsection{Méthodologie d'évaluation}
-
-\begin{methodBox}
-L'évaluation de la maturité digitale de l'atelier de coupe a été réalisée a l'aide du questionnaire \textbf{IMPULS}, un outil de diagnostic développé par l'Association Allemande de l'Industrie (VDMA) pour mesurer l'état d'avancement des entreprises dans l'adoption des principes de l'Industrie 4.0.
-\end{methodBox}
-
-L'évaluation de la maturité digitale a été effectuée a l'aide d'un calculateur basé sur les retours de 11 répondants. Chaque critère a été noté selon trois niveaux d'implémentation : « Non », « Partiellement », et « Oui », permettant de générer un score global par critère .
-\subsection{Détail des scores par critère}
-
-    \begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.45\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Chapitre2/images/Capture d'écran 2025-06-04 084317.png}
-    \caption{Détail des résultats par critère}
-    \label{form}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.50\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Chapitre2/images/Capture d'écran 2025-06-04 084501.png}
-    \caption{tableau complet des critères, scores et niveaux}
-      \label{inscri}
-
-  \end{minipage}
-\end{figure}
-L'audit a porté sur \textbf{17 critères} répartis dans \textbf{4 domaines} clés :
-
-\begin{enumerate}[label=\Alph*.]
-    \item Efficacité des processus
-    \item Automatisation, innovation et intégration numérique
-    \item Gestion des performances et des flux
-    \item Amélioration continue et flexibilité
-\end{enumerate}
-
-Le questionnaire a été administré auprès de \textbf{11 personnes} travaillant dans l'atelier de coupe. Le système de calcul automatique permet de convertir les réponses (« Non », « Partiellement », « Oui ») en un \textbf{score sur 100}, selon la formule suivante :
-
-\begin{equation}
-\boxed{\text{Score} = \frac{\text{Partiellement} \times 0,5 + \text{Oui} \times 1}{11} \times 100}
-\end{equation}
-Le tableau détaillé met en évidence les critères les moins avancés :
-\begin{table}[H]
-\centering
-\begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{|l|c|c|}
-\hline
-\rowcolor{lightgray}
-\textbf{Critères prioritaires} & \textbf{Score} & \textbf{Niveau} \\
-\hline
-Interopérabilité des systèmes & \textcolor{dangerred}{14\%} & Non implémenté \\
-\hline
-Planification et ordonnancement & \textcolor{dangerred}{23\%} & Non implémenté \\
-\hline
-Suivi de l'avancement & \textcolor{dangerred}{23\%} & Non implémenté \\
-\hline
-Visualisation des performances & \textcolor{dangerred}{27\%} & Non implémenté \\
-\hline
-\end{tabular}
-\end{adjustbox}
-\caption{Critères constituant des leviers prioritaires d'amélioration}
-\label{tab:criteres_prioritaires}
-\end{table}
-Ces critères constituent des leviers prioritaires d'amélioration.
-
-\subsection{Résultats globaux}
-
-L'analyse des données a révélé un \textbf{score global de 41/100}, ce qui correspond a un \textbf{niveau de maturité « partiellement implémenté »}. Ce résultat indique que plusieurs pratiques et technologies de l'Industrie 4.0 sont amorcées, mais restent a un stade initial de mise en Åuvre ou ne sont pas encore déployées de manière homogène.
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[height=5cm]{Chapitre2/images/score1.png}
-\caption{{\emph{Tableau récapitulatif des scores par domaine}}}
-\label{chap1:fig1}
-\end{center}
-\end{figure}
-
-La \textbf{répartition par niveau} montre que :
-
-\begin{itemize}
-    \item \textcolor{dangerred}{\textbf{24\%}} des critères sont \textbf{non implémentés} (<30\%)
-    \item \textcolor{warningorange}{\textbf{71\%}} sont \textbf{partiellement implémentés} (entre 30\% et 69\%)
-    \item \textcolor{successgreen}{\textbf{6\%}} (1 critère) est \textbf{totalement implémenté} (>70\%)
-\end{itemize}
-
-\subsection{Analyse par domaine}
-
-
-    \begin{figure}[H]
-  \centering
-  \begin{minipage}[b]{0.45\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Chapitre2/images/Capture d'écran 2025-06-04 090245.png}
-    \caption{Diagramme de Radar}
-    \label{form}
-  \end{minipage}
-\end{figure}
-L'analyse par domaine met en lumière les disparités suivantes :
-
-\subsubsection{Domaine A : Efficacité des processus}
-
-\begin{itemize}
-    \item \textbf{Score moyen : 44\%} â Partiellement implémenté
-    \item \textbf{Points faibles :} élimination des gaspillages (41\%), temps de cycle (45\%), standardisation (45\%)
-    \item Ces résultats révèlent un manque d'outils Lean et de pratiques systématisées d'optimisation.
-\end{itemize}
-
-\subsubsection{Domaine B : Automatisation, innovation et intégration numérique}
-
-\begin{itemize}
-    \item \textbf{Score moyen : 45\%} â Partiellement implémenté
-    \item Bien que l'automatisation soit amorcée (50\%), des lacunes critiques sont observées sur l'\textbf{interopérabilité des systèmes} (14\%), traduisant un cloisonnement entre les outils numériques.
-\end{itemize}
-
-\subsubsection{Domaine C : Gestion des performances et des flux}
-
-\begin{warningBox}
-\textbf{Score moyen : 29\%} â \textcolor{dangerred}{Non implémenté}\\
-C'est le domaine le plus faible. La \textbf{visualisation des performances} (27\%), la \textbf{planification} (23\%) et le \textbf{suivi de l'avancement} (23\%) ne sont pas opérationnels. Cela empÊche un pilotage efficace de la production.
-\end{warningBox}
-
-\subsubsection{Domaine D : Amélioration continue et flexibilité}
-
-\begin{itemize}
-    \item \textbf{Score moyen : 47\%} â Partiellement implémenté
-    \item Ce domaine présente des initiatives prometteuses. Seul le critère relatif a \textbf{l'utilisation des capteurs IoT} atteint 77\%, indiquant un potentiel élevé pour le suivi des opérations.
-\end{itemize}
-
-
-\subsection{Conclusion des résultats}
-L'audit révèle que l'atelier de coupe se situe dans une \textbf{phase intermédiaire de transformation digitale}. Plusieurs outils sont présents, notamment au niveau des capteurs et de certains processus d'automatisation, mais leur intégration globale reste insuffisante.
-Le manque d'interopérabilité, de visibilité en temps réel, ainsi que l'absence de planification numérique constituent les principaux freins a une digitalisation avancée.
-
-\section{Partie II : Application de la méthodologie DMAIC}
-
-\subsection{Introduction a la méthode DMAIC}
-Dans une logique d'optimisation de la performance industrielle et en cohérence avec les principes de l'Industrie 4.0, ce projet applique la méthodologie DMAIC (Define, Measure, Analyze, Improve, Control), issue du Lean Six Sigma. Cette démarche structurée de résolution de problèmes, fondée sur l'analyse factuelle et des mesures quantifiables, permet d'identifier les causes réelles des dysfonctionnements et de mettre en Åuvre des solutions durables et mesurables.
-Dans le contexte de l'atelier de coupe textile, ou subsistent des limites en matière de planification, de coordination et de traçabilité malgré la présence d'outils numériques, l'application du DMAIC vise a améliorer la gestion du temps, la maîtrise du planning et, plus globalement, la performance opérationnelle.
-
-\subsection{Phase 1 : Define (Définir)}
-
-\subsubsection{Objectif de la phase Define}
-
-La phase Define constitue le fondement de la démarche DMAIC. Elle vise a \textbf{définir précisément le problème}, a identifier les parties prenantes, a établir le périmètre du projet et a fixer des objectifs mesurables d'amélioration. Cette phase garantit l'alignement de tous les acteurs sur une compréhension commune de la problématique et des enjeux.
-\subsubsection{Systèmes d'information utilisés dans l'atelier de coupe}
-
-Dans l'atelier de coupe Bacovet, la gestion opérationnelle repose sur deux logiciels principaux : \textbf{Divatex} et \textbf{G.Pro}, chacun couvrant une partie du processus de production.
-
- \textbf{ -Divatex} intervientntervient en amont, au niveau du \textbf{stock et de la planification des matières}. Il assure la gestion des rouleaux de tissu, la réservation des matières premières, et le suivi des mouvements de consommation et de réception. Ce système permet également la création et la gestion des matériaux et accessoires utilisés pour les modèles.
-\begin{table}[H]
-\centering
-\caption{Résumé du fonctionnement du logiciel Divatex}
-\begin{tabular}{|p{3.5cm}|p{10.5cm}|}
-\hline
-\textbf{Ãlément} & \textbf{Description} \\
-\hline
-Rôle & Gestion amont : stock de tissu, planification et mouvement des rouleaux \\
-\hline
-Entrées & Données des rouleaux (référence, quantité, emplacement), ordres de fabrication (OF), réservations matière \\
-\hline
-Processus & Lancement des commandes, réservation des rouleaux, création des matériaux et accessoires, suivi de consommation et réception \\
-\hline
-Sorties & Mise à jour des stocks, statut matière des OF, historique des mouvements, rapports de consommation \\
-\hline
-\end{tabular}
-\end{table}
-
-\textbf{-G.Pro}, quant a lui, est opérationnel a partir de la zone de \textbf{départage} et jusqu'au \textbf{contrôle qualité confection}. Il assure la traçabilité des paquets grâce a un tag circulaire contenant les informations de l'ordre de fabrication (OF) et permet le suivi manuel de l'avancement des commandes post-coupe.
-\begin{table}[H]
-\centering
-\caption{Résumé du fonctionnement du logiciel G.Pro}
-\begin{tabular}{|p{3.5cm}|p{10.5cm}|}
-\hline
-\textbf{Ãlément} & \textbf{Description} \\
-\hline
-Rôle & Gestion aval : traçabilité post-coupe et suivi des paquets \\
-\hline
-Entrées & OF et tags circulaires contenant les informations d'identification des paquets\\
-\hline
-Processus & Suivi de progression des paquets, détection via tag, contrôle qualité, validation des étapes post-coupe \\
-\hline
-Sorties & Statut des OF, temps de production (saisie manuelle), rapports de progression, historique des mouvements post-coupe \\
-\hline
-\end{tabular}
-\end{table}
-
-
-Malgré leur rôle essentiel, ces deux systèmes fonctionnent de manière indépendante, sans synchronisation automatique. Cette séparation génère une \textbf{zone grise} entre les deux phases critiques de production : le \textbf{matelassage} et la \textbf{coupe}. Ni le temps de matelassage ni le temps de coupe ne sont enregistrés ou centralisés automatiquement. En conséquence, l'absence de liaison en temps réel entre la planification matière (Divatex) et l'exécution opérationnelle (G.Pro) limite la \textbf{traçabilité}, la \textbf{réactivité} ainsi que la capacité d'analyse des performances et de gestion des réclamations.
-
-
-
-\textbf{Synthèse:} La digitalisation actuelle assure la traçabilité matière et post-coupe, mais reste \textbf{incomplète sur les opérations de matelassage et de coupe}. Cela justifie l'intégration d'une solution intelligente permettant le suivi en temps réel et l'interconnexion entre les outils existants, afin d'améliorer la performance et la visibilité globale du processus.
-
-\subsubsection{Outil utilisé : Carte mentale}
-
-Pour synthétiser la situation actuelle, une carte mentale a été construite (Figure~\ref{fig:carte_mentale}).
-
-\begin{figure}[H]
-\centering
-\includegraphics[angle=90,width=0.40\textheight,keepaspectratio]{Chapitre2/images/23.png}
-\caption{Carte mentale}
-\label{fig:carte_mentale}
-\end{figure}
-
-\subsubsection{Résumé des points clés identifiés}
-Le tableau~\ref{tab:forces_faiblesses} présente une synthèse des forces et faiblesses identifiées lors de cette phase de définition.
-
-\begin{table}[H]
-    \centering
-    \caption{Analyse des forces et faiblesses du système actuel}
-    \label{tab:forces_faiblesses}
-    \begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{|l|l|}
-        \hline
-        \rowcolor{green!10}
-        \textbf{Forces} & \textbf{Faiblesses} \\
-        \hline
-        Existence de logiciels spécialisés (Divatex, G.Pro) & Pas de connexion entre Divatex et G.Pro \\
-        \hline
-        Système de traçabilité par tag post-coupe & Aucune traçabilité instantanée de la coupe \\
-        \hline
-        Engagement du personnel & Pas de mesure automatique des temps de matelassage et coupe \\
-        \hline
-        & Absence de planning intégré et dynamique \\
-        \hline
-        & Communication manuelle entre équipes \\
-        \hline
-        & Retards ou anomalies détectés trop tardivement \\
-        \hline
-    \end{tabular}
-\end{adjustbox}
-\end{table}
-\subsubsection{Conclusion de la phase "Définir"}
-
-La problématique centrale est \textbf{l'absence d'intégration entre les systèmes existants et le manque de visibilité en temps réel sur les opérations de matelassage et de coupe}.
-
-\subsection{Phase 2 : Measure (Mesurer)}
-
-% Introduction brève de la phase Mesurer
-Dans la démarche DMAIC, la phase \textbf{Mesurer} consiste a établir une connaissance factuelle du processus actuel. Elle vise a collecter des données \textit{fiables, traçables et représentatives} sur les opérations clés, afin de quantifier les performances réelles et les perturbations. Cette étape permet de définir une \textbf{ligne de base (baseline)} des indicateurs, de valider le système de mesure et de préparer une analyse objective des causes dans la phase suivante.
-
-\subsubsection{Objectif de la phase de mesure}
-
-La phase de \textbf{mesure} établit une base de référence objective des performances actuelles. Elle vise a \textbf{quantifier les perturbations} de planification et a \textbf{mesurer les temps réels} des opérations clés (préparation, matelassage, coupe, départage), afin de disposer d'indicateurs fiables avant toute amélioration.
-
-\subsubsection{Méthodologie de mesure}
-
-Deux approches principales sont utilisées :
-\begin{itemize}
-
-\item{Chronométrage direct} via des fiches d'enregistrement (début, fin, durée) pour chaque étape : préparation, matelassage (automatique et manuel), coupe (robotisée et manuelle), départage et vignettage, comme illustré aux Figures~\ref{chpp3} et \ref{chp3}.
-
-% Figures 2.9 et 2.10 placées directement après le paragraphe de chronométrage direct
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.85\textwidth]{Chapitre2/images/IMG_20250614_141256_509.jpg}
-  \caption{Fiche d'enregistrement (modèle Rim)}
-  \label{chpp3}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.85\textwidth]{Chapitre2/images/IMG_20250614_141303_456.jpg}
-  \caption{Fiche d'enregistrement (modèle Leotard 500g pink)}
-  \label{chp3}
-\end{figure}
-
-\end{itemize}
-
-\paragraph{Analyse du déroulement de coupe (extrait documentaire)}
-
-Afin de compléter la collecte terrain, une \textbf{analyse documentaire} a été réalisée a partir du fichier \textit{analyse deroulement COUPE}. Cette source décrit pas-a-pas le déroulement d'articles en coupe et sert de support a la validation des séquences observées et des points de mesure.
-
-\paragraph{Aperçu (intégration directe du PDF)}
-Ã défaut de captures déja extraites, les pages clés du document sont intégrées ci-dessous directement depuis le PDF.
-
-\includepdf[pages=1,angle=90,scale=0.85,pagecommand=\thispagestyle{plain}]{Chapitre2/analyse_deroulement_coupe.pdf}
-
-\paragraph{Description synthétique du document}
-Le document \textit{analyse deroulement COUPE} présente, sous forme structurée et illustrée, le déroulement réel des opérations dans la salle de coupe. Il décrit successivement les étapes de préparation (CAO, vérification OF et matières), de matelassage (manuel et automatique), de coupe (robotisée et/ou manuelle), puis de départage et vignettage, en précisant pour chaque étape les acteurs impliqués, les supports utilisés, les temps observés, ainsi que les incidents/perturbations relevés (pannes, attentes, changements de priorité, relaxation tissu, etc.).
-
-\paragraph{Objectifs de l'analyse documentaire}
-\begin{itemize}
-    \item Valider, par triangulation, les séquences opérationnelles observées sur le terrain et celles décrites par les procédures internes.
-    \item Identifier les points de contrôle utiles a la mesure (horodatages, transitions d'étapes, variables influentes comme nombre de plis, laize, longueur).
-    \item Mettre en évidence les sources récurrentes de variabilité et de perturbation impactant la planification (attentes tables, pannes robot, relaxation doublure, saisies manuelles).
-    \item Définir une base de référence fiable pour la modélisation des temps et l'optimisation ultérieure (chapitres Analyse et Amélioration).
-\end{itemize}
-
-\paragraph{Principaux enseignements}
-\begin{itemize}
-    \item Les transitions entre matelassage et coupe constituent un point critique de synchronisation; l'absence de visibilité temps réel génère des attentes et des replanifications.
-    \item Le temps de matelassage est fortement corrélé au nombre de plis et aux dimensions du matelas; la variabilité opérateur/machine demeure notable.
-    \item Les perturbations majeures recensées (pannes robot, relaxation tissu, changements de priorité) expliquent une part significative des écarts planning.
-    \item La traçabilité amont/aval est partielle: des données clés restent saisies manuellement et non consolidées.
-\end{itemize}
-
-\paragraph{Limites et précautions}
-\begin{itemize}
-    \item La documentation se concentre sur des cas représentatifs mais non exhaustifs; elle doit etre complétée par des mesures systématiques et des séries temporelles plus longues.
-    \item Certaines informations (délais d'attente, durées anormales) peuvent etre sous-déclarées en l'absence d'instrumentation continue.
-\end{itemize}
-
-\paragraph{Conclusion opérationnelle}
-Cette analyse documentaire consolide la compréhension du flux réel en salle de coupe et fournit des repères mesurables pour la phase \textbf{Analyser}. Elle justifie la mise en place d'une instrumentation de mesure plus fine, l'amélioration de la visualisation temps réel et l'usage d'un modèle prédictif des temps de matelassage/coupe pour soutenir la planification.
-
-% (Figures dé\end{itemize}placées plus haut, juste après le paragraphe de chronométrage direct)
-
-% Figure supprimée sur demande (anciennement: Fiche d'enregistrement du déroulement de chaque article)
-
-\subsubsection{Description synthétique des processus mesurés}
-
-Les activités mesurées et leurs ordres de grandeur observés sont :
-\begin{itemize}
-    \item \textbf{Préparation des fichiers CAO} et traçabilité OF : 50 a 60 minutes.
-    \item \textbf{Matelassage automatique} (1 table dédiée, chariot automatisé) : 20 a 30 minutes par matelas selon le tissu.
-    \item \textbf{Matelassage manuel} (4 tables, 2 opérateurs/table) : 35 a 50 minutes par matelas.
-    \item \textbf{Coupe robotisée} (2 robots horizontaux, 5 tables) : 25 a 40 minutes selon la complexité.
-    \item \textbf{Départage et ajout de vignettes} (13 opérateurs) : 40 a 60 minutes par lot.
-    \item \textbf{Stockage et contrôle qualité} : transfert vers trois zones de stockage (avant/après sérigraphie).
-\end{itemize}
-
-\subsubsection{Constats clés de la collecte}
-
-\begin{itemize}
-    \item \textbf{Variabilité des temps} par modèle (jusqu'a ±15 min sur matelassage manuel).
-    \item \textbf{Perturbations fréquentes} : pannes des robots (notamment robot 2), pannes d'électricité, attente de relaxation tissu (jusqu'a 72h pour la doublure).
-    \item \textbf{Communication manuelle} et absence d'outil de visualisation partagée du planning.
-\end{itemize}
-
-
-
-\subsubsection{Synthèse de la phase de mesure}
-
-La phase \textbf{Mesurer} quantifie les écarts entre le planning théorique et la réalité opérationnelle. Les données montrent l'impact des pannes machines, du manque de visualisation temps réel et de l'absence de remontées automatiques, générant des \textbf{retards non détectés} et une fiabilité de planning dégradée. Ces éléments constituent la base de la phase \textbf{Analyser} qui suit.
-
-\subsection{Phase 3 : Analyze (Analyser)}
-
-\subsubsection{Objectif de la phase Analyse}
-
-La phase \textbf{Analyse} vise a identifier les causes racines des perturbations observées dans la planification de l'atelier de coupe. Elle s'appuie sur les résultats collectés durant la phase de mesure, notamment les données chronométrées, les pannes, et la disponibilité des ressources.
-
-L'objectif est de comprendre pourquoi les délais de matelassage et de coupe varient, et quelles sont les sources principales des retards. Cette analyse permet de cibler les actions correctives et préventives a mettre en Åuvre dans la phase suivante.
-
-\subsubsection{Méthodes d'analyse utilisées}
-
-Deux méthodes Lean Six Sigma ont été mobilisées :
-
-\begin{itemize}
-    \item \textbf{Le diagramme d'Ishikawa (causes-effet)} : pour regrouper les causes potentielles selon les catégories classiques (Méthode, Main d'Åuvre, Milieu, Machine, Matière).
-    \item \textbf{L'analyse directe des données mesurées} : pour corréler certaines variables (ex. : largeur du matelas et durée de matelassage, disponibilité des tables et temps d'attente).
-\end{itemize}
-
-\subsubsection{Analyse des temps réels par activité}
-
-Les données mesurées ont permis d'identifier les durées moyennes suivantes :
-
-\begin{table}[H]
-\centering
-\caption{Analyse des temps observés par activité}
-\begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{|l|l|l|}
-\hline
-\textbf{Activité} & \textbf{Durée moyenne} & \textbf{Observations} \\
-\hline
-Préparation OF / CAO & ~50 minutes & Stable, dépend de la qualité de la fiche technique \\
-\hline
-Matelassage automatique & 20 a 30 min / matelas & Efficace mais dépend de la disponibilité du chariot \\
-\hline
-Matelassage manuel & 35 a 50 min / matelas & Variabilité selon tissu et opérateurs \\
-\hline
-Coupe robotisée & 25 a 40 min & Dépend des pannes / files d'attente \\
-\hline
-Départage + vignettage & 45 a 60 min & Poste critique, coordination multiple \\
-\hline
-\end{tabular}
-\end{adjustbox}
-\label{tab:temps_observes_analyse}
-\end{table}
-
-\subsubsection{Analyse des perturbations}
-
-L'analyse croisée a permis de mettre en évidence :
-\begin{itemize}
-    \item \textbf{Un manque de synchronisation} entre les opérations de matelassage et de coupe dû a l'attente de libération des tables.
-    \item \textbf{Des blocages fréquents} causés par :
-    \begin{itemize}
-        \item Pannes des robots (robot de coupe 2 souvent en panne).
-        \item Délai de relaxation tissu doublure (jusqu'a 72h).
-        \item Erreurs dans la priorisation des ordres de fabrication.
-    \end{itemize}
-\end{itemize}
-
-\subsubsection{Capacités et limites techniques observées}
-
-\begin{table}[H]
-\centering
-\caption{Analyse des ressources et limitations}
-\begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{|l|l|l|}
-\hline
-\textbf{Ressource} & \textbf{Capacité théorique} & \textbf{Limitation observée} \\
-\hline
-Tables de matelassage & 6 (1 auto, 4 manuelles, 1 vide) & Saturation rapide lors de pics de production \\
-\hline
-Robots de coupe & 2 robots couvrant 5 tables & En cas de panne, files d'attente sur la coupe \\
-\hline
-Opérateurs sur tables & 17 personnes & Charge inégale, pas de standardisation \\
-\hline
-Départage / vignettage & 13 postes & Coordination complexe entre les t'ches \\
-\hline
-\end{tabular}
-\end{adjustbox}
-\label{tab:ressources_limitations}
-\end{table}
-
-\subsubsection{Diagramme d'Ishikawa}
-
-La Figure~\ref{fig:ishikawa} suivante illustre les principales causes des retards observés dans l'atelier :
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.95\textwidth]{Chapitre2/images/ishikawa_beige.png}
-\caption{{\emph{Diagramme d'Ishikawa : Analyse des causes racines des retards dans l'atelier de coupe}}}
-\label{fig:ishikawa}
-\end{figure}
-
-\subsubsection{Analyse directe des données mesurées}
-
-L'analyse directe des données collectées lors de la phase Mesurer a permis de mettre en évidence plusieurs corrélations significatives :
-
-\begin{itemize}
-    \item \textbf{Corrélation largeur du matelas et durée de matelassage} : Les matelas plus larges nécessitent généralement plus de temps de manipulation et d'alignement.
-    \item \textbf{Corrélation disponibilité des tables et temps d'attente} : Lorsque toutes les tables sont occupées simultanément, les opérateurs attendent en moyenne 32 minutes avant de commencer le matelassage.
-    \item \textbf{Variabilité selon le type de tissu} : Les tissus doublure nécessitent une relaxation préalable (jusqu'a 72h), impactant directement la planification.
-    \item \textbf{Impact des pannes robot} : Le robot de coupe 2 présente un taux de panne de 18\% (vs 6\% pour les autres), générant des files d'attente importantes.
-\end{itemize}
-
-\subsubsection{Synthèse des causes racines identifiées}
-
-\begin{table}[H]
-\centering
-\caption{Synthèse des causes par catégorie}
-\begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{|l|l|}
-\hline
-\textbf{Catégorie} & \textbf{Cause racine identifiée} \\
-\hline
-Machine & Pannes fréquentes des robots, absence de maintenance préventive \\
-\hline
-Méthode & Pas de standard sur les durées de t'ches, séquencement non optimisé \\
-\hline
-Milieu & Saturation des postes, espace restreint \\
-\hline
-Main d'Åuvre & Hétérogénéité des performances entre opérateurs \\
-\hline
-Matière & Tissu nécessitant relaxation longue (doublure : 72h) \\
-\hline
-\end{tabular}
-\end{adjustbox}
-\label{tab:synthese_causes_racines}
-\end{table}
-
-\subsubsection{Conclusion de la phase Analyse}
-
-Cette phase a permis d'identifier clairement les facteurs qui altèrent la performance globale du processus. L'absence d'outils de visualisation en temps réel, combinée a une dépendance excessive aux ressources critiques (robots, tables), engendre des retards fréquents et non anticipés dans la production. Les deux méthodes utilisées (diagramme d'Ishikawa et analyse directe des données) ont complémenté efficacement l'identification des causes racines et la compréhension des mécanismes de perturbation.
-
-%
-\subsection{Phase 4 : Improve (Améliorer)}
-
-\subsubsection{Constat principal}
-
-L'analyse de la phase \textit{Analyze} a révélé plusieurs dysfonctionnements limitant la performance de l'atelier de coupe, notamment une \textbf{saturation rapide des tables de matelassage} due a l'absence de système de planification et de suivi en temps réel.
-
-Ces contraintes se traduisent par :
-\begin{itemize}
-  \item Une \textbf{indisponibilité fréquente} des tables lors des pics d'activité ;
-  \item Des \textbf{conflits de planification} entre opérateurs, dus a un manque de visibilité globale sur les ressources ;
-  \item L'absence d'un \textbf{outil numérique} permettant de synchroniser le planning avec l'état réel des tables.
-\end{itemize}
-
-Ces constats soulignent la nécessité d'un \textbf{pilotage intelligent des ressources}, s'inscrivant pleinement dans la logique de l'Industrie 4.0, ou la digitalisation et l'automatisation des processus permettent de renforcer la réactivité et l'efficacité opérationnelle.
-
-\subsubsection{Proposition : Algorithme intelligent de gestion des tables de matelassage}
-
-Afin d'optimiser la planification et l'utilisation des ressources physiques de l'atelier, nous proposons un \textbf{algorithme de gestion dynamique} des tables de matelassage. Cet outil vise a offrir une \textbf{visualisation en temps réel} de la disponibilité des tables, tout en anticipant les conflits d'utilisation.
-
-\paragraph{Principe de fonctionnement}
-Chaque table est identifiée par un code unique (T1, T2, \dots, T6). Le système compare en continu l'heure actuelle avec le planning de matelassage. Il met automatiquement a jour le statut de chaque table selon trois états possibles :
-\begin{itemize}
-  \item \textit{Occupée} (en cours d'utilisation)
-  \item \textit{Réservée} (prévue pour une opération a venir)
-  \item \textit{Disponible} (libre pour un nouveau matelas)
-\end{itemize}
-
-\paragraph{Pseudocode de l'algorithme}
-\begin{verbatim}
-Entrées :
-  Tables = {T1, T2, â¦, T6}
-  Planning (heure début, durée prévue)
-  Heure actuelle = H
-
-Pour chaque table T[i] :
-  Si (H >= heure début[i] ET H < heure fin prévue[i]) :
-      Statut[T[i]] = "Occupée"
-  Sinon si (H < heure début[i]) :
-      Statut[T[i]] = "Réservée"
-  Sinon :
-      Statut[T[i]] = "Disponible"
-
-Afficher le statut de chaque table
-\end{verbatim}
-
-\paragraph{Schéma de fonctionnement de l'algorithme}
-La Figure~\ref{fig:algo_flowchart} illustre le flux de décision de l'algorithme de gestion des tables de matelassage, depuis la collecte des données d'entrée jusqu'a l'affichage des statuts en temps réel.
-
-\begin{figure}[H]
-\centering
-\resizebox{0.95\textwidth}{!}{%
-\begin{tikzpicture}[
-    node distance=2.5cm,
-    startstop/.style={rectangle, rounded corners, minimum width=3.5cm, minimum height=1cm, text centered, draw=black, line width=0.8pt, fill=red!30, font=\small},
-    io/.style={trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3.5cm, minimum height=1cm, text centered, draw=black, line width=0.8pt, fill=blue!30, font=\small},
-    process/.style={rectangle, minimum width=3.5cm, minimum height=1cm, text centered, draw=black, line width=0.8pt, fill=orange!30, font=\small},
-    decision/.style={diamond, minimum width=4cm, minimum height=1.3cm, text centered, draw=black, line width=0.8pt, fill=green!30, aspect=2, font=\small},
-    output/.style={rectangle, minimum width=3.5cm, minimum height=1cm, text centered, draw=black, line width=0.8pt, fill=yellow!30, font=\small},
-    arrow/.style={thick,->,>=stealth}
-]
-
-% Nodes
-\node (start) [startstop] {Début};
-\node (input) [io, below of=start, yshift=-0.3cm] {Entrées:\\Tables, Planning, H};
-\node (init) [process, below of=input, yshift=-0.3cm] {i = 1};
-\node (check) [decision, below of=init, yshift=-1cm] {i $\leq$ 6 ?};
-\node (cond1) [decision, below of=check, yshift=-1.8cm] {H $\geq$ début[i]\\ET\\H < fin[i] ?};
-\node (status1) [output, left of=cond1, xshift=-4cm] {Statut[T[i]]\\= "Occupée"};
-\node (cond2) [decision, below of=cond1, yshift=-1.8cm] {H < début[i] ?};
-\node (status2) [output, left of=cond2, xshift=-4cm] {Statut[T[i]]\\= "Réservée"};
-\node (status3) [output, below of=cond2, yshift=-0.8cm] {Statut[T[i]]\\= "Disponible"};
-\node (increment) [process, right of=cond2, xshift=4cm] {i = i + 1};
-\node (display) [io, right of=check, xshift=5.5cm] {Afficher\\statuts};
-\node (stop) [startstop, below of=display, yshift=-0.3cm] {Fin};
-
-% Arrows (avec fill=white pour masquer les lignes sous les nÅuds)
-\begin{scope}[on background layer]
-\draw [arrow] (start) -- (input);
-\draw [arrow] (input) -- (init);
-\draw [arrow] (init) -- (check);
-\draw [arrow] (check) -- node[anchor=east, fill=white, inner sep=1pt, font=\scriptsize] {Oui} (cond1);
-\draw [arrow] (check) -- node[anchor=south, fill=white, inner sep=1pt, font=\scriptsize] {Non} (display);
-\draw [arrow] (cond1) -- node[anchor=south, fill=white, inner sep=1pt, font=\scriptsize] {Oui} (status1);
-\draw [arrow] (cond1) -- node[anchor=east, fill=white, inner sep=1pt, font=\scriptsize] {Non} (cond2);
-\draw [arrow] (cond2) -- node[anchor=south, fill=white, inner sep=1pt, font=\scriptsize] {Oui} (status2);
-\draw [arrow] (cond2) -- node[anchor=east, fill=white, inner sep=1pt, font=\scriptsize] {Non} (status3);
-\draw [arrow] (status1) |- (increment);
-\draw [arrow] (status2) |- (increment);
-\draw [arrow] (status3) -- (increment);
-\draw [arrow] (increment) |- (check);
-\draw [arrow] (display) -- (stop);
-\end{scope}
-
-\end{tikzpicture}%
-}
-\caption{Diagramme de flux de l'algorithme de gestion des tables de matelassage}
-\label{fig:algo_flowchart}
-\end{figure}
-
-\subsubsection{Application pratique}
-L'algorithme peut etre déployé sous plusieurs formes :
-\begin{itemize}
-  \item \textbf{Une feuille Excel automatisée}, avec macros et mise a jour minute par minute ;
-  \item \textbf{Une interface web locale}, connectée aux données de production et accessible depuis le poste du chef d'atelier.
-\end{itemize}
-
-Ce système permet :
-\begin{itemize}
-  \item De \textbf{visualiser en temps réel} la disponibilité de chaque table ;
-  \item D'\textbf{éviter les conflits} ou chevauchements de planning ;
-  \item D'\textbf{améliorer la fluidité} du flux de travail entre préparation, matelassage et coupe.
-\end{itemize}
-
-\begin{table}[H]
-\centering
-\caption{Exemple de statut temps réel}
-\begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{|l|l|l|}
-\hline
-\textbf{Table} & \textbf{Heure actuelle} & \textbf{Statut} \\
-\hline
-T1 & 09:00 & Occupée (jusqu'a 09:30) \\
-\hline
-T2 & 09:00 & Disponible \\
-\hline
-T3 & 09:00 & Occupée (jusqu'a 09:45) \\
-\hline
-\end{tabular}
-\end{adjustbox}
-\end{table}
-
-\subsubsection{Bénéfices attendus}
-L'intégration de cet algorithme dans le système de gestion de production offre plusieurs avantages :
-\begin{itemize}
-  \item \textbf{Réduction du temps d'attente} entre les opérations de coupe ;
-  \item \textbf{Optimisation de l'utilisation des ressources existantes} sans investissement matériel supplémentaire ;
-  \item \textbf{Amélioration de la coordination} entre opérateurs et planificateurs ;
-  \item \textbf{Digitalisation partielle du pilotage de production}, contribuant a la transition vers une \textbf{usine connectée}.
-\end{itemize}
-
-Ainsi, cette solution constitue une première étape vers la \textbf{transformation numérique} de l'atelier, en s'inscrivant dans une démarche \textit{Lean 4.0} conciliant \textbf{amélioration continue} et \textbf{technologies intelligentes}.
-
-
-\subsection{Phase Contrôler : Pérennisation des améliorations}
-
-\subsubsection{Objectifs de la phase de contrôle}
-
-La phase \textbf{Contrôler} (Control) constitue la dernière étape de la méthodologie DMAIC. Elle vise a \textbf{pérenniser les améliorations} mises en place lors de la phase précédente, a \textbf{surveiller les performances} dans le temps, et a garantir que les gains obtenus ne se dégradent pas. Cette phase assure la \textbf{standardisation des nouvelles pratiques} et l'instauration d'un système de \textbf{suivi continu} permettant de détecter rapidement toute dérive.
-
-Dans le contexte de l'atelier de coupe, la phase de contrôle permet de :
-\begin{itemize}
-  \item Maintenir l'efficacité de l'algorithme de gestion des tables de matelassage ;
-  \item Assurer la fiabilité et la mise a jour régulière des données de planification ;
-  \item Garantir l'adhésion du personnel aux nouvelles procédures digitales ;
-  \item Mettre en place des indicateurs de performance (KPI) pour un pilotage objectif.
-\end{itemize}
-
-\subsubsection{Mise en place d'indicateurs de performance (KPI)}
-
-Pour assurer un suivi efficace des améliorations, plusieurs \textbf{indicateurs clés de performance} sont définis et suivis régulièrement :
-
-\begin{table}[H]
-\centering
-\caption{Indicateurs de performance pour le suivi de l'amélioration}
-\small
-\renewcommand{\arraystretch}{1.3}
-\begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{|>{\raggedright\arraybackslash}p{4.5cm}|>{\raggedright\arraybackslash}p{6.5cm}|>{\centering\arraybackslash}p{2cm}|}
-\hline
-\rowcolor{lightgray}
-\textbf{Indicateur} & \textbf{Description} & \textbf{Cible} \\
-\hline
-Taux de disponibilité des tables & Pourcentage de temps ou les tables sont disponibles sans conflit & > 85\% \\
-\hline
-Temps d'attente moyen & Temps moyen d'attente entre matelassage et coupe & < 15 min \\
-\hline
-Nombre de conflits de planning & Nombre de chevauchements ou conflits détectés par semaine & < 3 \\
-\hline
-Taux d'utilisation de l'algorithme & Fréquence d'utilisation de l'outil de gestion par les opérateurs & > 90\% \\
-\hline
-Respect du planning & Pourcentage d'opérations réalisées dans les délais prévus & > 80\% \\
-\hline
-\end{tabular}
-\end{adjustbox}
-\end{table}
-
-Ces indicateurs sont mesurés de manière \textbf{hebdomadaire} et font l'objet d'une revue mensuelle avec l'équipe de production pour identifier les éventuelles dérives et mettre en place des actions correctives.
-
-\subsubsection{Système de suivi et de visualisation}
-
-Un \textbf{tableau de bord de suivi} est mis en place pour visualiser en temps réel l'évolution des indicateurs de performance. Ce tableau de bord peut prendre la forme :
-\begin{itemize}
-  \item D'un \textbf{fichier Excel partagé} avec graphiques automatisés (courbes d'évolution, histogrammes) ;
-  \item D'un \textbf{dashboard web} accessible depuis les postes de l'atelier, affichant les KPI en temps réel ;
-  \item D'un \textbf{affichage visuel} dans l'atelier (écran de supervision) permettant a tous les opérateurs de suivre les performances.
-\end{itemize}
-
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}
-\begin{axis}[
-    width=12cm,
-    height=6cm,
-    xlabel={Semaines},
-    ylabel={Taux de disponibilité (\%)},
-    ymin=70, ymax=100,
-    xmin=1, xmax=12,
-    xtick={1,2,3,4,5,6,7,8,9,10,11,12},
-    ytick={70,75,80,85,90,95,100},
-    legend pos=south east,
-    ymajorgrids=true,
-    grid style=dashed,
-]
-
-\addplot[
-    color=blue,
-    mark=square,
-    thick
-    ]
-    coordinates {
-    (1,78)(2,80)(3,82)(4,85)(5,87)(6,88)(7,90)(8,89)(9,91)(10,92)(11,93)(12,94)
-    };
-    \addlegendentry{Disponibilité réelle}
-
-\addplot[
-    color=red,
-    mark=none,
-    dashed,
-    thick
-    ]
-    coordinates {
-    (1,85)(12,85)
-    };
-    \addlegendentry{Cible (85\%)}
-
-\end{axis}
-\end{tikzpicture}
-\caption{Exemple de suivi du taux de disponibilité des tables sur 12 semaines}
-\end{figure}
-
-\subsubsection{Mécanismes de contrôle et d'alerte}
-
-Pour garantir la réactivité face aux dérives, des \textbf{mécanismes d'alerte automatiques} sont intégrés au système :
-\begin{itemize}
-  \item \textbf{Alerte de conflit} : Notification automatique lorsque deux opérations sont planifiées sur la meme table au meme moment ;
-  \item \textbf{Alerte de retard} : Signal envoyé au chef d'atelier si une opération dépasse le temps prévu de plus de 20\% ;
-  \item \textbf{Alerte de sous-utilisation} : Notification si une table reste inutilisée pendant plus de 2 heures consécutives en période de production ;
-  \item \textbf{Rapport hebdomadaire automatique} : Génération d'un rapport récapitulatif des performances envoyé par email aux responsables.
-\end{itemize}
-
-Ces alertes permettent une \textbf{intervention rapide} et évitent l'accumulation de dysfonctionnements.
-
-\subsubsection{Standardisation des procédures}
-
-La pérennisation des améliorations passe par la \textbf{formalisation et la standardisation} des nouvelles pratiques. Cela inclut :
-\begin{itemize}
-  \item \textbf{Rédaction de procédures opératoires standardisées (SOP)} décrivant l'utilisation de l'algorithme de gestion des tables ;
-  \item \textbf{Formation du personnel} a l'utilisation de l'outil et aux nouvelles méthodes de planification ;
-  \item \textbf{Documentation des bonnes pratiques} : création d'un guide utilisateur illustré, accessible a tous les opérateurs ;
-  \item \textbf{Audits réguliers} : vérification trimestrielle du respect des procédures et de l'utilisation effective de l'outil.
-\end{itemize}
-
-\subsubsection{Amélioration continue}
-
-La phase de contrôle ne se limite pas a maintenir les acquis, elle s'inscrit dans une logique d'\textbf{amélioration continue} (Kaizen). Des \textbf{réunions d'amélioration} sont organisées mensuellement avec l'équipe de production pour :
-\begin{itemize}
-  \item Analyser les résultats des indicateurs de performance ;
-  \item Identifier les nouvelles opportunités d'optimisation ;
-  \item Recueillir les retours d'expérience des opérateurs ;
-  \item Ajuster l'algorithme ou les procédures en fonction des besoins terrain.
-\end{itemize}
-
-Un \textbf{cycle PDCA} (Plan-Do-Check-Act) est ainsi instauré pour garantir une dynamique d'amélioration permanente.
-
-\subsubsection{Conclusion de la phase Contrôler}
-
-La phase de contrôle assure la \textbf{pérennité des gains} obtenus grace a l'algorithme de gestion des tables de matelassage. En combinant suivi des indicateurs, mécanismes d'alerte, standardisation des pratiques et amélioration continue, cette phase garantit que les bénéfices de la transformation digitale se maintiennent dans le temps et continuent de s'améliorer.
-
-Cette démarche DMAIC complète, de la définition du problème jusqu'au contrôle des solutions, constitue le socle méthodologique de la transformation Lean 4.0 de l'atelier de coupe, préparant ainsi le terrain pour les développements techniques détaillés dans les chapitres suivants.
+ï»¿\chapter{Mener une action d'amélioration d'un atelier de travail avec  Audit, les outils lean 4.0}\label{chap2}
 
+\lhead{Chapitre II: Audit et DMAIC }
+\dominitoc 
+\rhead{\thepage}
+\begin{spacing}{2}
+\minitoc
+\end{spacing}
+\section{Introduction}
+\label{chap2:intro}
+
+Ce deuxième chapitre présente de manière structurée et systématique la démarche méthodologique employée pour analyser et améliorer les performances de l'atelier de coupe. L'architecture de ce chapitre s'organise en deux parties complémentaires et interdépendantes.
+
+La première partie expose le \textbf{diagnostic de maturité digitale} de l'atelier de coupe réalisé au travers d'un \textbf{audit approfondi} et structuré, fondé sur le référentiel international \textbf{IMPULS} (Industrie 4.0 Maturity Index) spécifiquement conçu pour l'évaluation de la maturité digitale industrielle. Cet audit méthodologique permet d'évaluer de manière objective et quantifiée le niveau de digitalisation actuel de l'atelier, et d'identifier de manière priorisée les axes stratégiques d'amélioration en cohérence avec les standards de l'Industrie 4.0.
+
+La seconde partie détaille l'application rigoureuse et systématique de la \textbf{méthodologie DMAIC} (\textit{Define, Measure, Analyze, Improve, Control}), issue du référentiel \textbf{Lean Six Sigma}, mise en Åuvre dans le cadre d'une \textbf{action d'amélioration Lean 4.0} visant a identifier de manière structurée les dysfonctionnements opérationnels de l'atelier de coupe, a quantifier leurs impacts, a analyser leurs causes racines, et a proposer des solutions d'amélioration fondées sur des données objectives.
+
+L'objectif principal de cette démarche méthodologique combinée est d'établir une base solide, rigoureuse et fondée sur des preuves empiriques pour la conception et le développement de \textbf{solutions digitales intelligentes}, en s'appuyant a la fois sur une \textbf{évaluation objective du niveau de maturité digitale} et sur une \textbf{analyse quantitative approfondie des performances actuelles} de l'atelier.
+
+\section{Partie I : Audit de maturité digitale}
+
+\subsection{Introduction a l'audit IMPULS}
+
+Dans un contexte de transformation numérique croissante, il est essentiel d'\textbf{évaluer le niveau de maturité digitale} des différents services de production. L'audit de maturité digitale permet d'identifier les forces, les faiblesses et les opportunités d'évolution vers les standards de l'Industrie 4.0.
+
+\subsection{Objectifs de l'audit}
+
+\begin{itemize}
+\item Ãvaluer le niveau d'intégration des technologies numériques dans l'atelier de coupe
+\item Identifier les axes d'amélioration en lien avec l'excellence opérationnelle et l'Industrie 4.0
+\item Préparer un plan d'action de transformation digitale adapté a la réalité terrain
+\end{itemize}
+
+
+
+\subsection{Phase Innover : Propositions d'amélioration}
+
+\subsubsection{Constat principal}
+
+L'analyse de la phase \textit{Analyze} a révélé plusieurs dysfonctionnements limitant la performance de l'atelier de coupe, notamment une \textbf{saturation rapide des tables de matelassage} due a l'absence de système de planification et de suivi en temps réel.
+
+Ces contraintes se traduisent par :
+\begin{itemize}
+  \item Une \textbf{indisponibilité fréquente} des tables lors des pics d'activité ;
+  \item Des \textbf{conflits de planification} entre opérateurs, dus a un manque de visibilité globale sur les ressources ;
+  \item L'absence d'un \textbf{outil numérique} permettant de synchroniser le planning avec l'état réel des tables.
+\end{itemize}
+
+Ces constats soulignent la nécessité d'un \textbf{pilotage intelligent des ressources}, s'inscrivant pleinement dans la logique de l'Industrie 4.0, ou la digitalisation et l'automatisation des processus permettent de renforcer la réactivité et l'efficacité opérationnelle.
+
+\subsubsection{Proposition : Algorithme intelligent de gestion des tables de matelassage}
+
+Afin d'optimiser la planification et l'utilisation des ressources physiques de l'atelier, nous proposons un \textbf{algorithme de gestion dynamique} des tables de matelassage. Cet outil vise a offrir une \textbf{visualisation en temps réel} de la disponibilité des tables, tout en anticipant les conflits d'utilisation.
+
+\paragraph{Principe de fonctionnement}
+Chaque table est identifiée par un code unique (T1, T2, \dots, T6). Le système compare en continu l'heure actuelle avec le planning de matelassage. Il met automatiquement a jour le statut de chaque table selon trois états possibles : \textit{Occupée} (en cours d'utilisation), \textit{Réservée} (prévue pour une opération a venir) et \textit{Disponible} (libre pour un nouveau matelas).
+
+\paragraph{Pseudocode de l'algorithme}
+\begin{verbatim}
+Entrées :
+  Tables = {T1, T2, â¦, T6}
+  Planning (heure début, durée prévue)
+  Heure actuelle = H
+
+Pour chaque table T[i] :
+  Si (H >= heure début[i] ET H < heure fin prévue[i]) :
+      Statut[T[i]] = "Occupée"
+  Sinon si (H < heure début[i]) :
+      Statut[T[i]] = "Réservée"
+  Sinon :
+      Statut[T[i]] = "Disponible"
+
+Afficher le statut de chaque table
+\end{verbatim}
+
+\subsubsection{Application pratique}
+L'algorithme peut etre déployé sous plusieurs formes :
+\begin{itemize}
+  \item \textbf{Une feuille Excel automatisée}, avec macros et mise a jour minute par minute ;
+  \item \textbf{Une interface web locale}, connectée aux données de production et accessible depuis le poste du chef d'atelier.
+\end{itemize}
+Ce système permet :
+\begin{itemize}
+  \item de \textbf{visualiser en temps réel} la disponibilité de chaque table ;
+  \item d'\textbf{éviter les conflits} ou chevauchements de planning ;
+  \item d'\textbf{améliorer la fluidité} du flux de travail entre préparation, matelassage et coupe.
+\end{itemize}
+
+\begin{table}[H]
+\centering
+\caption{Exemple de statut temps réel}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Table} & \textbf{Heure actuelle} & \textbf{Statut} \\
+\hline
+T1 & 09:00 & Occupée (jusqu'a 09:30) \\
+\hline
+T2 & 09:00 & Disponible \\
+\hline
+T3 & 09:00 & Occupée (jusqu'a 09:45) \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\subsubsection{Bénéfices attendus}
+L'intégration de cet algorithme dans le système de gestion de production offre plusieurs avantages :
+\begin{itemize}
+  \item \textbf{Réduction du temps d'attente} entre les opérations de coupe ;
+  \item \textbf{Optimisation de l'utilisation des ressources existantes} sans investissement matériel supplémentaire ;
+  \item \textbf{Amélioration de la coordination} entre opérateurs et planificateurs ;
+  \item \textbf{Digitalisation partielle du pilotage de production}, contribuant a la transition vers une \textbf{usine connectée}.
+\end{itemize}
+Ainsi, cette solution constitue une première étape vers la \textbf{transformation numérique} de l'atelier, en s'inscrivant dans une démarche \textit{Lean 4.0} conciliant \textbf{amélioration continue} et \textbf{technologies intelligentes}.
+
+\subsection{Méthodologie d'évaluation}
+
+\subsubsection{Choix du questionnaire IMPULS}
+
+Le questionnaire \textbf{IMPULS â Industrie 4.0 Readiness} \cite{lichtblau2015industrie} a été choisi pour sa pertinence dans l'analyse de la maturité digitale industrielle \cite{xu2018industry, kagermann2013recommendations}. Il couvre les thématiques suivantes :
+\begin{itemize}
+   \item Efficacité des processus
+   \item Automatisation, innovation et intégration numérique
+   \item Gestion des performances et des flux
+   \item Amélioration continue et flexibilité
+\end{itemize}
+
+\subsubsection{Mode de diffusion}
+
+Le questionnaire a été administré en ligne via Google Forms, avec un accompagnement en présentiel pour aider les répondants a bien comprendre chaque question technique.
+
+\subsubsection{Cible de l'enquete}
+
+L'enquete a ciblé \textbf{11 personnes clés} de l'atelier de coupe, incluant :
+\begin{itemize}
+  \item Chef d'atelier
+  \item Agents d'ordonnancement/planification
+  \item Opérateurs machine
+  \item Responsables qualité coupe
+  \item Responsable maintenance
+\end{itemize}
+Ces profils ont été choisis en fonction de leur connaissance du fonctionnement réel
+de l'atelier et de leur implication dans les processus numériques ou manuels actuels.
+\subsection{Déroulement de l'enquete}
+\begin{itemize}
+  \item  \textbf  Préparation : création du formulaire Google Forms (Figure \ref{form}), adaptation des questions a l'environnement Bacovet.
+
+  \item  \textbf  Lancement : envoi du lien aux personnes concernées, accompagnement en face a face sur place.
+
+  \item  \textbf  Assistance : chaque répondant a été guidé par l'auteur du projet pour expliciter les critères du questionnaire.
+
+  \item  \textbf  Collecte et consolidation : les réponses ont été collectées automatiquement, puis exploitées pour l'analyse.(Les Figures \ref{20};\ref{22})
+ \end{itemize}
+ \begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.30\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Chapitre2/images/21.jpg}
+    \caption{Formulaire Google Forms}
+    \label{form}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.30\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Chapitre2/images/20.jpg}
+    \caption{Diagramme circulaire (Pie chart)}
+    \label{20}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.30\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Chapitre2/images/22.jpg}
+    \caption{Histogramme / Diagramme en barres (Bar chart)}
+    \label{22}
+  \end{minipage}
+\end{figure}
+
+
+\section{Résultats de l'évaluation de la maturité digitale}
+\subsection{Méthodologie d'évaluation}
+
+\begin{methodBox}
+L'évaluation de la maturité digitale de l'atelier de coupe a été réalisée a l'aide du questionnaire \textbf{IMPULS}, un outil de diagnostic développé par l'Association Allemande de l'Industrie (VDMA) pour mesurer l'état d'avancement des entreprises dans l'adoption des principes de l'Industrie 4.0.
+\end{methodBox}
+
+L'évaluation de la maturité digitale a été effectuée a l'aide d'un calculateur basé sur les retours de 11 répondants. Chaque critère a été noté selon trois niveaux d'implémentation : « Non », « Partiellement », et « Oui », permettant de générer un score global par critère .
+\subsection{Détail des scores par critère}
+
+\begin{figure}[p]
+\centering
+\includegraphics[angle=90,width=1.3\textheight,height=1.3\textwidth,keepaspectratio]{Chapitre2/images/IMG_20250614_141256_509.jpg}
+\caption{Fiche d'enregistrement (modèle Rim)}
+\label{chpp3}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[angle=90,width=1.3\textheight,height=1.3\textwidth,keepaspectratio]{Chapitre2/images/IMG_20250614_141303_456.jpg}
+\caption{Fiche d'enregistrement (modèle Leotard 500g pink)}
+\label{chp3}
+\end{figure}
+
+\end{itemize}
+
+\paragraph{Analyse du déroulement de coupe (extrait documentaire)}
+
+Afin de compléter la collecte terrain, une \textbf{analyse documentaire} a été réalisée a partir du fichier \textit{analyse deroulement COUPE}. Cette source décrit pas-a-pas le déroulement d'articles en coupe et sert de support a la validation des séquences observées et des points de mesure.
+
+\paragraph{Aperçu (intégration directe du PDF)}
+Ã défaut de captures déja extraites, les pages clés du document sont intégrées ci-dessous directement depuis le PDF.
+
+\includepdf[pages=1,angle=90,scale=0.85,pagecommand=\thispagestyle{plain}]{Chapitre2/analyse_deroulement_coupe.pdf}
+
+\paragraph{Description synthétique du document}
+Le document \textit{analyse deroulement COUPE} présente, sous forme structurée et illustrée, le déroulement réel des opérations dans la salle de coupe. Il décrit successivement les étapes de préparation (CAO, vérification OF et matières), de matelassage (manuel et automatique), de coupe (robotisée et/ou manuelle), puis de départage et vignettage, en précisant pour chaque étape les acteurs impliqués, les supports utilisés, les temps observés, ainsi que les incidents/perturbations relevés (pannes, attentes, changements de priorité, relaxation tissu, etc.).
+
+\paragraph{Objectifs de l'analyse documentaire}
+\begin{itemize}
+    \item Valider, par triangulation, les séquences opérationnelles observées sur le terrain et celles décrites par les procédures internes.
+    \item Identifier les points de contrôle utiles a la mesure (horodatages, transitions d'étapes, variables influentes comme nombre de plis, laize, longueur).
+    \item Mettre en évidence les sources récurrentes de variabilité et de perturbation impactant la planification (attentes tables, pannes robot, relaxation doublure, saisies manuelles).
+    \item Définir une base de référence fiable pour la modélisation des temps et l'optimisation ultérieure (chapitres Analyse et Amélioration).
+\end{itemize}
+
+\paragraph{Principaux enseignements}
+\begin{itemize}
+    \item Les transitions entre matelassage et coupe constituent un point critique de synchronisation; l'absence de visibilité temps réel génère des attentes et des replanifications.
+    \item Le temps de matelassage est fortement corrélé au nombre de plis et aux dimensions du matelas; la variabilité opérateur/machine demeure notable.
+    \item Les perturbations majeures recensées (pannes robot, relaxation tissu, changements de priorité) expliquent une part significative des écarts planning.
+    \item La traçabilité amont/aval est partielle: des données clés restent saisies manuellement et non consolidées.
+\end{itemize}
+
+\paragraph{Limites et précautions}
+\begin{itemize}
+    \item La documentation se concentre sur des cas représentatifs mais non exhaustifs; elle doit etre complétée par des mesures systématiques et des séries temporelles plus longues.
+    \item Certaines informations (délais d'attente, durées anormales) peuvent etre sous-déclarées en l'absence d'instrumentation continue.
+\end{itemize}
+
+\paragraph{Conclusion opérationnelle}
+Cette analyse documentaire consolide la compréhension du flux réel en salle de coupe et fournit des repères mesurables pour la phase \textbf{Analyser}. Elle justifie la mise en place d'une instrumentation de mesure plus fine, l'amélioration de la visualisation temps réel et l'usage d'un modèle prédictif des temps de matelassage/coupe pour soutenir la planification.
+
+% (Figures dé\end{itemize}placées plus haut, juste après le paragraphe de chronométrage direct)
+
+% Figure supprimée sur demande (anciennement: Fiche d'enregistrement du déroulement de chaque article)
+
+\subsubsection{Description synthétique des processus mesurés}
+
+Les activités mesurées et leurs ordres de grandeur observés sont :
+\begin{itemize}
+    \item \textbf{Préparation des fichiers CAO} et traçabilité OF : 50 a 60 minutes.
+    \item \textbf{Matelassage automatique} (1 table dédiée, chariot automatisé) : 20 a 30 minutes par matelas selon le tissu.
+    \item \textbf{Matelassage manuel} (4 tables, 2 opérateurs/table) : 35 a 50 minutes par matelas.
+    \item \textbf{Coupe robotisée} (2 robots horizontaux, 5 tables) : 25 a 40 minutes selon la complexité.
+    \item \textbf{Départage et ajout de vignettes} (13 opérateurs) : 40 a 60 minutes par lot.
+    \item \textbf{Stockage et contrôle qualité} : transfert vers trois zones de stockage (avant/après sérigraphie).
+\end{itemize}
+
+\subsubsection{Constats clés de la collecte}
+
+\begin{itemize}
+    \item \textbf{Variabilité des temps} par modèle (jusqu'a ±15 min sur matelassage manuel).
+    \item \textbf{Perturbations fréquentes} : pannes des robots (notamment robot 2), pannes d'électricité, attente de relaxation tissu (jusqu'a 72h pour la doublure).
+    \item \textbf{Communication manuelle} et absence d'outil de visualisation partagée du planning.
+\end{itemize}
+
+\subsubsection{Paramètres techniques de l'atelier (référence)}
+
+\begin{table}[H]
+\centering
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Ãlément} & \textbf{Valeur} \\
+\hline
+Nombre de tables & 6 (dont 1 automatique, 4 manuelles, 1 vide) \\
+\hline
+Chariot matelasseur automatique & 1 \\
+\hline
+Robots de coupe & 2 (translation horizontale sur 5 tables) \\
+\hline
+Effectif sur les tables & 17 opérateurs \\
+\hline
+Ãquipe de départage & 13 postes / 13 personnes \\
+\hline
+Zones de stock & 3 (avant/après sérigraphie) \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Paramètres techniques de l'atelier}
+
+
+\label{tab:parametres_atelier_phase2}
+\end{table}
+
+
+\subsubsection{Synthèse de la phase de mesure}
+
+La phase \textbf{Mesurer} quantifie les écarts entre le planning théorique et la réalité opérationnelle. Les données montrent l'impact des pannes machines, du manque de visualisation temps réel et de l'absence de remontées automatiques, générant des \textbf{retards non détectés} et une fiabilité de planning dégradée. Ces éléments constituent la base de la phase \textbf{Analyser} qui suit.
+
+\subsection{Phase 3 : Analyze (Analyser)}
+
+\subsubsection{Objectif de la phase Analyse}
+
+La phase \textbf{Analyse} vise a identifier les causes racines des perturbations observées dans la planification de l'atelier de coupe. Elle s'appuie sur les résultats collectés durant la phase de mesure, notamment les données chronométrées, les pannes, et la disponibilité des ressources.
+
+L'objectif est de comprendre pourquoi les délais de matelassage et de coupe varient, et quelles sont les sources principales des retards. Cette analyse permet de cibler les actions correctives et préventives a mettre en Åuvre dans la phase suivante.
+
+\subsubsection{Méthodes d'analyse utilisées}
+
+Deux méthodes Lean Six Sigma ont été mobilisées :
+
+\begin{itemize}
+    \item \textbf{Le diagramme d'Ishikawa (causes-effet)} : pour regrouper les causes potentielles selon les catégories classiques (Méthode, Main d'Åuvre, Milieu, Machine, Matière).
+    \item \textbf{L'analyse directe des données mesurées} : pour corréler certaines variables (ex. : largeur du matelas et durée de matelassage, disponibilité des tables et temps d'attente).
+\end{itemize}
+
+\subsubsection{Analyse des temps réels par activité}
+
+Les données mesurées ont permis d'identifier les durées moyennes suivantes :
+
+\begin{table}[H]
+\centering
+\caption{Analyse des temps observés par activité}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Activité} & \textbf{Durée moyenne} & \textbf{Observations} \\
+\hline
+Préparation OF / CAO & ~50 minutes & Stable, dépend de la qualité de la fiche technique \\
+\hline
+Matelassage automatique & 20 a 30 min / matelas & Efficace mais dépend de la disponibilité du chariot \\
+\hline
+Matelassage manuel & 35 a 50 min / matelas & Variabilité selon tissu et opérateurs \\
+\hline
+Coupe robotisée & 25 a 40 min & Dépend des pannes / files d'attente \\
+\hline
+Départage + vignettage & 45 a 60 min & Poste critique, coordination multiple \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\label{tab:temps_observes_analyse}
+\end{table}
+
+\subsubsection{Analyse des perturbations}
+
+L'analyse croisée a permis de mettre en évidence :
+\begin{itemize}
+    \item \textbf{Un manque de synchronisation} entre les opérations de matelassage et de coupe dû a l'attente de libération des tables.
+    \item \textbf{Des blocages fréquents} causés par :
+    \begin{itemize}
+        \item Pannes des robots (robot de coupe 2 souvent en panne).
+        \item Délai de relaxation tissu doublure (jusqu'a 72h).
+        \item Erreurs dans la priorisation des ordres de fabrication.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Capacités et limites techniques observées}
+
+\begin{table}[H]
+\centering
+\caption{Analyse des ressources et limitations}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Ressource} & \textbf{Capacité théorique} & \textbf{Limitation observée} \\
+\hline
+Tables de matelassage & 6 (1 auto, 4 manuelles, 1 vide) & Saturation rapide lors de pics de production \\
+\hline
+Robots de coupe & 2 robots couvrant 5 tables & En cas de panne, files d'attente sur la coupe \\
+\hline
+Opérateurs sur tables & 17 personnes & Charge inégale, pas de standardisation \\
+\hline
+Départage / vignettage & 13 postes & Coordination complexe entre les t'ches \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\label{tab:ressources_limitations}
+\end{table}
+
+\subsubsection{Diagramme d'Ishikawa}
+
+La Figure~\ref{fig:ishikawa} suivante illustre les principales causes des retards observés dans l'atelier :
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{Chapitre2/images/ishikawa_beige.png}
+\caption{{\emph{Diagramme d'Ishikawa : Analyse des causes racines des retards dans l'atelier de coupe}}}
+\label{fig:ishikawa}
+\end{figure}
+
+\subsubsection{Analyse directe des données mesurées}
+
+L'analyse directe des données collectées lors de la phase Mesurer a permis de mettre en évidence plusieurs corrélations significatives :
+
+\begin{itemize}
+    \item \textbf{Corrélation largeur du matelas et durée de matelassage} : Les matelas plus larges nécessitent généralement plus de temps de manipulation et d'alignement.
+    \item \textbf{Corrélation disponibilité des tables et temps d'attente} : Lorsque toutes les tables sont occupées simultanément, les opérateurs attendent en moyenne 32 minutes avant de commencer le matelassage.
+    \item \textbf{Variabilité selon le type de tissu} : Les tissus doublure nécessitent une relaxation préalable (jusqu'a 72h), impactant directement la planification.
+    \item \textbf{Impact des pannes robot} : Le robot de coupe 2 présente un taux de panne de 18\% (vs 6\% pour les autres), générant des files d'attente importantes.
+\end{itemize}
+
+\subsubsection{Synthèse des causes racines identifiées}
+
+\begin{table}[H]
+\centering
+\caption{Synthèse des causes par catégorie}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Catégorie} & \textbf{Cause racine identifiée} \\
+\hline
+Machine & Pannes fréquentes des robots, absence de maintenance préventive \\
+\hline
+Méthode & Pas de standard sur les durées de t'ches, séquencement non optimisé \\
+\hline
+Milieu & Saturation des postes, espace restreint \\
+\hline
+Main d'Åuvre & Hétérogénéité des performances entre opérateurs \\
+\hline
+Matière & Tissu nécessitant relaxation longue (doublure : 72h) \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\label{tab:synthese_causes_racines}
+\end{table}
+
+\subsubsection{Conclusion de la phase Analyse}
+
+Cette phase a permis d'identifier clairement les facteurs qui altèrent la performance globale du processus. L'absence d'outils de visualisation en temps réel, combinée a une dépendance excessive aux ressources critiques (robots, tables), engendre des retards fréquents et non anticipés dans la production. Les deux méthodes utilisées (diagramme d'Ishikawa et analyse directe des données) ont complémenté efficacement l'identification des causes racines et la compréhension des mécanismes de perturbation.
+
+%
+\subsection{Phase 4 : Improve (Améliorer)}
+
+\subsubsection{Constat principal}
+
+L'analyse de la phase \textit{Analyze} a révélé plusieurs dysfonctionnements limitant la performance de l'atelier de coupe, notamment une \textbf{saturation rapide des tables de matelassage} due a l'absence de système de planification et de suivi en temps réel.
+
+Ces contraintes se traduisent par :
+\begin{itemize}
+  \item Une \textbf{indisponibilité fréquente} des tables lors des pics d'activité ;
+  \item Des \textbf{conflits de planification} entre opérateurs, dus a un manque de visibilité globale sur les ressources ;
+  \item L'absence d'un \textbf{outil numérique} permettant de synchroniser le planning avec l'état réel des tables.
+\end{itemize}
+
+Ces constats soulignent la nécessité d'un \textbf{pilotage intelligent des ressources}, s'inscrivant pleinement dans la logique de l'Industrie 4.0, ou la digitalisation et l'automatisation des processus permettent de renforcer la réactivité et l'efficacité opérationnelle.
+
+\subsubsection{Proposition : Algorithme intelligent de gestion des tables de matelassage}
+
+Afin d'optimiser la planification et l'utilisation des ressources physiques de l'atelier, nous proposons un \textbf{algorithme de gestion dynamique} des tables de matelassage. Cet outil vise a offrir une \textbf{visualisation en temps réel} de la disponibilité des tables, tout en anticipant les conflits d'utilisation.
+
+\paragraph{Principe de fonctionnement}
+Chaque table est identifiée par un code unique (T1, T2, \dots, T6). Le système compare en continu l'heure actuelle avec le planning de matelassage. Il met automatiquement a jour le statut de chaque table selon trois états possibles :
+\begin{itemize}
+  \item \textit{Occupée} (en cours d'utilisation)
+  \item \textit{Réservée} (prévue pour une opération a venir)
+  \item \textit{Disponible} (libre pour un nouveau matelas)
+\end{itemize}
+
+\paragraph{Pseudocode de l'algorithme}
+\begin{verbatim}
+Entrées :
+  Tables = {T1, T2, â¦, T6}
+  Planning (heure début, durée prévue)
+  Heure actuelle = H
+
+Pour chaque table T[i] :
+  Si (H >= heure début[i] ET H < heure fin prévue[i]) :
+      Statut[T[i]] = "Occupée"
+  Sinon si (H < heure début[i]) :
+      Statut[T[i]] = "Réservée"
+  Sinon :
+      Statut[T[i]] = "Disponible"
+
+Afficher le statut de chaque table
+\end{verbatim}
+
+\paragraph{Schéma de fonctionnement de l'algorithme}
+La Figure~\ref{fig:algo_flowchart} illustre le flux de décision de l'algorithme de gestion des tables de matelassage, depuis la collecte des données d'entrée jusqu'a l'affichage des statuts en temps réel.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.95\textwidth}{!}{%
+\begin{tikzpicture}[
+    node distance=2.5cm,
+    startstop/.style={rectangle, rounded corners, minimum width=3.5cm, minimum height=1cm, text centered, draw=black, line width=0.8pt, fill=red!30, font=\small},
+    io/.style={trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3.5cm, minimum height=1cm, text centered, draw=black, line width=0.8pt, fill=blue!30, font=\small},
+    process/.style={rectangle, minimum width=3.5cm, minimum height=1cm, text centered, draw=black, line width=0.8pt, fill=orange!30, font=\small},
+    decision/.style={diamond, minimum width=4cm, minimum height=1.3cm, text centered, draw=black, line width=0.8pt, fill=green!30, aspect=2, font=\small},
+    output/.style={rectangle, minimum width=3.5cm, minimum height=1cm, text centered, draw=black, line width=0.8pt, fill=yellow!30, font=\small},
+    arrow/.style={thick,->,>=stealth}
+]
+
+% Nodes
+\node (start) [startstop] {Début};
+\node (input) [io, below of=start, yshift=-0.3cm] {Entrées:\\Tables, Planning, H};
+\node (init) [process, below of=input, yshift=-0.3cm] {i = 1};
+\node (check) [decision, below of=init, yshift=-1cm] {i $\leq$ 6 ?};
+\node (cond1) [decision, below of=check, yshift=-1.8cm] {H $\geq$ début[i]\\ET\\H < fin[i] ?};
+\node (status1) [output, left of=cond1, xshift=-4cm] {Statut[T[i]]\\= "Occupée"};
+\node (cond2) [decision, below of=cond1, yshift=-1.8cm] {H < début[i] ?};
+\node (status2) [output, left of=cond2, xshift=-4cm] {Statut[T[i]]\\= "Réservée"};
+\node (status3) [output, below of=cond2, yshift=-0.8cm] {Statut[T[i]]\\= "Disponible"};
+\node (increment) [process, right of=cond2, xshift=4cm] {i = i + 1};
+\node (display) [io, right of=check, xshift=5.5cm] {Afficher\\statuts};
+\node (stop) [startstop, below of=display, yshift=-0.3cm] {Fin};
+
+% Arrows (avec fill=white pour masquer les lignes sous les nÅuds)
+\begin{scope}[on background layer]
+\draw [arrow] (start) -- (input);
+\draw [arrow] (input) -- (init);
+\draw [arrow] (init) -- (check);
+\draw [arrow] (check) -- node[anchor=east, fill=white, inner sep=1pt, font=\scriptsize] {Oui} (cond1);
+\draw [arrow] (check) -- node[anchor=south, fill=white, inner sep=1pt, font=\scriptsize] {Non} (display);
+\draw [arrow] (cond1) -- node[anchor=south, fill=white, inner sep=1pt, font=\scriptsize] {Oui} (status1);
+\draw [arrow] (cond1) -- node[anchor=east, fill=white, inner sep=1pt, font=\scriptsize] {Non} (cond2);
+\draw [arrow] (cond2) -- node[anchor=south, fill=white, inner sep=1pt, font=\scriptsize] {Oui} (status2);
+\draw [arrow] (cond2) -- node[anchor=east, fill=white, inner sep=1pt, font=\scriptsize] {Non} (status3);
+\draw [arrow] (status1) |- (increment);
+\draw [arrow] (status2) |- (increment);
+\draw [arrow] (status3) -- (increment);
+\draw [arrow] (increment) |- (check);
+\draw [arrow] (display) -- (stop);
+\end{scope}
+
+\end{tikzpicture}%
+}
+\caption{Diagramme de flux de l'algorithme de gestion des tables de matelassage}
+\label{fig:algo_flowchart}
+\end{figure}
+
+\subsubsection{Application pratique}
+L'algorithme peut etre déployé sous plusieurs formes :
+\begin{itemize}
+  \item \textbf{Une feuille Excel automatisée}, avec macros et mise a jour minute par minute ;
+  \item \textbf{Une interface web locale}, connectée aux données de production et accessible depuis le poste du chef d'atelier.
+\end{itemize}
+
+Ce système permet :
+\begin{itemize}
+  \item De \textbf{visualiser en temps réel} la disponibilité de chaque table ;
+  \item D'\textbf{éviter les conflits} ou chevauchements de planning ;
+  \item D'\textbf{améliorer la fluidité} du flux de travail entre préparation, matelassage et coupe.
+\end{itemize}
+
+\begin{table}[H]
+\centering
+\caption{Exemple de statut temps réel}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Table} & \textbf{Heure actuelle} & \textbf{Statut} \\
+\hline
+T1 & 09:00 & Occupée (jusqu'a 09:30) \\
+\hline
+T2 & 09:00 & Disponible \\
+\hline
+T3 & 09:00 & Occupée (jusqu'a 09:45) \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\subsubsection{Bénéfices attendus}
+L'intégration de cet algorithme dans le système de gestion de production offre plusieurs avantages :
+\begin{itemize}
+  \item \textbf{Réduction du temps d'attente} entre les opérations de coupe ;
+  \item \textbf{Optimisation de l'utilisation des ressources existantes} sans investissement matériel supplémentaire ;
+  \item \textbf{Amélioration de la coordination} entre opérateurs et planificateurs ;
+  \item \textbf{Digitalisation partielle du pilotage de production}, contribuant a la transition vers une \textbf{usine connectée}.
+\end{itemize}
+
+Ainsi, cette solution constitue une première étape vers la \textbf{transformation numérique} de l'atelier, en s'inscrivant dans une démarche \textit{Lean 4.0} conciliant \textbf{amélioration continue} et \textbf{technologies intelligentes}.
+
+
+\subsection{Phase Contrôler : Pérennisation des améliorations}
+
+\subsubsection{Objectifs de la phase de contrôle}
+
+La phase \textbf{Contrôler} (Control) constitue la dernière étape de la méthodologie DMAIC. Elle vise a \textbf{pérenniser les améliorations} mises en place lors de la phase précédente, a \textbf{surveiller les performances} dans le temps, et a garantir que les gains obtenus ne se dégradent pas. Cette phase assure la \textbf{standardisation des nouvelles pratiques} et l'instauration d'un système de \textbf{suivi continu} permettant de détecter rapidement toute dérive.
+
+Dans le contexte de l'atelier de coupe, la phase de contrôle permet de :
+\begin{itemize}
+  \item Maintenir l'efficacité de l'algorithme de gestion des tables de matelassage ;
+  \item Assurer la fiabilité et la mise a jour régulière des données de planification ;
+  \item Garantir l'adhésion du personnel aux nouvelles procédures digitales ;
+  \item Mettre en place des indicateurs de performance (KPI) pour un pilotage objectif.
+\end{itemize}
+
+\subsubsection{Mise en place d'indicateurs de performance (KPI)}
+
+Pour assurer un suivi efficace des améliorations, plusieurs \textbf{indicateurs clés de performance} sont définis et suivis régulièrement :
+
+\begin{table}[H]
+\centering
+\caption{Indicateurs de performance pour le suivi de l'amélioration}
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|>{\raggedright\arraybackslash}p{4.5cm}|>{\raggedright\arraybackslash}p{6.5cm}|>{\centering\arraybackslash}p{2cm}|}
+\hline
+\rowcolor{lightgray}
+\textbf{Indicateur} & \textbf{Description} & \textbf{Cible} \\
+\hline
+Taux de disponibilité des tables & Pourcentage de temps ou les tables sont disponibles sans conflit & > 85\% \\
+\hline
+Temps d'attente moyen & Temps moyen d'attente entre matelassage et coupe & < 15 min \\
+\hline
+Nombre de conflits de planning & Nombre de chevauchements ou conflits détectés par semaine & < 3 \\
+\hline
+Taux d'utilisation de l'algorithme & Fréquence d'utilisation de l'outil de gestion par les opérateurs & > 90\% \\
+\hline
+Respect du planning & Pourcentage d'opérations réalisées dans les délais prévus & > 80\% \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+Ces indicateurs sont mesurés de manière \textbf{hebdomadaire} et font l'objet d'une revue mensuelle avec l'équipe de production pour identifier les éventuelles dérives et mettre en place des actions correctives.
+
+\subsubsection{Système de suivi et de visualisation}
+
+Un \textbf{tableau de bord de suivi} est mis en place pour visualiser en temps réel l'évolution des indicateurs de performance. Ce tableau de bord peut prendre la forme :
+\begin{itemize}
+  \item D'un \textbf{fichier Excel partagé} avec graphiques automatisés (courbes d'évolution, histogrammes) ;
+  \item D'un \textbf{dashboard web} accessible depuis les postes de l'atelier, affichant les KPI en temps réel ;
+  \item D'un \textbf{affichage visuel} dans l'atelier (écran de supervision) permettant a tous les opérateurs de suivre les performances.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=12cm,
+    height=6cm,
+    xlabel={Semaines},
+    ylabel={Taux de disponibilité (\%)},
+    ymin=70, ymax=100,
+    xmin=1, xmax=12,
+    xtick={1,2,3,4,5,6,7,8,9,10,11,12},
+    ytick={70,75,80,85,90,95,100},
+    legend pos=south east,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot[
+    color=blue,
+    mark=square,
+    thick
+    ]
+    coordinates {
+    (1,78)(2,80)(3,82)(4,85)(5,87)(6,88)(7,90)(8,89)(9,91)(10,92)(11,93)(12,94)
+    };
+    \addlegendentry{Disponibilité réelle}
+
+\addplot[
+    color=red,
+    mark=none,
+    dashed,
+    thick
+    ]
+    coordinates {
+    (1,85)(12,85)
+    };
+    \addlegendentry{Cible (85\%)}
+
+\end{axis}
+\end{tikzpicture}
+\caption{Exemple de suivi du taux de disponibilité des tables sur 12 semaines}
+\end{figure}
+
+\subsubsection{Mécanismes de contrôle et d'alerte}
+
+Pour garantir la réactivité face aux dérives, des \textbf{mécanismes d'alerte automatiques} sont intégrés au système :
+\begin{itemize}
+  \item \textbf{Alerte de conflit} : Notification automatique lorsque deux opérations sont planifiées sur la meme table au meme moment ;
+  \item \textbf{Alerte de retard} : Signal envoyé au chef d'atelier si une opération dépasse le temps prévu de plus de 20\% ;
+  \item \textbf{Alerte de sous-utilisation} : Notification si une table reste inutilisée pendant plus de 2 heures consécutives en période de production ;
+  \item \textbf{Rapport hebdomadaire automatique} : Génération d'un rapport récapitulatif des performances envoyé par email aux responsables.
+\end{itemize}
+
+Ces alertes permettent une \textbf{intervention rapide} et évitent l'accumulation de dysfonctionnements.
+
+\subsubsection{Standardisation des procédures}
+
+La pérennisation des améliorations passe par la \textbf{formalisation et la standardisation} des nouvelles pratiques. Cela inclut :
+\begin{itemize}
+  \item \textbf{Rédaction de procédures opératoires standardisées (SOP)} décrivant l'utilisation de l'algorithme de gestion des tables ;
+  \item \textbf{Formation du personnel} a l'utilisation de l'outil et aux nouvelles méthodes de planification ;
+  \item \textbf{Documentation des bonnes pratiques} : création d'un guide utilisateur illustré, accessible a tous les opérateurs ;
+  \item \textbf{Audits réguliers} : vérification trimestrielle du respect des procédures et de l'utilisation effective de l'outil.
+\end{itemize}
+
+\subsubsection{Amélioration continue}
+
+La phase de contrôle ne se limite pas a maintenir les acquis, elle s'inscrit dans une logique d'\textbf{amélioration continue} (Kaizen). Des \textbf{réunions d'amélioration} sont organisées mensuellement avec l'équipe de production pour :
+\begin{itemize}
+  \item Analyser les résultats des indicateurs de performance ;
+  \item Identifier les nouvelles opportunités d'optimisation ;
+  \item Recueillir les retours d'expérience des opérateurs ;
+  \item Ajuster l'algorithme ou les procédures en fonction des besoins terrain.
+\end{itemize}
+
+Un \textbf{cycle PDCA} (Plan-Do-Check-Act) est ainsi instauré pour garantir une dynamique d'amélioration permanente.
+
+\subsubsection{Conclusion de la phase Contrôler}
+
+La phase de contrôle assure la \textbf{pérennité des gains} obtenus grace a l'algorithme de gestion des tables de matelassage. En combinant suivi des indicateurs, mécanismes d'alerte, standardisation des pratiques et amélioration continue, cette phase garantit que les bénéfices de la transformation digitale se maintiennent dans le temps et continuent de s'améliorer.
+
+Cette démarche DMAIC complète, de la définition du problème jusqu'au contrôle des solutions, constitue le socle méthodologique de la transformation Lean 4.0 de l'atelier de coupe, préparant ainsi le terrain pour les développements techniques détaillés dans les chapitres suivants.
