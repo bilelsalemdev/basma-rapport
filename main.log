@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.4)  10 NOV 2025 12:18
 =======
 This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.6)  10 NOV 2025 12:39
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.6)  10 NOV 2025 12:39
+>>>>>>> main
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2378,28 +2382,40 @@ Package minitoc Info: I0006
 
 ]
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Chapitre1/images/2.jpg, id=1777, 325.96782pt x 67.75313pt>
 =======
 <Chapitre1/images/2.jpg, id=1833, 325.96782pt x 67.75313pt>
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+<Chapitre1/images/2.jpg, id=1833, 325.96782pt x 67.75313pt>
+>>>>>>> main
 File: Chapitre1/images/2.jpg Graphic file (type jpg)
 <use Chapitre1/images/2.jpg>
 Package pdftex.def Info: Chapitre1/images/2.jpg  used on input line 24.
 (pdftex.def)             Requested size: 192.0548pt x 39.92023pt.
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Chapitre1/images/1.jpg, id=1778, 276.28218pt x 164.11313pt>
 =======
 <Chapitre1/images/1.jpg, id=1834, 276.28218pt x 164.11313pt>
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+<Chapitre1/images/1.jpg, id=1834, 276.28218pt x 164.11313pt>
+>>>>>>> main
 File: Chapitre1/images/1.jpg Graphic file (type jpg)
 <use Chapitre1/images/1.jpg>
 Package pdftex.def Info: Chapitre1/images/1.jpg  used on input line 31.
 (pdftex.def)             Requested size: 213.39568pt x 126.75813pt.
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Chapitre1/images/3.png, id=1779, 792.71156pt x 244.66406pt>
 =======
 <Chapitre1/images/3.png, id=1835, 792.71156pt x 244.66406pt>
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+<Chapitre1/images/3.png, id=1835, 792.71156pt x 244.66406pt>
+>>>>>>> main
 File: Chapitre1/images/3.png Graphic file (type png)
 <use Chapitre1/images/3.png>
 Package pdftex.def Info: Chapitre1/images/3.png  used on input line 52.
@@ -2420,35 +2436,50 @@ png>]
 [5 <basma-rapport/Chapitre1/images/2.jpg> <basma-rapport/Chapitre1/images/1.jpg
 > <basma-rapport/Chapitre1/images/3.png>]
 <Chapitre1/images/4.png, id=1842, 302.12875pt x 167.62625pt>
+<<<<<<< HEAD
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+>>>>>>> main
 File: Chapitre1/images/4.png Graphic file (type png)
 <use Chapitre1/images/4.png>
 Package pdftex.def Info: Chapitre1/images/4.png  used on input line 70.
 (pdftex.def)             Requested size: 192.0548pt x 106.55402pt.
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Chapitre1/images/5.png, id=1787, 342.27875pt x 148.555pt>
 =======
 <Chapitre1/images/5.png, id=1843, 342.27875pt x 148.555pt>
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+<Chapitre1/images/5.png, id=1843, 342.27875pt x 148.555pt>
+>>>>>>> main
 File: Chapitre1/images/5.png Graphic file (type png)
 <use Chapitre1/images/5.png>
 Package pdftex.def Info: Chapitre1/images/5.png  used on input line 77.
 (pdftex.def)             Requested size: 213.39568pt x 92.61996pt.
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Chapitre1/images/Organigramme.drawio.png, id=1788, 1305.87875pt x 423.5825pt>
 =======
 <Chapitre1/images/Organigramme.drawio.png, id=1844, 1305.87875pt x 423.5825pt>
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+<Chapitre1/images/Organigramme.drawio.png, id=1844, 1305.87875pt x 423.5825pt>
+>>>>>>> main
 File: Chapitre1/images/Organigramme.drawio.png Graphic file (type png)
 <use Chapitre1/images/Organigramme.drawio.png>
 Package pdftex.def Info: Chapitre1/images/Organigramme.drawio.png  used on inpu
 t line 88.
 (pdftex.def)             Requested size: 192.0548pt x 62.29367pt.
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Chapitre1/images/process-Page-3.drawio.png, id=1790, 158.5925pt x 517.935pt>
 =======
 <Chapitre1/images/process-Page-3.drawio.png, id=1846, 158.5925pt x 517.935pt>
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+<Chapitre1/images/process-Page-3.drawio.png, id=1846, 158.5925pt x 517.935pt>
+>>>>>>> main
 File: Chapitre1/images/process-Page-3.drawio.png Graphic file (type png)
 <use Chapitre1/images/process-Page-3.drawio.png>
 Package pdftex.def Info: Chapitre1/images/process-Page-3.drawio.png  used on in
@@ -2473,7 +2504,10 @@ ganigramme.drawio.png>]
 [6 <basma-rapport/Chapitre1/images/4.png> <basma-rapport/Chapitre1/images/5.png
 > <basma-rapport/Chapitre1/images/Organigramme.drawio.png>]
 <Chapitre1/images/process-Page-4.drawio.png, id=1856, 432.61626pt x 1436.36626p
+<<<<<<< HEAD
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+>>>>>>> main
 t>
 File: Chapitre1/images/process-Page-4.drawio.png Graphic file (type png)
 <use Chapitre1/images/process-Page-4.drawio.png>
@@ -2505,26 +2539,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 =======
 [8 <basma-rapport/Chapitre1/images/process-Page-4.drawio.png>]
 <Chapitre1/images/ZONE matellas.jpg, id=1869, 301.125pt x 151.3153pt>
+<<<<<<< HEAD
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+>>>>>>> main
 File: Chapitre1/images/ZONE matellas.jpg Graphic file (type jpg)
 <use Chapitre1/images/ZONE matellas.jpg>
 Package pdftex.def Info: Chapitre1/images/ZONE matellas.jpg  used on input line
  133.
 (pdftex.def)             Requested size: 283.11266pt x 142.26378pt.
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Chapitre1/images/8.jpg, id=1813, 313.9228pt x 181.42781pt>
 =======
 <Chapitre1/images/8.jpg, id=1870, 313.9228pt x 181.42781pt>
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+<Chapitre1/images/8.jpg, id=1870, 313.9228pt x 181.42781pt>
+>>>>>>> main
 File: Chapitre1/images/8.jpg Graphic file (type jpg)
 <use Chapitre1/images/8.jpg>
 Package pdftex.def Info: Chapitre1/images/8.jpg  used on input line 151.
 (pdftex.def)             Requested size: 192.0548pt x 110.99469pt.
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Chapitre1/images/9.jpg, id=1814, 263.48438pt x 219.82124pt>
 =======
 <Chapitre1/images/9.jpg, id=1871, 263.48438pt x 219.82124pt>
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+<Chapitre1/images/9.jpg, id=1871, 263.48438pt x 219.82124pt>
+>>>>>>> main
 File: Chapitre1/images/9.jpg Graphic file (type jpg)
 <use Chapitre1/images/9.jpg>
 Package pdftex.def Info: Chapitre1/images/9.jpg  used on input line 158.
@@ -2543,16 +2588,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 =======
 [9 <basma-rapport/Chapitre1/images/ZONE matellas.jpg>]
 <Chapitre1/images/16.jpg, id=1881, 392.21532pt x 219.82124pt>
+<<<<<<< HEAD
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+>>>>>>> main
 File: Chapitre1/images/16.jpg Graphic file (type jpg)
 <use Chapitre1/images/16.jpg>
 Package pdftex.def Info: Chapitre1/images/16.jpg  used on input line 176.
 (pdftex.def)             Requested size: 256.07741pt x 143.52946pt.
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Chapitre1/images/14.jpg, id=1825, 500.62032pt x 782.925pt>
 =======
 <Chapitre1/images/14.jpg, id=1882, 500.62032pt x 782.925pt>
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+<Chapitre1/images/14.jpg, id=1882, 500.62032pt x 782.925pt>
+>>>>>>> main
 File: Chapitre1/images/14.jpg Graphic file (type jpg)
 <use Chapitre1/images/14.jpg>
 Package pdftex.def Info: Chapitre1/images/14.jpg  used on input line 198.
@@ -2573,7 +2625,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [10 <basma-rapport/Chapitre1/images/8.jpg> <basma-rapport/Chapitre1/images/9.jp
 g> <basma-rapport/Chapitre1/images/16.jpg>]
 <Chapitre1/images/13.jpg, id=1891, 350.81062pt x 437.38406pt>
+<<<<<<< HEAD
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+>>>>>>> main
 File: Chapitre1/images/13.jpg Graphic file (type jpg)
 <use Chapitre1/images/13.jpg>
 Package pdftex.def Info: Chapitre1/images/13.jpg  used on input line 212.
@@ -2607,10 +2662,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [13]
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Chapitre2/images/23.png, id=1852, 3745.995pt x 1457.445pt>
 =======
 <Chapitre2/images/23.png, id=1909, 3745.995pt x 1457.445pt>
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+<Chapitre2/images/23.png, id=1909, 3745.995pt x 1457.445pt>
+>>>>>>> main
 File: Chapitre2/images/23.png Graphic file (type png)
 <use Chapitre2/images/23.png>
 Package pdftex.def Info: Chapitre2/images/23.png  used on input line 283.
@@ -2776,7 +2835,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 =======
 [22]
 <Chapitre2/images/21.jpg, id=1967, 301.125pt x 411.03563pt>
+<<<<<<< HEAD
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+>>>>>>> main
 File: Chapitre2/images/21.jpg Graphic file (type jpg)
 <use Chapitre2/images/21.jpg>
 Package pdftex.def Info: Chapitre2/images/21.jpg  used on input line 159.
@@ -2787,10 +2849,14 @@ Underfull \hbox (badness 4072) in paragraph at lines 160--160
  []
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Chapitre2/images/20.jpg, id=1906, 656.4525pt x 448.67625pt>
 =======
 <Chapitre2/images/20.jpg, id=1968, 656.4525pt x 448.67625pt>
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+<Chapitre2/images/20.jpg, id=1968, 656.4525pt x 448.67625pt>
+>>>>>>> main
 File: Chapitre2/images/20.jpg Graphic file (type jpg)
 <use Chapitre2/images/20.jpg>
 Package pdftex.def Info: Chapitre2/images/20.jpg  used on input line 166.
@@ -2801,10 +2867,14 @@ Underfull \hbox (badness 1454) in paragraph at lines 167--167
  []
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Chapitre2/images/22.jpg, id=1907, 331.99031pt x 460.72125pt>
 =======
 <Chapitre2/images/22.jpg, id=1969, 331.99031pt x 460.72125pt>
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+<Chapitre2/images/22.jpg, id=1969, 331.99031pt x 460.72125pt>
+>>>>>>> main
 File: Chapitre2/images/22.jpg Graphic file (type jpg)
 <use Chapitre2/images/22.jpg>
 Package pdftex.def Info: Chapitre2/images/22.jpg  used on input line 173.
@@ -2824,7 +2894,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [23 <basma-rapport/Chapitre2/images/21.jpg> <basma-rapport/Chapitre2/images/20.
 jpg> <basma-rapport/Chapitre2/images/22.jpg>]
 <Chapitre2/images/IMG_20250614_141256_509.jpg, id=1974, 721.94719pt x 260.47313
+<<<<<<< HEAD
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+>>>>>>> main
 pt>
 File: Chapitre2/images/IMG_20250614_141256_509.jpg Graphic file (type jpg)
 <use Chapitre2/images/IMG_20250614_141256_509.jpg>
@@ -2832,10 +2905,14 @@ Package pdftex.def Info: Chapitre2/images/IMG_20250614_141256_509.jpg  used on
 input line 192.
 (pdftex.def)             Requested size: 721.94542pt x 260.47249pt.
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Chapitre2/images/IMG_20250614_141303_456.jpg, id=1913, 887.56593pt x 288.3272p
 =======
 <Chapitre2/images/IMG_20250614_141303_456.jpg, id=1975, 887.56593pt x 288.3272p
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+<Chapitre2/images/IMG_20250614_141303_456.jpg, id=1975, 887.56593pt x 288.3272p
+>>>>>>> main
 t>
 File: Chapitre2/images/IMG_20250614_141303_456.jpg Graphic file (type jpg)
 <use Chapitre2/images/IMG_20250614_141303_456.jpg>
@@ -3050,10 +3127,14 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 (hyperref)                than one, level fixed on input line 208.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Chapitre2/analyse_deroulement_coupe.pdf, id=1914, 845.07718pt x 597.432pt>
 =======
 <Chapitre2/analyse_deroulement_coupe.pdf, id=1976, 845.07718pt x 597.432pt>
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+<Chapitre2/analyse_deroulement_coupe.pdf, id=1976, 845.07718pt x 597.432pt>
+>>>>>>> main
 File: Chapitre2/analyse_deroulement_coupe.pdf Graphic file (type pdf)
 <use Chapitre2/analyse_deroulement_coupe.pdf>
 Package pdftex.def Info: Chapitre2/analyse_deroulement_coupe.pdf  used on input
@@ -3068,7 +3149,10 @@ Package pdftex.def Info: Chapitre2/analyse_deroulement_coupe.pdf  used on input
  line 213.
 (pdftex.def)             Requested size: 845.07512pt x 597.43054pt.
 <Chapitre2/analyse_deroulement_coupe.pdf, id=1979, page=1, 845.07718pt x 597.43
+<<<<<<< HEAD
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+>>>>>>> main
 2pt>
 File: Chapitre2/analyse_deroulement_coupe.pdf Graphic file (type pdf)
 <use Chapitre2/analyse_deroulement_coupe.pdf, page 1>
@@ -3156,7 +3240,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 =======
 [30]
 <Chapitre2/images/ishikawa_beige.png, id=2022, 770.88pt x 578.16pt>
+<<<<<<< HEAD
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+>>>>>>> main
 File: Chapitre2/images/ishikawa_beige.png Graphic file (type png)
 <use Chapitre2/images/ishikawa_beige.png>
 Package pdftex.def Info: Chapitre2/images/ishikawa_beige.png  used on input lin
@@ -3496,7 +3583,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 =======
 [44]
 <Chapitre3/images/python.png, id=2089, 1284.8pt x 380.42125pt>
+<<<<<<< HEAD
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+>>>>>>> main
 File: Chapitre3/images/python.png Graphic file (type png)
 <use Chapitre3/images/python.png>
 Package pdftex.def Info: Chapitre3/images/python.png  used on input line 33.
@@ -3559,7 +3649,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 =======
 [45 <basma-rapport/Chapitre3/images/python.png>]
 <Chapitre3/images/pbib.png, id=2095, 947.54pt x 696.6025pt>
+<<<<<<< HEAD
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+>>>>>>> main
 File: Chapitre3/images/pbib.png Graphic file (type png)
 <use Chapitre3/images/pbib.png>
 Package pdftex.def Info: Chapitre3/images/pbib.png  used on input line 64.
@@ -4903,10 +4996,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [129]) (Chapitre5/chapitre5.tex
 =======
 [135]) (basma-rapport/Chapitre6/chapitre6.tex
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+[135]) (basma-rapport/Chapitre6/chapitre6.tex
+>>>>>>> main
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -4924,6 +5021,7 @@ Package minitoc Info: I0024
 (minitoc)             PREPARING MINITOCS FROM main.toc on input line 5.
 Package minitoc Info: I0006
 (minitoc)             main.mtc0 is empty on input line 7.
+<<<<<<< HEAD
 <<<<<<< HEAD
 [131
 
@@ -5356,6 +5454,98 @@ none, so I've put one in; maybe that will work.
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
 
+=======
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 ...vice] (frontend) {Interface Utilisateur\\R
+                                                  eact Dashboard};
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ..., below of=frontend] (api) {API Gateway\\F
+                                                  astAPI};
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...=-2.5cm] (predict) {Service Prédiction\\T
+                                                  ime Predictor};
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...5cm] (schedule) {Service Ordonnancement\\S
+                                                  cheduler};
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...=-1.5cm] (analytics) {Service Analytics\\K
+                                                  PIs \& Reports};
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 ...lytics, xshift=-1.5cm] (mlflow) {MLflow\\M
+                                                  odel Registry};
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...s, xshift=1.5cm] (db) {Base de Données\\P
+                                                  ostgreSQL};
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [137
+
+]
+>>>>>>> main
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -5542,7 +5732,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+<<<<<<< HEAD
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+>>>>>>> main
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -5552,7 +5745,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [141]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> main
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -5686,6 +5882,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Overfull \hbox (30.15187pt too wide) in paragraph at lines 537--537
 []            \T1/lmtt/m/n/12 due_date_minutes = (due_date - self.start_date).d
 ays * 24 * 60[] 
+<<<<<<< HEAD
+=======
  []
 
 
@@ -5788,6 +5986,129 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [156]
+Overfull \hbox (7.11188pt too wide) in paragraph at lines 1--1
+[][] 
+>>>>>>> main
+ []
+
+
+Overfull \hbox (61.03389pt too wide) in paragraph at lines 556--556
+[]\T1/lmtt/m/n/12 def create_access_token(data: dict, expires_delta: Optional[t
+imedelta] = None):[] 
+ []
+
+<<<<<<< HEAD
+=======
+ [157
+>>>>>>> main
+
+Overfull \hbox (17.80887pt too wide) in paragraph at lines 556--556
+[]    \T1/lmtt/m/n/12 encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm
+=ALGORITHM)[] 
+ []
+
+
+Overfull \hbox (11.63387pt too wide) in paragraph at lines 570--570
+[]        \T1/lmtt/m/n/12 payload = jwt.decode(token, SECRET_KEY, algorithms=[A
+LGORITHM])[] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[149]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+<<<<<<< HEAD
+[150]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+=======
+[158]
+Overfull \hbox (7.11188pt too wide) in paragraph at lines 358--358
+[][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 3
+61.
+(/usr/share/texmf/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [159
+>>>>>>> main
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[151]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+<<<<<<< HEAD
+[152]
+Overfull \hbox (85.7339pt too wide) in paragraph at lines 747--747
+[]\T1/lmtt/m/n/12 def cached_prediction(nbr_plies, longeur_trace, longeur_matel
+as, largeur, machine):[] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[153]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[154]
+Overfull \hbox (79.5589pt too wide) in paragraph at lines 835--835
+[]    \T1/lmtt/m/n/12 drift_score = calculate_drift_score(current_performance, 
+baseline_performance)[] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[155]) (basma-rapport/ConclusionGenerale/conclusion.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[156]
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
 Overfull \hbox (7.11188pt too wide) in paragraph at lines 1--1
 [][] 
@@ -5842,6 +6163,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 =======
 [160]
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+[160]
+>>>>>>> main
 Overfull \hbox (7.11188pt too wide) in paragraph at lines 365--365
 [][] 
  []
@@ -5865,10 +6189,14 @@ m/fr/web-hosting/glossary/what-
  []
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [146
 =======
 [161
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+[161
+>>>>>>> main
 
 ]
 
@@ -5905,10 +6233,14 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                in the main.log file.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [147] (main.aux)
 =======
 [162] (basma-rapport/main.aux)
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+[162] (basma-rapport/main.aux)
+>>>>>>> main
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -5937,12 +6269,16 @@ Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
 (biblatex)                and rerun LaTeX afterwards.
 
+<<<<<<< HEAD
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+>>>>>>> main
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
 <<<<<<< HEAD
  54171 strings out of 474486
  1188572 string characters out of 5745171
@@ -6154,6 +6490,8 @@ PDF statistics:
  733 named destinations out of 1000 (max. 500000)
  2487 words of extra memory for PDF output out of 10000 (max. 10000000)
 =======
+=======
+>>>>>>> main
  53840 strings out of 474222
  1171411 string characters out of 5748733
  2054245 words of memory out of 5000000
@@ -6181,5 +6519,8 @@ PDF statistics:
  2706 compressed objects within 28 object streams
  707 named destinations out of 1000 (max. 500000)
  2580 words of extra memory for PDF output out of 10000 (max. 10000000)
+<<<<<<< HEAD
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+>>>>>>> main
 

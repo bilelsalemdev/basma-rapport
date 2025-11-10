@@ -578,4 +578,7 @@
 \contentsline {section}{\numberline {5.11}Conclusion}{156}{section.5.11}%
 \contentsline {starchapter}{Conclusion générale}{157}{section.5.11}%
 \contentsline {chapter}{Webographie}{161}{section.5.11}%
+<<<<<<< HEAD
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+>>>>>>> main

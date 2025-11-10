@@ -65,6 +65,7 @@
 \contentsline {xchapter}{Application de la méthodologie CRISP-ML(Q) au sein de l'atelier de coupe Bacovet}{124}{chapter.4}%
 \addvspace {10\p@ }
 <<<<<<< HEAD
+<<<<<<< HEAD
 \contentsline {xchapter}{Agile 4-month delivery plan}{131}{chapter.5}%
 \contentsline {table}{\numberline {5.1}{\ignorespaces Roadmap Phase 1 - Fondations}}{132}{table.caption.111}%
 \contentsline {table}{\numberline {5.2}{\ignorespaces Roadmap Phase 2 - Développement Core}}{132}{table.caption.112}%
@@ -75,3 +76,6 @@
 =======
 \contentsline {xchapter}{Service IA and dashboard}{137}{chapter.5}%
 >>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
+=======
+\contentsline {xchapter}{Service IA and dashboard}{137}{chapter.5}%
+>>>>>>> main
