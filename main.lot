@@ -4,78 +4,64 @@
 \contentsline {xchapter}{Cadre du projet et étude de l'existant}{4}{chapter.1}%
 \contentsline {table}{\numberline {1.1}{\ignorespaces Paramètres techniques de l'atelier de coupe}}{13}{table.caption.15}%
 \contentsline {table}{\numberline {1.2}{\ignorespaces Analyse SIPOC du projet}}{16}{table.caption.17}%
-\contentsline {table}{\numberline {1.3}{\ignorespaces Analyse QQOQCCP du projet}}{16}{table.caption.18}%
+\contentsline {table}{\numberline {1.3}{\ignorespaces Analyse QQOQCCP du projet}}{17}{table.caption.18}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Mener une action d'amélioration d'un atelier de travail avec Audit, les outils lean 4.0}{18}{chapter.2}%
-\contentsline {table}{\numberline {2.1}{\ignorespaces Exemple de statut temps réel}}{20}{table.caption.19}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Analyse des temps observés par activité}}{29}{table.caption.23}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces Analyse des ressources et limitations}}{30}{table.caption.24}%
-\contentsline {table}{\numberline {2.4}{\ignorespaces Synthèse des causes par catégorie}}{31}{table.caption.26}%
-\contentsline {table}{\numberline {2.5}{\ignorespaces Exemple de statut temps réel}}{34}{table.caption.28}%
-\contentsline {table}{\numberline {2.6}{\ignorespaces Indicateurs de performance pour le suivi de l'amélioration}}{35}{table.caption.29}%
+\contentsline {xchapter}{Mener une action d'amélioration d'un atelier de travail avec Audit, les outils lean 4.0}{19}{chapter.2}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Exemple de statut temps réel}}{21}{table.caption.19}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Analyse des temps observés par activité}}{30}{table.caption.23}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Analyse des ressources et limitations}}{31}{table.caption.24}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Synthèse des causes par catégorie}}{32}{table.caption.26}%
+\contentsline {table}{\numberline {2.5}{\ignorespaces Exemple de statut temps réel}}{35}{table.caption.28}%
+\contentsline {table}{\numberline {2.6}{\ignorespaces Indicateurs de performance pour le suivi de l'amélioration}}{36}{table.caption.29}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Intelligence Artificielle, Industrie 4.0 et Méthodologie CRISP-ML(Q)}{38}{chapter.3}%
-\contentsline {table}{\numberline {3.1}{\ignorespaces Bibliothèques Python pour la manipulation de données}}{45}{table.caption.35}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Bibliothèques Python pour le Machine Learning}}{45}{table.caption.37}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Bibliothèques Python pour la visualisation}}{46}{table.caption.38}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Technologies backend et API}}{46}{table.caption.39}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Technologies frontend}}{48}{table.caption.41}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Outils d'optimisation}}{49}{table.caption.43}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Outils d'infrastructure et DevOps}}{49}{table.caption.44}%
-\contentsline {table}{\numberline {3.8}{\ignorespaces Stack technologique complète du projet}}{50}{table.caption.46}%
-\contentsline {table}{\numberline {3.9}{\ignorespaces Business Model Canvas du systeme IA de planification}}{56}{table.caption.49}%
-\contentsline {table}{\numberline {3.10}{\ignorespaces Objectifs operationnels avec metriques de succes}}{56}{table.caption.50}%
-\contentsline {table}{\numberline {3.11}{\ignorespaces Matrice pouvoir-interet des parties prenantes}}{57}{table.caption.51}%
-\contentsline {table}{\numberline {3.12}{\ignorespaces Comparaison processus AS-IS vs TO-BE}}{61}{table.caption.52}%
-\contentsline {table}{\numberline {3.13}{\ignorespaces Registre detaille des risques metier}}{61}{table.caption.53}%
-\contentsline {table}{\numberline {3.14}{\ignorespaces Criteres de succes techniques}}{63}{table.caption.54}%
-\contentsline {table}{\numberline {3.15}{\ignorespaces Criteres de succes metier}}{63}{table.caption.55}%
-\contentsline {table}{\numberline {3.16}{\ignorespaces Caracteristiques detaillees des sources de donnees}}{68}{table.caption.56}%
-\contentsline {table}{\numberline {3.17}{\ignorespaces Dictionnaire de donnees - Variables principales}}{69}{table.caption.57}%
-\contentsline {table}{\numberline {3.18}{\ignorespaces Description des variables principales}}{70}{table.caption.58}%
-\contentsline {table}{\numberline {3.19}{\ignorespaces Analyse des valeurs manquantes par variable}}{72}{table.caption.59}%
-\contentsline {table}{\numberline {3.20}{\ignorespaces Valeurs aberrantes detectees}}{73}{table.caption.60}%
-\contentsline {table}{\numberline {3.21}{\ignorespaces Features finales pour modelisation}}{80}{table.caption.62}%
-\contentsline {table}{\numberline {3.22}{\ignorespaces Criteres de qualite des donnees}}{84}{table.caption.65}%
-\contentsline {table}{\numberline {3.23}{\ignorespaces Criteres de qualite des modeles ML}}{85}{table.caption.66}%
-\contentsline {table}{\numberline {3.24}{\ignorespaces Standards de qualite du code}}{86}{table.caption.67}%
-\contentsline {table}{\numberline {3.25}{\ignorespaces Criteres de qualite operationnelle}}{88}{table.caption.68}%
-\contentsline {table}{\numberline {3.26}{\ignorespaces Metriques de qualite des donnees}}{91}{table.caption.69}%
-\contentsline {table}{\numberline {3.27}{\ignorespaces Alertes de qualite des donnees}}{92}{table.caption.70}%
-\contentsline {table}{\numberline {3.28}{\ignorespaces Criteres de validation des modeles ML}}{93}{table.caption.71}%
-\contentsline {table}{\numberline {3.29}{\ignorespaces Systeme d'alertes de monitoring}}{95}{table.caption.72}%
-\contentsline {table}{\numberline {3.30}{\ignorespaces Criteres de selection des algorithmes ML}}{101}{table.caption.73}%
-\contentsline {table}{\numberline {3.31}{\ignorespaces Comparaison theorique des algorithmes candidats}}{103}{table.caption.74}%
-\contentsline {table}{\numberline {3.32}{\ignorespaces Resultats de la comparaison initiale des algorithmes (hyperparametres par defaut)}}{104}{table.caption.76}%
-\contentsline {table}{\numberline {3.33}{\ignorespaces Configuration initiale des hyperparametres XGBoost}}{107}{table.caption.78}%
-\contentsline {table}{\numberline {3.34}{\ignorespaces Ressources computationnelles utilisees pour l'entrainement}}{110}{table.caption.81}%
-\contentsline {table}{\numberline {3.35}{\ignorespaces Performances du modele XGBoost apres entrainement initial}}{111}{table.caption.83}%
-\contentsline {table}{\numberline {3.36}{\ignorespaces Espace de recherche des hyperparametres XGBoost}}{113}{table.caption.84}%
-\contentsline {table}{\numberline {3.37}{\ignorespaces Hyperparametres optimaux identifies}}{115}{table.caption.86}%
-\contentsline {table}{\numberline {3.38}{\ignorespaces Comparaison avant/apres optimisation des hyperparametres}}{115}{table.caption.87}%
-\contentsline {table}{\numberline {3.39}{\ignorespaces Analyse de sensibilite des hyperparametres}}{116}{table.caption.89}%
-\contentsline {table}{\numberline {3.40}{\ignorespaces Performances de la configuration optimale sur ensemble de test}}{117}{table.caption.91}%
-\contentsline {table}{\numberline {3.41}{\ignorespaces Configuration de la validation croisee temporelle}}{118}{table.caption.92}%
-\contentsline {table}{\numberline {3.42}{\ignorespaces Decoupage des folds pour validation croisee temporelle}}{119}{table.caption.93}%
-\contentsline {table}{\numberline {3.43}{\ignorespaces Resultats de la validation croisee temporelle (5 folds)}}{119}{table.caption.95}%
-\contentsline {table}{\numberline {3.44}{\ignorespaces Analyse de variance (ANOVA) des performances par fold}}{120}{table.caption.97}%
-\contentsline {table}{\numberline {3.45}{\ignorespaces Intervalles de confiance a 95\% des performances}}{122}{table.caption.99}%
-\contentsline {table}{\numberline {3.46}{\ignorespaces Comparaison avec la litterature scientifique}}{122}{table.caption.100}%
+\contentsline {xchapter}{Intelligence Artificielle, Industrie 4.0 et Méthodologie CRISP-ML(Q)}{39}{chapter.3}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Bibliothèques Python pour la manipulation de données}}{46}{table.caption.35}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Bibliothèques Python pour le Machine Learning}}{47}{table.caption.37}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Bibliothèques Python pour la visualisation}}{48}{table.caption.38}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Technologies backend et API}}{49}{table.caption.39}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Technologies frontend}}{50}{table.caption.41}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Outils d'optimisation}}{52}{table.caption.43}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Outils d'infrastructure et DevOps}}{53}{table.caption.44}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Stack technologique complète du projet}}{55}{table.caption.46}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces Business Model Canvas du systeme IA de planification}}{61}{table.caption.49}%
+\contentsline {table}{\numberline {3.10}{\ignorespaces Objectifs operationnels avec metriques de succes}}{61}{table.caption.50}%
+\contentsline {table}{\numberline {3.11}{\ignorespaces Matrice pouvoir-interet des parties prenantes}}{62}{table.caption.51}%
+\contentsline {table}{\numberline {3.12}{\ignorespaces Comparaison processus AS-IS vs TO-BE}}{66}{table.caption.52}%
+\contentsline {table}{\numberline {3.13}{\ignorespaces Registre detaille des risques metier}}{66}{table.caption.53}%
+\contentsline {table}{\numberline {3.14}{\ignorespaces Criteres de succes techniques}}{68}{table.caption.54}%
+\contentsline {table}{\numberline {3.15}{\ignorespaces Criteres de succes metier}}{68}{table.caption.55}%
+\contentsline {table}{\numberline {3.16}{\ignorespaces Caracteristiques detaillees des sources de donnees}}{73}{table.caption.56}%
+\contentsline {table}{\numberline {3.17}{\ignorespaces Dictionnaire de donnees - Variables principales}}{74}{table.caption.57}%
+\contentsline {table}{\numberline {3.18}{\ignorespaces Description des variables principales}}{75}{table.caption.58}%
+\contentsline {table}{\numberline {3.19}{\ignorespaces Analyse des valeurs manquantes par variable}}{77}{table.caption.59}%
+\contentsline {table}{\numberline {3.20}{\ignorespaces Valeurs aberrantes detectees}}{78}{table.caption.60}%
+\contentsline {table}{\numberline {3.21}{\ignorespaces Features finales pour modelisation}}{85}{table.caption.62}%
+\contentsline {table}{\numberline {3.22}{\ignorespaces Criteres de qualite des donnees}}{89}{table.caption.65}%
+\contentsline {table}{\numberline {3.23}{\ignorespaces Criteres de qualite des modeles ML}}{90}{table.caption.66}%
+\contentsline {table}{\numberline {3.24}{\ignorespaces Standards de qualite du code}}{91}{table.caption.67}%
+\contentsline {table}{\numberline {3.25}{\ignorespaces Criteres de qualite operationnelle}}{93}{table.caption.68}%
+\contentsline {table}{\numberline {3.26}{\ignorespaces Metriques de qualite des donnees}}{96}{table.caption.69}%
+\contentsline {table}{\numberline {3.27}{\ignorespaces Alertes de qualite des donnees}}{97}{table.caption.70}%
+\contentsline {table}{\numberline {3.28}{\ignorespaces Criteres de validation des modeles ML}}{98}{table.caption.71}%
+\contentsline {table}{\numberline {3.29}{\ignorespaces Systeme d'alertes de monitoring}}{100}{table.caption.72}%
+\contentsline {table}{\numberline {3.30}{\ignorespaces Criteres de selection des algorithmes ML}}{107}{table.caption.73}%
+\contentsline {table}{\numberline {3.31}{\ignorespaces Comparaison theorique des algorithmes candidats}}{108}{table.caption.74}%
+\contentsline {table}{\numberline {3.32}{\ignorespaces Resultats de la comparaison initiale des algorithmes (hyperparametres par defaut)}}{110}{table.caption.76}%
+\contentsline {table}{\numberline {3.33}{\ignorespaces Configuration initiale des hyperparametres XGBoost}}{112}{table.caption.78}%
+\contentsline {table}{\numberline {3.34}{\ignorespaces Ressources computationnelles utilisees pour l'entrainement}}{116}{table.caption.81}%
+\contentsline {table}{\numberline {3.35}{\ignorespaces Performances du modele XGBoost apres entrainement initial}}{117}{table.caption.83}%
+\contentsline {table}{\numberline {3.36}{\ignorespaces Espace de recherche des hyperparametres XGBoost}}{119}{table.caption.84}%
+\contentsline {table}{\numberline {3.37}{\ignorespaces Hyperparametres optimaux identifies}}{121}{table.caption.86}%
+\contentsline {table}{\numberline {3.38}{\ignorespaces Comparaison avant/apres optimisation des hyperparametres}}{121}{table.caption.87}%
+\contentsline {table}{\numberline {3.39}{\ignorespaces Analyse de sensibilite des hyperparametres}}{122}{table.caption.89}%
+\contentsline {table}{\numberline {3.40}{\ignorespaces Performances de la configuration optimale sur ensemble de test}}{123}{table.caption.91}%
+\contentsline {table}{\numberline {3.41}{\ignorespaces Configuration de la validation croisee temporelle}}{124}{table.caption.92}%
+\contentsline {table}{\numberline {3.42}{\ignorespaces Decoupage des folds pour validation croisee temporelle}}{125}{table.caption.93}%
+\contentsline {table}{\numberline {3.43}{\ignorespaces Resultats de la validation croisee temporelle (5 folds)}}{125}{table.caption.95}%
+\contentsline {table}{\numberline {3.44}{\ignorespaces Analyse de variance (ANOVA) des performances par fold}}{126}{table.caption.97}%
+\contentsline {table}{\numberline {3.45}{\ignorespaces Intervalles de confiance a 95\% des performances}}{128}{table.caption.99}%
+\contentsline {table}{\numberline {3.46}{\ignorespaces Comparaison avec la litterature scientifique}}{128}{table.caption.100}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Application de la méthodologie CRISP-ML(Q) au sein de l'atelier de coupe Bacovet}{124}{chapter.4}%
+\contentsline {xchapter}{Application de la méthodologie CRISP-ML(Q) au sein de l'atelier de coupe Bacovet}{130}{chapter.4}%
 \addvspace {10\p@ }
-<<<<<<< HEAD
-<<<<<<< HEAD
-\contentsline {xchapter}{Agile 4-month delivery plan}{131}{chapter.5}%
-\contentsline {table}{\numberline {5.1}{\ignorespaces Roadmap Phase 1 - Fondations}}{132}{table.caption.111}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Roadmap Phase 2 - Développement Core}}{132}{table.caption.112}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Roadmap Phase 3 - Optimisation et Production}}{132}{table.caption.113}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Registre détaillé des risques projet}}{137}{table.caption.114}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces Matrice probabilité-impact des risques}}{137}{table.caption.115}%
-\contentsline {table}{\numberline {5.6}{\ignorespaces Répartition du Budget}}{140}{table.caption.116}%
-=======
 \contentsline {xchapter}{Service IA and dashboard}{137}{chapter.5}%
->>>>>>> 145061d1c41c5d9818717e9549838d69e883f0da
-=======
-\contentsline {xchapter}{Service IA and dashboard}{137}{chapter.5}%
->>>>>>> main

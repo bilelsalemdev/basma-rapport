@@ -26,8 +26,7 @@
 {\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {2.3.2.0.7}Conclusion opérationnelle}{\reset@font\mtcPfont 29}{paragraph.2.3.2.0.7}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.2.1}Description synthétique des processus mesurés}{\reset@font\mtcSSSfont 29}{subsubsection.2.3.2.1}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.2.2}Constats clés de la collecte}{\reset@font\mtcSSSfont 29}{subsubsection.2.3.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.2.3}Paramètres techniques de l'atelier (référence)}{\reset@font\mtcSSSfont 29}{subsubsection.2.3.2.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.2.4}Synthèse de la phase de mesure}{\reset@font\mtcSSSfont 30}{subsubsection.2.3.2.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.2.3}Synthèse de la phase de mesure}{\reset@font\mtcSSSfont 29}{subsubsection.2.3.2.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.3}Phase 3 : Analyze (Analyser)}{\reset@font\mtcSSfont 30}{subsection.2.3.3}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.3.1}Objectif de la phase Analyse}{\reset@font\mtcSSSfont 30}{subsubsection.2.3.3.1}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.3.2}Méthodes d'analyse utilisées}{\reset@font\mtcSSSfont 30}{subsubsection.2.3.3.2}}
@@ -35,7 +34,7 @@
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.3.4}Analyse des perturbations}{\reset@font\mtcSSSfont 30}{subsubsection.2.3.3.4}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.3.5}Capacités et limites techniques observées}{\reset@font\mtcSSSfont 31}{subsubsection.2.3.3.5}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.3.6}Diagramme d'Ishikawa}{\reset@font\mtcSSSfont 31}{subsubsection.2.3.3.6}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.3.7}Analyse directe des données mesurées}{\reset@font\mtcSSSfont 32}{subsubsection.2.3.3.7}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.3.7}Analyse directe des données mesurées}{\reset@font\mtcSSSfont 31}{subsubsection.2.3.3.7}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.3.8}Synthèse des causes racines identifiées}{\reset@font\mtcSSSfont 32}{subsubsection.2.3.3.8}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.3.9}Conclusion de la phase Analyse}{\reset@font\mtcSSSfont 32}{subsubsection.2.3.3.9}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.4}Phase 4 : Improve (Améliorer)}{\reset@font\mtcSSfont 32}{subsection.2.3.4}}
@@ -43,7 +42,7 @@
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.4.2}Proposition : Algorithme intelligent de gestion des tables de matelassage}{\reset@font\mtcSSSfont 33}{subsubsection.2.3.4.2}}
 {\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {2.3.4.2.1}Principe de fonctionnement}{\reset@font\mtcPfont 33}{paragraph.2.3.4.2.1}}
 {\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {2.3.4.2.2}Pseudocode de l'algorithme}{\reset@font\mtcPfont 33}{paragraph.2.3.4.2.2}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {2.3.4.2.3}Schéma de fonctionnement de l'algorithme}{\reset@font\mtcPfont 34}{paragraph.2.3.4.2.3}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {2.3.4.2.3}Schéma de fonctionnement de l'algorithme}{\reset@font\mtcPfont 33}{paragraph.2.3.4.2.3}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.4.3}Application pratique}{\reset@font\mtcSSSfont 34}{subsubsection.2.3.4.3}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.4.4}Bénéfices attendus}{\reset@font\mtcSSSfont 35}{subsubsection.2.3.4.4}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.5}Phase Contrôler : Pérennisation des améliorations}{\reset@font\mtcSSfont 35}{subsection.2.3.5}}

@@ -1,0 +1,62 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Introduction}{\reset@font\mtcSfont 137}{section.5.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Architecture des Services IA}{\reset@font\mtcSfont 137}{section.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.1}Vue d'ensemble de l'architecture}{\reset@font\mtcSSfont 137}{subsection.5.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.2}Composants principaux}{\reset@font\mtcSSfont 138}{subsection.5.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.2.2.1}Service de Prédiction}{\reset@font\mtcSSSfont 138}{subsubsection.5.2.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.2.2.2}Service d'Ordonnancement}{\reset@font\mtcSSSfont 138}{subsubsection.5.2.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.2.2.3}Service Analytics}{\reset@font\mtcSSSfont 139}{subsubsection.5.2.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Spécifications des APIs}{\reset@font\mtcSfont 139}{section.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.1}API de Prédiction}{\reset@font\mtcSSfont 139}{subsection.5.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.1.1}Endpoint de prédiction simple}{\reset@font\mtcSSSfont 139}{subsubsection.5.3.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.1.2}Endpoint de prédiction en lot}{\reset@font\mtcSSSfont 140}{subsubsection.5.3.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.2}API d'Ordonnancement}{\reset@font\mtcSSfont 140}{subsection.5.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.1}Endpoint d'optimisation de planification}{\reset@font\mtcSSSfont 140}{subsubsection.5.3.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.3}API Analytics}{\reset@font\mtcSSfont 142}{subsection.5.3.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.3.1}Endpoint de calcul des KPIs}{\reset@font\mtcSSSfont 142}{subsubsection.5.3.3.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Interface Utilisateur}{\reset@font\mtcSfont 143}{section.5.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.1}Architecture du Dashboard React}{\reset@font\mtcSSfont 143}{subsection.5.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.1.1}Structure des composants}{\reset@font\mtcSSSfont 143}{subsubsection.5.4.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.1.2}Gestion d'état}{\reset@font\mtcSSSfont 143}{subsubsection.5.4.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.2}Pages principales}{\reset@font\mtcSSfont 143}{subsection.5.4.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.2.1}Dashboard Principal}{\reset@font\mtcSSSfont 143}{subsubsection.5.4.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.2.2}Page de Planification}{\reset@font\mtcSSSfont 144}{subsubsection.5.4.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.2.3}Page Analytics}{\reset@font\mtcSSSfont 145}{subsubsection.5.4.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.2.4}Simulateur What-If}{\reset@font\mtcSSSfont 146}{subsubsection.5.4.2.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}Intégration des Modèles ML}{\reset@font\mtcSfont 147}{section.5.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.1}Service de Prédiction}{\reset@font\mtcSSfont 147}{subsection.5.5.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.5.1.1}Chargement des modèles}{\reset@font\mtcSSSfont 147}{subsubsection.5.5.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.5.1.2}Préprocessing des données}{\reset@font\mtcSSSfont 147}{subsubsection.5.5.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.2}Service d'Ordonnancement}{\reset@font\mtcSSfont 148}{subsection.5.5.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.5.2.1}Modélisation des contraintes}{\reset@font\mtcSSSfont 148}{subsubsection.5.5.2.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.6}Sécurité et Authentification}{\reset@font\mtcSfont 149}{section.5.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.6.1}Système d'authentification}{\reset@font\mtcSSfont 149}{subsection.5.6.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.6.1.1}Génération des tokens}{\reset@font\mtcSSSfont 149}{subsubsection.5.6.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.6.1.2}Vérification des tokens}{\reset@font\mtcSSSfont 149}{subsubsection.5.6.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.6.2}Contrôle d'accès basé sur les rôles (RBAC)}{\reset@font\mtcSSfont 149}{subsection.5.6.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.7}Monitoring et Observabilité}{\reset@font\mtcSfont 150}{section.5.7}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.1}Métriques de performance}{\reset@font\mtcSSfont 150}{subsection.5.7.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.1.1}Métriques des modèles}{\reset@font\mtcSSSfont 150}{subsubsection.5.7.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.1.2}Métriques des services}{\reset@font\mtcSSSfont 150}{subsubsection.5.7.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.2}Alertes et notifications}{\reset@font\mtcSSfont 150}{subsection.5.7.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.8}Documentation Technique}{\reset@font\mtcSfont 151}{section.5.8}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.8.1}Documentation API}{\reset@font\mtcSSfont 151}{subsection.5.8.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.8.2}Guide de déploiement}{\reset@font\mtcSSfont 151}{subsection.5.8.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.8.2.1}Configuration Docker}{\reset@font\mtcSSSfont 151}{subsubsection.5.8.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.8.2.2}Docker Compose}{\reset@font\mtcSSSfont 151}{subsubsection.5.8.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.8.3}Tests et validation}{\reset@font\mtcSSfont 152}{subsection.5.8.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.8.3.1}Tests unitaires}{\reset@font\mtcSSSfont 152}{subsubsection.5.8.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.8.3.2}Tests d'intégration}{\reset@font\mtcSSSfont 152}{subsubsection.5.8.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.9}Performance et Optimisation}{\reset@font\mtcSfont 153}{section.5.9}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.9.1}Optimisations des modèles}{\reset@font\mtcSSfont 153}{subsection.5.9.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.9.1.1}Cache des prédictions}{\reset@font\mtcSSSfont 153}{subsubsection.5.9.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.9.1.2}Prédiction en lot}{\reset@font\mtcSSSfont 153}{subsubsection.5.9.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.9.2}Optimisations de l'ordonnancement}{\reset@font\mtcSSfont 154}{subsection.5.9.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.9.2.1}Parallélisation}{\reset@font\mtcSSSfont 154}{subsubsection.5.9.2.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.10}Évolutivité et Maintenance}{\reset@font\mtcSfont 155}{section.5.10}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.10.1}Architecture évolutive}{\reset@font\mtcSSfont 155}{subsection.5.10.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.10.1.1}Microservices}{\reset@font\mtcSSSfont 155}{subsubsection.5.10.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.10.1.2}API Gateway}{\reset@font\mtcSSSfont 155}{subsubsection.5.10.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.10.2}Maintenance des modèles}{\reset@font\mtcSSfont 155}{subsection.5.10.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.10.2.1}Monitoring de la dérive}{\reset@font\mtcSSSfont 155}{subsubsection.5.10.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.10.2.2}Réentraînement automatique}{\reset@font\mtcSSSfont 155}{subsubsection.5.10.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.11}Conclusion}{\reset@font\mtcSfont 156}{section.5.11}}
